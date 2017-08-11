@@ -1,2 +1,6 @@
 Ola mundo
+<<<<<<< HEAD
 Conflito de merge
+=======
+Conflito de merge branch
+>>>>>>> marcelopaivaramos
