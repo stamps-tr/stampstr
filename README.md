@@ -1,2 +1,4 @@
-# stampstr
-Projeto STAMPS-TR (Soluções Tecnológicas Aplicáveis às Mídias e Produtos de Saúde em Tempo Real (STAMPS-TR)
+# STAMPS-TR
+Soluções Tecnológicas Aplicáveis às Mídias e Produtos de Saúde em Tempo Real
+
+**Para** organizações públicas e/ou privadas envolvidas com gestão no domínio de conhecimento de saúde, que necessitam gerenciar dados e/ou informações provenientes de sensores, **o Projeto de STAMPS-TR** é um Sistema Computadorizado (software e hardware) envolvendo Pacientes, Médicos, Hospitais e Fornecedores, para tomada de decisão em tempo real. **Diferentemente** de outros produtos existentes em Universidades, Institutos de Pesquisa, Agências Governamentais ou Empresas Públicas e/ou Privadas, **este produto** será desenvolvido e verificado quanto a qualidade, confiabilidade, segurança (safety), segurança (security) e testabilidade, em apenas 16 semanas acadêmicas, utilizando-se do método de desenvolvimento ágil Scrum e suas boas práticas em um cenário fictício de crise.
