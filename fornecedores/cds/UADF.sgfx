@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R17" ?>
+
+<specification>
+    <IDE>
+        <project path="Remote_Control.etp"/>
+        <ratio horizontal="20" vertical="20"/>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <A661 library_version="1" supp_version="5">
+        <intprop name="ApplicationId">1</intprop>
+    </A661>
+    <children>
+        <A661Layer name="a661_layer" oid="775d0421-655a-4381-a4e7-ced3ad4b1c4b">
+            <IDE>
+                <ratio horizontal="20" vertical="20"/>
+            </IDE>
+            <model>
+                <intprop name="LayerId">1</intprop>
+                <intprop name="ContextNumber">0</intprop>
+                <intprop name="Width">15360</intprop>
+                <intprop name="Height">15360</intprop>
+            </model>
+            <runtime>
+                <connect msg_id="A661_UA_CONTEXT_NUMBER" name="a661_layer_A661_UA_CONTEXT_NUMBER"/>
+                <connect msg_id="A661_REQ_LAYER_ACTIVE" name="a661_layer_A661_REQ_LAYER_ACTIVE"/>
+                <connect msg_id="A661_REQ_LAYER_INACTIVE" name="a661_layer_A661_REQ_LAYER_INACTIVE"/>
+                <connect msg_id="A661_REQ_LAYER_VISIBLE" name="a661_layer_A661_REQ_LAYER_VISIBLE"/>
+            </runtime>
+            <events>
+                <connect msg_id="A661_SERVER_CONTEXT_NUMBER" name="a661_layer_A661_SERVER_CONTEXT_NUMBER"/>
+                <connect msg_id="A661_NOTE_REINIT_LAYER_DATA" name="a661_layer_A661_NOTE_REINIT_LAYER_DATA"/>
+                <connect msg_id="A661_NOTE_LAYER_IS_ACTIVE" name="a661_layer_A661_NOTE_LAYER_IS_ACTIVE"/>
+                <connect msg_id="A661_NOTE_LAYER_IS_INACTIVE" name="a661_layer_A661_NOTE_LAYER_IS_INACTIVE"/>
+                <connect msg_id="A661_NOTE_CYCLIC_ACTIVATION" name="a661_layer_A661_NOTE_CYCLIC_ACTIVATION"/>
+                <connect msg_id="A661_ERR_BAD_COMMAND" name="a661_layer_A661_ERR_BAD_COMMAND"/>
+                <connect msg_id="A661_ERR_CREATE_ABORTED" name="a661_layer_A661_ERR_CREATE_ABORTED"/>
+                <connect msg_id="A661_ERR_EXTEND_ABORTED" name="a661_layer_A661_ERR_EXTEND_ABORTED"/>
+                <connect msg_id="A661_ERR_SET_ABORTED" name="a661_layer_A661_ERR_SET_ABORTED"/>
+                <connect msg_id="A661_ERR_UA_REQUEST_ABORTED" name="a661_layer_A661_ERR_UA_REQUEST_ABORTED"/>
+                <connect msg_id="A661_ERR_MEMORY_OVERLOAD" name="a661_layer_A661_ERR_MEMORY_OVERLOAD"/>
+                <connect msg_id="A661_ERR_PROCESS_OVERLOAD" name="a661_layer_A661_ERR_PROCESS_OVERLOAD"/>
+                <connect msg_id="A661_ERR_RENDERING_OVERLOAD" name="a661_layer_A661_ERR_RENDERING_OVERLOAD"/>
+            </events>
+            <children>
+                <widget name="btn_on_off" oid="fa138d40-6899-42ea-9d35-ec55e5c5846b" type="ToggleButton">
+                    <model>
+                        <intprop name="WidgetIdent">1</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5840</intprop>
+                        <intprop name="PosY">11640</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="ToggleState">A661_UNSELECTED</enumprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">On/Off</stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_INNER_STATE_TOGGLE" name="btn_on_off_A661_INNER_STATE_TOGGLE"/>
+                        <connect msg_id="A661_ENABLE" name="btn_on_off_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="btn_on_off_A661_VISIBLE"/>
+                        <connect msg_id="A661_STYLE_SET" name="btn_on_off_A661_STYLE_SET"/>
+                        <connect msg_id="A661_STRING" name="btn_on_off_A661_STRING"/>
+                        <connect msg_id="A661_STRING_ALTERNATE" name="btn_on_off_A661_STRING_ALTERNATE"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="btn_on_off_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="btn_on_off_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="btn_on_off_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="btn_on_off_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="btn_on_off_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_STATE_CHANGE" name="btn_on_off_A661_EVT_STATE_CHANGE"/>
+                    </events>
+                </widget>
+                <widget name="btn_up" oid="8393f4e2-39fd-4f19-a463-f4ca65c1a9ca" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">2</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">6980</intprop>
+                        <intprop name="PosY">8560</intprop>
+                        <intprop name="SizeX">1000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">^</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="btn_up_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="btn_up_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="btn_up_A661_STRING"/>
+                        <connect msg_id="A661_STYLE_SET" name="btn_up_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="btn_up_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="btn_up_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="btn_up_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="btn_up_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="btn_up_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="btn_up_A661_EVT_SELECTION"/>
+                    </events>
+                </widget>
+                <widget name="btn_down" oid="f9c890d1-6dec-4eb7-a4c0-b7d43b2cf3d5" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">3</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">6940</intprop>
+                        <intprop name="PosY">6740</intprop>
+                        <intprop name="SizeX">1000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">v</stringprop>
+                    </model>
+                    <extensions>
+                        <extension type="DirectionalTabbingExtension">
+                            <intprop name="NumDirections">4</intprop>
+                            <arrayprop name="TabDirectionWidgetIdArray">
+                                <intprop name="1">0</intprop>
+                                <intprop name="2">0</intprop>
+                                <intprop name="3">0</intprop>
+                                <intprop name="4">0</intprop>
+                            </arrayprop>
+                        </extension>
+                    </extensions>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="btn_down_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="btn_down_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="btn_down_A661_STRING"/>
+                        <connect msg_id="A661_STYLE_SET" name="btn_down_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="btn_down_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="btn_down_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="btn_down_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="btn_down_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="btn_down_A661_REQ_CURSOR_ON_WIDGET"/>
+                        <connect msg_id="A661_TAB_DIRECTION_WIDGET_ID_ARRAY" name="btn_down_A661_TAB_DIRECTION_WIDGET_ID_ARRAY"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="btn_down_A661_EVT_SELECTION"/>
+                    </events>
+                </widget>
+                <widget name="btn_left" oid="9e6b42b2-3ca8-4762-9c16-009b2ad7eed2" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">4</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5500</intprop>
+                        <intprop name="PosY">7620</intprop>
+                        <intprop name="SizeX">1000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">&lt;</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="btn_left_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="btn_left_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="btn_left_A661_STRING"/>
+                        <connect msg_id="A661_STYLE_SET" name="btn_left_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="btn_left_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="btn_left_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="btn_left_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="btn_left_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="btn_left_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="btn_left_A661_EVT_SELECTION"/>
+                    </events>
+                </widget>
+                <widget name="btn_right" oid="23b70eb7-de5f-43cf-8ba1-59d15d511a6e" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">5</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8340</intprop>
+                        <intprop name="PosY">7660</intprop>
+                        <intprop name="SizeX">1000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">&gt;</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="btn_right_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="btn_right_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="btn_right_A661_STRING"/>
+                        <connect msg_id="A661_STYLE_SET" name="btn_right_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="btn_right_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="btn_right_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="btn_right_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="btn_right_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="btn_right_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="btn_right_A661_EVT_SELECTION"/>
+                    </events>
+                </widget>
+                <widget name="slider_speed" oid="952108f8-898e-4d0d-9974-778a21a6ebdd" type="Slider">
+                    <model>
+                        <intprop name="WidgetIdent">6</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5020</intprop>
+                        <intprop name="PosY">3120</intprop>
+                        <intprop name="SizeX">5000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <floatprop name="MinValue">0.0</floatprop>
+                        <floatprop name="MaxValue">100.0</floatprop>
+                        <floatprop name="Value">0.0</floatprop>
+                        <floatprop name="MajorTickInterval">20.0</floatprop>
+                        <enumprop name="ShowMajorLabels">A661_TRUE</enumprop>
+                        <enumprop name="Orientation">A661_LEFT_TO_RIGHT</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="LsbMultiple">5</intprop>
+                        <intprop name="MinorTickMultiple">4</intprop>
+                        <floatprop name="MajorTickReference">0.0</floatprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="slider_speed_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="slider_speed_A661_VISIBLE"/>
+                        <connect msg_id="A661_STYLE_SET" name="slider_speed_A661_STYLE_SET"/>
+                        <connect msg_id="A661_VALUE" name="slider_speed_A661_VALUE"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="slider_speed_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="slider_speed_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="slider_speed_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="slider_speed_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="slider_speed_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_VALUE_CHANGE" name="slider_speed_A661_EVT_VALUE_CHANGE"/>
+                    </events>
+                </widget>
+                <widget name="btn_s_left" oid="be17ffc2-949c-47f4-8d01-9681a93a5488" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">7</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">3660</intprop>
+                        <intprop name="PosY">3100</intprop>
+                        <intprop name="SizeX">1000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">&lt;</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="btn_s_left_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="btn_s_left_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="btn_s_left_A661_STRING"/>
+                        <connect msg_id="A661_STYLE_SET" name="btn_s_left_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="btn_s_left_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="btn_s_left_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="btn_s_left_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="btn_s_left_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="btn_s_left_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="btn_s_left_A661_EVT_SELECTION"/>
+                    </events>
+                </widget>
+                <widget name="btn_s_right" oid="343e3e9e-76a9-4072-9c3f-250c82a8df2f" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">8</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">10320</intprop>
+                        <intprop name="PosY">3080</intprop>
+                        <intprop name="SizeX">1000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">&gt;</stringprop>
+                    </model>
+                    <runtime/>
+                    <events/>
+                </widget>
+                <widget name="Speed" oid="93eedad9-116b-497a-b237-02c8bd7dace2" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">9</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">6040</intprop>
+                        <intprop name="PosY">4200</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Speed</stringprop>
+                    </model>
+                    <runtime/>
+                </widget>
+                <widget name="Direction" oid="34800d4a-9bb6-40f6-9e1b-86b335117f9a" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">10</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5960</intprop>
+                        <intprop name="PosY">9560</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Direction</stringprop>
+                    </model>
+                    <runtime/>
+                </widget>
+                <widget name="Turn" oid="8b728f60-d685-4932-b92d-614995d1e7cf" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">12</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5880</intprop>
+                        <intprop name="PosY">12600</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Turn</stringprop>
+                    </model>
+                    <runtime/>
+                </widget>
+            </children>
+        </A661Layer>
+    </children>
+</specification>
+
+<!-- crc32 : 929916491 -->
+
