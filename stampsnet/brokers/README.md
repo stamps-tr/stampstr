@@ -2,7 +2,7 @@
 
 Serviços
 ---
-- **kafka**: Message broker 
+- **kafka**: General Message broker 
 - **mqtt**: IoT message broker
 
 **OBS**: Ajuste as variáveis de ambiente (environment) no `docker-compose.yml` conforme sua necessidade
