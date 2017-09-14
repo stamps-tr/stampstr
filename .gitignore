@@ -51,4 +51,4 @@ bower_components
 .idea
 .vscode
 **/.idea/**
-.swp
+*.swp
