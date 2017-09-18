@@ -37,8 +37,8 @@
                         <intprop name="WidgetIdent">1</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1180</intprop>
-                        <intprop name="PosY">1540</intprop>
+                        <intprop name="PosX">1860</intprop>
+                        <intprop name="PosY">2000</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -70,8 +70,8 @@
                         <intprop name="WidgetIdent">2</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1180</intprop>
-                        <intprop name="PosY">2500</intprop>
+                        <intprop name="PosX">1860</intprop>
+                        <intprop name="PosY">2960</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -98,10 +98,42 @@
                     </runtime>
                     <children/>
                 </widget>
+                <widget name="GpArcCircle" oid="4db699e1-14c6-43b0-8e0c-c061db745591" type="GpArcCircle">
+                    <model>
+                        <intprop name="WidgetIdent">3</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1120</intprop>
+                        <intprop name="PosY">3420</intprop>
+                        <intprop name="StartAngle">2147483647</intprop>
+                        <intprop name="EndAngle">-2147483648</intprop>
+                        <intprop name="Radius">350</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">21</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">21</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="GpArcCircle_A661_VISIBLE"/>
+                        <connect msg_id="A661_STYLE_SET" name="GpArcCircle_A661_STYLE_SET"/>
+                        <connect msg_id="A661_POS_XY" name="GpArcCircle_A661_POS_XY"/>
+                        <connect msg_id="A661_POS_X" name="GpArcCircle_A661_POS_X"/>
+                        <connect msg_id="A661_POS_Y" name="GpArcCircle_A661_POS_Y"/>
+                        <connect msg_id="A661_COLOR_INDEX" name="GpArcCircle_A661_COLOR_INDEX"/>
+                        <connect msg_id="A661_FILL_INDEX" name="GpArcCircle_A661_FILL_INDEX"/>
+                        <connect msg_id="A661_RADIUS" name="GpArcCircle_A661_RADIUS"/>
+                        <connect msg_id="A661_START_ANGLE" name="GpArcCircle_A661_START_ANGLE"/>
+                        <connect msg_id="A661_END_ANGLE" name="GpArcCircle_A661_END_ANGLE"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="GpArcCircle_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="GpArcCircle_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <children/>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 545147053 -->
+<!-- crc32 : 1742708132 -->
 
