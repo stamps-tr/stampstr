@@ -39,30 +39,36 @@
 [STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
 
 "C:\\Users\\guilh\\Desktop\\ITA\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="Simulation" 
+"C:\\Users\\Julhio\\Documents\\ITA\\CE-237\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="Simulation" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
 "C:\\Users\\guilh\\Desktop\\ITA\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="HTML" 
+"C:\\Users\\Julhio\\Documents\\ITA\\CE-237\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="HTML" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Synchronization]
 
 "C:\\Users\\guilh\\Desktop\\ITA\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="Synchronization" 
+"C:\\Users\\Julhio\\Documents\\ITA\\CE-237\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="Synchronization" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
 
 "C:\\Users\\guilh\\Desktop\\ITA\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="KCG" 
+"C:\\Users\\Julhio\\Documents\\ITA\\CE-237\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\DiffAnalyzer]
 
 "C:\\Users\\guilh\\Desktop\\ITA\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="KCG" 
+"C:\\Users\\Julhio\\Documents\\ITA\\CE-237\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Instrumenter]
 
 "C:\\Users\\guilh\\Desktop\\ITA\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="Coverage" 
+"C:\\Users\\Julhio\\Documents\\ITA\\CE-237\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp"="Coverage" 
 
 [STUDIO\Workspace]
 
-"ActiveProject"="C:\\Users\\guilh\\Desktop\\ITA\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp" 
+"ActiveProject"="C:\\Users\\Julhio\\Documents\\ITA\\CE-237\\stampstr\\hospitais\\Time3\\US55\\US55Project\\US55Project.etp" 
 
 [SCADE\Editor\Shortcut]
 

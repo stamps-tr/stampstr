@@ -5,10 +5,10 @@
 <specification>
     <IDE>
         <project path="comando_controle.etp"/>
-        <ratio horizontal="1" vertical="1"/>
+        <ratio horizontal="20" vertical="20"/>
     </IDE>
     <symbology>
-        <dimension height="1024" width="768"/>
+        <dimension height="512" width="512"/>
     </symbology>
     <A661 library_version="1" supp_version="5">
         <intprop name="ApplicationId">1</intprop>
@@ -21,17 +21,38 @@
             <model>
                 <intprop name="LayerId">1</intprop>
                 <intprop name="ContextNumber">0</intprop>
-                <intprop name="Width">15360</intprop>
-                <intprop name="Height">20480</intprop>
+                <intprop name="Width">10240</intprop>
+                <intprop name="Height">10240</intprop>
             </model>
+            <runtime>
+                <connect msg_id="A661_UA_CONTEXT_NUMBER" name="a661_layer_A661_UA_CONTEXT_NUMBER"/>
+                <connect msg_id="A661_REQ_LAYER_ACTIVE" name="a661_layer_A661_REQ_LAYER_ACTIVE"/>
+                <connect msg_id="A661_REQ_LAYER_INACTIVE" name="a661_layer_A661_REQ_LAYER_INACTIVE"/>
+                <connect msg_id="A661_REQ_LAYER_VISIBLE" name="a661_layer_A661_REQ_LAYER_VISIBLE"/>
+            </runtime>
+            <events>
+                <connect msg_id="A661_SERVER_CONTEXT_NUMBER" name="a661_layer_A661_SERVER_CONTEXT_NUMBER"/>
+                <connect msg_id="A661_NOTE_REINIT_LAYER_DATA" name="a661_layer_A661_NOTE_REINIT_LAYER_DATA"/>
+                <connect msg_id="A661_NOTE_LAYER_IS_ACTIVE" name="a661_layer_A661_NOTE_LAYER_IS_ACTIVE"/>
+                <connect msg_id="A661_NOTE_LAYER_IS_INACTIVE" name="a661_layer_A661_NOTE_LAYER_IS_INACTIVE"/>
+                <connect msg_id="A661_NOTE_CYCLIC_ACTIVATION" name="a661_layer_A661_NOTE_CYCLIC_ACTIVATION"/>
+                <connect msg_id="A661_ERR_BAD_COMMAND" name="a661_layer_A661_ERR_BAD_COMMAND"/>
+                <connect msg_id="A661_ERR_CREATE_ABORTED" name="a661_layer_A661_ERR_CREATE_ABORTED"/>
+                <connect msg_id="A661_ERR_EXTEND_ABORTED" name="a661_layer_A661_ERR_EXTEND_ABORTED"/>
+                <connect msg_id="A661_ERR_SET_ABORTED" name="a661_layer_A661_ERR_SET_ABORTED"/>
+                <connect msg_id="A661_ERR_UA_REQUEST_ABORTED" name="a661_layer_A661_ERR_UA_REQUEST_ABORTED"/>
+                <connect msg_id="A661_ERR_MEMORY_OVERLOAD" name="a661_layer_A661_ERR_MEMORY_OVERLOAD"/>
+                <connect msg_id="A661_ERR_PROCESS_OVERLOAD" name="a661_layer_A661_ERR_PROCESS_OVERLOAD"/>
+                <connect msg_id="A661_ERR_RENDERING_OVERLOAD" name="a661_layer_A661_ERR_RENDERING_OVERLOAD"/>
+            </events>
             <children>
-                <widget name="Lb_Principal" oid="2982d981-10e3-48ba-b278-1d5a53218811" type="Label">
+                <widget name="Lb_Principal" oid="d7ae1c84-e276-4f0b-91f6-f7fd334f19bb" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">1</intprop>
+                        <intprop name="WidgetIdent">29</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">4500</intprop>
-                        <intprop name="PosY">19160</intprop>
+                        <intprop name="PosX">1620</intprop>
+                        <intprop name="PosY">9520</intprop>
                         <intprop name="SizeX">7000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -58,13 +79,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="Lb_Localiza" oid="5994dc23-dd0f-4864-af7e-484b3d91f1fc" type="Label">
+                <widget name="Lb_Localiza" oid="1a872ac0-5996-434e-b163-ad52c061cf18" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">2</intprop>
+                        <intprop name="WidgetIdent">30</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2500</intprop>
-                        <intprop name="PosY">17180</intprop>
+                        <intprop name="PosX">280</intprop>
+                        <intprop name="PosY">8840</intprop>
                         <intprop name="SizeX">5000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -91,13 +112,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="Lb_Lat" oid="82983c39-6b08-400e-91a9-9534f4a458a8" type="Label">
+                <widget name="Lb_Lat" oid="2f99c93a-410a-4011-b934-9329888e41b6" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">3</intprop>
+                        <intprop name="WidgetIdent">31</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">8040</intprop>
-                        <intprop name="PosY">17640</intprop>
+                        <intprop name="PosX">680</intprop>
+                        <intprop name="PosY">8280</intprop>
                         <intprop name="SizeX">1000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -124,13 +145,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="Lb_Long" oid="3ef4b558-5803-4f89-9031-d102d4f8607f" type="Label">
+                <widget name="Lb_Long" oid="9ed48c89-3e94-4c03-8ae8-91e781604582" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">4</intprop>
+                        <intprop name="WidgetIdent">32</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">8020</intprop>
-                        <intprop name="PosY">16660</intprop>
+                        <intprop name="PosX">3700</intprop>
+                        <intprop name="PosY">8240</intprop>
                         <intprop name="SizeX">1000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -157,13 +178,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="EditBox_Lat" oid="0d556704-ca98-437c-8814-3858b880188c" type="EditBoxText">
+                <widget name="EditBox_Lat" oid="90d79fa9-debd-4bc4-8232-2c7103b96b1e" type="EditBoxText">
                     <model>
-                        <intprop name="WidgetIdent">5</intprop>
+                        <intprop name="WidgetIdent">33</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">9240</intprop>
-                        <intprop name="PosY">17900</intprop>
+                        <intprop name="PosX">1620</intprop>
+                        <intprop name="PosY">8380</intprop>
                         <intprop name="SizeX">1500</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -195,13 +216,13 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="EditBox_Long" oid="19b3f54b-7fd6-4a5f-94b4-5956758abdc8" type="EditBoxText">
+                <widget name="EditBox_Long" oid="eff69fef-e46c-4352-8516-669f3c0df4a5" type="EditBoxText">
                     <model>
-                        <intprop name="WidgetIdent">6</intprop>
+                        <intprop name="WidgetIdent">34</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">9260</intprop>
-                        <intprop name="PosY">16900</intprop>
+                        <intprop name="PosX">4900</intprop>
+                        <intprop name="PosY">8400</intprop>
                         <intprop name="SizeX">1500</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -233,13 +254,13 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="Lb_nVitimas" oid="57146607-b5f6-4aa4-884f-75b00437a99b" type="Label">
+                <widget name="Lb_nVitimas" oid="8c0ccd54-5f61-4b32-865d-d25cd2974a64" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">7</intprop>
+                        <intprop name="WidgetIdent">35</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2540</intprop>
-                        <intprop name="PosY">14480</intprop>
+                        <intprop name="PosX">300</intprop>
+                        <intprop name="PosY">7520</intprop>
                         <intprop name="SizeX">4000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -266,13 +287,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="EditBox_nVitimas" oid="ba102fe8-5621-4bde-a7c4-a9a2337ca868" type="EditBoxText">
+                <widget name="EditBox_nVitimas" oid="6519a339-6be8-44f3-83d7-6adbb12960bc" type="EditBoxText">
                     <model>
-                        <intprop name="WidgetIdent">8</intprop>
+                        <intprop name="WidgetIdent">36</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">6300</intprop>
-                        <intprop name="PosY">14680</intprop>
+                        <intprop name="PosX">4900</intprop>
+                        <intprop name="PosY">7580</intprop>
                         <intprop name="SizeX">1500</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -304,13 +325,13 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="Lb_HorarioAcidente" oid="99c38d9f-1a8d-4a78-819a-f88a08555c53" type="Label">
+                <widget name="Lb_HorarioAcidente" oid="62318c0c-8a60-44fe-938d-7fe736a32b86" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">9</intprop>
+                        <intprop name="WidgetIdent">37</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2540</intprop>
-                        <intprop name="PosY">10180</intprop>
+                        <intprop name="PosX">320</intprop>
+                        <intprop name="PosY">5580</intprop>
                         <intprop name="SizeX">4000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -337,13 +358,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="Lb_DataAcidente" oid="55059026-156b-4ace-a11a-db0dd6effeca" type="Label">
+                <widget name="Lb_DataAcidente" oid="a85c4610-a2f9-45ab-b9fd-e229507a4a7b" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">10</intprop>
+                        <intprop name="WidgetIdent">38</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2540</intprop>
-                        <intprop name="PosY">12200</intprop>
+                        <intprop name="PosX">280</intprop>
+                        <intprop name="PosY">6920</intprop>
                         <intprop name="SizeX">4000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -370,13 +391,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="Lb_Ponto" oid="15b0965b-2933-49fa-b4d0-fab7d3f32499" type="Label">
+                <widget name="Lb_Ponto" oid="ebd554db-76d5-4f40-8438-343eb6a44081" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">16</intprop>
+                        <intprop name="WidgetIdent">39</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">8720</intprop>
-                        <intprop name="PosY">10320</intprop>
+                        <intprop name="PosX">2000</intprop>
+                        <intprop name="PosY">4960</intprop>
                         <intprop name="SizeX">400</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -403,13 +424,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="Lb_EstadoVitimas" oid="1f1bf8a7-691e-4bf2-90c5-549dd7b6a006" type="Label">
+                <widget name="Lb_EstadoVitimas" oid="9c6e5752-7461-409e-a22c-8f7f5e6db74b" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">17</intprop>
+                        <intprop name="WidgetIdent">40</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2560</intprop>
-                        <intprop name="PosY">8160</intprop>
+                        <intprop name="PosX">320</intprop>
+                        <intprop name="PosY">4200</intprop>
                         <intprop name="SizeX">4000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -436,13 +457,13 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="ComboBox_EstadoVitimas" oid="50bf8e7a-37f0-423e-aa67-df029c5df6ce" type="ComboBox">
+                <widget name="ComboBox_EstadoVitimas" oid="2b125b9e-9597-41c0-b1f4-4c3c177a11d0" type="ComboBox">
                     <model>
-                        <intprop name="WidgetIdent">18</intprop>
+                        <intprop name="WidgetIdent">41</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">6860</intprop>
-                        <intprop name="PosY">8340</intprop>
+                        <intprop name="PosX">4620</intprop>
+                        <intprop name="PosY">4380</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="SelectingAreaWidth">3000</intprop>
@@ -483,13 +504,13 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="Lb_InfoDetalhadaVitimas" oid="a55a005a-efd6-4c25-b69f-f702232889da" type="Label">
+                <widget name="Lb_InfoDetalhadaVitimas" oid="651032e3-12cd-4eee-9993-cb31e682cbec" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">19</intprop>
+                        <intprop name="WidgetIdent">42</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2580</intprop>
-                        <intprop name="PosY">5300</intprop>
+                        <intprop name="PosX">280</intprop>
+                        <intprop name="PosY">2740</intprop>
                         <intprop name="SizeX">5000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -516,15 +537,15 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="EditBoxMultiLine_DetalheVitimas" oid="310bc03d-9377-4088-9df2-96e97ee0c2ce" type="EditBoxMultiLine">
+                <widget name="EditBoxMultiLine_DetalheVitimas" oid="cf51e285-dd02-46c9-8336-d72504139e4e" type="EditBoxMultiLine">
                     <model>
-                        <intprop name="WidgetIdent">20</intprop>
+                        <intprop name="WidgetIdent">43</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">7980</intprop>
-                        <intprop name="PosY">4700</intprop>
-                        <intprop name="SizeX">6000</intprop>
-                        <intprop name="SizeY">2000</intprop>
+                        <intprop name="PosX">5680</intprop>
+                        <intprop name="PosY">2180</intprop>
+                        <intprop name="SizeX">3980</intprop>
+                        <intprop name="SizeY">1920</intprop>
                         <intprop name="StyleSet">110</intprop>
                         <intprop name="NextFocusedWidget">0</intprop>
                         <intprop name="StartCursorPos">32</intprop>
@@ -550,13 +571,13 @@
                     <events/>
                     <children/>
                 </widget>
-                <widget name="Lb_DetalheAcidente" oid="04b352a3-3f17-4aa1-8c0e-02a6b6a30f21" type="Label">
+                <widget name="Lb_DetalheAcidente" oid="2f124223-4e0b-489b-9572-c4e3867e85b0" type="Label">
                     <model>
-                        <intprop name="WidgetIdent">21</intprop>
+                        <intprop name="WidgetIdent">44</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2580</intprop>
-                        <intprop name="PosY">2400</intprop>
+                        <intprop name="PosX">280</intprop>
+                        <intprop name="PosY">840</intprop>
                         <intprop name="SizeX">5000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -583,15 +604,15 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="EditBoxMultiLine_DetalheAcidente" oid="e5c4c8e5-3be5-4ece-b0d4-336c154c5e4d" type="EditBoxMultiLine">
+                <widget name="EditBoxMultiLine_DetalheAcidente" oid="180015d2-97a9-40f6-872d-c90bbbf1d81a" type="EditBoxMultiLine">
                     <model>
-                        <intprop name="WidgetIdent">22</intprop>
+                        <intprop name="WidgetIdent">45</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">7980</intprop>
-                        <intprop name="PosY">1820</intprop>
-                        <intprop name="SizeX">6000</intprop>
-                        <intprop name="SizeY">2000</intprop>
+                        <intprop name="PosX">5700</intprop>
+                        <intprop name="PosY">60</intprop>
+                        <intprop name="SizeX">3960</intprop>
+                        <intprop name="SizeY">1980</intprop>
                         <intprop name="StyleSet">110</intprop>
                         <intprop name="NextFocusedWidget">0</intprop>
                         <intprop name="StartCursorPos">32</intprop>
@@ -617,13 +638,13 @@
                     <events/>
                     <children/>
                 </widget>
-                <widget name="ComboBox_Hora" oid="fc4e4ce9-1128-4fe6-916e-c803adbf8116" type="ComboBox">
+                <widget name="ComboBox_Hora" oid="e7490a53-e610-4254-adcf-725fadb3eb2e" type="ComboBox">
                     <model>
-                        <intprop name="WidgetIdent">23</intprop>
+                        <intprop name="WidgetIdent">46</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">6900</intprop>
-                        <intprop name="PosY">10420</intprop>
+                        <intprop name="PosX">340</intprop>
+                        <intprop name="PosY">5120</intprop>
                         <intprop name="SizeX">1500</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="SelectingAreaWidth">3000</intprop>
@@ -682,13 +703,13 @@
                     <events/>
                     <children/>
                 </widget>
-                <widget name="ComboBox_Minuto" oid="79206261-a3eb-4cc9-8e56-d8dd5709cc70" type="ComboBox">
+                <widget name="ComboBox_Minuto" oid="89980bfe-f123-4b1d-b3fe-3df45c02f41a" type="ComboBox">
                     <model>
-                        <intprop name="WidgetIdent">24</intprop>
+                        <intprop name="WidgetIdent">47</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">9460</intprop>
-                        <intprop name="PosY">10380</intprop>
+                        <intprop name="PosX">2460</intprop>
+                        <intprop name="PosY">5120</intprop>
                         <intprop name="SizeX">1500</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="SelectingAreaWidth">3000</intprop>
@@ -783,13 +804,13 @@
                     <events/>
                     <children/>
                 </widget>
-                <widget name="ComboBox_Dia" oid="ee1bb1f0-28e7-4fba-858b-b167e6e8430f" type="ComboBox">
+                <widget name="ComboBox_Dia" oid="0ac2396a-cc4b-435e-b05d-fa32d578a4b7" type="ComboBox">
                     <model>
-                        <intprop name="WidgetIdent">25</intprop>
+                        <intprop name="WidgetIdent">48</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">6120</intprop>
-                        <intprop name="PosY">12400</intprop>
+                        <intprop name="PosX">300</intprop>
+                        <intprop name="PosY">6440</intprop>
                         <intprop name="SizeX">1500</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="SelectingAreaWidth">3000</intprop>
@@ -857,13 +878,13 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="ComboBox_Mes" oid="cf0d21e9-1fa2-4369-9124-52293010d08a" type="ComboBox">
+                <widget name="ComboBox_Mes" oid="46fed2da-7722-44f2-ab9f-fea2a7de3f83" type="ComboBox">
                     <model>
-                        <intprop name="WidgetIdent">26</intprop>
+                        <intprop name="WidgetIdent">49</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">8140</intprop>
-                        <intprop name="PosY">12380</intprop>
+                        <intprop name="PosX">2460</intprop>
+                        <intprop name="PosY">6480</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="SelectingAreaWidth">3000</intprop>
@@ -912,13 +933,13 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="ComboBox_Ano" oid="e8f045c5-155c-4fcd-a330-839e502f405c" type="ComboBox">
+                <widget name="ComboBox_Ano" oid="ab55d673-52cc-4b1a-b42e-a5052f222911" type="ComboBox">
                     <model>
-                        <intprop name="WidgetIdent">27</intprop>
+                        <intprop name="WidgetIdent">50</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">11700</intprop>
-                        <intprop name="PosY">12360</intprop>
+                        <intprop name="PosX">6060</intprop>
+                        <intprop name="PosY">6520</intprop>
                         <intprop name="SizeX">1500</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="SelectingAreaWidth">3000</intprop>
@@ -970,42 +991,10 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="PushButton_Enviar" oid="55fbbdb7-fdd8-4508-84f4-d5f3233fb196" type="PushButton">
-                    <model>
-                        <intprop name="WidgetIdent">28</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">5560</intprop>
-                        <intprop name="PosY">380</intprop>
-                        <intprop name="SizeX">5000</intprop>
-                        <intprop name="SizeY">1000</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Enviar</stringprop>
-                    </model>
-                    <runtime>
-                        <connect msg_id="A661_ENABLE" name="PushButton_Enviar_A661_ENABLE"/>
-                        <connect msg_id="A661_VISIBLE" name="PushButton_Enviar_A661_VISIBLE"/>
-                        <connect msg_id="A661_STRING" name="PushButton_Enviar_A661_STRING"/>
-                        <connect msg_id="A661_STYLE_SET" name="PushButton_Enviar_A661_STYLE_SET"/>
-                        <connect msg_id="A661_ENTRY_VALID" name="PushButton_Enviar_A661_ENTRY_VALID"/>
-                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="PushButton_Enviar_A661_NEXT_FOCUSED_WIDGET"/>
-                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="PushButton_Enviar_A661_AUTO_FOCUS_MOTION"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="PushButton_Enviar_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="PushButton_Enviar_A661_REQ_CURSOR_ON_WIDGET"/>
-                    </runtime>
-                    <events>
-                        <connect msg_id="A661_EVT_SELECTION" name="PushButton_Enviar_A661_EVT_SELECTION"/>
-                    </events>
-                    <children/>
-                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 2724404069 -->
+<!-- crc32 : 1309889538 -->
 

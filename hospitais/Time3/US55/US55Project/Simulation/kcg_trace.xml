@@ -12,7 +12,7 @@
     <Option name="warn_error" value="#off#"/>
     <Option name="short_circuit" value="#off#"/>
     <Option name="wrap_c_ops" value="#off#"/>
-    <Option name="input_file" value="C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US55/US55Project/Simulation/scade_model_without_unused.scade"/>
+    <Option name="input_file" value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US55/US55Project/Simulation/scade_model_without_unused.scade"/>
     <Option name="probes" value="#on#"/>
     <Option name="no_observe" value="#off#"/>
     <Option name="observe" value="#off#"/>
@@ -28,7 +28,7 @@
     <Option name="noexp" value="#off#"/>
     <Option name="exp" value="#off#"/>
     <Option name="expall" value="#on#"/>
-    <Option name="target_dir" value="C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US55/US55Project/Simulation"/>
+    <Option name="target_dir" value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US55/US55Project/Simulation"/>
     <Option name="target" value="C"/>
     <Option name="root" value="Operator1"/>
     <Option name="auth" value="#off#"/>
