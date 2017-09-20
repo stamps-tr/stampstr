@@ -7,7 +7,7 @@
 <specification>
     <IDE>
         <project path="display_saude.etp"/>
-        <ratio horizontal="1" vertical="1"/>
+        <ratio horizontal="20" vertical="20"/>
     </IDE>
     <symbology>
         <dimension height="1024" width="1024"/>
@@ -599,10 +599,70 @@
                     </model>
                     <runtime/>
                 </widget>
+                <widget name="GlicoseAtual" oid="53d188b1-3767-47db-a8f0-6aea308dbc9f" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">31</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">14840</intprop>
+                        <intprop name="PosY">17040</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">12</intprop>
+                        <intprop name="ColorIndex">31</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">98</stringprop>
+                    </model>
+                    <runtime/>
+                </widget>
+                <widget name="BatimentoAtual" oid="6699f903-3d85-4924-b358-c61c1e126f0e" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">32</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">14500</intprop>
+                        <intprop name="PosY">10520</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">12</intprop>
+                        <intprop name="ColorIndex">15</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">102</stringprop>
+                    </model>
+                    <runtime/>
+                </widget>
+                <widget name="PressaoAtual" oid="0595ade5-188f-48da-893e-eb6ecd43feb0" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">33</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">14340</intprop>
+                        <intprop name="PosY">3980</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">12</intprop>
+                        <intprop name="ColorIndex">61</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">123</stringprop>
+                    </model>
+                    <runtime/>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 2294256709 -->
+<!-- crc32 : 3082406352 -->
 
