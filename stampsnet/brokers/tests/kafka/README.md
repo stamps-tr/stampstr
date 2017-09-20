@@ -1,16 +1,17 @@
-# Testando o broker MQTT
+# Testando o broker KAFKA
 
 ### Preparando o ambiente:
 ```sh
-$> npm install -g mqtt
+$> apt install kafkacat
 ```
 
 ### Subscriber:
 ```sh
-$> mqtt subscribe -h stampsnet.hashtagsource.com -t 'teste' 
+$> kafkacat -C -b stampsnet.hashtagsource.com -t teste 
 ```
 
 ### Publisher:
 ```sh
-$> mqtt publish -h stampsnet.hashtagsource.com -t 'teste' -m '123'
+$> kafkacat -P -b stampsnet.hashtagsource.com -t teste <enter>
+123
 ```
