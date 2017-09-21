@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="STR_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_uChar"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="4"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4952/2BE3/1370/59b980ee15f3"/>
+			</pragmas>
+		</Constant>
+		<Type name="T_uChar">
+			<definition>
+				<NamedType>
+					<type>
+						<TypeRef name="uint16"/>
+					</type>
+				</NamedType>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/dec9/2BE3/1370/59b981ad779e"/>
+			</pragmas>
+		</Type>
+		<Type name="T_uShort">
+			<definition>
+				<NamedType>
+					<type>
+						<TypeRef name="uint8"/>
+					</type>
+				</NamedType>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/deca/2BE3/1370/59b981c2394"/>
+			</pragmas>
+		</Type>
+		<Type name="T_String">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="STR_SIZE"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/decb/2BE3/1370/59b981cb5af2"/>
+			</pragmas>
+		</Type>
+		<Constant name="TURN_BTN_ON">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['O', 'n', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'O'"/>
+						<ConstValue value="'n'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/17477/2BE3/1370/59b990123019"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TURN_BTN_OFF">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['O', 'f', 'f', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'O'"/>
+						<ConstValue value="'f'"/>
+						<ConstValue value="'f'"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/17478/2BE3/1370/59b9902e35ab"/>
+			</pragmas>
+		</Constant>
+		<Constant name="GREEN">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_uShort"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="55"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/129db/3524/1114/59ba958d71"/>
+			</pragmas>
+		</Constant>
+		<Constant name="RED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_uShort"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="21"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/129ed/3524/1114/59ba95ba5213"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SEND_BTN_ON">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['T', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'T'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4a32/5E96/1778/59bbd465903"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SEND_BTN_OFF">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['F', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'F'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4a33/5E96/1778/59bbd496618c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SEND_BTN_UP">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['U', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'U'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4a34/5E96/1778/59bbd4a3363"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SEND_BTN_DOWN">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['D', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'D'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4a35/5E96/1778/59bbd4adab9"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SEND_BTN_LEFT">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['L', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'L'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4a36/5E96/1778/59bbd4b72097"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SEND_BTN_RIGHT">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['R', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'R'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4a37/5E96/1778/59bbd4c04407"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" external="imported" name="PublishMQTT">
+			<inputs>
+				<Variable name="Send">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4951/65B9/2818/59bb1c6835dd"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="Mqttstatus">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4952/65B9/2818/59bb1c867b8f"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<pragmas>
+				<ed:Operator oid="!ed/4949/65B9/2818/59bb1553517b"/>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
