@@ -481,7 +481,7 @@
                         <arrayprop name="EntryList">
                             <stringprop name="1">Gravissimo</stringprop>
                             <stringprop name="2">Grave</stringprop>
-                            <stringprop name="3">Estavél</stringprop>
+                            <stringprop name="3">Estavel</stringprop>
                             <stringprop name="4">Consciente</stringprop>
                         </arrayprop>
                     </model>
@@ -996,5 +996,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1309889538 -->
+<!-- crc32 : 1718592410 -->
 
