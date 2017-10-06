@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/KCG/config.txt
+** Generation date: 2017-10-05T10:57:26
+*************************************************************$-->
+<mapping>
+  <config>
+    <option name="use_types" value="#off#"/>
+    <option name="imported_root_package" value="#off#"/>
+    <option name="root_package" value="#off#"/>
+    <option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <option name="state_vector" value="#off#"/>
+    <option name="static" value="#off#"/>
+    <option name="separate_io_all" value="#off#"/>
+    <option name="no_separate_io" value="#off#"/>
+    <option name="separate_io" value="#off#"/>
+    <option name="warn_error" value="#off#"/>
+    <option name="short_circuit" value="#off#"/>
+    <option name="wrap_c_ops" value="#off#"/>
+    <option name="input_file" value="C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/KCG/scade_model_without_unused.scade"/>
+    <option name="probes" value="#off#"/>
+    <option name="debug" value="#off#"/>
+    <option name="no_observe" value="#off#"/>
+    <option name="observe" value="#off#"/>
+    <option name="user_config" value="./user_macros.h"/>
+    <option name="input_threshold" value="2"/>
+    <option name="header" value="#off#"/>
+    <option name="significance_length" value="31"/>
+    <option name="name_length" value="200"/>
+    <option name="globals_prefix" value="#off#"/>
+    <option name="keep_asserts" value="#off#"/>
+    <option name="global_root_context" value="#off#"/>
+    <option name="noexp" value="#off#"/>
+    <option name="exp" value="#off#"/>
+    <option name="expall" value="#on#"/>
+    <option name="target_dir" value="C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/KCG"/>
+    <option name="target" value="C"/>
+    <option name="root" value="ErlunControl"/>
+    <option name="auth" value="#off#"/>
+  </config>
+  <model>
+    <array id="1" baseType="3" size="4"/>
+    <predefType id="2" name="bool"/>
+    <predefType id="3" name="char"/>
+    <predefType id="4" name="int8"/>
+    <predefType id="5" name="int16"/>
+    <predefType id="6" name="int32"/>
+    <predefType id="7" name="int64"/>
+    <predefType id="8" name="uint8"/>
+    <predefType id="9" name="uint16"/>
+    <predefType id="10" name="uint32"/>
+    <predefType id="11" name="uint64"/>
+    <predefType id="12" name="float32"/>
+    <predefType id="13" name="float64"/>
+    <predefType id="14" name="size"/>
+    <constant id="15" name="TURN_BTN_OFF" imported="false" type="26"/>
+    <constant id="16" name="STR_SIZE" imported="false" type="27"/>
+    <constant id="17" name="TURN_BTN_ON" imported="false" type="26"/>
+    <constant id="18" name="GREEN" imported="false" type="28"/>
+    <constant id="19" name="RED" imported="false" type="28"/>
+    <constant id="20" name="SEND_BTN_UP" imported="false" type="26"/>
+    <constant id="21" name="SEND_BTN_DOWN" imported="false" type="26"/>
+    <constant id="22" name="SEND_BTN_LEFT" imported="false" type="26"/>
+    <constant id="23" name="SEND_BTN_RIGHT" imported="false" type="26"/>
+    <constant id="24" name="SEND_BTN_ON" imported="false" type="26"/>
+    <constant id="25" name="SEND_BTN_OFF" imported="false" type="26"/>
+    <type id="26" name="T_String" imported="false" type="1"/>
+    <type id="27" name="T_uChar" imported="false" type="9"/>
+    <type id="28" name="T_uShort" imported="false" type="8"/>
+    <operator id="29" name="ErlunControl" imported="false" root="true" expanded="false">
+      <input id="30" name="Turn_Btn" clock="false" type="2"/>
+      <input id="31" name="Up_Btn" clock="false" type="2"/>
+      <input id="32" name="Down_Btn" clock="false" type="2"/>
+      <input id="33" name="Left_Btn" clock="false" type="2"/>
+      <input id="34" name="Right_Btn" clock="false" type="2"/>
+      <input id="35" name="Speed_Btn" clock="false" type="2"/>
+      <input id="36" name="Speed_BtnValue" clock="false" type="12"/>
+      <output id="37" name="Turn_BtnTextString" clock="false" type="26"/>
+      <output id="38" name="StringSize" clock="false" type="27"/>
+      <output id="39" name="Emit2CDS" clock="false" type="2"/>
+      <output id="40" name="Layer1Active" clock="false" type="2"/>
+      <output id="41" name="Layer1Visible" clock="false" type="2"/>
+      <output id="42" name="TurnTextColorIndex" clock="false" type="28"/>
+      <output id="43" name="EmitVisible" clock="false" type="2"/>
+      <output id="44" name="Send_TextString" clock="false" type="26"/>
+      <instance id="45" name="1" op="61" expanded="true">
+        <input id="46" name="Input1" clock="false" type="2"/>
+        <output id="47" name="Output1" clock="false" type="2"/>
+        <fby id="48" name="1"/>
+      </instance>
+      <fby id="49" name="4"/>
+      <fby id="50" name="7"/>
+      <fby id="51" name="8"/>
+      <fby id="52" name="10"/>
+      <fby id="53" name="9"/>
+      <fby id="54" name="11"/>
+      <instance id="55" name="1" op="62" expanded="true">
+        <input id="56" name="Input" clock="false" type="12"/>
+        <output id="57" name="Output" clock="false" type="26"/>
+      </instance>
+      <fby id="58" name="15"/>
+      <fby id="59" name="16"/>
+      <instance id="60" name="2" op="63" expanded="false"/>
+    </operator>
+    <operator id="61" name="Switch" imported="false" root="false" expanded="true"/>
+    <operator id="62" name="SpeedStr" imported="false" root="false" expanded="true"/>
+    <operator id="63" name="msg" imported="true" root="false" expanded="false">
+      <input id="64" name="Send" clock="false" type="26"/>
+      <output id="65" name="Status" clock="false" type="6"/>
+    </operator>
+  </model>
+  <generated>
+    <c>
+      <file id="66" name="ErlunControl.h">
+        <function id="67" name="ErlunControl_init">
+          <parameter id="68" name="outC" type="74" pointer="true"/>
+        </function>
+        <function id="69" name="ErlunControl_reset">
+          <parameter id="70" name="outC" type="74" pointer="true"/>
+        </function>
+        <function id="71" name="ErlunControl">
+          <parameter id="72" name="inC" type="92" pointer="true"/>
+          <parameter id="73" name="outC" type="74" pointer="true"/>
+        </function>
+        <struct id="74" name="outC_ErlunControl">
+          <field id="75" name="Turn_BtnTextString" type="108" pointer="false"/>
+          <field id="76" name="StringSize" type="107" pointer="false"/>
+          <field id="77" name="Emit2CDS" type="143" pointer="false"/>
+          <field id="78" name="Layer1Active" type="143" pointer="false"/>
+          <field id="79" name="Layer1Visible" type="143" pointer="false"/>
+          <field id="80" name="TurnTextColorIndex" type="106" pointer="false"/>
+          <field id="81" name="EmitVisible" type="143" pointer="false"/>
+          <field id="82" name="Send_TextString" type="108" pointer="false"/>
+          <field id="83" name="_L3_Switch_1" type="143" pointer="false"/>
+          <field id="84" name="_L7" type="143" pointer="false"/>
+          <field id="85" name="_L99" type="134" pointer="false"/>
+          <field id="86" name="_L117" type="134" pointer="false"/>
+          <field id="87" name="_L130" type="134" pointer="false"/>
+          <field id="88" name="_L128" type="134" pointer="false"/>
+          <field id="89" name="_L139" type="134" pointer="false"/>
+          <field id="90" name="_L312" type="134" pointer="false"/>
+          <field id="91" name="_L317" type="134" pointer="false"/>
+        </struct>
+        <struct id="92" name="inC_ErlunControl">
+          <field id="93" name="Turn_Btn" type="143" pointer="false"/>
+          <field id="94" name="Up_Btn" type="143" pointer="false"/>
+          <field id="95" name="Down_Btn" type="143" pointer="false"/>
+          <field id="96" name="Left_Btn" type="143" pointer="false"/>
+          <field id="97" name="Right_Btn" type="143" pointer="false"/>
+          <field id="98" name="Speed_Btn" type="143" pointer="false"/>
+          <field id="99" name="Speed_BtnValue" type="142" pointer="false"/>
+        </struct>
+      </file>
+      <file id="100" name="kcg_types.h">
+        <ifdef id="101" name="kcg_use_T_String">
+          <function id="102" name="kcg_comp_T_String" returnType="143">
+            <parameter id="103" name="kcg_c1" type="108" pointer="true"/>
+            <parameter id="104" name="kcg_c2" type="108" pointer="true"/>
+          </function>
+        </ifdef>
+        <macro id="105" name="kcg_copy_T_String"/>
+        <typedef id="106" name="T_uShort" aliasType="136"/>
+        <typedef id="107" name="T_uChar" aliasType="137"/>
+        <array id="108" name="T_String" baseType="144" size="4"/>
+        <macro id="109" name="kcg_assign_array"/>
+        <macro id="110" name="kcg_assign_struct"/>
+        <macro id="111" name="kcg_lnot_uint8"/>
+        <macro id="112" name="kcg_lnot_uint16"/>
+        <macro id="113" name="kcg_lnot_uint32"/>
+        <macro id="114" name="kcg_lnot_uint64"/>
+        <macro id="115" name="kcg_lsl_uint8"/>
+        <macro id="116" name="kcg_lsl_uint16"/>
+        <macro id="117" name="kcg_lsl_uint32"/>
+        <macro id="118" name="kcg_lsl_uint64"/>
+        <macro id="119" name="kcg_true"/>
+        <macro id="120" name="kcg_false"/>
+        <macro id="121" name="kcg_lit_int8"/>
+        <macro id="122" name="kcg_lit_int16"/>
+        <macro id="123" name="kcg_lit_int32"/>
+        <macro id="124" name="kcg_lit_int64"/>
+        <macro id="125" name="kcg_lit_uint8"/>
+        <macro id="126" name="kcg_lit_uint16"/>
+        <macro id="127" name="kcg_lit_uint32"/>
+        <macro id="128" name="kcg_lit_uint64"/>
+        <macro id="129" name="kcg_lit_size"/>
+        <macro id="130" name="kcg_lit_float64"/>
+        <macro id="131" name="kcg_lit_float32"/>
+        <predefType id="132" name="kcg_int8"/>
+        <predefType id="133" name="kcg_int16"/>
+        <predefType id="134" name="kcg_int32"/>
+        <predefType id="135" name="kcg_int64"/>
+        <predefType id="136" name="kcg_uint8"/>
+        <predefType id="137" name="kcg_uint16"/>
+        <predefType id="138" name="kcg_uint32"/>
+        <predefType id="139" name="kcg_uint64"/>
+        <predefType id="140" name="kcg_size"/>
+        <predefType id="141" name="kcg_float64"/>
+        <predefType id="142" name="kcg_float32"/>
+        <predefType id="143" name="kcg_bool"/>
+        <predefType id="144" name="kcg_char"/>
+        <macro id="145" name="KCG_MAPW_CPY"/>
+      </file>
+      <file id="146" name="kcg_consts.h">
+        <macro id="147" name="STR_SIZE" type="107"/>
+        <constant id="148" name="TURN_BTN_OFF" type="108" pointer="false"/>
+        <constant id="149" name="TURN_BTN_ON" type="108" pointer="false"/>
+        <macro id="150" name="GREEN" type="106"/>
+        <macro id="151" name="RED" type="106"/>
+        <constant id="152" name="SEND_BTN_UP" type="108" pointer="false"/>
+        <constant id="153" name="SEND_BTN_DOWN" type="108" pointer="false"/>
+        <constant id="154" name="SEND_BTN_LEFT" type="108" pointer="false"/>
+        <constant id="155" name="SEND_BTN_RIGHT" type="108" pointer="false"/>
+        <constant id="156" name="SEND_BTN_ON" type="108" pointer="false"/>
+        <constant id="157" name="SEND_BTN_OFF" type="108" pointer="false"/>
+      </file>
+      <file id="158" name="kcg_sensors.h"/>
+      <file id="159" name="kcg_imported_functions.h">
+        <function id="160" name="msg" returnType="134">
+          <parameter id="161" name="Send" type="108" pointer="true"/>
+        </function>
+      </file>
+    </c>
+    <map srcId="141" dstId="130" role="wrapped-lit"/>
+    <map srcId="142" dstId="131" role="wrapped-lit"/>
+    <map srcId="140" dstId="129" role="wrapped-lit"/>
+    <map srcId="139" dstId="128" role="wrapped-lit"/>
+    <map srcId="139" dstId="114" role="wrapped-lnot"/>
+    <map srcId="139" dstId="118" role="wrapped-lsl"/>
+    <map srcId="138" dstId="127" role="wrapped-lit"/>
+    <map srcId="138" dstId="113" role="wrapped-lnot"/>
+    <map srcId="138" dstId="117" role="wrapped-lsl"/>
+    <map srcId="137" dstId="126" role="wrapped-lit"/>
+    <map srcId="137" dstId="112" role="wrapped-lnot"/>
+    <map srcId="137" dstId="116" role="wrapped-lsl"/>
+    <map srcId="136" dstId="125" role="wrapped-lit"/>
+    <map srcId="136" dstId="111" role="wrapped-lnot"/>
+    <map srcId="136" dstId="115" role="wrapped-lsl"/>
+    <map srcId="135" dstId="124" role="wrapped-lit"/>
+    <map srcId="134" dstId="123" role="wrapped-lit"/>
+    <map srcId="133" dstId="122" role="wrapped-lit"/>
+    <map srcId="132" dstId="121" role="wrapped-lit"/>
+    <map srcId="108" dstId="101" role="type-use"/>
+    <map srcId="108" dstId="102" role="type-comparison"/>
+    <map srcId="108" dstId="105" role="type-copy"/>
+  </generated>
+  <map modelId="29" generatedId="68" role="context-parameter"/>
+  <map modelId="29" generatedId="67" role="init-method"/>
+  <map modelId="29" generatedId="70" role="context-parameter"/>
+  <map modelId="29" generatedId="69" role="reset-method"/>
+  <map modelId="29" generatedId="72" role="input-struct-parameter"/>
+  <map modelId="36" generatedId="99"/>
+  <map modelId="56" generatedId="99"/>
+  <map modelId="35" generatedId="98"/>
+  <map modelId="34" generatedId="97"/>
+  <map modelId="33" generatedId="96"/>
+  <map modelId="32" generatedId="95"/>
+  <map modelId="31" generatedId="94"/>
+  <map modelId="30" generatedId="93"/>
+  <map modelId="46" generatedId="93"/>
+  <map modelId="29" generatedId="92" role="input-struct-type"/>
+  <map modelId="29" generatedId="73" role="context-parameter"/>
+  <map modelId="59" generatedId="91" role="memory"/>
+  <map modelId="58" generatedId="90" role="memory"/>
+  <map modelId="54" generatedId="89" role="memory"/>
+  <map modelId="52" generatedId="88" role="memory"/>
+  <map modelId="53" generatedId="87" role="memory"/>
+  <map modelId="51" generatedId="86" role="memory"/>
+  <map modelId="50" generatedId="85" role="memory"/>
+  <map modelId="49" generatedId="84" role="memory"/>
+  <map modelId="48" generatedId="83" role="memory"/>
+  <map modelId="44" generatedId="82"/>
+  <map modelId="43" generatedId="81"/>
+  <map modelId="47" generatedId="81"/>
+  <map modelId="42" generatedId="80"/>
+  <map modelId="41" generatedId="79"/>
+  <map modelId="40" generatedId="78"/>
+  <map modelId="39" generatedId="77"/>
+  <map modelId="38" generatedId="76"/>
+  <map modelId="37" generatedId="75"/>
+  <map modelId="29" generatedId="74" role="context-type"/>
+  <map modelId="29" generatedId="66" role="interface-file"/>
+  <map modelId="29" generatedId="71" role="cycle-method"/>
+  <map modelId="64" generatedId="161"/>
+  <map modelId="63" generatedId="160" role="cycle-method"/>
+  <map modelId="25" generatedId="157"/>
+  <map modelId="24" generatedId="156"/>
+  <map modelId="23" generatedId="155"/>
+  <map modelId="22" generatedId="154"/>
+  <map modelId="21" generatedId="153"/>
+  <map modelId="20" generatedId="152"/>
+  <map modelId="19" generatedId="151"/>
+  <map modelId="18" generatedId="150"/>
+  <map modelId="17" generatedId="149"/>
+  <map modelId="15" generatedId="148"/>
+  <map modelId="16" generatedId="147"/>
+  <map modelId="28" generatedId="106"/>
+  <map modelId="27" generatedId="107"/>
+  <map modelId="26" generatedId="108"/>
+  <map modelId="1" generatedId="108"/>
+  <map modelId="3" generatedId="144"/>
+  <map modelId="2" generatedId="143"/>
+  <map modelId="13" generatedId="141"/>
+  <map modelId="12" generatedId="142"/>
+  <map modelId="14" generatedId="140"/>
+  <map modelId="11" generatedId="139"/>
+  <map modelId="10" generatedId="138"/>
+  <map modelId="9" generatedId="137"/>
+  <map modelId="8" generatedId="136"/>
+  <map modelId="7" generatedId="135"/>
+  <map modelId="6" generatedId="134"/>
+  <map modelId="5" generatedId="133"/>
+  <map modelId="4" generatedId="132"/>
+</mapping>
+<!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** mapping.xml
+** Generation date: 2017-10-05T10:57:26
+*************************************************************$-->

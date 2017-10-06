@@ -1,0 +1,38 @@
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/KCG/config.txt
+** Generation date: 2017-10-03T09:26:19
+*************************************************************$ */
+#ifndef _PublishMQTT_H_
+#define _PublishMQTT_H_
+
+#include "kcg_types.h"
+
+/* =====================  no input structure  ====================== */
+
+/* =====================  no output structure  ====================== */
+
+/* ========================  context type  ========================= */
+typedef struct {
+  /* ---------------------------  outputs  --------------------------- */
+  kcg_int32 /* Mqttstatus/ */ Mqttstatus;
+  /* -------------  insert eventual inits and memories  -------------- */
+} outC_PublishMQTT;
+
+/* ===========  node initialization and cycle functions  =========== */
+/* PublishMQTT/ */
+extern void PublishMQTT(/* Send/ */ T_String *Send, outC_PublishMQTT *outC);
+
+#ifndef KCG_NO_EXTERN_CALL_TO_RESET
+extern void PublishMQTT_reset(outC_PublishMQTT *outC);
+#endif /* KCG_NO_EXTERN_CALL_TO_RESET */
+
+extern void PublishMQTT_init(outC_PublishMQTT *outC);
+
+
+
+#endif /* _PublishMQTT_H_ */
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** PublishMQTT.dh
+** Generation date: 2017-10-03T09:26:19
+*************************************************************$ */
+
