@@ -1,3 +1,0 @@
--target_dir "C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation" -expall -target C -name_length 200 -significance_length 31 -user_config "./user_macros.h" -input_threshold 2 -probes -debug 
--root ErlunControl
-"C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation/scade_model_without_unused.scade"
