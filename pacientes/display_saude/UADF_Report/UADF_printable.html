@@ -1,0 +1,2036 @@
+<HTML>
+<HEAD>
+<TITLE>UADF</TITLE>
+<STYLE type="text/css">
+.Normal { 
+font-family: Verdana;
+font-size: 9pt;}
+.BodyText { 
+font-family: Verdana;
+font-size: 9pt;}
+.Title { 
+text-align: center;
+font-family: Verdana;
+font-size: 20pt;
+font-weight: bold;
+padding-bottom: 16pt;}
+.Subtitle { 
+text-align: center;
+font-family: Verdana;
+font-size: 16pt;
+font-style: italic;
+padding-bottom: 16pt;}
+.DocumentInfo { 
+font-family: Verdana;
+font-size: 11pt;}
+.ListNumber2 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 0.8cm;}
+.Heading1 { 
+margin-top: 12pt;
+border-top-style: dotted;page-break-before: always;
+font-family: Verdana;
+font-size: 16pt;
+font-weight: bold;
+padding-top: 12pt;
+padding-bottom: 12pt;}
+.Heading2 { 
+font-family: Verdana;
+font-size: 14pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading3 { 
+font-family: Verdana;
+font-size: 12pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading4 { 
+font-family: Verdana;
+font-size: 11pt;
+padding-bottom: 6pt;}
+.TableCell { 
+text-align: left;
+vertical-align:middle;
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 0.1cm;
+padding-right: 0.1cm;}
+.TableHeadingCell { 
+text-align: left;
+
+color: rgb(255,255,255);
+background-color: rgb(0,0,128);
+font-family: Verdana;
+font-size: 9pt;
+font-weight: bold;
+padding-left: 0.1cm;}
+.TOC1 { 
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+padding-top: 6pt;}
+.TOC2 { 
+font-family: Verdana;
+font-size: 10pt;
+padding-left: 0.35cm;
+padding-top: 6pt;}
+.TOC3 { 
+font-family: Verdana;
+font-size: 9pt;
+font-style: italic;
+padding-left: 0.7cm;
+padding-top: 6pt;}
+.TOC4 { 
+font-family: Verdana;
+font-size: 8pt;
+padding-left: 1cm;}
+.Header { 
+font-family: Tahoma;
+font-size: 9pt;}
+.Footer { 
+font-family: Tahoma;
+font-size: 9pt;}
+.Caption { 
+text-align: center;
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;
+padding-top: 6pt;
+padding-bottom: 12pt;}
+.TableCaption { 
+text-align: left;
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;
+padding-bottom: 6pt;}
+.ListOfFigures { 
+font-family: Verdana;
+font-size: 11pt;
+font-weight: bold;}
+.Hyperlink { 
+font-family: Verdana;
+font-size: 9pt;
+text-decoration: underline;}
+.DocumentClass { 
+text-align: center;
+font-family: Verdana;
+font-size: 11pt;}
+.TableCellAnnot { 
+text-align: left;
+vertical-align:middle;
+font-family: Verdana;
+font-size: 9pt;
+font-style: italic;
+padding-left: 0.1cm;
+padding-right: 0.1cm;}
+.TableHeadingCellAnnot { 
+text-align: left;
+vertical-align:middle;
+color: rgb(0,0,0);
+background-color: rgb(255,255,255);
+font-family: Verdana;
+font-size: 9pt;
+font-weight: bold;
+padding-left: 0.1cm;}
+.TextualCode { 
+text-align: center;
+color: rgb(192,192,192);
+font-family: Verdana;
+font-size: 7pt;
+padding-top: 6pt;
+padding-bottom: 12pt;}
+.EndOfDocument { 
+}
+.ListTitle { 
+font-family: Times New Roman;
+font-size: 9pt;}
+.ListOfTables { 
+}
+.Heading5 { 
+font-family: Arial;
+font-size: 8pt;
+font-weight: bold;
+padding-top: 6pt;
+padding-bottom: 10pt;}
+.Heading6 { 
+font-family: Arial;
+font-size: 8pt;
+font-weight: bold;
+padding-top: 6pt;
+padding-bottom: 10pt;}
+.Heading7 { 
+font-family: Arial;
+font-size: 8pt;
+font-weight: bold;
+padding-top: 6pt;
+padding-bottom: 10pt;}
+.TOC5 { 
+}
+.TOC6 { 
+}
+.TOC7 { 
+}
+table{
+border:1px solid rgb(0, 0, 0);
+border-spacing: 0px;
+border-collapse: collapse;
+}
+td{
+border:1px solid rgb(0, 0, 0);
+border-collapse: collapse;
+ min-height: 0.5cm;
+height: 0.5cm;
+}
+th{
+border:1px solid rgb(0, 0, 0);
+border-collapse: collapse;
+ min-height: 0.5cm;
+height: 0.5cm;
+}
+</STYLE>
+</HEAD>
+<BODY>
+
+<DIV class="DocumentClass">
+<DIV class="DocumentClass">&lt;document classification&gt;</DIV><HR style="width: 14cm; text-align: center;">
+<DIV class="Title">&lt;title&gt;</DIV>
+<DIV class="Subtitle">&lt;subtitle&gt;</DIV>
+</DIV>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<DIV class="DocumentInfo">
+<B>Summary: </B></DIV>
+<DIV style="height:35mm;">&lt;summary&gt;</DIV>
+<DIV class="DocumentInfo">
+<B>Company: </B>&lt;company&gt;<BR>
+<B>Authors: </B>&lt;authors&gt;<BR>
+<B>Reference: </B>&lt;reference&gt;<BR>
+<B>Index: </B>&lt;index&gt;<BR>
+<B>Date: </B>&lt;date&gt;</DIV>
+<DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><HR style="width: 17cm; text-align: center;">
+<DIV class="DocumentInfo">
+<B>Distribution List: </B>&lt;distribution list&gt;</DIV>
+
+<DIV class="Title" style="margin-top: 12pt; border-top-style: dotted;page-break-before: always; padding-top: 12pt;">Table Of Contents</DIV>
+<DIV class="TOC1">1. <A HREF="#_TOC0">Specification Description</A></DIV>
+<DIV class="TOC2">1.1. <A HREF="#_TOC1">General Description</A></DIV>
+<DIV class="TOC2">1.2. <A HREF="#_TOC2">Specification Overview</A></DIV>
+<DIV class="TOC2">1.3. <A HREF="#_TOC3">Color Table Description</A></DIV>
+<DIV class="TOC2">1.4. <A HREF="#_TOC4">Line Width Table Description</A></DIV>
+<DIV class="TOC2">1.5. <A HREF="#_TOC5">Line Stipple Table Description</A></DIV>
+<DIV class="TOC2">1.6. <A HREF="#_TOC6">Font Table Description</A></DIV>
+<DIV class="TOC2">1.7. <A HREF="#_TOC7">Layers List</A></DIV>
+<DIV class="TOC2">1.8. <A HREF="#_TOC8">Picture Table Description</A></DIV>
+<DIV class="TOC2">1.9. <A HREF="#_TOC9">Symbol Table Description</A></DIV>
+<DIV class="TOC1">2. <A HREF="#_TOC10">Layer: a661_layer</A></DIV>
+<DIV class="TOC2">2.1. <A HREF="#_TOC11">Layer Structure</A></DIV>
+<DIV class="TOC2">2.2. <A HREF="#_TOC12">Layer Content</A></DIV>
+
+<DIV class="Heading1">1. <A NAME="_TOC0">Specification Description</A></DIV>
+<DIV class="BodyText">
+<A NAME='specification_description'></A>This section describes the configuration of the specification 'UADF'.<BR>
+</DIV>
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCellAnnot">File name</TH>
+<TD class="TableCell">C:\Users\victo\display_saude\UADF.sgfx</TD>
+</TR><TR><TH class="TableHeadingCellAnnot">Window dimension (pixel)</TH>
+<TD class="TableCell">1024x1024</TD>
+</TR><TR><TH class="TableHeadingCellAnnot">Color Mode</TH>
+<TD class="TableCell">RGBA</TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading2">1.1. <A NAME="_TOC1">General Description</A></DIV>
+<DIV class="BodyText">
+<DIV class="BodyText">&lt;description&gt;</DIV></DIV>
+<DIV class="Heading2">1.2. <A NAME="_TOC2">Specification Overview</A></DIV>
+<DIV class="BodyText">
+This subsection shows a complete multi-layers overview of the specification 'UADF'.<BR>
+</DIV>
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000001.png'></DIV>
+<BR>
+<DIV class="Heading2">1.3. <A NAME="_TOC3">Color Table Description</A></DIV>
+<DIV class="BodyText">
+This subsection describes the information related to the colors defined for the specification 'UADF'.<BR>
+<BR>
+Color table:color_table.sct<BR>
+<BR>
+</DIV>
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Color name</TH>
+<TH class="TableHeadingCell">Color index</TH>
+<TH class="TableHeadingCell">Color value (ARGB)</TH>
+<TH class="TableHeadingCell"> </TH>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">BLACK</SPAN><A NAME='color_1'></A></TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell">255 / 0 / 0 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(0,0,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">WHITE</SPAN><A NAME='color_2'></A></TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell">255 / 255 / 255 / 255</TD>
+<TD class="TableCell" style="background-color: rgb(255,255,255); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTER GREY</SPAN><A NAME='color_3'></A></TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell">255 / 242 / 242 / 242</TD>
+<TD class="TableCell" style="background-color: rgb(242,242,242); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHT GREY</SPAN><A NAME='color_4'></A></TD>
+<TD class="TableCell">4</TD>
+<TD class="TableCell">255 / 204 / 204 / 204</TD>
+<TD class="TableCell" style="background-color: rgb(204,204,204); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">GREY</SPAN><A NAME='color_5'></A></TD>
+<TD class="TableCell">5</TD>
+<TD class="TableCell">255 / 153 / 153 / 153</TD>
+<TD class="TableCell" style="background-color: rgb(153,153,153); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARK GREY</SPAN><A NAME='color_6'></A></TD>
+<TD class="TableCell">6</TD>
+<TD class="TableCell">255 / 102 / 102 / 102</TD>
+<TD class="TableCell" style="background-color: rgb(102,102,102); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKER GREY</SPAN><A NAME='color_7'></A></TD>
+<TD class="TableCell">7</TD>
+<TD class="TableCell">255 / 51 / 51 / 51</TD>
+<TD class="TableCell" style="background-color: rgb(51,51,51); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">RED</SPAN><A NAME='color_11'></A></TD>
+<TD class="TableCell">11</TD>
+<TD class="TableCell">255 / 255 / 0 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(255,0,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTEST RED</SPAN><A NAME='color_12'></A></TD>
+<TD class="TableCell">12</TD>
+<TD class="TableCell">255 / 255 / 213 / 213</TD>
+<TD class="TableCell" style="background-color: rgb(255,213,213); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTER RED</SPAN><A NAME='color_13'></A></TD>
+<TD class="TableCell">13</TD>
+<TD class="TableCell">255 / 255 / 170 / 170</TD>
+<TD class="TableCell" style="background-color: rgb(255,170,170); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHT RED</SPAN><A NAME='color_14'></A></TD>
+<TD class="TableCell">14</TD>
+<TD class="TableCell">255 / 255 / 85 / 85</TD>
+<TD class="TableCell" style="background-color: rgb(255,85,85); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARK RED</SPAN><A NAME='color_15'></A></TD>
+<TD class="TableCell">15</TD>
+<TD class="TableCell">255 / 212 / 0 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(212,0,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKER RED</SPAN><A NAME='color_16'></A></TD>
+<TD class="TableCell">16</TD>
+<TD class="TableCell">255 / 170 / 0 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(170,0,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKEST RED</SPAN><A NAME='color_17'></A></TD>
+<TD class="TableCell">17</TD>
+<TD class="TableCell">255 / 128 / 0 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(128,0,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">ORANGE</SPAN><A NAME='color_21'></A></TD>
+<TD class="TableCell">21</TD>
+<TD class="TableCell">255 / 255 / 128 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(255,128,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTEST ORANGE</SPAN><A NAME='color_22'></A></TD>
+<TD class="TableCell">22</TD>
+<TD class="TableCell">255 / 255 / 230 / 213</TD>
+<TD class="TableCell" style="background-color: rgb(255,230,213); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTER ORANGE</SPAN><A NAME='color_23'></A></TD>
+<TD class="TableCell">23</TD>
+<TD class="TableCell">255 / 255 / 204 / 170</TD>
+<TD class="TableCell" style="background-color: rgb(255,204,170); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHT ORANGE</SPAN><A NAME='color_24'></A></TD>
+<TD class="TableCell">24</TD>
+<TD class="TableCell">255 / 255 / 153 / 85</TD>
+<TD class="TableCell" style="background-color: rgb(255,153,85); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARK ORANGE</SPAN><A NAME='color_25'></A></TD>
+<TD class="TableCell">25</TD>
+<TD class="TableCell">255 / 212 / 85 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(212,85,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKER ORANGE</SPAN><A NAME='color_26'></A></TD>
+<TD class="TableCell">26</TD>
+<TD class="TableCell">255 / 170 / 68 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(170,68,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKEST ORANGE</SPAN><A NAME='color_27'></A></TD>
+<TD class="TableCell">27</TD>
+<TD class="TableCell">255 / 128 / 51 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(128,51,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">YELLOW</SPAN><A NAME='color_31'></A></TD>
+<TD class="TableCell">31</TD>
+<TD class="TableCell">255 / 255 / 255 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(255,255,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTEST YELLOW</SPAN><A NAME='color_32'></A></TD>
+<TD class="TableCell">32</TD>
+<TD class="TableCell">255 / 255 / 246 / 213</TD>
+<TD class="TableCell" style="background-color: rgb(255,246,213); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTER YELLOW</SPAN><A NAME='color_33'></A></TD>
+<TD class="TableCell">33</TD>
+<TD class="TableCell">255 / 255 / 238 / 170</TD>
+<TD class="TableCell" style="background-color: rgb(255,238,170); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHT YELLOW</SPAN><A NAME='color_34'></A></TD>
+<TD class="TableCell">34</TD>
+<TD class="TableCell">255 / 255 / 221 / 85</TD>
+<TD class="TableCell" style="background-color: rgb(255,221,85); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARK YELLOW</SPAN><A NAME='color_35'></A></TD>
+<TD class="TableCell">35</TD>
+<TD class="TableCell">255 / 255 / 204 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(255,204,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKER YELLOW</SPAN><A NAME='color_36'></A></TD>
+<TD class="TableCell">36</TD>
+<TD class="TableCell">255 / 212 / 170 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(212,170,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKEST YELLOW</SPAN><A NAME='color_37'></A></TD>
+<TD class="TableCell">37</TD>
+<TD class="TableCell">255 / 170 / 136 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(170,136,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">GREEN</SPAN><A NAME='color_41'></A></TD>
+<TD class="TableCell">41</TD>
+<TD class="TableCell">255 / 0 / 255 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(0,255,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTEST GREEN</SPAN><A NAME='color_42'></A></TD>
+<TD class="TableCell">42</TD>
+<TD class="TableCell">255 / 213 / 255 / 213</TD>
+<TD class="TableCell" style="background-color: rgb(213,255,213); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTER GREEN</SPAN><A NAME='color_43'></A></TD>
+<TD class="TableCell">43</TD>
+<TD class="TableCell">255 / 170 / 255 / 170</TD>
+<TD class="TableCell" style="background-color: rgb(170,255,170); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHT GREEN</SPAN><A NAME='color_44'></A></TD>
+<TD class="TableCell">44</TD>
+<TD class="TableCell">255 / 85 / 255 / 85</TD>
+<TD class="TableCell" style="background-color: rgb(85,255,85); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARK GREEN</SPAN><A NAME='color_45'></A></TD>
+<TD class="TableCell">45</TD>
+<TD class="TableCell">255 / 0 / 212 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(0,212,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKER GREEN</SPAN><A NAME='color_46'></A></TD>
+<TD class="TableCell">46</TD>
+<TD class="TableCell">255 / 0 / 170 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(0,170,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKEST GREEN</SPAN><A NAME='color_47'></A></TD>
+<TD class="TableCell">47</TD>
+<TD class="TableCell">255 / 0 / 128 / 0</TD>
+<TD class="TableCell" style="background-color: rgb(0,128,0); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">CYAN</SPAN><A NAME='color_51'></A></TD>
+<TD class="TableCell">51</TD>
+<TD class="TableCell">255 / 0 / 255 / 255</TD>
+<TD class="TableCell" style="background-color: rgb(0,255,255); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTEST CYAN</SPAN><A NAME='color_52'></A></TD>
+<TD class="TableCell">52</TD>
+<TD class="TableCell">255 / 213 / 255 / 246</TD>
+<TD class="TableCell" style="background-color: rgb(213,255,246); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTER CYAN</SPAN><A NAME='color_53'></A></TD>
+<TD class="TableCell">53</TD>
+<TD class="TableCell">255 / 170 / 255 / 238</TD>
+<TD class="TableCell" style="background-color: rgb(170,255,238); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHT CYAN</SPAN><A NAME='color_54'></A></TD>
+<TD class="TableCell">54</TD>
+<TD class="TableCell">255 / 85 / 255 / 221</TD>
+<TD class="TableCell" style="background-color: rgb(85,255,221); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARK CYAN</SPAN><A NAME='color_55'></A></TD>
+<TD class="TableCell">55</TD>
+<TD class="TableCell">255 / 0 / 212 / 170</TD>
+<TD class="TableCell" style="background-color: rgb(0,212,170); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKER CYAN</SPAN><A NAME='color_56'></A></TD>
+<TD class="TableCell">56</TD>
+<TD class="TableCell">255 / 0 / 170 / 136</TD>
+<TD class="TableCell" style="background-color: rgb(0,170,136); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKEST CYAN</SPAN><A NAME='color_57'></A></TD>
+<TD class="TableCell">57</TD>
+<TD class="TableCell">255 / 0 / 102 / 102</TD>
+<TD class="TableCell" style="background-color: rgb(0,102,102); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">BLUE</SPAN><A NAME='color_61'></A></TD>
+<TD class="TableCell">61</TD>
+<TD class="TableCell">255 / 0 / 0 / 255</TD>
+<TD class="TableCell" style="background-color: rgb(0,0,255); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTEST BLUE</SPAN><A NAME='color_62'></A></TD>
+<TD class="TableCell">62</TD>
+<TD class="TableCell">255 / 213 / 213 / 255</TD>
+<TD class="TableCell" style="background-color: rgb(213,213,255); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTER BLUE</SPAN><A NAME='color_63'></A></TD>
+<TD class="TableCell">63</TD>
+<TD class="TableCell">255 / 170 / 170 / 255</TD>
+<TD class="TableCell" style="background-color: rgb(170,170,255); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHT BLUE</SPAN><A NAME='color_64'></A></TD>
+<TD class="TableCell">64</TD>
+<TD class="TableCell">255 / 85 / 85 / 255</TD>
+<TD class="TableCell" style="background-color: rgb(85,85,255); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARK BLUE</SPAN><A NAME='color_65'></A></TD>
+<TD class="TableCell">65</TD>
+<TD class="TableCell">255 / 0 / 0 / 212</TD>
+<TD class="TableCell" style="background-color: rgb(0,0,212); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKER BLUE</SPAN><A NAME='color_66'></A></TD>
+<TD class="TableCell">66</TD>
+<TD class="TableCell">255 / 0 / 0 / 170</TD>
+<TD class="TableCell" style="background-color: rgb(0,0,170); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKEST BLUE</SPAN><A NAME='color_67'></A></TD>
+<TD class="TableCell">67</TD>
+<TD class="TableCell">255 / 0 / 0 / 128</TD>
+<TD class="TableCell" style="background-color: rgb(0,0,128); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">FUSCHIA</SPAN><A NAME='color_71'></A></TD>
+<TD class="TableCell">71</TD>
+<TD class="TableCell">255 / 255 / 0 / 255</TD>
+<TD class="TableCell" style="background-color: rgb(255,0,255); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTEST FUSCHIA</SPAN><A NAME='color_72'></A></TD>
+<TD class="TableCell">72</TD>
+<TD class="TableCell">255 / 255 / 213 / 246</TD>
+<TD class="TableCell" style="background-color: rgb(255,213,246); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHTER FUSCHIA</SPAN><A NAME='color_73'></A></TD>
+<TD class="TableCell">73</TD>
+<TD class="TableCell">255 / 255 / 170 / 238</TD>
+<TD class="TableCell" style="background-color: rgb(255,170,238); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LIGHT FUSCHIA</SPAN><A NAME='color_74'></A></TD>
+<TD class="TableCell">74</TD>
+<TD class="TableCell">255 / 255 / 85 / 221</TD>
+<TD class="TableCell" style="background-color: rgb(255,85,221); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARK FUSCHIA</SPAN><A NAME='color_75'></A></TD>
+<TD class="TableCell">75</TD>
+<TD class="TableCell">255 / 255 / 0 / 204</TD>
+<TD class="TableCell" style="background-color: rgb(255,0,204); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKER FUSCHIA</SPAN><A NAME='color_76'></A></TD>
+<TD class="TableCell">76</TD>
+<TD class="TableCell">255 / 212 / 0 / 170</TD>
+<TD class="TableCell" style="background-color: rgb(212,0,170); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">DARKEST FUSCHIA</SPAN><A NAME='color_77'></A></TD>
+<TD class="TableCell">77</TD>
+<TD class="TableCell">255 / 128 / 0 / 102</TD>
+<TD class="TableCell" style="background-color: rgb(128,0,102); width: 20mm;">&nbsp;</TD>
+</TR><TR><TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">BACKGROUND</SPAN><A NAME='color_127'></A></TD>
+<TD class="TableCell">127</TD>
+<TD class="TableCell">255 / 144 / 158 / 167</TD>
+<TD class="TableCell" style="background-color: rgb(144,158,167); width: 20mm;">&nbsp;</TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading2">1.4. <A NAME="_TOC4">Line Width Table Description</A></DIV>
+<DIV class="BodyText">
+This subsection describes the information related to the line widths defined for the specification 'UADF'.<BR>
+<BR>
+Line width table: line_width_table.swt<BR>
+<BR>
+</DIV>
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Line width index</TH>
+<TH class="TableHeadingCell">Name</TH>
+<TH class="TableHeadingCell">Line width</TH>
+<TH class="TableHeadingCell">Color width</TH>
+<TH class="TableHeadingCell">Halo width</TH>
+</TR><TR><TD class="TableCell">0</TD>
+<TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LW0</SPAN><A NAME='linewidth_0'></A></TD>
+<TD class="TableCell">1.2</TD>
+<TD class="TableCell">1.5</TD>
+<TD class="TableCell">3.0</TD>
+</TR><TR><TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LW1</SPAN><A NAME='linewidth_1'></A></TD>
+<TD class="TableCell">2.5</TD>
+<TD class="TableCell">1.5</TD>
+<TD class="TableCell">3.5</TD>
+</TR><TR><TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LW2</SPAN><A NAME='linewidth_2'></A></TD>
+<TD class="TableCell">3.5</TD>
+<TD class="TableCell">2.5</TD>
+<TD class="TableCell">4.2</TD>
+</TR><TR><TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LW3</SPAN><A NAME='linewidth_3'></A></TD>
+<TD class="TableCell">4.5</TD>
+<TD class="TableCell">3.5</TD>
+<TD class="TableCell">5.5</TD>
+</TR><TR><TD class="TableCell">4</TD>
+<TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LW4</SPAN><A NAME='linewidth_4'></A></TD>
+<TD class="TableCell">5.5</TD>
+<TD class="TableCell">4.5</TD>
+<TD class="TableCell">6.5</TD>
+</TR><TR><TD class="TableCell">5</TD>
+<TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LW5</SPAN><A NAME='linewidth_5'></A></TD>
+<TD class="TableCell">6.5</TD>
+<TD class="TableCell">5.5</TD>
+<TD class="TableCell">7.5</TD>
+</TR><TR><TD class="TableCell">6</TD>
+<TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LW6</SPAN><A NAME='linewidth_6'></A></TD>
+<TD class="TableCell">7.5</TD>
+<TD class="TableCell">6.5</TD>
+<TD class="TableCell">8.5</TD>
+</TR><TR><TD class="TableCell">7</TD>
+<TD class="TableCell" style=""><SPAN STYLE="font-style: normal; font-weight: normal; text-decoration: normal;">LW7</SPAN><A NAME='linewidth_7'></A></TD>
+<TD class="TableCell">8.5</TD>
+<TD class="TableCell">7.5</TD>
+<TD class="TableCell">9.5</TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading2">1.5. <A NAME="_TOC5">Line Stipple Table Description</A></DIV>
+<DIV class="BodyText">
+This subsection describes the information related to the line stipples defined for the specification 'UADF'.<BR>
+<BR>
+Line stipple table: line_stipple_table.sst<BR>
+<BR>
+</DIV>
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Line stipple index</TH>
+<TH class="TableHeadingCell">Stipple value</TH>
+</TR><TR><TD class="TableCell" style="">0<A NAME='linestipple_0'></A></TD>
+<TD class="TableCell" style="">continuous line</TD>
+</TR><TR><TD class="TableCell" style="">1<A NAME='linestipple_1'></A></TD>
+<TD class="TableCell" style=""><B>12</B> / 12</TD>
+</TR><TR><TD class="TableCell" style="">2<A NAME='linestipple_2'></A></TD>
+<TD class="TableCell" style=""><B>8</B> / 8</TD>
+</TR><TR><TD class="TableCell" style="">3<A NAME='linestipple_3'></A></TD>
+<TD class="TableCell" style=""><B>1</B> / 6</TD>
+</TR><TR><TD class="TableCell" style="">4<A NAME='linestipple_4'></A></TD>
+<TD class="TableCell" style=""><B>1</B> / 8 / <B>8</B> / 8</TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading2">1.6. <A NAME="_TOC6">Font Table Description</A></DIV>
+<DIV class="BodyText">
+This subsection describes the information related to the fonts defined for the specification 'UADF'.<BR>
+</DIV>
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Font id</TH>
+<TH class="TableHeadingCell">Font name</TH>
+<TH class="TableHeadingCell">Font line width</TH>
+</TR><TR><TD class="TableCell" style="">0<A NAME='font_0'></A></TD>
+<TD class="TableCell">Font T1</TD>
+<TD class="TableCell">3, 4, 5, 6, 7</TD>
+</TR><TR><TD class="TableCell" style="">1<A NAME='font_1'></A></TD>
+<TD class="TableCell">Font T2</TD>
+<TD class="TableCell">3, 4, 5, 6, 7</TD>
+</TR><TR><TD class="TableCell" style="">2<A NAME='font_2'></A></TD>
+<TD class="TableCell">Font T3</TD>
+<TD class="TableCell">3, 4, 5, 6, 7, 8</TD>
+</TR><TR><TD class="TableCell" style="">3<A NAME='font_3'></A></TD>
+<TD class="TableCell">Font T4</TD>
+<TD class="TableCell">3, 4, 5, 6, 7, 8</TD>
+</TR><TR><TD class="TableCell" style="">4<A NAME='font_4'></A></TD>
+<TD class="TableCell">Font T5</TD>
+<TD class="TableCell">3, 4, 5, 6, 7, 8, 9</TD>
+</TR><TR><TD class="TableCell" style="">5<A NAME='font_5'></A></TD>
+<TD class="TableCell">Sans18</TD>
+<TD class="TableCell">3</TD>
+</TR><TR><TD class="TableCell" style="">6<A NAME='font_6'></A></TD>
+<TD class="TableCell">Sans26</TD>
+<TD class="TableCell">3</TD>
+</TR><TR><TD class="TableCell" style="">7<A NAME='font_7'></A></TD>
+<TD class="TableCell">SansBold18</TD>
+<TD class="TableCell">3</TD>
+</TR><TR><TD class="TableCell" style="">8<A NAME='font_8'></A></TD>
+<TD class="TableCell">SansBold26</TD>
+<TD class="TableCell">3</TD>
+</TR><TR><TD class="TableCell" style="">9<A NAME='font_9'></A></TD>
+<TD class="TableCell">Mono18</TD>
+<TD class="TableCell">3</TD>
+</TR><TR><TD class="TableCell" style="">10<A NAME='font_10'></A></TD>
+<TD class="TableCell">Mono26</TD>
+<TD class="TableCell">3</TD>
+</TR><TR><TD class="TableCell" style="">11<A NAME='font_11'></A></TD>
+<TD class="TableCell">MonoBold18</TD>
+<TD class="TableCell">3</TD>
+</TR><TR><TD class="TableCell" style="">12<A NAME='font_12'></A></TD>
+<TD class="TableCell">MonoBold26</TD>
+<TD class="TableCell">3</TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading2">1.7. <A NAME="_TOC7">Layers List</A></DIV>
+<DIV class="BodyText">
+This subsection provides the list the layers defined for the specification 'UADF'<BR>
+</DIV>
+<DIV class="BodyText">
+<UL class="ListNumber2"><LI class="ListNumber2"><A class="Hyperlink" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A></LI>
+</UL>
+</DIV>
+<DIV class="Heading2">1.8. <A NAME="_TOC8">Picture Table Description</A></DIV>
+<DIV class="BodyText">
+This subsection describes the information related to the pictures defined for the specification UADF.<BR>
+<BR>
+Picture table: <I>No picture defined in this specification</I></DIV>
+<DIV class="Heading2">1.9. <A NAME="_TOC9">Symbol Table Description</A></DIV>
+<DIV class="BodyText">
+This subsection describes the information related to the symbol definitions defined for the specification UADF.<BR>
+<BR>
+Symbol table: <I>No symbol defined in this specification</I></DIV>
+<DIV class="Heading1">2. <A NAME="_TOC10">Layer: a661_layer</A></DIV>
+<DIV class="BodyText">
+<A NAME='de34a808-93dc-4a3c-a0b7-2b381ee9baae'></A>This section describes the layer 'a661_layer'.<DIV class="Heading2">2.1. <A NAME="_TOC11">Layer Structure</A></DIV>
+<DIV class="BodyText">
+<A NAME='structurede34a808-93dc-4a3c-a0b7-2b381ee9baae'></A>This subsection describes the structure of the layer 'a661_layer'.<BR>
+</DIV>
+<DIV class="BodyText">
+<I>No hierarchy object defined.</I></DIV>
+<DIV class="Heading2">2.2. <A NAME="_TOC12">Layer Content</A></DIV>
+<DIV class="BodyText">
+<A NAME='contentde34a808-93dc-4a3c-a0b7-2b381ee9baae'></A>This subsection describes the content of the layer 'a661_layer'.<BR>
+</DIV>
+<DIV class="BodyText">
+<A NAME='de34a808-93dc-4a3c-a0b7-2b381ee9baae_1'></A><DIV class="BodyText">
+<BR>
+<A NAME='de34a808-93dc-4a3c-a0b7-2b381ee9baae_1'></A><B>Object: a661_layer (type: A661Layer)</B><BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableHeadingCellAnnot" style="">Visibility</TD>
+<TD class="TableCell">true</TD>
+</TR><TR><TD class="TableHeadingCellAnnot" style="">Layer Id</TD>
+<TD class="TableCell">1</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000002.png'></DIV>
+<BR>
+<DIV class="BodyText">Children of container a661_layer: (primitives are in italics)</DIV><UL class="ListNumber2"><LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#5e768a8a-e937-4898-964b-d41ee9f20001">GpLine</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#3bff8831-35d9-4d0e-8205-ed2071d6f90c">GpLine</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#09e1cf9d-7e0c-4e23-9e6f-5c4f241bb64c">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#fa2e0e6b-15e8-4d84-89cd-24b99a8ba266">MedidaGlicose</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#3bfdf546-ef44-4803-ac3e-15018c851110">GpLine</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#ff775fd1-ff85-456d-bc54-f8597935a0a9">GpLine</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#bd395ea7-1f35-4a8b-8a28-234a9e930a28">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#b81fcc82-e044-4d58-95a1-bd4283098e20">MedidaBatimento</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#c76760bb-81b3-42bf-af97-c8908b71cf78">GpLine</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#ae5d2053-bc2a-477c-8d39-d883d074d507">GpLine</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#7dae6bd1-9995-4099-85c1-77565e8ff0ba">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#13ebd159-270c-49db-958f-b58f5eba3767">MedidaPressao</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#02cae17b-b347-4c5e-bb2c-4a46d246b72f">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#f97914e2-211a-4393-bc72-115cf3dcf2e2">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#8661bb13-da60-47c7-8c88-4ccf71b026ce">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#c77772cf-a9a9-4c19-ae17-f00640c0be09">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#05228102-2eca-477d-8dca-43d97be8560a">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#849b9091-f547-4223-b559-19169d39161b">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#f8ff35d7-c7d1-4ad7-8d58-87619c8759b1">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#addf91d7-514f-46b2-81df-cdfad4af8470">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#ec39d162-e1f4-4753-b754-025934176378">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#5c2e5a34-59a9-4242-b670-67814a39f397">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#1e9acb0b-b1c9-479c-bee2-d6eed6edeaf1">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#227bb94a-a783-4b25-8be6-3178868c8ae6">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#d6e01228-3242-4ab3-aa60-8aa5873fd0b0">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#c90b6578-1d23-4341-b3d1-ea7491f82fa7">Label</A></LI>
+<LI class="ListNumber2"><A class="Hyperlink" style="font-style: italic;" HREF="#2b36aa31-544c-4d80-9e15-525c87d3269f">Label</A></LI>
+</UL>
+<BR>
+<DIV class="BodyText">
+<A NAME='5e768a8a-e937-4898-964b-d41ee9f20001'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#5e768a8a-e937-4898-964b-d41ee9f20001_1">GpLine</A><BR>
+<I>type: GpLine</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">3</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXStart</B></TD>
+<TD class="TableCell">3300</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYStart</B></TD>
+<TD class="TableCell">13380</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXEnd</B></TD>
+<TD class="TableCell">3300</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYEnd</B></TD>
+<TD class="TableCell">19640</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">45: DARK GREEN</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000003.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='3bff8831-35d9-4d0e-8205-ed2071d6f90c'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#3bff8831-35d9-4d0e-8205-ed2071d6f90c_1">GpLine</A><BR>
+<I>type: GpLine</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">4</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXStart</B></TD>
+<TD class="TableCell">2760</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYStart</B></TD>
+<TD class="TableCell">13860</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXEnd</B></TD>
+<TD class="TableCell">13900</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYEnd</B></TD>
+<TD class="TableCell">13860</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">41: GREEN</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000004.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='09e1cf9d-7e0c-4e23-9e6f-5c4f241bb64c'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#09e1cf9d-7e0c-4e23-9e6f-5c4f241bb64c_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">5</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">12860</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">12940</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">Tempo (m)</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000005.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='fa2e0e6b-15e8-4d84-89cd-24b99a8ba266'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#fa2e0e6b-15e8-4d84-89cd-24b99a8ba266_1">MedidaGlicose</A><BR>
+<I>type: GpPolyline</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">7</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">31: YELLOW</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Closed</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxNumberOfVertices</B></TD>
+<TD class="TableCell">16</TD>
+</TR><TR><TD class="TableCell" style=""><B>NumberOfVertices</B></TD>
+<TD class="TableCell">6</TD>
+</TR><TR><TD class="TableCell" style=""><B>Vertices</B></TD>
+<TD class="TableCell">[x:3300;y:17680;,x:5420;y:16040;,x:7550;y:17740;,x:9660;y:15160;,x:11780;y:17300;,x:13900;y:17400;]</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000006.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='3bfdf546-ef44-4803-ac3e-15018c851110'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#3bfdf546-ef44-4803-ac3e-15018c851110_1">GpLine</A><BR>
+<I>type: GpLine</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">8</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXStart</B></TD>
+<TD class="TableCell">3320</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYStart</B></TD>
+<TD class="TableCell">6800</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXEnd</B></TD>
+<TD class="TableCell">3320</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYEnd</B></TD>
+<TD class="TableCell">13060</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">45: DARK GREEN</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000007.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='ff775fd1-ff85-456d-bc54-f8597935a0a9'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#ff775fd1-ff85-456d-bc54-f8597935a0a9_1">GpLine</A><BR>
+<I>type: GpLine</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">9</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXStart</B></TD>
+<TD class="TableCell">2780</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYStart</B></TD>
+<TD class="TableCell">7280</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXEnd</B></TD>
+<TD class="TableCell">13920</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYEnd</B></TD>
+<TD class="TableCell">7280</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">41: GREEN</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000008.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='bd395ea7-1f35-4a8b-8a28-234a9e930a28'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#bd395ea7-1f35-4a8b-8a28-234a9e930a28_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">10</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">12800</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">6380</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">Tempo (m)</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000009.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='b81fcc82-e044-4d58-95a1-bd4283098e20'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#b81fcc82-e044-4d58-95a1-bd4283098e20_1">MedidaBatimento</A><BR>
+<I>type: GpPolyline</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">11</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">15: DARK RED</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Closed</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxNumberOfVertices</B></TD>
+<TD class="TableCell">16</TD>
+</TR><TR><TD class="TableCell" style=""><B>NumberOfVertices</B></TD>
+<TD class="TableCell">6</TD>
+</TR><TR><TD class="TableCell" style=""><B>Vertices</B></TD>
+<TD class="TableCell">[x:3320;y:11100;,x:5440;y:9460;,x:7570;y:11160;,x:9680;y:8580;,x:11800;y:10720;,x:13920;y:10820;]</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000010.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='c76760bb-81b3-42bf-af97-c8908b71cf78'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#c76760bb-81b3-42bf-af97-c8908b71cf78_1">GpLine</A><BR>
+<I>type: GpLine</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">12</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXStart</B></TD>
+<TD class="TableCell">3320</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYStart</B></TD>
+<TD class="TableCell">300</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXEnd</B></TD>
+<TD class="TableCell">3320</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYEnd</B></TD>
+<TD class="TableCell">6560</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">45: DARK GREEN</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000011.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='ae5d2053-bc2a-477c-8d39-d883d074d507'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#ae5d2053-bc2a-477c-8d39-d883d074d507_1">GpLine</A><BR>
+<I>type: GpLine</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">13</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXStart</B></TD>
+<TD class="TableCell">2780</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYStart</B></TD>
+<TD class="TableCell">780</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosXEnd</B></TD>
+<TD class="TableCell">13920</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosYEnd</B></TD>
+<TD class="TableCell">780</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">41: GREEN</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000012.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='7dae6bd1-9995-4099-85c1-77565e8ff0ba'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#7dae6bd1-9995-4099-85c1-77565e8ff0ba_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">14</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">12800</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">-120</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">Tempo (m)</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000013.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='13ebd159-270c-49db-958f-b58f5eba3767'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#13ebd159-270c-49db-958f-b58f5eba3767_1">MedidaPressao</A><BR>
+<I>type: GpPolyline</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">15</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">61: BLUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Halo</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Closed</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxNumberOfVertices</B></TD>
+<TD class="TableCell">16</TD>
+</TR><TR><TD class="TableCell" style=""><B>NumberOfVertices</B></TD>
+<TD class="TableCell">6</TD>
+</TR><TR><TD class="TableCell" style=""><B>Vertices</B></TD>
+<TD class="TableCell">[x:3320;y:4600;,x:5440;y:2960;,x:7570;y:4660;,x:9680;y:2080;,x:11800;y:4220;,x:13920;y:4320;]</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000014.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='02cae17b-b347-4c5e-bb2c-4a46d246b72f'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#02cae17b-b347-4c5e-bb2c-4a46d246b72f_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">16</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">660</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">19460</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">Glicose(mg/dl)</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000015.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='f97914e2-211a-4393-bc72-115cf3dcf2e2'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#f97914e2-211a-4393-bc72-115cf3dcf2e2_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">17</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">20</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">12940</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3500</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">Batimentos(bpm)</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000016.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='8661bb13-da60-47c7-8c88-4ccf71b026ce'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#8661bb13-da60-47c7-8c88-4ccf71b026ce_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">18</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">40</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">6200</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">Pressao(mmHg)</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000017.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='c77772cf-a9a9-4c19-ae17-f00640c0be09'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#c77772cf-a9a9-4c19-ae17-f00640c0be09_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">19</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">2700</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">13840</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">70</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000018.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='05228102-2eca-477d-8dca-43d97be8560a'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#05228102-2eca-477d-8dca-43d97be8560a_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">20</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">2220</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">18980</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">150</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000019.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='849b9091-f547-4223-b559-19169d39161b'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#849b9091-f547-4223-b559-19169d39161b_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">21</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">2520</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">12480</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">150</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000020.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='f8ff35d7-c7d1-4ad7-8d58-87619c8759b1'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#f8ff35d7-c7d1-4ad7-8d58-87619c8759b1_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">22</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">2660</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">7240</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">50</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000021.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='addf91d7-514f-46b2-81df-cdfad4af8470'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#addf91d7-514f-46b2-81df-cdfad4af8470_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">23</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">2720</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">760</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">40</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000022.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='ec39d162-e1f4-4753-b754-025934176378'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#ec39d162-e1f4-4753-b754-025934176378_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">24</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">2560</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">5800</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">200</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000023.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='5c2e5a34-59a9-4242-b670-67814a39f397'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#5c2e5a34-59a9-4242-b670-67814a39f397_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">25</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">3420</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">120</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">-5</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000024.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='1e9acb0b-b1c9-479c-bee2-d6eed6edeaf1'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#1e9acb0b-b1c9-479c-bee2-d6eed6edeaf1_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">26</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">13720</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">160</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">0</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000025.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='227bb94a-a783-4b25-8be6-3178868c8ae6'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#227bb94a-a783-4b25-8be6-3178868c8ae6_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">27</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">3400</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">6660</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">-5</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000026.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='d6e01228-3242-4ab3-aa60-8aa5873fd0b0'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#d6e01228-3242-4ab3-aa60-8aa5873fd0b0_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">28</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">3460</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">13260</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">-5</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000027.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='c90b6578-1d23-4341-b3d1-ea7491f82fa7'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#c90b6578-1d23-4341-b3d1-ea7491f82fa7_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">29</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">13720</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">6660</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">0</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000028.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<A NAME='2b36aa31-544c-4d80-9e15-525c87d3269f'></A><DIV class="BodyText">
+<DIV class="BodyText">
+<B>Widget: </B><A class="Hyperlink" style="" HREF="#de34a808-93dc-4a3c-a0b7-2b381ee9baae">a661_layer</A>/<A class="Hyperlink" style="" HREF="#2b36aa31-544c-4d80-9e15-525c87d3269f_1">Label</A><BR>
+<I>type: Label</I><BR>
+<BR>
+</DIV>
+<DIV class="BodyText">
+<DIV class="BodyText"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell">Property</TH>
+<TH class="TableHeadingCell">Value</TH>
+</TR><TR><TD class="TableCell" style=""><B>Widget id</B></TD>
+<TD class="TableCell">30</TD>
+</TR><TR><TD class="TableCell" style=""><B>Anonymous</B></TD>
+<TD class="TableCell">A661_FALSE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Visible</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosX</B></TD>
+<TD class="TableCell">13780</TD>
+</TR><TR><TD class="TableCell" style=""><B>PosY</B></TD>
+<TD class="TableCell">13260</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeX</B></TD>
+<TD class="TableCell">3000</TD>
+</TR><TR><TD class="TableCell" style=""><B>SizeY</B></TD>
+<TD class="TableCell">800</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.FR(180.0)</B></TD>
+<TD class="TableCell">0</TD>
+</TR><TR><TD class="TableCell" style=""><B>RotationAngle.Float Value</B></TD>
+<TD class="TableCell">0.0</TD>
+</TR><TR><TD class="TableCell" style=""><B>StyleSet</B></TD>
+<TD class="TableCell">1: FREE</TD>
+</TR><TR><TD class="TableCell" style=""><B>MaxStringLength</B></TD>
+<TD class="TableCell">32</TD>
+</TR><TR><TD class="TableCell" style=""><B>MotionAllowed</B></TD>
+<TD class="TableCell">A661_TRUE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Font</B></TD>
+<TD class="TableCell">0: Font T1</TD>
+</TR><TR><TD class="TableCell" style=""><B>ColorIndex</B></TD>
+<TD class="TableCell">2: WHITE</TD>
+</TR><TR><TD class="TableCell" style=""><B>Alignment</B></TD>
+<TD class="TableCell">A661_LEFT</TD>
+</TR><TR><TD class="TableCell" style=""><B>LabelString</B></TD>
+<TD class="TableCell">0</TD>
+</TR></TBODY></TABLE></DIV>
+<BR>
+</DIV>
+</DIV>
+<DIV class="BodyText">
+<BR>
+<DIV class="BodyText"><IMG SRC='UADF_img/img000029.png'></DIV>
+<BR>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</BODY>
+</HTML>
+

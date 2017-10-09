@@ -1,0 +1,38 @@
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/KCG/config.txt
+** Generation date: 2017-10-03T09:26:19
+*************************************************************$ */
+
+#include "kcg_consts.h"
+#include "kcg_sensors.h"
+#include "PublishMQTT.h"
+
+/* PublishMQTT/ */
+void PublishMQTT(/* Send/ */ T_String *Send, outC_PublishMQTT *outC)
+{
+  /* The body of this function must be provided */
+
+}
+
+void PublishMQTT_init(outC_PublishMQTT *outC)
+{
+  /* The body of this function must be provided */
+
+}
+
+
+#ifndef KCG_NO_EXTERN_CALL_TO_RESET
+void PublishMQTT_reset(outC_PublishMQTT *outC)
+{
+  /* The body of this function must be provided */
+
+}
+#endif /* KCG_NO_EXTERN_CALL_TO_RESET */
+
+
+
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** PublishMQTT.dc
+** Generation date: 2017-10-03T09:26:19
+*************************************************************$ */
+

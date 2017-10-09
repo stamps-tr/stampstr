@@ -1,2 +1,0 @@
-3)  Realizar um Commit no repositório do Projeto do STAMPS-TR;
-6)  Resolver algum conflito de Merge

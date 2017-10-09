@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="LATITUDE">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="5"/>
+					</size>
+				</Table>
+			</type>
+			<value>
+				<!-- ['5', '.', '1', '2', '3'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'5'"/>
+						<ConstValue value="'.'"/>
+						<ConstValue value="'1'"/>
+						<ConstValue value="'2'"/>
+						<ConstValue value="'3'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/499d/722D/3C54/59c1e3d8412d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LONGITUDE">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="5"/>
+					</size>
+				</Table>
+			</type>
+			<value>
+				<!-- ['9', '.', '1', '2', '3'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'9'"/>
+						<ConstValue value="'.'"/>
+						<ConstValue value="'1'"/>
+						<ConstValue value="'2'"/>
+						<ConstValue value="'3'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/499e/722D/3C54/59c1e3ed5b6b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="NUMBER_VICTIMS">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="12"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/499f/722D/3C54/59c1e405f11"/>
+			</pragmas>
+		</Constant>
+		<Constant name="STATUS_VICTIMS">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="10"/>
+					</size>
+				</Table>
+			</type>
+			<value>
+				<!-- ['G', 'R', 'A', 'V', 'I', 'S', 'S', 'I', 'M', 'O'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'G'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'V'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'M'"/>
+						<ConstValue value="'O'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/49a0/722D/3C54/59c1e4695ab0"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

@@ -1,0 +1,45 @@
+*****************************
+*** Generated KCG H/Ads files ***
+*****************************
+Operator.h
+kcg_types.h
+kcg_consts.h
+kcg_sensors.h
+kcg_imported_functions.h
+
+*****************************
+*** Generated KCG C/Adb files ***
+*****************************
+Operator.c
+kcg_types.c
+kcg_consts.c
+
+*****************************
+*** External C Files ***
+*****************************
+socket_mqtt_type.c
+$(SCADE)\lib\C\SmuPredefConv.c
+$(SCADE)\lib\C\SmuTypes.c
+$(SCADE)\lib\C\SmuLib.c
+$(SCADE)\lib\C\SmuVTable.c
+socket_mqtt_mapping.c
+..\..\eclipse-paho-mqtt-c-windows-1.2.0\samples\MQTTClient_publish.c
+
+*****************************
+*** Generated SC2C Files ***
+*****************************
+user_macros.h
+kcg_imported_types.h
+
+*****************************
+*** Include Directories ***
+*****************************
+.
+$(SCADE)
+$(SCADE)\include
+$(SCADE)\include\C
+$(SCADE)\include\Ada
+$(SCADE)\lib\Ada
+..\..\eclipse-paho-mqtt-c-windows-1.2.0\samples
+$(SCADE)\libraries\SC65\libmathext
+

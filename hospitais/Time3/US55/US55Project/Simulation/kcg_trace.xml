@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US55/US55Project/Simulation/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#on#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="debug" value="#on#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="2"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="expall" value="#on#"/>
+    <Option name="target_dir" value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US55/US55Project/Simulation"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="Operator1"/>
+    <Option name="auth" value="#off#"/>
+    <Constant macroDef="true" scadeName="GREEN" scadeType="uint8" targetName="GREEN" targetType="kcg_uint8"/>
+    <Constant macroDef="true" scadeName="RED" scadeType="uint8" targetName="RED" targetType="kcg_uint8"/>
+    <RootNode headerFile="Operator1.h" scadeName="Operator1" targetCycleFct="Operator1" targetInitFct="Operator1_reset" targetInitializationFct="Operator1_init">
+      <Output inCtx="true" scadeName="EmitToCDS" scadeType="bool" targetName="EmitToCDS" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="SignalToLed" scadeType="uint8" targetName="SignalToLed" targetType="kcg_uint8"/>
+      <Local inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L4" scadeType="uint8" targetName="_L4" targetType="kcg_uint8"/>
+      <Local inCtx="true" scadeName="_L3" scadeType="uint8" targetName="_L3" targetType="kcg_uint8"/>
+      <Local inCtx="true" scadeName="_L2" scadeType="uint8" targetName="_L2" targetType="kcg_uint8"/>
+      <Local inCtx="true" scadeName="_L6" scadeType="bool" targetName="_L6" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L11" scadeType="bool" targetName="_L11" targetType="kcg_bool"/>
+      <NodeInlining instName="1" scadeName="Toggle">
+        <Input inCtx="true" scadeName="Input" scadeType="bool" targetName="Input_Toggle_1" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="Output" scadeType="bool" targetName="Output_Toggle_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_Toggle_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_Toggle_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_Toggle_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4_Toggle_1" targetType="kcg_bool"/>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L4_Toggle_1" targetType="kcg_bool"/>
+        </FbyOp>
+      </NodeInlining>
+      <FbyOp instName="1">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Fby inCtx="true" targetName="fby_1" targetType="struct_259"/>
+      </FbyOp>
+      <Fby inCtx="true" targetName="fby_1" targetType="struct_259"/>
+      <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L4_Toggle_1" targetType="kcg_bool"/>
+      <OutCtxType targetName="outC_Operator1"/>
+    </RootNode>
+    <ExpNode scadeName="Toggle"/>
+    <StructType targetCompFct="kcg_comp_struct_259" targetCopyFct="kcg_copy_struct_259" targetName="struct_259">
+      <Field scadeName="idx" scadeType="kcg_size" targetName="idx" targetType="kcg_size"/>
+      <Field scadeName="items" scadeType="array_bool_10000" targetName="items" targetType="array_bool_10000"/>
+    </StructType>
+    <ArrayType cellType="kcg_bool" size="10000" targetCompFct="kcg_comp_array_bool_10000" targetCopyFct="kcg_copy_array_bool_10000" targetName="array_bool_10000"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

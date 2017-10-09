@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#on#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="debug" value="#on#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="2"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="expall" value="#on#"/>
+    <Option name="target_dir" value="C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="ErlunControl"/>
+    <Option name="auth" value="#off#"/>
+    <Constant scadeName="TURN_BTN_OFF" scadeType="T_String" targetName="TURN_BTN_OFF" targetType="T_String"/>
+    <Constant macroDef="true" scadeName="STR_SIZE" scadeType="T_uChar" targetName="STR_SIZE" targetType="T_uChar"/>
+    <Constant scadeName="TURN_BTN_ON" scadeType="T_String" targetName="TURN_BTN_ON" targetType="T_String"/>
+    <Constant macroDef="true" scadeName="GREEN" scadeType="T_uShort" targetName="GREEN" targetType="T_uShort"/>
+    <Constant macroDef="true" scadeName="RED" scadeType="T_uShort" targetName="RED" targetType="T_uShort"/>
+    <Constant scadeName="SEND_BTN_UP" scadeType="T_String" targetName="SEND_BTN_UP" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_DOWN" scadeType="T_String" targetName="SEND_BTN_DOWN" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_LEFT" scadeType="T_String" targetName="SEND_BTN_LEFT" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_RIGHT" scadeType="T_String" targetName="SEND_BTN_RIGHT" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_ON" scadeType="T_String" targetName="SEND_BTN_ON" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_OFF" scadeType="T_String" targetName="SEND_BTN_OFF" targetType="T_String"/>
+    <NamedType refType="T_String" scadeName="T_String" targetName="T_String"/>
+    <NamedType refType="kcg_uint16" scadeName="T_uChar" targetName="T_uChar"/>
+    <NamedType refType="kcg_uint8" scadeName="T_uShort" targetName="T_uShort"/>
+    <RootNode headerFile="ErlunControl.h" scadeName="ErlunControl" targetCycleFct="ErlunControl" targetInitFct="ErlunControl_reset" targetInitializationFct="ErlunControl_init">
+      <Input inCtx="true" scadeName="Turn_Btn" scadeType="bool" targetName="Turn_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Up_Btn" scadeType="bool" targetName="Up_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Down_Btn" scadeType="bool" targetName="Down_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Left_Btn" scadeType="bool" targetName="Left_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Right_Btn" scadeType="bool" targetName="Right_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Speed_Btn" scadeType="bool" targetName="Speed_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Speed_BtnValue" scadeType="float32" targetName="Speed_BtnValue" targetType="kcg_float32"/>
+      <Output inCtx="true" scadeName="Turn_BtnTextString" scadeType="T_String" targetName="Turn_BtnTextString" targetType="T_String"/>
+      <Output inCtx="true" scadeName="StringSize" scadeType="T_uChar" targetName="StringSize" targetType="T_uChar"/>
+      <Output inCtx="true" scadeName="Emit2CDS" scadeType="bool" targetName="Emit2CDS" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="Layer1Active" scadeType="bool" targetName="Layer1Active" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="Layer1Visible" scadeType="bool" targetName="Layer1Visible" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="TurnTextColorIndex" scadeType="T_uShort" targetName="TurnTextColorIndex" targetType="T_uShort"/>
+      <Output inCtx="true" scadeName="EmitVisible" scadeType="bool" targetName="EmitVisible" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="Send_TextString" scadeType="T_String" targetName="Send_TextString" targetType="T_String"/>
+      <Local inCtx="true" scadeName="Var_Turn_Btn" scadeType="bool" targetName="Var_Turn_Btn" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="Var_Send" scadeType="int32" targetName="Var_Send" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="Var_mqtt" scadeType="int32" targetName="Var_mqtt" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L3" scadeType="T_String" targetName="_L3" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L4" scadeType="T_String" targetName="_L4" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L5" scadeType="T_String" targetName="_L5" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L6" scadeType="T_uChar" targetName="_L6" targetType="T_uChar"/>
+      <Local inCtx="true" scadeName="_L7" scadeType="bool" targetName="_L7" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L9" scadeType="bool" targetName="_L9" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L13" scadeType="T_uShort" targetName="_L13" targetType="T_uShort"/>
+      <Local inCtx="true" scadeName="_L12" scadeType="bool" targetName="_L12" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L11" scadeType="T_uShort" targetName="_L11" targetType="T_uShort"/>
+      <Local inCtx="true" scadeName="_L10" scadeType="T_uShort" targetName="_L10" targetType="T_uShort"/>
+      <Local inCtx="true" scadeName="_L19" scadeType="T_String" targetName="_L19" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L27" scadeType="T_String" targetName="_L27" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L30" scadeType="T_String" targetName="_L30" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L31" scadeType="T_String" targetName="_L31" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L32" scadeType="T_String" targetName="_L32" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L42" scadeType="char^(4)" targetName="_L42" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L91" scadeType="bool" targetName="_L91" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L99" scadeType="int32" targetName="_L99" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L100" scadeType="int32" targetName="_L100" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L108" scadeType="int32" targetName="_L108" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L112" scadeType="int32" targetName="_L112" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L117" scadeType="int32" targetName="_L117" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L116" scadeType="int32" targetName="_L116" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L114" scadeType="int32" targetName="_L114" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L113" scadeType="int32" targetName="_L113" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L118" scadeType="bool" targetName="_L118" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L119" scadeType="int32" targetName="_L119" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L120" scadeType="int32" targetName="_L120" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L130" scadeType="int32" targetName="_L130" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L129" scadeType="int32" targetName="_L129" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L128" scadeType="int32" targetName="_L128" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L127" scadeType="int32" targetName="_L127" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L124" scadeType="int32" targetName="_L124" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L123" scadeType="int32" targetName="_L123" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L122" scadeType="int32" targetName="_L122" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L121" scadeType="int32" targetName="_L121" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L131" scadeType="bool" targetName="_L131" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L132" scadeType="bool" targetName="_L132" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L146" scadeType="int32" targetName="_L146" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L143" scadeType="int32" targetName="_L143" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L139" scadeType="int32" targetName="_L139" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L136" scadeType="int32" targetName="_L136" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L149" scadeType="bool" targetName="_L149" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L150" scadeType="T_String" targetName="_L150" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L152" scadeType="T_String" targetName="_L152" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L297" scadeType="T_String" targetName="_L297" targetType="T_String"/>
+      <Local inCtx="true" scadeName="_L299" scadeType="float32" targetName="_L299" targetType="kcg_float32"/>
+      <Local inCtx="true" scadeName="_L300" scadeType="bool" targetName="_L300" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L301" scadeType="bool" targetName="_L301" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L302" scadeType="bool" targetName="_L302" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L312" scadeType="int32" targetName="_L312" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L311" scadeType="int32" targetName="_L311" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L310" scadeType="int32" targetName="_L310" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L309" scadeType="int32" targetName="_L309" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L314" scadeType="bool" targetName="_L314" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L322" scadeType="bool" targetName="_L322" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L321" scadeType="bool" targetName="_L321" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L320" scadeType="bool" targetName="_L320" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L319" scadeType="int32" targetName="_L319" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L317" scadeType="int32" targetName="_L317" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L316" scadeType="int32" targetName="_L316" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L315" scadeType="int32" targetName="_L315" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L323" scadeType="int32" targetName="_L323" targetType="kcg_int32"/>
+      <NodeInlining instName="1" scadeName="Switch">
+        <Input inCtx="true" scadeName="Input1" scadeType="bool" targetName="Input1_Switch_1" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="Output1" scadeType="bool" targetName="Output1_Switch_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4_Switch_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_Switch_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_Switch_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_Switch_1" targetType="kcg_bool"/>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L3_Switch_1" targetType="kcg_bool"/>
+        </FbyOp>
+      </NodeInlining>
+      <FbyOp instName="4">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L7" targetType="kcg_bool"/>
+      </FbyOp>
+      <FbyOp instName="7">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L99" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="8">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L117" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="10">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L128" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="9">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L130" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="11">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L139" targetType="kcg_int32"/>
+      </FbyOp>
+      <NodeInlining instName="1" scadeName="SpeedStr">
+        <Input inCtx="true" scadeName="Input" scadeType="float32" targetName="Input_SpeedStr_1" targetType="kcg_float32"/>
+        <Output inCtx="true" scadeName="Output" scadeType="T_String" targetName="Output_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L154" scadeType="char^(4)" targetName="_L154_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L152" scadeType="bool" targetName="_L152_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L151" scadeType="float32" targetName="_L151_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L149" scadeType="int32" targetName="_L149_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L145" scadeType="char^(4)" targetName="_L145_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L144" scadeType="int32" targetName="_L144_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L143" scadeType="bool" targetName="_L143_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L142" scadeType="int32" targetName="_L142_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L141" scadeType="bool" targetName="_L141_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L140" scadeType="int32" targetName="_L140_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L135" scadeType="char^(4)" targetName="_L135_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L134" scadeType="int32" targetName="_L134_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L133" scadeType="bool" targetName="_L133_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L132" scadeType="int32" targetName="_L132_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L131" scadeType="float32" targetName="_L131_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L130" scadeType="float32" targetName="_L130_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L126" scadeType="int32" targetName="_L126_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L125" scadeType="int32" targetName="_L125_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L124" scadeType="bool" targetName="_L124_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L123" scadeType="float32" targetName="_L123_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L121" scadeType="bool" targetName="_L121_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L117" scadeType="char^(4)" targetName="_L117_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L116" scadeType="bool" targetName="_L116_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L113" scadeType="bool" targetName="_L113_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L112" scadeType="bool" targetName="_L112_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L106" scadeType="int32" targetName="_L106_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L105" scadeType="int32" targetName="_L105_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L104" scadeType="bool" targetName="_L104_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L103" scadeType="bool" targetName="_L103_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L102" scadeType="int32" targetName="_L102_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L99" scadeType="char^(4)" targetName="_L99_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L97" scadeType="bool" targetName="_L97_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L96" scadeType="float32" targetName="_L96_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L95" scadeType="bool" targetName="_L95_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L94" scadeType="float32" targetName="_L94_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L89" scadeType="char^(4)" targetName="_L89_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L88" scadeType="bool" targetName="_L88_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L87" scadeType="float32" targetName="_L87_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L85" scadeType="int32" targetName="_L85_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L84" scadeType="int32" targetName="_L84_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L79" scadeType="bool" targetName="_L79_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L78" scadeType="float32" targetName="_L78_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L77" scadeType="int32" targetName="_L77_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L76" scadeType="bool" targetName="_L76_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L75" scadeType="bool" targetName="_L75_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L74" scadeType="bool" targetName="_L74_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L71" scadeType="char^(4)" targetName="_L71_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L70" scadeType="bool" targetName="_L70_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L69" scadeType="float32" targetName="_L69_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L68" scadeType="float32" targetName="_L68_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L67" scadeType="bool" targetName="_L67_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L66" scadeType="bool" targetName="_L66_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L63" scadeType="float32" targetName="_L63_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L62" scadeType="float32" targetName="_L62_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L61" scadeType="bool" targetName="_L61_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L60" scadeType="float32" targetName="_L60_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L59" scadeType="int32" targetName="_L59_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L55" scadeType="char^(4)" targetName="_L55_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L54" scadeType="bool" targetName="_L54_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L53" scadeType="int32" targetName="_L53_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L52" scadeType="int32" targetName="_L52_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L51" scadeType="int32" targetName="_L51_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L46" scadeType="char^(4)" targetName="_L46_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L45" scadeType="float32" targetName="_L45_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L44" scadeType="bool" targetName="_L44_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L43" scadeType="bool" targetName="_L43_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L42" scadeType="int32" targetName="_L42_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L41" scadeType="int32" targetName="_L41_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L36" scadeType="char^(4)" targetName="_L36_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L35" scadeType="int32" targetName="_L35_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L34" scadeType="float32" targetName="_L34_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L33" scadeType="bool" targetName="_L33_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L32" scadeType="float32" targetName="_L32_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L31" scadeType="int32" targetName="_L31_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="char^(4)" targetName="_L27_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="int32" targetName="_L26_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="int32" targetName="_L24_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="int32" targetName="_L23_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="bool" targetName="_L17_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="int32" targetName="_L16_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="int32" targetName="_L15_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="bool" targetName="_L14_SpeedStr_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="int32" targetName="_L13_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="int32" targetName="_L12_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="char^(4)" targetName="_L9_SpeedStr_1" targetType="T_String"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="float32" targetName="_L8_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="int32" targetName="_L7_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="int32" targetName="_L6_SpeedStr_1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="float32" targetName="_L5_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float32" targetName="_L4_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L155" scadeType="float32" targetName="_L155_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L156" scadeType="float32" targetName="_L156_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L157" scadeType="float32" targetName="_L157_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L158" scadeType="float32" targetName="_L158_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L159" scadeType="float32" targetName="_L159_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L160" scadeType="float32" targetName="_L160_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L161" scadeType="float32" targetName="_L161_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L162" scadeType="float32" targetName="_L162_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L163" scadeType="float32" targetName="_L163_SpeedStr_1" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L164" scadeType="float32" targetName="_L164_SpeedStr_1" targetType="kcg_float32"/>
+      </NodeInlining>
+      <FbyOp instName="15">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L312" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="16">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L317" targetType="kcg_int32"/>
+      </FbyOp>
+      <NodeInstance instName="2" refName="msg" scadeName="msg"/>
+      <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L3_Switch_1" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L7" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L99" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L117" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L130" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L128" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L139" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L312" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L317" targetType="kcg_int32"/>
+      <OutCtxType targetName="outC_ErlunControl"/>
+      <InCtxType targetName="inC_ErlunControl"/>
+    </RootNode>
+    <ExpNode scadeName="Switch"/>
+    <ExpNode scadeName="SpeedStr"/>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="msg" targetCycleFct="msg">
+      <Input scadeName="Send" scadeType="T_String" targetName="Send" targetType="T_String"/>
+      <Output scadeName="Status" scadeType="int32" targetName="Status" targetType="kcg_int32"/>
+    </NoExpNode>
+    <ArrayType cellType="kcg_char" size="4" targetCompFct="kcg_comp_T_String" targetCopyFct="kcg_copy_T_String" targetName="T_String"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

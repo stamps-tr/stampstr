@@ -1,0 +1,40 @@
+version: '2'
+
+services:
+
+  # Elasticsearch: https://www.elastic.co/guide/en/elasticsearch/reference/5.5/docker.html
+  elasticsearch:
+    image: elasticsearch:5.5.2
+    environment:
+      - http.host=0.0.0.0
+      # Disable X-Pack security: https://www.elastic.co/guide/en/elasticsearch/reference/5.5/security-settings.html#general-security-settings
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    mem_limit: 1g
+
+  # Graylog: https://hub.docker.com/r/graylog/graylog/
+  graylog:
+    image: graylog/graylog:2.3.1-2
+    environment:
+      - GRAYLOG_PASSWORD_SECRET=iOd0CN1gF0mR6A7oQyXpQ1FEYH2ISqujqTngMRrnKadSL0KUTYmO9a9giE98XtTMSr6p1C3GAjbaAOwoIXuaW21wbvHojKWU
+      - GRAYLOG_ROOT_PASSWORD_SHA2=9e0c9338e206fc9330e499ecf4718ecf3b636e00fbd13e875b955333fb7b1eac
+      - GRAYLOG_WEB_ENDPOINT_URI=http://stampsnet.hashtagsource.com/api
+      - GRAYLOG_MONGODB_URI=mongodb://graylog:mie6zaoT@ds155644.mlab.com:55644/graylog
+    links:
+      - elasticsearch
+    ports:
+      # Graylog web interface and REST API
+      - 80:9000
+      - 9000:9000
+      # Syslog TCP
+      - 514:514
+      # Syslog UDP
+      - 514:514/udp
+      # GELF TCP
+      - 12201:12201
+      # GELF UDP
+      - 12201:12201/udp
