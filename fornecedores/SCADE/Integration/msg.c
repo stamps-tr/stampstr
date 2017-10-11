@@ -8,7 +8,7 @@
 
 int msg( char *Send )
 {
-    char cmd[4], cmdKafka[200]="python C:\\Users\\Paiva\\SCADE\\STAMPS-TR\\\Integration\\kafkaProducer.py ";
+    char cmd[4], cmdKafka[200]="python C:\\Users\\Paiva\\SCADE\\STAMPS-TR\\\Integration\\send2Bridge.py ";
     strncpy(cmd, Send, 4);
     if(strncmp(cmd, " ", 1) != 0)
     {

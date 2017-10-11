@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation/config.txt
-** Generation date: 2017-10-06T16:57:42
+** Generation date: 2017-10-10T14:20:48
 *************************************************************$ */
 #ifndef _KCG_TYPES_H_
 #define _KCG_TYPES_H_
@@ -199,6 +199,6 @@ extern kcg_bool kcg_comp_T_String(T_String *kcg_c1, T_String *kcg_c2);
 #endif /* _KCG_TYPES_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.h
-** Generation date: 2017-10-06T16:57:42
+** Generation date: 2017-10-10T14:20:48
 *************************************************************$ */
 
