@@ -1,9 +1,12 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation/config.txt
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$ */
 
 #include "kcg_consts.h"
+
+/* SEND_BTN_PHOTO/ */
+const T_String SEND_BTN_PHOTO = { 'P', ' ', ' ', ' ' };
 
 /* SEND_BTN_OFF/ */
 const T_String SEND_BTN_OFF = { 'F', ' ', ' ', ' ' };
@@ -31,6 +34,6 @@ const T_String TURN_BTN_OFF = { 'O', 'f', 'f', ' ' };
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_consts.c
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$ */
 

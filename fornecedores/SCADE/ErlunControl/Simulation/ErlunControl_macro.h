@@ -58,6 +58,9 @@ typedef struct {
 #define VARC_ErlunControl_Speed_BtnValue(context) context.inputs_ctx.Speed_BtnValue  /* ErlunControl/Speed_BtnValue */
 #define VAR_ErlunControl_Speed_BtnValue VARC_ErlunControl_Speed_BtnValue(CTX_ErlunControl)
 
+#define VARC_ErlunControl_Photo_Btn(context) context.inputs_ctx.Photo_Btn  /* ErlunControl/Photo_Btn */
+#define VAR_ErlunControl_Photo_Btn VARC_ErlunControl_Photo_Btn(CTX_ErlunControl)
+
 
 /*$**********************************************************
 *                           OUTPUTS
@@ -83,9 +86,6 @@ typedef struct {
 
 #define VARC_ErlunControl_EmitVisible(context) context.outputs_ctx.EmitVisible  /* ErlunControl/EmitVisible */
 #define VAR_ErlunControl_EmitVisible VARC_ErlunControl_EmitVisible(CTX_ErlunControl)
-
-#define VARC_ErlunControl_Send_TextString(context) context.outputs_ctx.Send_TextString  /* ErlunControl/Send_TextString */
-#define VAR_ErlunControl_Send_TextString VARC_ErlunControl_Send_TextString(CTX_ErlunControl)
 
 
 /*$**********************************************************
@@ -113,6 +113,8 @@ typedef struct {
 #define CPY_Speed_Btn(DST, SRC) DST = SRC
 #define T_Speed_BtnValue kcg_float32
 #define CPY_Speed_BtnValue(DST, SRC) DST = SRC
+#define T_Photo_Btn kcg_bool
+#define CPY_Photo_Btn(DST, SRC) DST = SRC
 #define T_Turn_BtnTextString T_String
 #define CPY_Turn_BtnTextString(DST, SRC) kcg_copy_T_String(DST, SRC)
 #define T_StringSize T_uChar
@@ -127,8 +129,6 @@ typedef struct {
 #define CPY_TurnTextColorIndex(DST, SRC) DST = SRC
 #define T_EmitVisible kcg_bool
 #define CPY_EmitVisible(DST, SRC) DST = SRC
-#define T_Send_TextString T_String
-#define CPY_Send_TextString(DST, SRC) kcg_copy_T_String(DST, SRC)
 
 
 /*$**********************************************************

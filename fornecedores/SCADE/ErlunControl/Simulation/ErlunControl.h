@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation/config.txt
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$ */
 #ifndef _ErlunControl_H_
 #define _ErlunControl_H_
@@ -17,6 +17,7 @@ typedef struct {
   kcg_bool /* Right_Btn/ */ Right_Btn;
   kcg_bool /* Speed_Btn/ */ Speed_Btn;
   kcg_float32 /* Speed_BtnValue/ */ Speed_BtnValue;
+  kcg_bool /* Photo_Btn/ */ Photo_Btn;
 } inC_ErlunControl;
 
 /* =====================  no output structure  ====================== */
@@ -31,7 +32,6 @@ typedef struct {
   kcg_bool /* Layer1Visible/ */ Layer1Visible;
   T_uShort /* TurnTextColorIndex/ */ TurnTextColorIndex;
   kcg_bool /* EmitVisible/ */ EmitVisible;
-  T_String /* Send_TextString/ */ Send_TextString;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   kcg_bool init;
@@ -45,6 +45,7 @@ typedef struct {
   kcg_int32 /* _L139/ */ _L139;
   kcg_int32 /* _L312/ */ _L312;
   kcg_int32 /* _L317/ */ _L317;
+  kcg_int32 /* _L326/ */ _L326;
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ----------------- no clocks of observable data ------------------ */
   /* -------------------- (-debug) no assertions  -------------------- */
@@ -216,6 +217,11 @@ typedef struct {
   kcg_int32 /* _L316/ */ _L316;
   kcg_int32 /* _L315/ */ _L315;
   kcg_int32 /* _L323/ */ _L323;
+  kcg_int32 /* _L328/ */ _L328;
+  kcg_int32 /* _L327/ */ _L327;
+  kcg_int32 /* _L325/ */ _L325;
+  kcg_bool /* _L329/ */ _L329;
+  T_String /* _L330/ */ _L330;
 } outC_ErlunControl;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -239,6 +245,6 @@ extern void ErlunControl_init(outC_ErlunControl *outC);
 #endif /* _ErlunControl_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** ErlunControl.h
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$ */
 

@@ -108,17 +108,12 @@
 								<Emit/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="10" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Send_Label">
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
 							<A661Data>
 								<Emit/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Send_LabelResult">
-							<A661Data>
-								<Emit/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Send_LabelResult">
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Speed_Label">
 							<A661Data>
 								<Emit/>
 							</A661Data>
@@ -131,11 +126,6 @@
 					</output>
 					<inputs>
 						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Turn_Label">
-							<A661Data>
-								<DataField value="String_size"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Send_LabelResult">
 							<A661Data>
 								<DataField value="String_size"/>
 							</A661Data>
@@ -213,12 +203,12 @@
 								<DataField value="Visible"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="10" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Send_Label">
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
 							<A661Data>
 								<DataField value="Visible"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Send_LabelResult">
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Speed_Label">
 							<A661Data>
 								<DataField value="Visible"/>
 							</A661Data>
@@ -251,18 +241,6 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="Send_TextString" type="char^4" oid="!ed/4a28/5E96/1778/59bbd3d216fb" instancepath="ErlunControl/"/>
-					</output>
-					<inputs>
-						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_STRING" Size="4" WidgetType="Label" WidgetName="Send_LabelResult">
-							<A661Data>
-								<DataField value="LabelString"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
 						<A661_NOTIFY_WIDGET_EVENT name="EvtValue" type="float" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_EVT_VALUE_CHANGE" WidgetType="Slider" WidgetName="Slider">
 							<A661Data>
 								<DataField value="EvtValue"/>
@@ -271,6 +249,18 @@
 					</output>
 					<inputs>
 						<Variable name="Speed_BtnValue" type="float32" oid="!ed/4f45/668F/DC4/59bfce4810c" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Photo_Btn" type="bool" oid="!ed/50dd/6A06/12D4/59de5b307acf" instancepath="ErlunControl/"/>
 					</inputs>
 				</MappingItem>
 			</mappingItems>

@@ -277,5 +277,28 @@
 				<ed:Constant oid="!ed/4a37/5E96/1778/59bbd4c04407"/>
 			</pragmas>
 		</Constant>
+		<Constant name="SEND_BTN_PHOTO">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['P', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'P'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5120/6A06/12D4/59de63e06b6e"/>
+			</pragmas>
+		</Constant>
 	</declarations>
 </File>

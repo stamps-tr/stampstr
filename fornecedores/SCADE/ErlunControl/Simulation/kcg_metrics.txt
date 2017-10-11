@@ -1,10 +1,10 @@
 $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation/config.txt
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$
 Data structures
   Structures
-    Max members in a single structure: 186
+    Max members in a single structure: 191
   Arrays
     Max number of dimensions for an array: 1
     Maximum size for a dimension: 4
@@ -22,8 +22,8 @@ Program size
   Identifiers
     Max number of identifiers with block scope declared in one block: 27
     Max number of macro identifiers simultaneously defined in one preprocessing translation unit: 46
-    Max number of extern identifiers in one translation unit: 13
+    Max number of extern identifiers in one translation unit: 14
 $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_metrics.txt
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$

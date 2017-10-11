@@ -275,8 +275,8 @@
                         <intprop name="WidgetIdent">8</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_FALSE</enumprop>
-                        <intprop name="PosX">1220</intprop>
-                        <intprop name="PosY">660</intprop>
+                        <intprop name="PosX">780</intprop>
+                        <intprop name="PosY">680</intprop>
                         <intprop name="SizeX">2560</intprop>
                         <intprop name="SizeY">720</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -308,10 +308,10 @@
                         <intprop name="WidgetIdent">9</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_FALSE</enumprop>
-                        <intprop name="PosX">500</intprop>
-                        <intprop name="PosY">140</intprop>
-                        <intprop name="SizeX">4180</intprop>
-                        <intprop name="SizeY">840</intprop>
+                        <intprop name="PosX">300</intprop>
+                        <intprop name="PosY">80</intprop>
+                        <intprop name="SizeX">3700</intprop>
+                        <intprop name="SizeY">860</intprop>
                         <intprop name="StyleSet">1</intprop>
                         <intprop name="NextFocusedWidget">0</intprop>
                         <floatprop name="MinValue">0.0</floatprop>
@@ -408,10 +408,78 @@
                     </runtime>
                     <children/>
                 </widget>
+                <widget name="Down_PicturePushButton" oid="64d0812e-cd57-4427-93ad-ba5d365a6944" type="PicturePushButton">
+                    <model>
+                        <intprop name="WidgetIdent">12</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_FALSE</enumprop>
+                        <intprop name="PosX">4280</intprop>
+                        <intprop name="PosY">200</intprop>
+                        <intprop name="SizeX">640</intprop>
+                        <intprop name="SizeY">620</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="PictureReference">5</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="PicturePosition">A661_CENTER</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="Down_PicturePushButton_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="Down_PicturePushButton_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="Down_PicturePushButton_A661_STRING"/>
+                        <connect msg_id="A661_PICTURE_REFERENCE" name="Down_PicturePushButton_A661_PICTURE_REFERENCE"/>
+                        <connect msg_id="A661_STYLE_SET" name="Down_PicturePushButton_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="Down_PicturePushButton_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="Down_PicturePushButton_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="Down_PicturePushButton_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Down_PicturePushButton_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Down_PicturePushButton_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="Down_PicturePushButton_A661_EVT_SELECTION"/>
+                    </events>
+                    <children/>
+                </widget>
+                <widget name="Speed_Label" oid="6ad35dff-43ba-4ea2-a590-8fa72301e56b" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">13</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_FALSE</enumprop>
+                        <intprop name="PosX">4060</intprop>
+                        <intprop name="PosY">760</intprop>
+                        <intprop name="SizeX">1040</intprop>
+                        <intprop name="SizeY">540</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">20</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">55</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Photo</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="Speed_Label_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="Speed_Label_A661_STRING"/>
+                        <connect msg_id="A661_POS_XY" name="Speed_Label_A661_POS_XY"/>
+                        <connect msg_id="A661_POS_X" name="Speed_Label_A661_POS_X"/>
+                        <connect msg_id="A661_POS_Y" name="Speed_Label_A661_POS_Y"/>
+                        <connect msg_id="A661_STYLE_SET" name="Speed_Label_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ORIENTATION" name="Speed_Label_A661_ORIENTATION"/>
+                        <connect msg_id="A661_COLOR_INDEX" name="Speed_Label_A661_COLOR_INDEX"/>
+                        <connect msg_id="A661_FONT" name="Speed_Label_A661_FONT"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Speed_Label_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Speed_Label_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <children/>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 1903152851 -->
+<!-- crc32 : 3562731292 -->
 

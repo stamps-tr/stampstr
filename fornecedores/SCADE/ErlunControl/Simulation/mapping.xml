@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation/config.txt
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$-->
 <mapping>
   <config>
@@ -54,790 +54,814 @@
     <predefType id="12" name="float32"/>
     <predefType id="13" name="float64"/>
     <predefType id="14" name="size"/>
-    <constant id="15" name="TURN_BTN_OFF" imported="false" type="26"/>
-    <constant id="16" name="STR_SIZE" imported="false" type="27"/>
-    <constant id="17" name="TURN_BTN_ON" imported="false" type="26"/>
-    <constant id="18" name="GREEN" imported="false" type="28"/>
-    <constant id="19" name="RED" imported="false" type="28"/>
-    <constant id="20" name="SEND_BTN_UP" imported="false" type="26"/>
-    <constant id="21" name="SEND_BTN_DOWN" imported="false" type="26"/>
-    <constant id="22" name="SEND_BTN_LEFT" imported="false" type="26"/>
-    <constant id="23" name="SEND_BTN_RIGHT" imported="false" type="26"/>
-    <constant id="24" name="SEND_BTN_ON" imported="false" type="26"/>
-    <constant id="25" name="SEND_BTN_OFF" imported="false" type="26"/>
-    <type id="26" name="T_String" imported="false" type="1"/>
-    <type id="27" name="T_uChar" imported="false" type="9"/>
-    <type id="28" name="T_uShort" imported="false" type="8"/>
-    <operator id="29" name="ErlunControl" imported="false" root="true" expanded="false">
-      <input id="30" name="Turn_Btn" clock="false" type="2"/>
-      <input id="31" name="Up_Btn" clock="false" type="2"/>
-      <input id="32" name="Down_Btn" clock="false" type="2"/>
-      <input id="33" name="Left_Btn" clock="false" type="2"/>
-      <input id="34" name="Right_Btn" clock="false" type="2"/>
-      <input id="35" name="Speed_Btn" clock="false" type="2"/>
-      <input id="36" name="Speed_BtnValue" clock="false" type="12"/>
-      <output id="37" name="Turn_BtnTextString" clock="false" type="26"/>
-      <output id="38" name="StringSize" clock="false" type="27"/>
-      <output id="39" name="Emit2CDS" clock="false" type="2"/>
-      <output id="40" name="Layer1Active" clock="false" type="2"/>
-      <output id="41" name="Layer1Visible" clock="false" type="2"/>
-      <output id="42" name="TurnTextColorIndex" clock="false" type="28"/>
-      <output id="43" name="EmitVisible" clock="false" type="2"/>
-      <output id="44" name="Send_TextString" clock="false" type="26"/>
-      <local id="45" name="Var_Turn_Btn" clock="false" type="2"/>
-      <local id="46" name="Var_Send" clock="false" type="6"/>
-      <local id="47" name="Var_mqtt" clock="false" type="6"/>
-      <local id="48" name="_L1" clock="false" type="2"/>
-      <local id="49" name="_L2" clock="false" type="2"/>
-      <local id="50" name="_L3" clock="false" type="26"/>
-      <local id="51" name="_L4" clock="false" type="26"/>
-      <local id="52" name="_L5" clock="false" type="26"/>
-      <local id="53" name="_L6" clock="false" type="27"/>
-      <local id="54" name="_L7" clock="false" type="2"/>
-      <local id="55" name="_L8" clock="false" type="2"/>
-      <local id="56" name="_L9" clock="false" type="2"/>
-      <local id="57" name="_L13" clock="false" type="28"/>
-      <local id="58" name="_L12" clock="false" type="2"/>
-      <local id="59" name="_L11" clock="false" type="28"/>
-      <local id="60" name="_L10" clock="false" type="28"/>
-      <local id="61" name="_L19" clock="false" type="26"/>
-      <local id="62" name="_L27" clock="false" type="26"/>
-      <local id="63" name="_L30" clock="false" type="26"/>
-      <local id="64" name="_L31" clock="false" type="26"/>
-      <local id="65" name="_L32" clock="false" type="26"/>
-      <local id="66" name="_L42" clock="false" type="1"/>
-      <local id="67" name="_L91" clock="false" type="2"/>
-      <local id="68" name="_L99" clock="false" type="6"/>
-      <local id="69" name="_L100" clock="false" type="6"/>
-      <local id="70" name="_L108" clock="false" type="6"/>
-      <local id="71" name="_L112" clock="false" type="6"/>
-      <local id="72" name="_L117" clock="false" type="6"/>
-      <local id="73" name="_L116" clock="false" type="6"/>
-      <local id="74" name="_L114" clock="false" type="6"/>
-      <local id="75" name="_L113" clock="false" type="6"/>
-      <local id="76" name="_L118" clock="false" type="2"/>
-      <local id="77" name="_L119" clock="false" type="6"/>
-      <local id="78" name="_L120" clock="false" type="6"/>
-      <local id="79" name="_L130" clock="false" type="6"/>
-      <local id="80" name="_L129" clock="false" type="6"/>
-      <local id="81" name="_L128" clock="false" type="6"/>
-      <local id="82" name="_L127" clock="false" type="6"/>
-      <local id="83" name="_L124" clock="false" type="6"/>
-      <local id="84" name="_L123" clock="false" type="6"/>
-      <local id="85" name="_L122" clock="false" type="6"/>
-      <local id="86" name="_L121" clock="false" type="6"/>
-      <local id="87" name="_L131" clock="false" type="2"/>
-      <local id="88" name="_L132" clock="false" type="2"/>
-      <local id="89" name="_L146" clock="false" type="6"/>
-      <local id="90" name="_L143" clock="false" type="6"/>
-      <local id="91" name="_L139" clock="false" type="6"/>
-      <local id="92" name="_L136" clock="false" type="6"/>
-      <local id="93" name="_L149" clock="false" type="2"/>
-      <local id="94" name="_L150" clock="false" type="26"/>
-      <local id="95" name="_L152" clock="false" type="26"/>
-      <local id="96" name="_L297" clock="false" type="26"/>
-      <local id="97" name="_L299" clock="false" type="12"/>
-      <local id="98" name="_L300" clock="false" type="2"/>
-      <local id="99" name="_L301" clock="false" type="2"/>
-      <local id="100" name="_L302" clock="false" type="2"/>
-      <local id="101" name="_L312" clock="false" type="6"/>
-      <local id="102" name="_L311" clock="false" type="6"/>
-      <local id="103" name="_L310" clock="false" type="6"/>
-      <local id="104" name="_L309" clock="false" type="6"/>
-      <local id="105" name="_L314" clock="false" type="2"/>
-      <local id="106" name="_L322" clock="false" type="2"/>
-      <local id="107" name="_L321" clock="false" type="2"/>
-      <local id="108" name="_L320" clock="false" type="2"/>
-      <local id="109" name="_L319" clock="false" type="6"/>
-      <local id="110" name="_L317" clock="false" type="6"/>
-      <local id="111" name="_L316" clock="false" type="6"/>
-      <local id="112" name="_L315" clock="false" type="6"/>
-      <local id="113" name="_L323" clock="false" type="6"/>
-      <instance id="114" name="1" op="234" expanded="true">
-        <input id="115" name="Input1" clock="false" type="2"/>
-        <output id="116" name="Output1" clock="false" type="2"/>
-        <local id="117" name="_L4" clock="false" type="2"/>
-        <local id="118" name="_L3" clock="false" type="2"/>
-        <local id="119" name="_L2" clock="false" type="2"/>
-        <local id="120" name="_L1" clock="false" type="2"/>
-        <fby id="121" name="1"/>
+    <constant id="15" name="TURN_BTN_OFF" imported="false" type="27"/>
+    <constant id="16" name="STR_SIZE" imported="false" type="28"/>
+    <constant id="17" name="TURN_BTN_ON" imported="false" type="27"/>
+    <constant id="18" name="GREEN" imported="false" type="29"/>
+    <constant id="19" name="RED" imported="false" type="29"/>
+    <constant id="20" name="SEND_BTN_UP" imported="false" type="27"/>
+    <constant id="21" name="SEND_BTN_DOWN" imported="false" type="27"/>
+    <constant id="22" name="SEND_BTN_LEFT" imported="false" type="27"/>
+    <constant id="23" name="SEND_BTN_RIGHT" imported="false" type="27"/>
+    <constant id="24" name="SEND_BTN_ON" imported="false" type="27"/>
+    <constant id="25" name="SEND_BTN_OFF" imported="false" type="27"/>
+    <constant id="26" name="SEND_BTN_PHOTO" imported="false" type="27"/>
+    <type id="27" name="T_String" imported="false" type="1"/>
+    <type id="28" name="T_uChar" imported="false" type="9"/>
+    <type id="29" name="T_uShort" imported="false" type="8"/>
+    <operator id="30" name="ErlunControl" imported="false" root="true" expanded="false">
+      <input id="31" name="Turn_Btn" clock="false" type="2"/>
+      <input id="32" name="Up_Btn" clock="false" type="2"/>
+      <input id="33" name="Down_Btn" clock="false" type="2"/>
+      <input id="34" name="Left_Btn" clock="false" type="2"/>
+      <input id="35" name="Right_Btn" clock="false" type="2"/>
+      <input id="36" name="Speed_Btn" clock="false" type="2"/>
+      <input id="37" name="Speed_BtnValue" clock="false" type="12"/>
+      <input id="38" name="Photo_Btn" clock="false" type="2"/>
+      <output id="39" name="Turn_BtnTextString" clock="false" type="27"/>
+      <output id="40" name="StringSize" clock="false" type="28"/>
+      <output id="41" name="Emit2CDS" clock="false" type="2"/>
+      <output id="42" name="Layer1Active" clock="false" type="2"/>
+      <output id="43" name="Layer1Visible" clock="false" type="2"/>
+      <output id="44" name="TurnTextColorIndex" clock="false" type="29"/>
+      <output id="45" name="EmitVisible" clock="false" type="2"/>
+      <local id="46" name="Var_Turn_Btn" clock="false" type="2"/>
+      <local id="47" name="Var_Send" clock="false" type="6"/>
+      <local id="48" name="Var_mqtt" clock="false" type="6"/>
+      <local id="49" name="_L1" clock="false" type="2"/>
+      <local id="50" name="_L2" clock="false" type="2"/>
+      <local id="51" name="_L3" clock="false" type="27"/>
+      <local id="52" name="_L4" clock="false" type="27"/>
+      <local id="53" name="_L5" clock="false" type="27"/>
+      <local id="54" name="_L6" clock="false" type="28"/>
+      <local id="55" name="_L7" clock="false" type="2"/>
+      <local id="56" name="_L8" clock="false" type="2"/>
+      <local id="57" name="_L9" clock="false" type="2"/>
+      <local id="58" name="_L13" clock="false" type="29"/>
+      <local id="59" name="_L12" clock="false" type="2"/>
+      <local id="60" name="_L11" clock="false" type="29"/>
+      <local id="61" name="_L10" clock="false" type="29"/>
+      <local id="62" name="_L19" clock="false" type="27"/>
+      <local id="63" name="_L27" clock="false" type="27"/>
+      <local id="64" name="_L30" clock="false" type="27"/>
+      <local id="65" name="_L31" clock="false" type="27"/>
+      <local id="66" name="_L32" clock="false" type="27"/>
+      <local id="67" name="_L42" clock="false" type="1"/>
+      <local id="68" name="_L91" clock="false" type="2"/>
+      <local id="69" name="_L99" clock="false" type="6"/>
+      <local id="70" name="_L100" clock="false" type="6"/>
+      <local id="71" name="_L108" clock="false" type="6"/>
+      <local id="72" name="_L112" clock="false" type="6"/>
+      <local id="73" name="_L117" clock="false" type="6"/>
+      <local id="74" name="_L116" clock="false" type="6"/>
+      <local id="75" name="_L114" clock="false" type="6"/>
+      <local id="76" name="_L113" clock="false" type="6"/>
+      <local id="77" name="_L118" clock="false" type="2"/>
+      <local id="78" name="_L119" clock="false" type="6"/>
+      <local id="79" name="_L120" clock="false" type="6"/>
+      <local id="80" name="_L130" clock="false" type="6"/>
+      <local id="81" name="_L129" clock="false" type="6"/>
+      <local id="82" name="_L128" clock="false" type="6"/>
+      <local id="83" name="_L127" clock="false" type="6"/>
+      <local id="84" name="_L124" clock="false" type="6"/>
+      <local id="85" name="_L123" clock="false" type="6"/>
+      <local id="86" name="_L122" clock="false" type="6"/>
+      <local id="87" name="_L121" clock="false" type="6"/>
+      <local id="88" name="_L131" clock="false" type="2"/>
+      <local id="89" name="_L132" clock="false" type="2"/>
+      <local id="90" name="_L146" clock="false" type="6"/>
+      <local id="91" name="_L143" clock="false" type="6"/>
+      <local id="92" name="_L139" clock="false" type="6"/>
+      <local id="93" name="_L136" clock="false" type="6"/>
+      <local id="94" name="_L149" clock="false" type="2"/>
+      <local id="95" name="_L150" clock="false" type="27"/>
+      <local id="96" name="_L152" clock="false" type="27"/>
+      <local id="97" name="_L297" clock="false" type="27"/>
+      <local id="98" name="_L299" clock="false" type="12"/>
+      <local id="99" name="_L300" clock="false" type="2"/>
+      <local id="100" name="_L301" clock="false" type="2"/>
+      <local id="101" name="_L302" clock="false" type="2"/>
+      <local id="102" name="_L312" clock="false" type="6"/>
+      <local id="103" name="_L311" clock="false" type="6"/>
+      <local id="104" name="_L310" clock="false" type="6"/>
+      <local id="105" name="_L309" clock="false" type="6"/>
+      <local id="106" name="_L314" clock="false" type="2"/>
+      <local id="107" name="_L322" clock="false" type="2"/>
+      <local id="108" name="_L321" clock="false" type="2"/>
+      <local id="109" name="_L320" clock="false" type="2"/>
+      <local id="110" name="_L319" clock="false" type="6"/>
+      <local id="111" name="_L317" clock="false" type="6"/>
+      <local id="112" name="_L316" clock="false" type="6"/>
+      <local id="113" name="_L315" clock="false" type="6"/>
+      <local id="114" name="_L323" clock="false" type="6"/>
+      <local id="115" name="_L328" clock="false" type="6"/>
+      <local id="116" name="_L327" clock="false" type="6"/>
+      <local id="117" name="_L326" clock="false" type="6"/>
+      <local id="118" name="_L325" clock="false" type="6"/>
+      <local id="119" name="_L329" clock="false" type="2"/>
+      <local id="120" name="_L330" clock="false" type="27"/>
+      <instance id="121" name="1" op="242" expanded="true">
+        <input id="122" name="Input1" clock="false" type="2"/>
+        <output id="123" name="Output1" clock="false" type="2"/>
+        <local id="124" name="_L4" clock="false" type="2"/>
+        <local id="125" name="_L3" clock="false" type="2"/>
+        <local id="126" name="_L2" clock="false" type="2"/>
+        <local id="127" name="_L1" clock="false" type="2"/>
+        <fby id="128" name="1"/>
       </instance>
-      <fby id="122" name="4"/>
-      <fby id="123" name="7"/>
-      <fby id="124" name="8"/>
-      <fby id="125" name="10"/>
-      <fby id="126" name="9"/>
-      <fby id="127" name="11"/>
-      <instance id="128" name="1" op="235" expanded="true">
-        <input id="129" name="Input" clock="false" type="12"/>
-        <output id="130" name="Output" clock="false" type="26"/>
-        <local id="131" name="_L154" clock="false" type="1"/>
-        <local id="132" name="_L152" clock="false" type="2"/>
-        <local id="133" name="_L151" clock="false" type="12"/>
-        <local id="134" name="_L149" clock="false" type="6"/>
-        <local id="135" name="_L145" clock="false" type="1"/>
-        <local id="136" name="_L144" clock="false" type="6"/>
-        <local id="137" name="_L143" clock="false" type="2"/>
-        <local id="138" name="_L142" clock="false" type="6"/>
-        <local id="139" name="_L141" clock="false" type="2"/>
-        <local id="140" name="_L140" clock="false" type="6"/>
-        <local id="141" name="_L135" clock="false" type="1"/>
-        <local id="142" name="_L134" clock="false" type="6"/>
-        <local id="143" name="_L133" clock="false" type="2"/>
-        <local id="144" name="_L132" clock="false" type="6"/>
-        <local id="145" name="_L131" clock="false" type="12"/>
-        <local id="146" name="_L130" clock="false" type="12"/>
-        <local id="147" name="_L126" clock="false" type="6"/>
-        <local id="148" name="_L125" clock="false" type="6"/>
-        <local id="149" name="_L124" clock="false" type="2"/>
-        <local id="150" name="_L123" clock="false" type="12"/>
-        <local id="151" name="_L121" clock="false" type="2"/>
-        <local id="152" name="_L117" clock="false" type="1"/>
-        <local id="153" name="_L116" clock="false" type="2"/>
-        <local id="154" name="_L113" clock="false" type="2"/>
-        <local id="155" name="_L112" clock="false" type="2"/>
-        <local id="156" name="_L106" clock="false" type="6"/>
-        <local id="157" name="_L105" clock="false" type="6"/>
-        <local id="158" name="_L104" clock="false" type="2"/>
-        <local id="159" name="_L103" clock="false" type="2"/>
-        <local id="160" name="_L102" clock="false" type="6"/>
-        <local id="161" name="_L99" clock="false" type="1"/>
-        <local id="162" name="_L97" clock="false" type="2"/>
-        <local id="163" name="_L96" clock="false" type="12"/>
-        <local id="164" name="_L95" clock="false" type="2"/>
-        <local id="165" name="_L94" clock="false" type="12"/>
-        <local id="166" name="_L89" clock="false" type="1"/>
-        <local id="167" name="_L88" clock="false" type="2"/>
-        <local id="168" name="_L87" clock="false" type="12"/>
-        <local id="169" name="_L85" clock="false" type="6"/>
-        <local id="170" name="_L84" clock="false" type="6"/>
-        <local id="171" name="_L79" clock="false" type="2"/>
-        <local id="172" name="_L78" clock="false" type="12"/>
-        <local id="173" name="_L77" clock="false" type="6"/>
-        <local id="174" name="_L76" clock="false" type="2"/>
-        <local id="175" name="_L75" clock="false" type="2"/>
-        <local id="176" name="_L74" clock="false" type="2"/>
-        <local id="177" name="_L71" clock="false" type="1"/>
-        <local id="178" name="_L70" clock="false" type="2"/>
-        <local id="179" name="_L69" clock="false" type="12"/>
-        <local id="180" name="_L68" clock="false" type="12"/>
-        <local id="181" name="_L67" clock="false" type="2"/>
-        <local id="182" name="_L66" clock="false" type="2"/>
-        <local id="183" name="_L63" clock="false" type="12"/>
-        <local id="184" name="_L62" clock="false" type="12"/>
-        <local id="185" name="_L61" clock="false" type="2"/>
-        <local id="186" name="_L60" clock="false" type="12"/>
-        <local id="187" name="_L59" clock="false" type="6"/>
-        <local id="188" name="_L55" clock="false" type="1"/>
-        <local id="189" name="_L54" clock="false" type="2"/>
-        <local id="190" name="_L53" clock="false" type="6"/>
-        <local id="191" name="_L52" clock="false" type="6"/>
-        <local id="192" name="_L51" clock="false" type="6"/>
-        <local id="193" name="_L46" clock="false" type="1"/>
-        <local id="194" name="_L45" clock="false" type="12"/>
-        <local id="195" name="_L44" clock="false" type="2"/>
-        <local id="196" name="_L43" clock="false" type="2"/>
-        <local id="197" name="_L42" clock="false" type="6"/>
-        <local id="198" name="_L41" clock="false" type="6"/>
-        <local id="199" name="_L36" clock="false" type="1"/>
-        <local id="200" name="_L35" clock="false" type="6"/>
-        <local id="201" name="_L34" clock="false" type="12"/>
-        <local id="202" name="_L33" clock="false" type="2"/>
-        <local id="203" name="_L32" clock="false" type="12"/>
-        <local id="204" name="_L31" clock="false" type="6"/>
-        <local id="205" name="_L27" clock="false" type="1"/>
-        <local id="206" name="_L26" clock="false" type="6"/>
-        <local id="207" name="_L24" clock="false" type="6"/>
-        <local id="208" name="_L23" clock="false" type="6"/>
-        <local id="209" name="_L17" clock="false" type="2"/>
-        <local id="210" name="_L16" clock="false" type="6"/>
-        <local id="211" name="_L15" clock="false" type="6"/>
-        <local id="212" name="_L14" clock="false" type="2"/>
-        <local id="213" name="_L13" clock="false" type="6"/>
-        <local id="214" name="_L12" clock="false" type="6"/>
-        <local id="215" name="_L9" clock="false" type="1"/>
-        <local id="216" name="_L8" clock="false" type="12"/>
-        <local id="217" name="_L7" clock="false" type="6"/>
-        <local id="218" name="_L6" clock="false" type="6"/>
-        <local id="219" name="_L5" clock="false" type="12"/>
-        <local id="220" name="_L4" clock="false" type="12"/>
-        <local id="221" name="_L155" clock="false" type="12"/>
-        <local id="222" name="_L156" clock="false" type="12"/>
-        <local id="223" name="_L157" clock="false" type="12"/>
-        <local id="224" name="_L158" clock="false" type="12"/>
-        <local id="225" name="_L159" clock="false" type="12"/>
-        <local id="226" name="_L160" clock="false" type="12"/>
-        <local id="227" name="_L161" clock="false" type="12"/>
-        <local id="228" name="_L162" clock="false" type="12"/>
-        <local id="229" name="_L163" clock="false" type="12"/>
-        <local id="230" name="_L164" clock="false" type="12"/>
+      <fby id="129" name="4"/>
+      <fby id="130" name="7"/>
+      <fby id="131" name="8"/>
+      <fby id="132" name="10"/>
+      <fby id="133" name="9"/>
+      <fby id="134" name="11"/>
+      <instance id="135" name="1" op="243" expanded="true">
+        <input id="136" name="Input" clock="false" type="12"/>
+        <output id="137" name="Output" clock="false" type="27"/>
+        <local id="138" name="_L154" clock="false" type="1"/>
+        <local id="139" name="_L152" clock="false" type="2"/>
+        <local id="140" name="_L151" clock="false" type="12"/>
+        <local id="141" name="_L149" clock="false" type="6"/>
+        <local id="142" name="_L145" clock="false" type="1"/>
+        <local id="143" name="_L144" clock="false" type="6"/>
+        <local id="144" name="_L143" clock="false" type="2"/>
+        <local id="145" name="_L142" clock="false" type="6"/>
+        <local id="146" name="_L141" clock="false" type="2"/>
+        <local id="147" name="_L140" clock="false" type="6"/>
+        <local id="148" name="_L135" clock="false" type="1"/>
+        <local id="149" name="_L134" clock="false" type="6"/>
+        <local id="150" name="_L133" clock="false" type="2"/>
+        <local id="151" name="_L132" clock="false" type="6"/>
+        <local id="152" name="_L131" clock="false" type="12"/>
+        <local id="153" name="_L130" clock="false" type="12"/>
+        <local id="154" name="_L126" clock="false" type="6"/>
+        <local id="155" name="_L125" clock="false" type="6"/>
+        <local id="156" name="_L124" clock="false" type="2"/>
+        <local id="157" name="_L123" clock="false" type="12"/>
+        <local id="158" name="_L121" clock="false" type="2"/>
+        <local id="159" name="_L117" clock="false" type="1"/>
+        <local id="160" name="_L116" clock="false" type="2"/>
+        <local id="161" name="_L113" clock="false" type="2"/>
+        <local id="162" name="_L112" clock="false" type="2"/>
+        <local id="163" name="_L106" clock="false" type="6"/>
+        <local id="164" name="_L105" clock="false" type="6"/>
+        <local id="165" name="_L104" clock="false" type="2"/>
+        <local id="166" name="_L103" clock="false" type="2"/>
+        <local id="167" name="_L102" clock="false" type="6"/>
+        <local id="168" name="_L99" clock="false" type="1"/>
+        <local id="169" name="_L97" clock="false" type="2"/>
+        <local id="170" name="_L96" clock="false" type="12"/>
+        <local id="171" name="_L95" clock="false" type="2"/>
+        <local id="172" name="_L94" clock="false" type="12"/>
+        <local id="173" name="_L89" clock="false" type="1"/>
+        <local id="174" name="_L88" clock="false" type="2"/>
+        <local id="175" name="_L87" clock="false" type="12"/>
+        <local id="176" name="_L85" clock="false" type="6"/>
+        <local id="177" name="_L84" clock="false" type="6"/>
+        <local id="178" name="_L79" clock="false" type="2"/>
+        <local id="179" name="_L78" clock="false" type="12"/>
+        <local id="180" name="_L77" clock="false" type="6"/>
+        <local id="181" name="_L76" clock="false" type="2"/>
+        <local id="182" name="_L75" clock="false" type="2"/>
+        <local id="183" name="_L74" clock="false" type="2"/>
+        <local id="184" name="_L71" clock="false" type="1"/>
+        <local id="185" name="_L70" clock="false" type="2"/>
+        <local id="186" name="_L69" clock="false" type="12"/>
+        <local id="187" name="_L68" clock="false" type="12"/>
+        <local id="188" name="_L67" clock="false" type="2"/>
+        <local id="189" name="_L66" clock="false" type="2"/>
+        <local id="190" name="_L63" clock="false" type="12"/>
+        <local id="191" name="_L62" clock="false" type="12"/>
+        <local id="192" name="_L61" clock="false" type="2"/>
+        <local id="193" name="_L60" clock="false" type="12"/>
+        <local id="194" name="_L59" clock="false" type="6"/>
+        <local id="195" name="_L55" clock="false" type="1"/>
+        <local id="196" name="_L54" clock="false" type="2"/>
+        <local id="197" name="_L53" clock="false" type="6"/>
+        <local id="198" name="_L52" clock="false" type="6"/>
+        <local id="199" name="_L51" clock="false" type="6"/>
+        <local id="200" name="_L46" clock="false" type="1"/>
+        <local id="201" name="_L45" clock="false" type="12"/>
+        <local id="202" name="_L44" clock="false" type="2"/>
+        <local id="203" name="_L43" clock="false" type="2"/>
+        <local id="204" name="_L42" clock="false" type="6"/>
+        <local id="205" name="_L41" clock="false" type="6"/>
+        <local id="206" name="_L36" clock="false" type="1"/>
+        <local id="207" name="_L35" clock="false" type="6"/>
+        <local id="208" name="_L34" clock="false" type="12"/>
+        <local id="209" name="_L33" clock="false" type="2"/>
+        <local id="210" name="_L32" clock="false" type="12"/>
+        <local id="211" name="_L31" clock="false" type="6"/>
+        <local id="212" name="_L27" clock="false" type="1"/>
+        <local id="213" name="_L26" clock="false" type="6"/>
+        <local id="214" name="_L24" clock="false" type="6"/>
+        <local id="215" name="_L23" clock="false" type="6"/>
+        <local id="216" name="_L17" clock="false" type="2"/>
+        <local id="217" name="_L16" clock="false" type="6"/>
+        <local id="218" name="_L15" clock="false" type="6"/>
+        <local id="219" name="_L14" clock="false" type="2"/>
+        <local id="220" name="_L13" clock="false" type="6"/>
+        <local id="221" name="_L12" clock="false" type="6"/>
+        <local id="222" name="_L9" clock="false" type="1"/>
+        <local id="223" name="_L8" clock="false" type="12"/>
+        <local id="224" name="_L7" clock="false" type="6"/>
+        <local id="225" name="_L6" clock="false" type="6"/>
+        <local id="226" name="_L5" clock="false" type="12"/>
+        <local id="227" name="_L4" clock="false" type="12"/>
+        <local id="228" name="_L155" clock="false" type="12"/>
+        <local id="229" name="_L156" clock="false" type="12"/>
+        <local id="230" name="_L157" clock="false" type="12"/>
+        <local id="231" name="_L158" clock="false" type="12"/>
+        <local id="232" name="_L159" clock="false" type="12"/>
+        <local id="233" name="_L160" clock="false" type="12"/>
+        <local id="234" name="_L161" clock="false" type="12"/>
+        <local id="235" name="_L162" clock="false" type="12"/>
+        <local id="236" name="_L163" clock="false" type="12"/>
+        <local id="237" name="_L164" clock="false" type="12"/>
       </instance>
-      <fby id="231" name="15"/>
-      <fby id="232" name="16"/>
-      <instance id="233" name="2" op="236" expanded="false"/>
+      <fby id="238" name="15"/>
+      <fby id="239" name="16"/>
+      <instance id="240" name="2" op="244" expanded="false"/>
+      <fby id="241" name="17"/>
     </operator>
-    <operator id="234" name="Switch" imported="false" root="false" expanded="true"/>
-    <operator id="235" name="SpeedStr" imported="false" root="false" expanded="true"/>
-    <operator id="236" name="msg" imported="true" root="false" expanded="false">
-      <input id="237" name="Send" clock="false" type="26"/>
-      <output id="238" name="Status" clock="false" type="6"/>
+    <operator id="242" name="Switch" imported="false" root="false" expanded="true"/>
+    <operator id="243" name="SpeedStr" imported="false" root="false" expanded="true"/>
+    <operator id="244" name="msg" imported="true" root="false" expanded="false">
+      <input id="245" name="Send" clock="false" type="27"/>
+      <output id="246" name="Status" clock="false" type="6"/>
     </operator>
   </model>
   <generated>
     <c>
-      <file id="239" name="ErlunControl.h">
-        <function id="240" name="ErlunControl_init">
-          <parameter id="241" name="outC" type="247" pointer="true"/>
+      <file id="247" name="ErlunControl.h">
+        <function id="248" name="ErlunControl_init">
+          <parameter id="249" name="outC" type="255" pointer="true"/>
         </function>
-        <function id="242" name="ErlunControl_reset">
-          <parameter id="243" name="outC" type="247" pointer="true"/>
+        <function id="250" name="ErlunControl_reset">
+          <parameter id="251" name="outC" type="255" pointer="true"/>
         </function>
-        <function id="244" name="ErlunControl">
-          <parameter id="245" name="inC" type="434" pointer="true"/>
-          <parameter id="246" name="outC" type="247" pointer="true"/>
+        <function id="252" name="ErlunControl">
+          <parameter id="253" name="inC" type="447" pointer="true"/>
+          <parameter id="254" name="outC" type="255" pointer="true"/>
         </function>
-        <struct id="247" name="outC_ErlunControl">
-          <field id="248" name="Turn_BtnTextString" type="450" pointer="false"/>
-          <field id="249" name="StringSize" type="449" pointer="false"/>
-          <field id="250" name="Emit2CDS" type="485" pointer="false"/>
-          <field id="251" name="Layer1Active" type="485" pointer="false"/>
-          <field id="252" name="Layer1Visible" type="485" pointer="false"/>
-          <field id="253" name="TurnTextColorIndex" type="448" pointer="false"/>
-          <field id="254" name="EmitVisible" type="485" pointer="false"/>
-          <field id="255" name="Send_TextString" type="450" pointer="false"/>
-          <field id="256" name="init" type="485" pointer="false"/>
-          <field id="257" name="_L3_Switch_1" type="485" pointer="false"/>
-          <field id="258" name="Var_Send" type="476" pointer="false"/>
-          <field id="259" name="_L7" type="485" pointer="false"/>
-          <field id="260" name="_L99" type="476" pointer="false"/>
-          <field id="261" name="_L117" type="476" pointer="false"/>
-          <field id="262" name="_L130" type="476" pointer="false"/>
-          <field id="263" name="_L128" type="476" pointer="false"/>
-          <field id="264" name="_L139" type="476" pointer="false"/>
-          <field id="265" name="_L312" type="476" pointer="false"/>
-          <field id="266" name="_L317" type="476" pointer="false"/>
-          <field id="267" name="Output1_Switch_1" type="485" pointer="false"/>
-          <field id="268" name="Input1_Switch_1" type="485" pointer="false"/>
-          <field id="269" name="_L1_Switch_1" type="485" pointer="false"/>
-          <field id="270" name="_L2_Switch_1" type="485" pointer="false"/>
-          <field id="271" name="_L4_Switch_1" type="485" pointer="false"/>
-          <field id="272" name="Output_SpeedStr_1" type="450" pointer="false"/>
-          <field id="273" name="Input_SpeedStr_1" type="484" pointer="false"/>
-          <field id="274" name="_L164_SpeedStr_1" type="484" pointer="false"/>
-          <field id="275" name="_L163_SpeedStr_1" type="484" pointer="false"/>
-          <field id="276" name="_L162_SpeedStr_1" type="484" pointer="false"/>
-          <field id="277" name="_L161_SpeedStr_1" type="484" pointer="false"/>
-          <field id="278" name="_L160_SpeedStr_1" type="484" pointer="false"/>
-          <field id="279" name="_L159_SpeedStr_1" type="484" pointer="false"/>
-          <field id="280" name="_L158_SpeedStr_1" type="484" pointer="false"/>
-          <field id="281" name="_L157_SpeedStr_1" type="484" pointer="false"/>
-          <field id="282" name="_L156_SpeedStr_1" type="484" pointer="false"/>
-          <field id="283" name="_L155_SpeedStr_1" type="484" pointer="false"/>
-          <field id="284" name="_L4_SpeedStr_1" type="484" pointer="false"/>
-          <field id="285" name="_L5_SpeedStr_1" type="484" pointer="false"/>
-          <field id="286" name="_L6_SpeedStr_1" type="476" pointer="false"/>
-          <field id="287" name="_L7_SpeedStr_1" type="476" pointer="false"/>
-          <field id="288" name="_L8_SpeedStr_1" type="484" pointer="false"/>
-          <field id="289" name="_L9_SpeedStr_1" type="450" pointer="false"/>
-          <field id="290" name="_L12_SpeedStr_1" type="476" pointer="false"/>
-          <field id="291" name="_L13_SpeedStr_1" type="476" pointer="false"/>
-          <field id="292" name="_L14_SpeedStr_1" type="485" pointer="false"/>
-          <field id="293" name="_L15_SpeedStr_1" type="476" pointer="false"/>
-          <field id="294" name="_L16_SpeedStr_1" type="476" pointer="false"/>
-          <field id="295" name="_L17_SpeedStr_1" type="485" pointer="false"/>
-          <field id="296" name="_L23_SpeedStr_1" type="476" pointer="false"/>
-          <field id="297" name="_L24_SpeedStr_1" type="476" pointer="false"/>
-          <field id="298" name="_L26_SpeedStr_1" type="476" pointer="false"/>
-          <field id="299" name="_L27_SpeedStr_1" type="450" pointer="false"/>
-          <field id="300" name="_L31_SpeedStr_1" type="476" pointer="false"/>
-          <field id="301" name="_L32_SpeedStr_1" type="484" pointer="false"/>
-          <field id="302" name="_L33_SpeedStr_1" type="485" pointer="false"/>
-          <field id="303" name="_L34_SpeedStr_1" type="484" pointer="false"/>
-          <field id="304" name="_L35_SpeedStr_1" type="476" pointer="false"/>
-          <field id="305" name="_L36_SpeedStr_1" type="450" pointer="false"/>
-          <field id="306" name="_L41_SpeedStr_1" type="476" pointer="false"/>
-          <field id="307" name="_L42_SpeedStr_1" type="476" pointer="false"/>
-          <field id="308" name="_L43_SpeedStr_1" type="485" pointer="false"/>
-          <field id="309" name="_L44_SpeedStr_1" type="485" pointer="false"/>
-          <field id="310" name="_L45_SpeedStr_1" type="484" pointer="false"/>
-          <field id="311" name="_L46_SpeedStr_1" type="450" pointer="false"/>
-          <field id="312" name="_L51_SpeedStr_1" type="476" pointer="false"/>
-          <field id="313" name="_L52_SpeedStr_1" type="476" pointer="false"/>
-          <field id="314" name="_L53_SpeedStr_1" type="476" pointer="false"/>
-          <field id="315" name="_L54_SpeedStr_1" type="485" pointer="false"/>
-          <field id="316" name="_L55_SpeedStr_1" type="450" pointer="false"/>
-          <field id="317" name="_L59_SpeedStr_1" type="476" pointer="false"/>
-          <field id="318" name="_L60_SpeedStr_1" type="484" pointer="false"/>
-          <field id="319" name="_L61_SpeedStr_1" type="485" pointer="false"/>
-          <field id="320" name="_L62_SpeedStr_1" type="484" pointer="false"/>
-          <field id="321" name="_L63_SpeedStr_1" type="484" pointer="false"/>
-          <field id="322" name="_L66_SpeedStr_1" type="485" pointer="false"/>
-          <field id="323" name="_L67_SpeedStr_1" type="485" pointer="false"/>
-          <field id="324" name="_L68_SpeedStr_1" type="484" pointer="false"/>
-          <field id="325" name="_L69_SpeedStr_1" type="484" pointer="false"/>
-          <field id="326" name="_L70_SpeedStr_1" type="485" pointer="false"/>
-          <field id="327" name="_L71_SpeedStr_1" type="450" pointer="false"/>
-          <field id="328" name="_L74_SpeedStr_1" type="485" pointer="false"/>
-          <field id="329" name="_L75_SpeedStr_1" type="485" pointer="false"/>
-          <field id="330" name="_L76_SpeedStr_1" type="485" pointer="false"/>
-          <field id="331" name="_L77_SpeedStr_1" type="476" pointer="false"/>
-          <field id="332" name="_L78_SpeedStr_1" type="484" pointer="false"/>
-          <field id="333" name="_L79_SpeedStr_1" type="485" pointer="false"/>
-          <field id="334" name="_L84_SpeedStr_1" type="476" pointer="false"/>
-          <field id="335" name="_L85_SpeedStr_1" type="476" pointer="false"/>
-          <field id="336" name="_L87_SpeedStr_1" type="484" pointer="false"/>
-          <field id="337" name="_L88_SpeedStr_1" type="485" pointer="false"/>
-          <field id="338" name="_L89_SpeedStr_1" type="450" pointer="false"/>
-          <field id="339" name="_L94_SpeedStr_1" type="484" pointer="false"/>
-          <field id="340" name="_L95_SpeedStr_1" type="485" pointer="false"/>
-          <field id="341" name="_L96_SpeedStr_1" type="484" pointer="false"/>
-          <field id="342" name="_L97_SpeedStr_1" type="485" pointer="false"/>
-          <field id="343" name="_L99_SpeedStr_1" type="450" pointer="false"/>
-          <field id="344" name="_L102_SpeedStr_1" type="476" pointer="false"/>
-          <field id="345" name="_L103_SpeedStr_1" type="485" pointer="false"/>
-          <field id="346" name="_L104_SpeedStr_1" type="485" pointer="false"/>
-          <field id="347" name="_L105_SpeedStr_1" type="476" pointer="false"/>
-          <field id="348" name="_L106_SpeedStr_1" type="476" pointer="false"/>
-          <field id="349" name="_L112_SpeedStr_1" type="485" pointer="false"/>
-          <field id="350" name="_L113_SpeedStr_1" type="485" pointer="false"/>
-          <field id="351" name="_L116_SpeedStr_1" type="485" pointer="false"/>
-          <field id="352" name="_L117_SpeedStr_1" type="450" pointer="false"/>
-          <field id="353" name="_L121_SpeedStr_1" type="485" pointer="false"/>
-          <field id="354" name="_L123_SpeedStr_1" type="484" pointer="false"/>
-          <field id="355" name="_L124_SpeedStr_1" type="485" pointer="false"/>
-          <field id="356" name="_L125_SpeedStr_1" type="476" pointer="false"/>
-          <field id="357" name="_L126_SpeedStr_1" type="476" pointer="false"/>
-          <field id="358" name="_L130_SpeedStr_1" type="484" pointer="false"/>
-          <field id="359" name="_L131_SpeedStr_1" type="484" pointer="false"/>
-          <field id="360" name="_L132_SpeedStr_1" type="476" pointer="false"/>
-          <field id="361" name="_L133_SpeedStr_1" type="485" pointer="false"/>
-          <field id="362" name="_L134_SpeedStr_1" type="476" pointer="false"/>
-          <field id="363" name="_L135_SpeedStr_1" type="450" pointer="false"/>
-          <field id="364" name="_L140_SpeedStr_1" type="476" pointer="false"/>
-          <field id="365" name="_L141_SpeedStr_1" type="485" pointer="false"/>
-          <field id="366" name="_L142_SpeedStr_1" type="476" pointer="false"/>
-          <field id="367" name="_L143_SpeedStr_1" type="485" pointer="false"/>
-          <field id="368" name="_L144_SpeedStr_1" type="476" pointer="false"/>
-          <field id="369" name="_L145_SpeedStr_1" type="450" pointer="false"/>
-          <field id="370" name="_L149_SpeedStr_1" type="476" pointer="false"/>
-          <field id="371" name="_L151_SpeedStr_1" type="484" pointer="false"/>
-          <field id="372" name="_L152_SpeedStr_1" type="485" pointer="false"/>
-          <field id="373" name="_L154_SpeedStr_1" type="450" pointer="false"/>
-          <field id="374" name="Var_Turn_Btn" type="485" pointer="false"/>
-          <field id="375" name="Var_mqtt" type="476" pointer="false"/>
-          <field id="376" name="_L1" type="485" pointer="false"/>
-          <field id="377" name="_L2" type="485" pointer="false"/>
-          <field id="378" name="_L3" type="450" pointer="false"/>
-          <field id="379" name="_L4" type="450" pointer="false"/>
-          <field id="380" name="_L5" type="450" pointer="false"/>
-          <field id="381" name="_L6" type="449" pointer="false"/>
-          <field id="382" name="_L8" type="485" pointer="false"/>
-          <field id="383" name="_L9" type="485" pointer="false"/>
-          <field id="384" name="_L13" type="448" pointer="false"/>
-          <field id="385" name="_L12" type="485" pointer="false"/>
-          <field id="386" name="_L11" type="448" pointer="false"/>
-          <field id="387" name="_L10" type="448" pointer="false"/>
-          <field id="388" name="_L19" type="450" pointer="false"/>
-          <field id="389" name="_L27" type="450" pointer="false"/>
-          <field id="390" name="_L30" type="450" pointer="false"/>
-          <field id="391" name="_L31" type="450" pointer="false"/>
-          <field id="392" name="_L32" type="450" pointer="false"/>
-          <field id="393" name="_L42" type="450" pointer="false"/>
-          <field id="394" name="_L91" type="485" pointer="false"/>
-          <field id="395" name="_L100" type="476" pointer="false"/>
-          <field id="396" name="_L108" type="476" pointer="false"/>
-          <field id="397" name="_L112" type="476" pointer="false"/>
-          <field id="398" name="_L116" type="476" pointer="false"/>
-          <field id="399" name="_L114" type="476" pointer="false"/>
-          <field id="400" name="_L113" type="476" pointer="false"/>
-          <field id="401" name="_L118" type="485" pointer="false"/>
-          <field id="402" name="_L119" type="476" pointer="false"/>
-          <field id="403" name="_L120" type="476" pointer="false"/>
-          <field id="404" name="_L129" type="476" pointer="false"/>
-          <field id="405" name="_L127" type="476" pointer="false"/>
-          <field id="406" name="_L124" type="476" pointer="false"/>
-          <field id="407" name="_L123" type="476" pointer="false"/>
-          <field id="408" name="_L122" type="476" pointer="false"/>
-          <field id="409" name="_L121" type="476" pointer="false"/>
-          <field id="410" name="_L131" type="485" pointer="false"/>
-          <field id="411" name="_L132" type="485" pointer="false"/>
-          <field id="412" name="_L146" type="476" pointer="false"/>
-          <field id="413" name="_L143" type="476" pointer="false"/>
-          <field id="414" name="_L136" type="476" pointer="false"/>
-          <field id="415" name="_L149" type="485" pointer="false"/>
-          <field id="416" name="_L150" type="450" pointer="false"/>
-          <field id="417" name="_L152" type="450" pointer="false"/>
-          <field id="418" name="_L297" type="450" pointer="false"/>
-          <field id="419" name="_L299" type="484" pointer="false"/>
-          <field id="420" name="_L300" type="485" pointer="false"/>
-          <field id="421" name="_L301" type="485" pointer="false"/>
-          <field id="422" name="_L302" type="485" pointer="false"/>
-          <field id="423" name="_L311" type="476" pointer="false"/>
-          <field id="424" name="_L310" type="476" pointer="false"/>
-          <field id="425" name="_L309" type="476" pointer="false"/>
-          <field id="426" name="_L314" type="485" pointer="false"/>
-          <field id="427" name="_L322" type="485" pointer="false"/>
-          <field id="428" name="_L321" type="485" pointer="false"/>
-          <field id="429" name="_L320" type="485" pointer="false"/>
-          <field id="430" name="_L319" type="476" pointer="false"/>
-          <field id="431" name="_L316" type="476" pointer="false"/>
-          <field id="432" name="_L315" type="476" pointer="false"/>
-          <field id="433" name="_L323" type="476" pointer="false"/>
+        <struct id="255" name="outC_ErlunControl">
+          <field id="256" name="Turn_BtnTextString" type="464" pointer="false"/>
+          <field id="257" name="StringSize" type="463" pointer="false"/>
+          <field id="258" name="Emit2CDS" type="499" pointer="false"/>
+          <field id="259" name="Layer1Active" type="499" pointer="false"/>
+          <field id="260" name="Layer1Visible" type="499" pointer="false"/>
+          <field id="261" name="TurnTextColorIndex" type="462" pointer="false"/>
+          <field id="262" name="EmitVisible" type="499" pointer="false"/>
+          <field id="263" name="init" type="499" pointer="false"/>
+          <field id="264" name="_L3_Switch_1" type="499" pointer="false"/>
+          <field id="265" name="Var_Send" type="490" pointer="false"/>
+          <field id="266" name="_L7" type="499" pointer="false"/>
+          <field id="267" name="_L99" type="490" pointer="false"/>
+          <field id="268" name="_L117" type="490" pointer="false"/>
+          <field id="269" name="_L130" type="490" pointer="false"/>
+          <field id="270" name="_L128" type="490" pointer="false"/>
+          <field id="271" name="_L139" type="490" pointer="false"/>
+          <field id="272" name="_L312" type="490" pointer="false"/>
+          <field id="273" name="_L317" type="490" pointer="false"/>
+          <field id="274" name="_L326" type="490" pointer="false"/>
+          <field id="275" name="Output1_Switch_1" type="499" pointer="false"/>
+          <field id="276" name="Input1_Switch_1" type="499" pointer="false"/>
+          <field id="277" name="_L1_Switch_1" type="499" pointer="false"/>
+          <field id="278" name="_L2_Switch_1" type="499" pointer="false"/>
+          <field id="279" name="_L4_Switch_1" type="499" pointer="false"/>
+          <field id="280" name="Output_SpeedStr_1" type="464" pointer="false"/>
+          <field id="281" name="Input_SpeedStr_1" type="498" pointer="false"/>
+          <field id="282" name="_L164_SpeedStr_1" type="498" pointer="false"/>
+          <field id="283" name="_L163_SpeedStr_1" type="498" pointer="false"/>
+          <field id="284" name="_L162_SpeedStr_1" type="498" pointer="false"/>
+          <field id="285" name="_L161_SpeedStr_1" type="498" pointer="false"/>
+          <field id="286" name="_L160_SpeedStr_1" type="498" pointer="false"/>
+          <field id="287" name="_L159_SpeedStr_1" type="498" pointer="false"/>
+          <field id="288" name="_L158_SpeedStr_1" type="498" pointer="false"/>
+          <field id="289" name="_L157_SpeedStr_1" type="498" pointer="false"/>
+          <field id="290" name="_L156_SpeedStr_1" type="498" pointer="false"/>
+          <field id="291" name="_L155_SpeedStr_1" type="498" pointer="false"/>
+          <field id="292" name="_L4_SpeedStr_1" type="498" pointer="false"/>
+          <field id="293" name="_L5_SpeedStr_1" type="498" pointer="false"/>
+          <field id="294" name="_L6_SpeedStr_1" type="490" pointer="false"/>
+          <field id="295" name="_L7_SpeedStr_1" type="490" pointer="false"/>
+          <field id="296" name="_L8_SpeedStr_1" type="498" pointer="false"/>
+          <field id="297" name="_L9_SpeedStr_1" type="464" pointer="false"/>
+          <field id="298" name="_L12_SpeedStr_1" type="490" pointer="false"/>
+          <field id="299" name="_L13_SpeedStr_1" type="490" pointer="false"/>
+          <field id="300" name="_L14_SpeedStr_1" type="499" pointer="false"/>
+          <field id="301" name="_L15_SpeedStr_1" type="490" pointer="false"/>
+          <field id="302" name="_L16_SpeedStr_1" type="490" pointer="false"/>
+          <field id="303" name="_L17_SpeedStr_1" type="499" pointer="false"/>
+          <field id="304" name="_L23_SpeedStr_1" type="490" pointer="false"/>
+          <field id="305" name="_L24_SpeedStr_1" type="490" pointer="false"/>
+          <field id="306" name="_L26_SpeedStr_1" type="490" pointer="false"/>
+          <field id="307" name="_L27_SpeedStr_1" type="464" pointer="false"/>
+          <field id="308" name="_L31_SpeedStr_1" type="490" pointer="false"/>
+          <field id="309" name="_L32_SpeedStr_1" type="498" pointer="false"/>
+          <field id="310" name="_L33_SpeedStr_1" type="499" pointer="false"/>
+          <field id="311" name="_L34_SpeedStr_1" type="498" pointer="false"/>
+          <field id="312" name="_L35_SpeedStr_1" type="490" pointer="false"/>
+          <field id="313" name="_L36_SpeedStr_1" type="464" pointer="false"/>
+          <field id="314" name="_L41_SpeedStr_1" type="490" pointer="false"/>
+          <field id="315" name="_L42_SpeedStr_1" type="490" pointer="false"/>
+          <field id="316" name="_L43_SpeedStr_1" type="499" pointer="false"/>
+          <field id="317" name="_L44_SpeedStr_1" type="499" pointer="false"/>
+          <field id="318" name="_L45_SpeedStr_1" type="498" pointer="false"/>
+          <field id="319" name="_L46_SpeedStr_1" type="464" pointer="false"/>
+          <field id="320" name="_L51_SpeedStr_1" type="490" pointer="false"/>
+          <field id="321" name="_L52_SpeedStr_1" type="490" pointer="false"/>
+          <field id="322" name="_L53_SpeedStr_1" type="490" pointer="false"/>
+          <field id="323" name="_L54_SpeedStr_1" type="499" pointer="false"/>
+          <field id="324" name="_L55_SpeedStr_1" type="464" pointer="false"/>
+          <field id="325" name="_L59_SpeedStr_1" type="490" pointer="false"/>
+          <field id="326" name="_L60_SpeedStr_1" type="498" pointer="false"/>
+          <field id="327" name="_L61_SpeedStr_1" type="499" pointer="false"/>
+          <field id="328" name="_L62_SpeedStr_1" type="498" pointer="false"/>
+          <field id="329" name="_L63_SpeedStr_1" type="498" pointer="false"/>
+          <field id="330" name="_L66_SpeedStr_1" type="499" pointer="false"/>
+          <field id="331" name="_L67_SpeedStr_1" type="499" pointer="false"/>
+          <field id="332" name="_L68_SpeedStr_1" type="498" pointer="false"/>
+          <field id="333" name="_L69_SpeedStr_1" type="498" pointer="false"/>
+          <field id="334" name="_L70_SpeedStr_1" type="499" pointer="false"/>
+          <field id="335" name="_L71_SpeedStr_1" type="464" pointer="false"/>
+          <field id="336" name="_L74_SpeedStr_1" type="499" pointer="false"/>
+          <field id="337" name="_L75_SpeedStr_1" type="499" pointer="false"/>
+          <field id="338" name="_L76_SpeedStr_1" type="499" pointer="false"/>
+          <field id="339" name="_L77_SpeedStr_1" type="490" pointer="false"/>
+          <field id="340" name="_L78_SpeedStr_1" type="498" pointer="false"/>
+          <field id="341" name="_L79_SpeedStr_1" type="499" pointer="false"/>
+          <field id="342" name="_L84_SpeedStr_1" type="490" pointer="false"/>
+          <field id="343" name="_L85_SpeedStr_1" type="490" pointer="false"/>
+          <field id="344" name="_L87_SpeedStr_1" type="498" pointer="false"/>
+          <field id="345" name="_L88_SpeedStr_1" type="499" pointer="false"/>
+          <field id="346" name="_L89_SpeedStr_1" type="464" pointer="false"/>
+          <field id="347" name="_L94_SpeedStr_1" type="498" pointer="false"/>
+          <field id="348" name="_L95_SpeedStr_1" type="499" pointer="false"/>
+          <field id="349" name="_L96_SpeedStr_1" type="498" pointer="false"/>
+          <field id="350" name="_L97_SpeedStr_1" type="499" pointer="false"/>
+          <field id="351" name="_L99_SpeedStr_1" type="464" pointer="false"/>
+          <field id="352" name="_L102_SpeedStr_1" type="490" pointer="false"/>
+          <field id="353" name="_L103_SpeedStr_1" type="499" pointer="false"/>
+          <field id="354" name="_L104_SpeedStr_1" type="499" pointer="false"/>
+          <field id="355" name="_L105_SpeedStr_1" type="490" pointer="false"/>
+          <field id="356" name="_L106_SpeedStr_1" type="490" pointer="false"/>
+          <field id="357" name="_L112_SpeedStr_1" type="499" pointer="false"/>
+          <field id="358" name="_L113_SpeedStr_1" type="499" pointer="false"/>
+          <field id="359" name="_L116_SpeedStr_1" type="499" pointer="false"/>
+          <field id="360" name="_L117_SpeedStr_1" type="464" pointer="false"/>
+          <field id="361" name="_L121_SpeedStr_1" type="499" pointer="false"/>
+          <field id="362" name="_L123_SpeedStr_1" type="498" pointer="false"/>
+          <field id="363" name="_L124_SpeedStr_1" type="499" pointer="false"/>
+          <field id="364" name="_L125_SpeedStr_1" type="490" pointer="false"/>
+          <field id="365" name="_L126_SpeedStr_1" type="490" pointer="false"/>
+          <field id="366" name="_L130_SpeedStr_1" type="498" pointer="false"/>
+          <field id="367" name="_L131_SpeedStr_1" type="498" pointer="false"/>
+          <field id="368" name="_L132_SpeedStr_1" type="490" pointer="false"/>
+          <field id="369" name="_L133_SpeedStr_1" type="499" pointer="false"/>
+          <field id="370" name="_L134_SpeedStr_1" type="490" pointer="false"/>
+          <field id="371" name="_L135_SpeedStr_1" type="464" pointer="false"/>
+          <field id="372" name="_L140_SpeedStr_1" type="490" pointer="false"/>
+          <field id="373" name="_L141_SpeedStr_1" type="499" pointer="false"/>
+          <field id="374" name="_L142_SpeedStr_1" type="490" pointer="false"/>
+          <field id="375" name="_L143_SpeedStr_1" type="499" pointer="false"/>
+          <field id="376" name="_L144_SpeedStr_1" type="490" pointer="false"/>
+          <field id="377" name="_L145_SpeedStr_1" type="464" pointer="false"/>
+          <field id="378" name="_L149_SpeedStr_1" type="490" pointer="false"/>
+          <field id="379" name="_L151_SpeedStr_1" type="498" pointer="false"/>
+          <field id="380" name="_L152_SpeedStr_1" type="499" pointer="false"/>
+          <field id="381" name="_L154_SpeedStr_1" type="464" pointer="false"/>
+          <field id="382" name="Var_Turn_Btn" type="499" pointer="false"/>
+          <field id="383" name="Var_mqtt" type="490" pointer="false"/>
+          <field id="384" name="_L1" type="499" pointer="false"/>
+          <field id="385" name="_L2" type="499" pointer="false"/>
+          <field id="386" name="_L3" type="464" pointer="false"/>
+          <field id="387" name="_L4" type="464" pointer="false"/>
+          <field id="388" name="_L5" type="464" pointer="false"/>
+          <field id="389" name="_L6" type="463" pointer="false"/>
+          <field id="390" name="_L8" type="499" pointer="false"/>
+          <field id="391" name="_L9" type="499" pointer="false"/>
+          <field id="392" name="_L13" type="462" pointer="false"/>
+          <field id="393" name="_L12" type="499" pointer="false"/>
+          <field id="394" name="_L11" type="462" pointer="false"/>
+          <field id="395" name="_L10" type="462" pointer="false"/>
+          <field id="396" name="_L19" type="464" pointer="false"/>
+          <field id="397" name="_L27" type="464" pointer="false"/>
+          <field id="398" name="_L30" type="464" pointer="false"/>
+          <field id="399" name="_L31" type="464" pointer="false"/>
+          <field id="400" name="_L32" type="464" pointer="false"/>
+          <field id="401" name="_L42" type="464" pointer="false"/>
+          <field id="402" name="_L91" type="499" pointer="false"/>
+          <field id="403" name="_L100" type="490" pointer="false"/>
+          <field id="404" name="_L108" type="490" pointer="false"/>
+          <field id="405" name="_L112" type="490" pointer="false"/>
+          <field id="406" name="_L116" type="490" pointer="false"/>
+          <field id="407" name="_L114" type="490" pointer="false"/>
+          <field id="408" name="_L113" type="490" pointer="false"/>
+          <field id="409" name="_L118" type="499" pointer="false"/>
+          <field id="410" name="_L119" type="490" pointer="false"/>
+          <field id="411" name="_L120" type="490" pointer="false"/>
+          <field id="412" name="_L129" type="490" pointer="false"/>
+          <field id="413" name="_L127" type="490" pointer="false"/>
+          <field id="414" name="_L124" type="490" pointer="false"/>
+          <field id="415" name="_L123" type="490" pointer="false"/>
+          <field id="416" name="_L122" type="490" pointer="false"/>
+          <field id="417" name="_L121" type="490" pointer="false"/>
+          <field id="418" name="_L131" type="499" pointer="false"/>
+          <field id="419" name="_L132" type="499" pointer="false"/>
+          <field id="420" name="_L146" type="490" pointer="false"/>
+          <field id="421" name="_L143" type="490" pointer="false"/>
+          <field id="422" name="_L136" type="490" pointer="false"/>
+          <field id="423" name="_L149" type="499" pointer="false"/>
+          <field id="424" name="_L150" type="464" pointer="false"/>
+          <field id="425" name="_L152" type="464" pointer="false"/>
+          <field id="426" name="_L297" type="464" pointer="false"/>
+          <field id="427" name="_L299" type="498" pointer="false"/>
+          <field id="428" name="_L300" type="499" pointer="false"/>
+          <field id="429" name="_L301" type="499" pointer="false"/>
+          <field id="430" name="_L302" type="499" pointer="false"/>
+          <field id="431" name="_L311" type="490" pointer="false"/>
+          <field id="432" name="_L310" type="490" pointer="false"/>
+          <field id="433" name="_L309" type="490" pointer="false"/>
+          <field id="434" name="_L314" type="499" pointer="false"/>
+          <field id="435" name="_L322" type="499" pointer="false"/>
+          <field id="436" name="_L321" type="499" pointer="false"/>
+          <field id="437" name="_L320" type="499" pointer="false"/>
+          <field id="438" name="_L319" type="490" pointer="false"/>
+          <field id="439" name="_L316" type="490" pointer="false"/>
+          <field id="440" name="_L315" type="490" pointer="false"/>
+          <field id="441" name="_L323" type="490" pointer="false"/>
+          <field id="442" name="_L328" type="490" pointer="false"/>
+          <field id="443" name="_L327" type="490" pointer="false"/>
+          <field id="444" name="_L325" type="490" pointer="false"/>
+          <field id="445" name="_L329" type="499" pointer="false"/>
+          <field id="446" name="_L330" type="464" pointer="false"/>
         </struct>
-        <struct id="434" name="inC_ErlunControl">
-          <field id="435" name="Turn_Btn" type="485" pointer="false"/>
-          <field id="436" name="Up_Btn" type="485" pointer="false"/>
-          <field id="437" name="Down_Btn" type="485" pointer="false"/>
-          <field id="438" name="Left_Btn" type="485" pointer="false"/>
-          <field id="439" name="Right_Btn" type="485" pointer="false"/>
-          <field id="440" name="Speed_Btn" type="485" pointer="false"/>
-          <field id="441" name="Speed_BtnValue" type="484" pointer="false"/>
+        <struct id="447" name="inC_ErlunControl">
+          <field id="448" name="Turn_Btn" type="499" pointer="false"/>
+          <field id="449" name="Up_Btn" type="499" pointer="false"/>
+          <field id="450" name="Down_Btn" type="499" pointer="false"/>
+          <field id="451" name="Left_Btn" type="499" pointer="false"/>
+          <field id="452" name="Right_Btn" type="499" pointer="false"/>
+          <field id="453" name="Speed_Btn" type="499" pointer="false"/>
+          <field id="454" name="Speed_BtnValue" type="498" pointer="false"/>
+          <field id="455" name="Photo_Btn" type="499" pointer="false"/>
         </struct>
       </file>
-      <file id="442" name="kcg_types.h">
-        <ifdef id="443" name="kcg_use_T_String">
-          <function id="444" name="kcg_comp_T_String" returnType="485">
-            <parameter id="445" name="kcg_c1" type="450" pointer="true"/>
-            <parameter id="446" name="kcg_c2" type="450" pointer="true"/>
+      <file id="456" name="kcg_types.h">
+        <ifdef id="457" name="kcg_use_T_String">
+          <function id="458" name="kcg_comp_T_String" returnType="499">
+            <parameter id="459" name="kcg_c1" type="464" pointer="true"/>
+            <parameter id="460" name="kcg_c2" type="464" pointer="true"/>
           </function>
         </ifdef>
-        <macro id="447" name="kcg_copy_T_String"/>
-        <typedef id="448" name="T_uShort" aliasType="478"/>
-        <typedef id="449" name="T_uChar" aliasType="479"/>
-        <array id="450" name="T_String" baseType="486" size="4"/>
-        <macro id="451" name="kcg_assign_array"/>
-        <macro id="452" name="kcg_assign_struct"/>
-        <macro id="453" name="kcg_lnot_uint8"/>
-        <macro id="454" name="kcg_lnot_uint16"/>
-        <macro id="455" name="kcg_lnot_uint32"/>
-        <macro id="456" name="kcg_lnot_uint64"/>
-        <macro id="457" name="kcg_lsl_uint8"/>
-        <macro id="458" name="kcg_lsl_uint16"/>
-        <macro id="459" name="kcg_lsl_uint32"/>
-        <macro id="460" name="kcg_lsl_uint64"/>
-        <macro id="461" name="kcg_true"/>
-        <macro id="462" name="kcg_false"/>
-        <macro id="463" name="kcg_lit_int8"/>
-        <macro id="464" name="kcg_lit_int16"/>
-        <macro id="465" name="kcg_lit_int32"/>
-        <macro id="466" name="kcg_lit_int64"/>
-        <macro id="467" name="kcg_lit_uint8"/>
-        <macro id="468" name="kcg_lit_uint16"/>
-        <macro id="469" name="kcg_lit_uint32"/>
-        <macro id="470" name="kcg_lit_uint64"/>
-        <macro id="471" name="kcg_lit_size"/>
-        <macro id="472" name="kcg_lit_float64"/>
-        <macro id="473" name="kcg_lit_float32"/>
-        <predefType id="474" name="kcg_int8"/>
-        <predefType id="475" name="kcg_int16"/>
-        <predefType id="476" name="kcg_int32"/>
-        <predefType id="477" name="kcg_int64"/>
-        <predefType id="478" name="kcg_uint8"/>
-        <predefType id="479" name="kcg_uint16"/>
-        <predefType id="480" name="kcg_uint32"/>
-        <predefType id="481" name="kcg_uint64"/>
-        <predefType id="482" name="kcg_size"/>
-        <predefType id="483" name="kcg_float64"/>
-        <predefType id="484" name="kcg_float32"/>
-        <predefType id="485" name="kcg_bool"/>
-        <predefType id="486" name="kcg_char"/>
-        <macro id="487" name="KCG_MAPW_CPY"/>
+        <macro id="461" name="kcg_copy_T_String"/>
+        <typedef id="462" name="T_uShort" aliasType="492"/>
+        <typedef id="463" name="T_uChar" aliasType="493"/>
+        <array id="464" name="T_String" baseType="500" size="4"/>
+        <macro id="465" name="kcg_assign_array"/>
+        <macro id="466" name="kcg_assign_struct"/>
+        <macro id="467" name="kcg_lnot_uint8"/>
+        <macro id="468" name="kcg_lnot_uint16"/>
+        <macro id="469" name="kcg_lnot_uint32"/>
+        <macro id="470" name="kcg_lnot_uint64"/>
+        <macro id="471" name="kcg_lsl_uint8"/>
+        <macro id="472" name="kcg_lsl_uint16"/>
+        <macro id="473" name="kcg_lsl_uint32"/>
+        <macro id="474" name="kcg_lsl_uint64"/>
+        <macro id="475" name="kcg_true"/>
+        <macro id="476" name="kcg_false"/>
+        <macro id="477" name="kcg_lit_int8"/>
+        <macro id="478" name="kcg_lit_int16"/>
+        <macro id="479" name="kcg_lit_int32"/>
+        <macro id="480" name="kcg_lit_int64"/>
+        <macro id="481" name="kcg_lit_uint8"/>
+        <macro id="482" name="kcg_lit_uint16"/>
+        <macro id="483" name="kcg_lit_uint32"/>
+        <macro id="484" name="kcg_lit_uint64"/>
+        <macro id="485" name="kcg_lit_size"/>
+        <macro id="486" name="kcg_lit_float64"/>
+        <macro id="487" name="kcg_lit_float32"/>
+        <predefType id="488" name="kcg_int8"/>
+        <predefType id="489" name="kcg_int16"/>
+        <predefType id="490" name="kcg_int32"/>
+        <predefType id="491" name="kcg_int64"/>
+        <predefType id="492" name="kcg_uint8"/>
+        <predefType id="493" name="kcg_uint16"/>
+        <predefType id="494" name="kcg_uint32"/>
+        <predefType id="495" name="kcg_uint64"/>
+        <predefType id="496" name="kcg_size"/>
+        <predefType id="497" name="kcg_float64"/>
+        <predefType id="498" name="kcg_float32"/>
+        <predefType id="499" name="kcg_bool"/>
+        <predefType id="500" name="kcg_char"/>
+        <macro id="501" name="KCG_MAPW_CPY"/>
       </file>
-      <file id="488" name="kcg_consts.h">
-        <macro id="489" name="STR_SIZE" type="449"/>
-        <constant id="490" name="TURN_BTN_OFF" type="450" pointer="false"/>
-        <constant id="491" name="TURN_BTN_ON" type="450" pointer="false"/>
-        <macro id="492" name="GREEN" type="448"/>
-        <macro id="493" name="RED" type="448"/>
-        <constant id="494" name="SEND_BTN_UP" type="450" pointer="false"/>
-        <constant id="495" name="SEND_BTN_DOWN" type="450" pointer="false"/>
-        <constant id="496" name="SEND_BTN_LEFT" type="450" pointer="false"/>
-        <constant id="497" name="SEND_BTN_RIGHT" type="450" pointer="false"/>
-        <constant id="498" name="SEND_BTN_ON" type="450" pointer="false"/>
-        <constant id="499" name="SEND_BTN_OFF" type="450" pointer="false"/>
+      <file id="502" name="kcg_consts.h">
+        <macro id="503" name="STR_SIZE" type="463"/>
+        <constant id="504" name="TURN_BTN_OFF" type="464" pointer="false"/>
+        <constant id="505" name="TURN_BTN_ON" type="464" pointer="false"/>
+        <macro id="506" name="GREEN" type="462"/>
+        <macro id="507" name="RED" type="462"/>
+        <constant id="508" name="SEND_BTN_UP" type="464" pointer="false"/>
+        <constant id="509" name="SEND_BTN_DOWN" type="464" pointer="false"/>
+        <constant id="510" name="SEND_BTN_LEFT" type="464" pointer="false"/>
+        <constant id="511" name="SEND_BTN_RIGHT" type="464" pointer="false"/>
+        <constant id="512" name="SEND_BTN_ON" type="464" pointer="false"/>
+        <constant id="513" name="SEND_BTN_OFF" type="464" pointer="false"/>
+        <constant id="514" name="SEND_BTN_PHOTO" type="464" pointer="false"/>
       </file>
-      <file id="500" name="kcg_sensors.h"/>
-      <file id="501" name="kcg_imported_functions.h">
-        <function id="502" name="msg" returnType="476">
-          <parameter id="503" name="Send" type="450" pointer="true"/>
+      <file id="515" name="kcg_sensors.h"/>
+      <file id="516" name="kcg_imported_functions.h">
+        <function id="517" name="msg" returnType="490">
+          <parameter id="518" name="Send" type="464" pointer="true"/>
         </function>
       </file>
     </c>
-    <map srcId="483" dstId="472" role="wrapped-lit"/>
-    <map srcId="484" dstId="473" role="wrapped-lit"/>
-    <map srcId="482" dstId="471" role="wrapped-lit"/>
-    <map srcId="481" dstId="470" role="wrapped-lit"/>
-    <map srcId="481" dstId="456" role="wrapped-lnot"/>
-    <map srcId="481" dstId="460" role="wrapped-lsl"/>
-    <map srcId="480" dstId="469" role="wrapped-lit"/>
-    <map srcId="480" dstId="455" role="wrapped-lnot"/>
-    <map srcId="480" dstId="459" role="wrapped-lsl"/>
-    <map srcId="479" dstId="468" role="wrapped-lit"/>
-    <map srcId="479" dstId="454" role="wrapped-lnot"/>
-    <map srcId="479" dstId="458" role="wrapped-lsl"/>
-    <map srcId="478" dstId="467" role="wrapped-lit"/>
-    <map srcId="478" dstId="453" role="wrapped-lnot"/>
-    <map srcId="478" dstId="457" role="wrapped-lsl"/>
-    <map srcId="477" dstId="466" role="wrapped-lit"/>
-    <map srcId="476" dstId="465" role="wrapped-lit"/>
-    <map srcId="475" dstId="464" role="wrapped-lit"/>
-    <map srcId="474" dstId="463" role="wrapped-lit"/>
-    <map srcId="450" dstId="443" role="type-use"/>
-    <map srcId="450" dstId="444" role="type-comparison"/>
-    <map srcId="450" dstId="447" role="type-copy"/>
+    <map srcId="497" dstId="486" role="wrapped-lit"/>
+    <map srcId="498" dstId="487" role="wrapped-lit"/>
+    <map srcId="496" dstId="485" role="wrapped-lit"/>
+    <map srcId="495" dstId="484" role="wrapped-lit"/>
+    <map srcId="495" dstId="470" role="wrapped-lnot"/>
+    <map srcId="495" dstId="474" role="wrapped-lsl"/>
+    <map srcId="494" dstId="483" role="wrapped-lit"/>
+    <map srcId="494" dstId="469" role="wrapped-lnot"/>
+    <map srcId="494" dstId="473" role="wrapped-lsl"/>
+    <map srcId="493" dstId="482" role="wrapped-lit"/>
+    <map srcId="493" dstId="468" role="wrapped-lnot"/>
+    <map srcId="493" dstId="472" role="wrapped-lsl"/>
+    <map srcId="492" dstId="481" role="wrapped-lit"/>
+    <map srcId="492" dstId="467" role="wrapped-lnot"/>
+    <map srcId="492" dstId="471" role="wrapped-lsl"/>
+    <map srcId="491" dstId="480" role="wrapped-lit"/>
+    <map srcId="490" dstId="479" role="wrapped-lit"/>
+    <map srcId="489" dstId="478" role="wrapped-lit"/>
+    <map srcId="488" dstId="477" role="wrapped-lit"/>
+    <map srcId="464" dstId="457" role="type-use"/>
+    <map srcId="464" dstId="458" role="type-comparison"/>
+    <map srcId="464" dstId="461" role="type-copy"/>
   </generated>
-  <map modelId="29" generatedId="241" role="context-parameter"/>
-  <map modelId="29" generatedId="240" role="init-method"/>
-  <map modelId="29" generatedId="243" role="context-parameter"/>
-  <map modelId="29" generatedId="242" role="reset-method"/>
-  <map modelId="29" generatedId="245" role="input-struct-parameter"/>
-  <map modelId="36" generatedId="441"/>
-  <map modelId="35" generatedId="440"/>
-  <map modelId="34" generatedId="439"/>
-  <map modelId="33" generatedId="438"/>
-  <map modelId="32" generatedId="437"/>
-  <map modelId="31" generatedId="436"/>
-  <map modelId="30" generatedId="435"/>
-  <map modelId="29" generatedId="434" role="input-struct-type"/>
-  <map modelId="29" generatedId="246" role="context-parameter"/>
-  <map modelId="113" generatedId="433"/>
-  <map modelId="112" generatedId="432"/>
-  <map modelId="111" generatedId="431"/>
-  <map modelId="109" generatedId="430"/>
-  <map modelId="108" generatedId="429"/>
-  <map modelId="107" generatedId="428"/>
-  <map modelId="106" generatedId="427"/>
-  <map modelId="105" generatedId="426"/>
-  <map modelId="104" generatedId="425"/>
-  <map modelId="103" generatedId="424"/>
-  <map modelId="102" generatedId="423"/>
-  <map modelId="100" generatedId="422"/>
-  <map modelId="99" generatedId="421"/>
-  <map modelId="98" generatedId="420"/>
-  <map modelId="97" generatedId="419"/>
-  <map modelId="96" generatedId="418"/>
-  <map modelId="95" generatedId="417"/>
-  <map modelId="94" generatedId="416"/>
-  <map modelId="93" generatedId="415"/>
-  <map modelId="92" generatedId="414"/>
-  <map modelId="90" generatedId="413"/>
-  <map modelId="89" generatedId="412"/>
-  <map modelId="88" generatedId="411"/>
-  <map modelId="87" generatedId="410"/>
-  <map modelId="86" generatedId="409"/>
-  <map modelId="85" generatedId="408"/>
-  <map modelId="84" generatedId="407"/>
-  <map modelId="83" generatedId="406"/>
-  <map modelId="82" generatedId="405"/>
-  <map modelId="80" generatedId="404"/>
-  <map modelId="78" generatedId="403"/>
-  <map modelId="77" generatedId="402"/>
-  <map modelId="76" generatedId="401"/>
-  <map modelId="75" generatedId="400"/>
-  <map modelId="74" generatedId="399"/>
-  <map modelId="73" generatedId="398"/>
-  <map modelId="71" generatedId="397"/>
-  <map modelId="70" generatedId="396"/>
-  <map modelId="69" generatedId="395"/>
-  <map modelId="67" generatedId="394"/>
-  <map modelId="66" generatedId="393"/>
-  <map modelId="65" generatedId="392"/>
-  <map modelId="64" generatedId="391"/>
-  <map modelId="63" generatedId="390"/>
-  <map modelId="62" generatedId="389"/>
-  <map modelId="61" generatedId="388"/>
-  <map modelId="60" generatedId="387"/>
-  <map modelId="59" generatedId="386"/>
-  <map modelId="58" generatedId="385"/>
-  <map modelId="57" generatedId="384"/>
-  <map modelId="56" generatedId="383"/>
-  <map modelId="55" generatedId="382"/>
-  <map modelId="53" generatedId="381"/>
-  <map modelId="52" generatedId="380"/>
-  <map modelId="51" generatedId="379"/>
-  <map modelId="50" generatedId="378"/>
-  <map modelId="49" generatedId="377"/>
-  <map modelId="48" generatedId="376"/>
-  <map modelId="47" generatedId="375"/>
-  <map modelId="45" generatedId="374"/>
-  <map modelId="131" generatedId="373"/>
-  <map modelId="132" generatedId="372"/>
-  <map modelId="133" generatedId="371"/>
-  <map modelId="134" generatedId="370"/>
-  <map modelId="135" generatedId="369"/>
-  <map modelId="136" generatedId="368"/>
-  <map modelId="137" generatedId="367"/>
-  <map modelId="138" generatedId="366"/>
-  <map modelId="139" generatedId="365"/>
-  <map modelId="140" generatedId="364"/>
-  <map modelId="141" generatedId="363"/>
-  <map modelId="142" generatedId="362"/>
-  <map modelId="143" generatedId="361"/>
-  <map modelId="144" generatedId="360"/>
-  <map modelId="145" generatedId="359"/>
-  <map modelId="146" generatedId="358"/>
-  <map modelId="147" generatedId="357"/>
-  <map modelId="148" generatedId="356"/>
-  <map modelId="149" generatedId="355"/>
-  <map modelId="150" generatedId="354"/>
-  <map modelId="151" generatedId="353"/>
-  <map modelId="152" generatedId="352"/>
-  <map modelId="153" generatedId="351"/>
-  <map modelId="154" generatedId="350"/>
-  <map modelId="155" generatedId="349"/>
-  <map modelId="156" generatedId="348"/>
-  <map modelId="157" generatedId="347"/>
-  <map modelId="158" generatedId="346"/>
-  <map modelId="159" generatedId="345"/>
-  <map modelId="160" generatedId="344"/>
-  <map modelId="161" generatedId="343"/>
-  <map modelId="162" generatedId="342"/>
-  <map modelId="163" generatedId="341"/>
-  <map modelId="164" generatedId="340"/>
-  <map modelId="165" generatedId="339"/>
-  <map modelId="166" generatedId="338"/>
-  <map modelId="167" generatedId="337"/>
-  <map modelId="168" generatedId="336"/>
-  <map modelId="169" generatedId="335"/>
-  <map modelId="170" generatedId="334"/>
-  <map modelId="171" generatedId="333"/>
-  <map modelId="172" generatedId="332"/>
-  <map modelId="173" generatedId="331"/>
-  <map modelId="174" generatedId="330"/>
-  <map modelId="175" generatedId="329"/>
-  <map modelId="176" generatedId="328"/>
-  <map modelId="177" generatedId="327"/>
-  <map modelId="178" generatedId="326"/>
-  <map modelId="179" generatedId="325"/>
-  <map modelId="180" generatedId="324"/>
-  <map modelId="181" generatedId="323"/>
-  <map modelId="182" generatedId="322"/>
-  <map modelId="183" generatedId="321"/>
-  <map modelId="184" generatedId="320"/>
-  <map modelId="185" generatedId="319"/>
-  <map modelId="186" generatedId="318"/>
-  <map modelId="187" generatedId="317"/>
-  <map modelId="188" generatedId="316"/>
-  <map modelId="189" generatedId="315"/>
-  <map modelId="190" generatedId="314"/>
-  <map modelId="191" generatedId="313"/>
-  <map modelId="192" generatedId="312"/>
-  <map modelId="193" generatedId="311"/>
-  <map modelId="194" generatedId="310"/>
-  <map modelId="195" generatedId="309"/>
-  <map modelId="196" generatedId="308"/>
-  <map modelId="197" generatedId="307"/>
-  <map modelId="198" generatedId="306"/>
-  <map modelId="199" generatedId="305"/>
-  <map modelId="200" generatedId="304"/>
-  <map modelId="201" generatedId="303"/>
-  <map modelId="202" generatedId="302"/>
-  <map modelId="203" generatedId="301"/>
-  <map modelId="204" generatedId="300"/>
-  <map modelId="205" generatedId="299"/>
-  <map modelId="206" generatedId="298"/>
-  <map modelId="207" generatedId="297"/>
-  <map modelId="208" generatedId="296"/>
-  <map modelId="209" generatedId="295"/>
-  <map modelId="210" generatedId="294"/>
-  <map modelId="211" generatedId="293"/>
-  <map modelId="212" generatedId="292"/>
-  <map modelId="213" generatedId="291"/>
-  <map modelId="214" generatedId="290"/>
-  <map modelId="215" generatedId="289"/>
-  <map modelId="216" generatedId="288"/>
-  <map modelId="217" generatedId="287"/>
-  <map modelId="218" generatedId="286"/>
-  <map modelId="219" generatedId="285"/>
-  <map modelId="220" generatedId="284"/>
-  <map modelId="221" generatedId="283"/>
-  <map modelId="222" generatedId="282"/>
-  <map modelId="223" generatedId="281"/>
-  <map modelId="224" generatedId="280"/>
-  <map modelId="225" generatedId="279"/>
-  <map modelId="226" generatedId="278"/>
-  <map modelId="227" generatedId="277"/>
-  <map modelId="228" generatedId="276"/>
-  <map modelId="229" generatedId="275"/>
-  <map modelId="230" generatedId="274"/>
-  <map modelId="129" generatedId="273"/>
-  <map modelId="130" generatedId="272"/>
-  <map modelId="117" generatedId="271"/>
-  <map modelId="119" generatedId="270"/>
-  <map modelId="120" generatedId="269"/>
-  <map modelId="115" generatedId="268"/>
-  <map modelId="116" generatedId="267"/>
-  <map modelId="110" generatedId="266"/>
-  <map modelId="232" generatedId="266" role="memory"/>
-  <map modelId="101" generatedId="265"/>
-  <map modelId="231" generatedId="265" role="memory"/>
-  <map modelId="91" generatedId="264"/>
-  <map modelId="127" generatedId="264" role="memory"/>
-  <map modelId="81" generatedId="263"/>
-  <map modelId="125" generatedId="263" role="memory"/>
-  <map modelId="79" generatedId="262"/>
-  <map modelId="126" generatedId="262" role="memory"/>
-  <map modelId="72" generatedId="261"/>
-  <map modelId="124" generatedId="261" role="memory"/>
-  <map modelId="68" generatedId="260"/>
-  <map modelId="123" generatedId="260" role="memory"/>
-  <map modelId="54" generatedId="259"/>
-  <map modelId="122" generatedId="259" role="memory"/>
-  <map modelId="46" generatedId="258"/>
-  <map modelId="118" generatedId="257"/>
-  <map modelId="121" generatedId="257" role="memory"/>
-  <map modelId="232" generatedId="256" role="init"/>
-  <map modelId="231" generatedId="256" role="init"/>
-  <map modelId="127" generatedId="256" role="init"/>
-  <map modelId="126" generatedId="256" role="init"/>
-  <map modelId="125" generatedId="256" role="init"/>
-  <map modelId="124" generatedId="256" role="init"/>
-  <map modelId="123" generatedId="256" role="init"/>
-  <map modelId="122" generatedId="256" role="init"/>
-  <map modelId="121" generatedId="256" role="init"/>
-  <map modelId="44" generatedId="255"/>
-  <map modelId="43" generatedId="254"/>
-  <map modelId="42" generatedId="253"/>
-  <map modelId="41" generatedId="252"/>
-  <map modelId="40" generatedId="251"/>
-  <map modelId="39" generatedId="250"/>
-  <map modelId="38" generatedId="249"/>
-  <map modelId="37" generatedId="248"/>
-  <map modelId="29" generatedId="247" role="context-type"/>
-  <map modelId="29" generatedId="239" role="interface-file"/>
-  <map modelId="29" generatedId="244" role="cycle-method"/>
-  <map modelId="237" generatedId="503"/>
-  <map modelId="236" generatedId="502" role="cycle-method"/>
-  <map modelId="25" generatedId="499"/>
-  <map modelId="24" generatedId="498"/>
-  <map modelId="23" generatedId="497"/>
-  <map modelId="22" generatedId="496"/>
-  <map modelId="21" generatedId="495"/>
-  <map modelId="20" generatedId="494"/>
-  <map modelId="19" generatedId="493"/>
-  <map modelId="18" generatedId="492"/>
-  <map modelId="17" generatedId="491"/>
-  <map modelId="15" generatedId="490"/>
-  <map modelId="16" generatedId="489"/>
-  <map modelId="28" generatedId="448"/>
-  <map modelId="27" generatedId="449"/>
-  <map modelId="26" generatedId="450"/>
-  <map modelId="1" generatedId="450"/>
-  <map modelId="3" generatedId="486"/>
-  <map modelId="2" generatedId="485"/>
-  <map modelId="13" generatedId="483"/>
-  <map modelId="12" generatedId="484"/>
-  <map modelId="14" generatedId="482"/>
-  <map modelId="11" generatedId="481"/>
-  <map modelId="10" generatedId="480"/>
-  <map modelId="9" generatedId="479"/>
-  <map modelId="8" generatedId="478"/>
-  <map modelId="7" generatedId="477"/>
-  <map modelId="6" generatedId="476"/>
-  <map modelId="5" generatedId="475"/>
-  <map modelId="4" generatedId="474"/>
+  <map modelId="30" generatedId="249" role="context-parameter"/>
+  <map modelId="30" generatedId="248" role="init-method"/>
+  <map modelId="30" generatedId="251" role="context-parameter"/>
+  <map modelId="30" generatedId="250" role="reset-method"/>
+  <map modelId="30" generatedId="253" role="input-struct-parameter"/>
+  <map modelId="38" generatedId="455"/>
+  <map modelId="37" generatedId="454"/>
+  <map modelId="36" generatedId="453"/>
+  <map modelId="35" generatedId="452"/>
+  <map modelId="34" generatedId="451"/>
+  <map modelId="33" generatedId="450"/>
+  <map modelId="32" generatedId="449"/>
+  <map modelId="31" generatedId="448"/>
+  <map modelId="30" generatedId="447" role="input-struct-type"/>
+  <map modelId="30" generatedId="254" role="context-parameter"/>
+  <map modelId="120" generatedId="446"/>
+  <map modelId="119" generatedId="445"/>
+  <map modelId="118" generatedId="444"/>
+  <map modelId="116" generatedId="443"/>
+  <map modelId="115" generatedId="442"/>
+  <map modelId="114" generatedId="441"/>
+  <map modelId="113" generatedId="440"/>
+  <map modelId="112" generatedId="439"/>
+  <map modelId="110" generatedId="438"/>
+  <map modelId="109" generatedId="437"/>
+  <map modelId="108" generatedId="436"/>
+  <map modelId="107" generatedId="435"/>
+  <map modelId="106" generatedId="434"/>
+  <map modelId="105" generatedId="433"/>
+  <map modelId="104" generatedId="432"/>
+  <map modelId="103" generatedId="431"/>
+  <map modelId="101" generatedId="430"/>
+  <map modelId="100" generatedId="429"/>
+  <map modelId="99" generatedId="428"/>
+  <map modelId="98" generatedId="427"/>
+  <map modelId="97" generatedId="426"/>
+  <map modelId="96" generatedId="425"/>
+  <map modelId="95" generatedId="424"/>
+  <map modelId="94" generatedId="423"/>
+  <map modelId="93" generatedId="422"/>
+  <map modelId="91" generatedId="421"/>
+  <map modelId="90" generatedId="420"/>
+  <map modelId="89" generatedId="419"/>
+  <map modelId="88" generatedId="418"/>
+  <map modelId="87" generatedId="417"/>
+  <map modelId="86" generatedId="416"/>
+  <map modelId="85" generatedId="415"/>
+  <map modelId="84" generatedId="414"/>
+  <map modelId="83" generatedId="413"/>
+  <map modelId="81" generatedId="412"/>
+  <map modelId="79" generatedId="411"/>
+  <map modelId="78" generatedId="410"/>
+  <map modelId="77" generatedId="409"/>
+  <map modelId="76" generatedId="408"/>
+  <map modelId="75" generatedId="407"/>
+  <map modelId="74" generatedId="406"/>
+  <map modelId="72" generatedId="405"/>
+  <map modelId="71" generatedId="404"/>
+  <map modelId="70" generatedId="403"/>
+  <map modelId="68" generatedId="402"/>
+  <map modelId="67" generatedId="401"/>
+  <map modelId="66" generatedId="400"/>
+  <map modelId="65" generatedId="399"/>
+  <map modelId="64" generatedId="398"/>
+  <map modelId="63" generatedId="397"/>
+  <map modelId="62" generatedId="396"/>
+  <map modelId="61" generatedId="395"/>
+  <map modelId="60" generatedId="394"/>
+  <map modelId="59" generatedId="393"/>
+  <map modelId="58" generatedId="392"/>
+  <map modelId="57" generatedId="391"/>
+  <map modelId="56" generatedId="390"/>
+  <map modelId="54" generatedId="389"/>
+  <map modelId="53" generatedId="388"/>
+  <map modelId="52" generatedId="387"/>
+  <map modelId="51" generatedId="386"/>
+  <map modelId="50" generatedId="385"/>
+  <map modelId="49" generatedId="384"/>
+  <map modelId="48" generatedId="383"/>
+  <map modelId="46" generatedId="382"/>
+  <map modelId="138" generatedId="381"/>
+  <map modelId="139" generatedId="380"/>
+  <map modelId="140" generatedId="379"/>
+  <map modelId="141" generatedId="378"/>
+  <map modelId="142" generatedId="377"/>
+  <map modelId="143" generatedId="376"/>
+  <map modelId="144" generatedId="375"/>
+  <map modelId="145" generatedId="374"/>
+  <map modelId="146" generatedId="373"/>
+  <map modelId="147" generatedId="372"/>
+  <map modelId="148" generatedId="371"/>
+  <map modelId="149" generatedId="370"/>
+  <map modelId="150" generatedId="369"/>
+  <map modelId="151" generatedId="368"/>
+  <map modelId="152" generatedId="367"/>
+  <map modelId="153" generatedId="366"/>
+  <map modelId="154" generatedId="365"/>
+  <map modelId="155" generatedId="364"/>
+  <map modelId="156" generatedId="363"/>
+  <map modelId="157" generatedId="362"/>
+  <map modelId="158" generatedId="361"/>
+  <map modelId="159" generatedId="360"/>
+  <map modelId="160" generatedId="359"/>
+  <map modelId="161" generatedId="358"/>
+  <map modelId="162" generatedId="357"/>
+  <map modelId="163" generatedId="356"/>
+  <map modelId="164" generatedId="355"/>
+  <map modelId="165" generatedId="354"/>
+  <map modelId="166" generatedId="353"/>
+  <map modelId="167" generatedId="352"/>
+  <map modelId="168" generatedId="351"/>
+  <map modelId="169" generatedId="350"/>
+  <map modelId="170" generatedId="349"/>
+  <map modelId="171" generatedId="348"/>
+  <map modelId="172" generatedId="347"/>
+  <map modelId="173" generatedId="346"/>
+  <map modelId="174" generatedId="345"/>
+  <map modelId="175" generatedId="344"/>
+  <map modelId="176" generatedId="343"/>
+  <map modelId="177" generatedId="342"/>
+  <map modelId="178" generatedId="341"/>
+  <map modelId="179" generatedId="340"/>
+  <map modelId="180" generatedId="339"/>
+  <map modelId="181" generatedId="338"/>
+  <map modelId="182" generatedId="337"/>
+  <map modelId="183" generatedId="336"/>
+  <map modelId="184" generatedId="335"/>
+  <map modelId="185" generatedId="334"/>
+  <map modelId="186" generatedId="333"/>
+  <map modelId="187" generatedId="332"/>
+  <map modelId="188" generatedId="331"/>
+  <map modelId="189" generatedId="330"/>
+  <map modelId="190" generatedId="329"/>
+  <map modelId="191" generatedId="328"/>
+  <map modelId="192" generatedId="327"/>
+  <map modelId="193" generatedId="326"/>
+  <map modelId="194" generatedId="325"/>
+  <map modelId="195" generatedId="324"/>
+  <map modelId="196" generatedId="323"/>
+  <map modelId="197" generatedId="322"/>
+  <map modelId="198" generatedId="321"/>
+  <map modelId="199" generatedId="320"/>
+  <map modelId="200" generatedId="319"/>
+  <map modelId="201" generatedId="318"/>
+  <map modelId="202" generatedId="317"/>
+  <map modelId="203" generatedId="316"/>
+  <map modelId="204" generatedId="315"/>
+  <map modelId="205" generatedId="314"/>
+  <map modelId="206" generatedId="313"/>
+  <map modelId="207" generatedId="312"/>
+  <map modelId="208" generatedId="311"/>
+  <map modelId="209" generatedId="310"/>
+  <map modelId="210" generatedId="309"/>
+  <map modelId="211" generatedId="308"/>
+  <map modelId="212" generatedId="307"/>
+  <map modelId="213" generatedId="306"/>
+  <map modelId="214" generatedId="305"/>
+  <map modelId="215" generatedId="304"/>
+  <map modelId="216" generatedId="303"/>
+  <map modelId="217" generatedId="302"/>
+  <map modelId="218" generatedId="301"/>
+  <map modelId="219" generatedId="300"/>
+  <map modelId="220" generatedId="299"/>
+  <map modelId="221" generatedId="298"/>
+  <map modelId="222" generatedId="297"/>
+  <map modelId="223" generatedId="296"/>
+  <map modelId="224" generatedId="295"/>
+  <map modelId="225" generatedId="294"/>
+  <map modelId="226" generatedId="293"/>
+  <map modelId="227" generatedId="292"/>
+  <map modelId="228" generatedId="291"/>
+  <map modelId="229" generatedId="290"/>
+  <map modelId="230" generatedId="289"/>
+  <map modelId="231" generatedId="288"/>
+  <map modelId="232" generatedId="287"/>
+  <map modelId="233" generatedId="286"/>
+  <map modelId="234" generatedId="285"/>
+  <map modelId="235" generatedId="284"/>
+  <map modelId="236" generatedId="283"/>
+  <map modelId="237" generatedId="282"/>
+  <map modelId="136" generatedId="281"/>
+  <map modelId="137" generatedId="280"/>
+  <map modelId="124" generatedId="279"/>
+  <map modelId="126" generatedId="278"/>
+  <map modelId="127" generatedId="277"/>
+  <map modelId="122" generatedId="276"/>
+  <map modelId="123" generatedId="275"/>
+  <map modelId="117" generatedId="274"/>
+  <map modelId="241" generatedId="274" role="memory"/>
+  <map modelId="111" generatedId="273"/>
+  <map modelId="239" generatedId="273" role="memory"/>
+  <map modelId="102" generatedId="272"/>
+  <map modelId="238" generatedId="272" role="memory"/>
+  <map modelId="92" generatedId="271"/>
+  <map modelId="134" generatedId="271" role="memory"/>
+  <map modelId="82" generatedId="270"/>
+  <map modelId="132" generatedId="270" role="memory"/>
+  <map modelId="80" generatedId="269"/>
+  <map modelId="133" generatedId="269" role="memory"/>
+  <map modelId="73" generatedId="268"/>
+  <map modelId="131" generatedId="268" role="memory"/>
+  <map modelId="69" generatedId="267"/>
+  <map modelId="130" generatedId="267" role="memory"/>
+  <map modelId="55" generatedId="266"/>
+  <map modelId="129" generatedId="266" role="memory"/>
+  <map modelId="47" generatedId="265"/>
+  <map modelId="125" generatedId="264"/>
+  <map modelId="128" generatedId="264" role="memory"/>
+  <map modelId="241" generatedId="263" role="init"/>
+  <map modelId="239" generatedId="263" role="init"/>
+  <map modelId="238" generatedId="263" role="init"/>
+  <map modelId="134" generatedId="263" role="init"/>
+  <map modelId="133" generatedId="263" role="init"/>
+  <map modelId="132" generatedId="263" role="init"/>
+  <map modelId="131" generatedId="263" role="init"/>
+  <map modelId="130" generatedId="263" role="init"/>
+  <map modelId="129" generatedId="263" role="init"/>
+  <map modelId="128" generatedId="263" role="init"/>
+  <map modelId="45" generatedId="262"/>
+  <map modelId="44" generatedId="261"/>
+  <map modelId="43" generatedId="260"/>
+  <map modelId="42" generatedId="259"/>
+  <map modelId="41" generatedId="258"/>
+  <map modelId="40" generatedId="257"/>
+  <map modelId="39" generatedId="256"/>
+  <map modelId="30" generatedId="255" role="context-type"/>
+  <map modelId="30" generatedId="247" role="interface-file"/>
+  <map modelId="30" generatedId="252" role="cycle-method"/>
+  <map modelId="245" generatedId="518"/>
+  <map modelId="244" generatedId="517" role="cycle-method"/>
+  <map modelId="26" generatedId="514"/>
+  <map modelId="25" generatedId="513"/>
+  <map modelId="24" generatedId="512"/>
+  <map modelId="23" generatedId="511"/>
+  <map modelId="22" generatedId="510"/>
+  <map modelId="21" generatedId="509"/>
+  <map modelId="20" generatedId="508"/>
+  <map modelId="19" generatedId="507"/>
+  <map modelId="18" generatedId="506"/>
+  <map modelId="17" generatedId="505"/>
+  <map modelId="15" generatedId="504"/>
+  <map modelId="16" generatedId="503"/>
+  <map modelId="29" generatedId="462"/>
+  <map modelId="28" generatedId="463"/>
+  <map modelId="27" generatedId="464"/>
+  <map modelId="1" generatedId="464"/>
+  <map modelId="3" generatedId="500"/>
+  <map modelId="2" generatedId="499"/>
+  <map modelId="13" generatedId="497"/>
+  <map modelId="12" generatedId="498"/>
+  <map modelId="14" generatedId="496"/>
+  <map modelId="11" generatedId="495"/>
+  <map modelId="10" generatedId="494"/>
+  <map modelId="9" generatedId="493"/>
+  <map modelId="8" generatedId="492"/>
+  <map modelId="7" generatedId="491"/>
+  <map modelId="6" generatedId="490"/>
+  <map modelId="5" generatedId="489"/>
+  <map modelId="4" generatedId="488"/>
 </mapping>
 <!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** mapping.xml
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$-->

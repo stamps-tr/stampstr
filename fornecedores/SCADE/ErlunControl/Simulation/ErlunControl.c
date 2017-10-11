@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/Simulation/config.txt
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -267,6 +267,24 @@ void ErlunControl(inC_ErlunControl *inC, outC_ErlunControl *outC)
   }
   kcg_copy_T_String(&outC->Output_SpeedStr_1, &outC->_L36_SpeedStr_1);
   last_Var_Send = outC->Var_Send;
+  kcg_copy_T_String(&outC->_L330, (T_String *) &SEND_BTN_PHOTO);
+  outC->_L329 = inC->Photo_Btn;
+  outC->_L328 = kcg_lit_int32(0);
+  outC->_L327 = kcg_lit_int32(8);
+  /* _L325= */
+  if (outC->init) {
+    outC->_L325 = kcg_lit_int32(0);
+  }
+  else {
+    outC->_L325 = outC->_L326;
+  }
+  /* _L326= */
+  if (outC->_L329) {
+    outC->_L326 = outC->_L327;
+  }
+  else {
+    outC->_L326 = outC->_L328;
+  }
   kcg_copy_T_String(&outC->_L19, (T_String *) &SEND_BTN_UP);
   kcg_copy_T_String(&outC->_L30, (T_String *) &SEND_BTN_DOWN);
   kcg_copy_T_String(&outC->_L31, (T_String *) &SEND_BTN_LEFT);
@@ -328,7 +346,7 @@ void ErlunControl(inC_ErlunControl *inC, outC_ErlunControl *outC)
     outC->_L108 = outC->_L99;
   }
   outC->_L119 = outC->_L108 + outC->_L114 + outC->_L129 + outC->_L124 +
-    outC->_L310 + outC->_L315 + outC->_L143;
+    outC->_L310 + outC->_L315 + outC->_L143 + outC->_L325;
   outC->Var_Send = outC->_L119;
   outC->_L120 = outC->Var_Send;
   /* _L27= */
@@ -353,6 +371,9 @@ void ErlunControl(inC_ErlunControl *inC, outC_ErlunControl *outC)
       break;
     case kcg_lit_int32(7) :
       kcg_copy_T_String(&outC->_L27, &outC->_L297);
+      break;
+    case kcg_lit_int32(8) :
+      kcg_copy_T_String(&outC->_L27, &outC->_L330);
       break;
     default :
       kcg_copy_T_String(&outC->_L27, &outC->_L42);
@@ -437,7 +458,6 @@ void ErlunControl(inC_ErlunControl *inC, outC_ErlunControl *outC)
   else {
     outC->_L99 = outC->_L100;
   }
-  kcg_copy_T_String(&outC->Send_TextString, &outC->_L27);
   outC->_L12 = outC->Var_Turn_Btn;
   outC->EmitVisible = outC->_L12;
   outC->_L10 = GREEN;
@@ -508,6 +528,13 @@ void ErlunControl_init(outC_ErlunControl *outC)
   kcg_size idx25;
   kcg_size idx26;
 
+  for (idx = 0; idx < 4; idx++) {
+    outC->_L330[idx] = ' ';
+  }
+  outC->_L329 = kcg_true;
+  outC->_L325 = kcg_lit_int32(0);
+  outC->_L327 = kcg_lit_int32(0);
+  outC->_L328 = kcg_lit_int32(0);
   outC->_L323 = kcg_lit_int32(0);
   outC->_L315 = kcg_lit_int32(0);
   outC->_L316 = kcg_lit_int32(0);
@@ -523,14 +550,14 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L301 = kcg_true;
   outC->_L300 = kcg_true;
   outC->_L299 = kcg_lit_float32(0.0);
-  for (idx = 0; idx < 4; idx++) {
-    outC->_L297[idx] = ' ';
-  }
   for (idx1 = 0; idx1 < 4; idx1++) {
-    outC->_L152[idx1] = ' ';
+    outC->_L297[idx1] = ' ';
   }
   for (idx2 = 0; idx2 < 4; idx2++) {
-    outC->_L150[idx2] = ' ';
+    outC->_L152[idx2] = ' ';
+  }
+  for (idx3 = 0; idx3 < 4; idx3++) {
+    outC->_L150[idx3] = ' ';
   }
   outC->_L149 = kcg_true;
   outC->_L136 = kcg_lit_int32(0);
@@ -554,23 +581,23 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L108 = kcg_lit_int32(0);
   outC->_L100 = kcg_lit_int32(0);
   outC->_L91 = kcg_true;
-  for (idx3 = 0; idx3 < 4; idx3++) {
-    outC->_L42[idx3] = ' ';
-  }
   for (idx4 = 0; idx4 < 4; idx4++) {
-    outC->_L32[idx4] = ' ';
+    outC->_L42[idx4] = ' ';
   }
   for (idx5 = 0; idx5 < 4; idx5++) {
-    outC->_L31[idx5] = ' ';
+    outC->_L32[idx5] = ' ';
   }
   for (idx6 = 0; idx6 < 4; idx6++) {
-    outC->_L30[idx6] = ' ';
+    outC->_L31[idx6] = ' ';
   }
   for (idx7 = 0; idx7 < 4; idx7++) {
-    outC->_L27[idx7] = ' ';
+    outC->_L30[idx7] = ' ';
   }
   for (idx8 = 0; idx8 < 4; idx8++) {
-    outC->_L19[idx8] = ' ';
+    outC->_L27[idx8] = ' ';
+  }
+  for (idx9 = 0; idx9 < 4; idx9++) {
+    outC->_L19[idx9] = ' ';
   }
   outC->_L10 = kcg_lit_uint8(0);
   outC->_L11 = kcg_lit_uint8(0);
@@ -579,35 +606,35 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L9 = kcg_true;
   outC->_L8 = kcg_true;
   outC->_L6 = kcg_lit_uint16(0);
-  for (idx9 = 0; idx9 < 4; idx9++) {
-    outC->_L5[idx9] = ' ';
-  }
   for (idx10 = 0; idx10 < 4; idx10++) {
-    outC->_L4[idx10] = ' ';
+    outC->_L5[idx10] = ' ';
   }
   for (idx11 = 0; idx11 < 4; idx11++) {
-    outC->_L3[idx11] = ' ';
+    outC->_L4[idx11] = ' ';
+  }
+  for (idx12 = 0; idx12 < 4; idx12++) {
+    outC->_L3[idx12] = ' ';
   }
   outC->_L2 = kcg_true;
   outC->_L1 = kcg_true;
   outC->Var_mqtt = kcg_lit_int32(0);
   outC->Var_Turn_Btn = kcg_true;
-  for (idx12 = 0; idx12 < 4; idx12++) {
-    outC->_L154_SpeedStr_1[idx12] = ' ';
+  for (idx13 = 0; idx13 < 4; idx13++) {
+    outC->_L154_SpeedStr_1[idx13] = ' ';
   }
   outC->_L152_SpeedStr_1 = kcg_true;
   outC->_L151_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L149_SpeedStr_1 = kcg_lit_int32(0);
-  for (idx13 = 0; idx13 < 4; idx13++) {
-    outC->_L145_SpeedStr_1[idx13] = ' ';
+  for (idx14 = 0; idx14 < 4; idx14++) {
+    outC->_L145_SpeedStr_1[idx14] = ' ';
   }
   outC->_L144_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L143_SpeedStr_1 = kcg_true;
   outC->_L142_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L141_SpeedStr_1 = kcg_true;
   outC->_L140_SpeedStr_1 = kcg_lit_int32(0);
-  for (idx14 = 0; idx14 < 4; idx14++) {
-    outC->_L135_SpeedStr_1[idx14] = ' ';
+  for (idx15 = 0; idx15 < 4; idx15++) {
+    outC->_L135_SpeedStr_1[idx15] = ' ';
   }
   outC->_L134_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L133_SpeedStr_1 = kcg_true;
@@ -619,8 +646,8 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L124_SpeedStr_1 = kcg_true;
   outC->_L123_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L121_SpeedStr_1 = kcg_true;
-  for (idx15 = 0; idx15 < 4; idx15++) {
-    outC->_L117_SpeedStr_1[idx15] = ' ';
+  for (idx16 = 0; idx16 < 4; idx16++) {
+    outC->_L117_SpeedStr_1[idx16] = ' ';
   }
   outC->_L116_SpeedStr_1 = kcg_true;
   outC->_L113_SpeedStr_1 = kcg_true;
@@ -630,15 +657,15 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L104_SpeedStr_1 = kcg_true;
   outC->_L103_SpeedStr_1 = kcg_true;
   outC->_L102_SpeedStr_1 = kcg_lit_int32(0);
-  for (idx16 = 0; idx16 < 4; idx16++) {
-    outC->_L99_SpeedStr_1[idx16] = ' ';
+  for (idx17 = 0; idx17 < 4; idx17++) {
+    outC->_L99_SpeedStr_1[idx17] = ' ';
   }
   outC->_L97_SpeedStr_1 = kcg_true;
   outC->_L96_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L95_SpeedStr_1 = kcg_true;
   outC->_L94_SpeedStr_1 = kcg_lit_float32(0.0);
-  for (idx17 = 0; idx17 < 4; idx17++) {
-    outC->_L89_SpeedStr_1[idx17] = ' ';
+  for (idx18 = 0; idx18 < 4; idx18++) {
+    outC->_L89_SpeedStr_1[idx18] = ' ';
   }
   outC->_L88_SpeedStr_1 = kcg_true;
   outC->_L87_SpeedStr_1 = kcg_lit_float32(0.0);
@@ -650,8 +677,8 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L76_SpeedStr_1 = kcg_true;
   outC->_L75_SpeedStr_1 = kcg_true;
   outC->_L74_SpeedStr_1 = kcg_true;
-  for (idx18 = 0; idx18 < 4; idx18++) {
-    outC->_L71_SpeedStr_1[idx18] = ' ';
+  for (idx19 = 0; idx19 < 4; idx19++) {
+    outC->_L71_SpeedStr_1[idx19] = ' ';
   }
   outC->_L70_SpeedStr_1 = kcg_true;
   outC->_L69_SpeedStr_1 = kcg_lit_float32(0.0);
@@ -663,31 +690,31 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L61_SpeedStr_1 = kcg_true;
   outC->_L60_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L59_SpeedStr_1 = kcg_lit_int32(0);
-  for (idx19 = 0; idx19 < 4; idx19++) {
-    outC->_L55_SpeedStr_1[idx19] = ' ';
+  for (idx20 = 0; idx20 < 4; idx20++) {
+    outC->_L55_SpeedStr_1[idx20] = ' ';
   }
   outC->_L54_SpeedStr_1 = kcg_true;
   outC->_L53_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L52_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L51_SpeedStr_1 = kcg_lit_int32(0);
-  for (idx20 = 0; idx20 < 4; idx20++) {
-    outC->_L46_SpeedStr_1[idx20] = ' ';
+  for (idx21 = 0; idx21 < 4; idx21++) {
+    outC->_L46_SpeedStr_1[idx21] = ' ';
   }
   outC->_L45_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L44_SpeedStr_1 = kcg_true;
   outC->_L43_SpeedStr_1 = kcg_true;
   outC->_L42_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L41_SpeedStr_1 = kcg_lit_int32(0);
-  for (idx21 = 0; idx21 < 4; idx21++) {
-    outC->_L36_SpeedStr_1[idx21] = ' ';
+  for (idx22 = 0; idx22 < 4; idx22++) {
+    outC->_L36_SpeedStr_1[idx22] = ' ';
   }
   outC->_L35_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L34_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L33_SpeedStr_1 = kcg_true;
   outC->_L32_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L31_SpeedStr_1 = kcg_lit_int32(0);
-  for (idx22 = 0; idx22 < 4; idx22++) {
-    outC->_L27_SpeedStr_1[idx22] = ' ';
+  for (idx23 = 0; idx23 < 4; idx23++) {
+    outC->_L27_SpeedStr_1[idx23] = ' ';
   }
   outC->_L26_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L24_SpeedStr_1 = kcg_lit_int32(0);
@@ -698,8 +725,8 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L14_SpeedStr_1 = kcg_true;
   outC->_L13_SpeedStr_1 = kcg_lit_int32(0);
   outC->_L12_SpeedStr_1 = kcg_lit_int32(0);
-  for (idx23 = 0; idx23 < 4; idx23++) {
-    outC->_L9_SpeedStr_1[idx23] = ' ';
+  for (idx24 = 0; idx24 < 4; idx24++) {
+    outC->_L9_SpeedStr_1[idx24] = ' ';
   }
   outC->_L8_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L7_SpeedStr_1 = kcg_lit_int32(0);
@@ -717,14 +744,15 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L163_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->_L164_SpeedStr_1 = kcg_lit_float32(0.0);
   outC->Input_SpeedStr_1 = kcg_lit_float32(0.0);
-  for (idx24 = 0; idx24 < 4; idx24++) {
-    outC->Output_SpeedStr_1[idx24] = ' ';
+  for (idx25 = 0; idx25 < 4; idx25++) {
+    outC->Output_SpeedStr_1[idx25] = ' ';
   }
   outC->_L4_Switch_1 = kcg_true;
   outC->_L2_Switch_1 = kcg_true;
   outC->_L1_Switch_1 = kcg_true;
   outC->Input1_Switch_1 = kcg_true;
   outC->Output1_Switch_1 = kcg_true;
+  outC->_L326 = kcg_lit_int32(0);
   outC->_L317 = kcg_lit_int32(0);
   outC->_L312 = kcg_lit_int32(0);
   outC->_L139 = kcg_lit_int32(0);
@@ -735,9 +763,6 @@ void ErlunControl_init(outC_ErlunControl *outC)
   outC->_L7 = kcg_true;
   outC->_L3_Switch_1 = kcg_true;
   outC->init = kcg_true;
-  for (idx25 = 0; idx25 < 4; idx25++) {
-    outC->Send_TextString[idx25] = ' ';
-  }
   outC->EmitVisible = kcg_true;
   outC->TurnTextColorIndex = kcg_lit_uint8(0);
   outC->Layer1Visible = kcg_true;
@@ -768,6 +793,6 @@ void ErlunControl_reset(outC_ErlunControl *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** ErlunControl.c
-** Generation date: 2017-10-10T14:20:48
+** Generation date: 2017-10-11T15:49:58
 *************************************************************$ */
 

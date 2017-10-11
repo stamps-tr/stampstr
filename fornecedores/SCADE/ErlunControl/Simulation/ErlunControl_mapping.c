@@ -20,7 +20,7 @@ DECL_ITER(array_4);
 DECL_SCOPE(scope_4, 101);
 DECL_SCOPE(scope_3, 5);
 DECL_SCOPE(scope_2, 1);
-DECL_SCOPE(scope_1, 86);
+DECL_SCOPE(scope_1, 92);
 DECL_SCOPE(scope_0, 1);
 
 /* clock definition */
@@ -158,7 +158,7 @@ const MappingScope scope_2 = {
     scope_2_entries, 1
 };
 
-const MappingEntry scope_1_entries[86] = {
+const MappingEntry scope_1_entries[92] = {
     /* 0 */ { MAP_OUTPUT, "Turn_BtnTextString", NULL, sizeof(T_String), (size_t)&outputs_ctx.Turn_BtnTextString, &_Type_T_String_Utils, NULL, NULL, &scope_2, 1, 0 },
     /* 1 */ { MAP_OUTPUT, "StringSize", NULL, sizeof(T_uChar), (size_t)&outputs_ctx.StringSize, &_Type_T_uChar_Utils, NULL, NULL, NULL, 1, 1 },
     /* 2 */ { MAP_OUTPUT, "Emit2CDS", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.Emit2CDS, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 2 },
@@ -166,14 +166,14 @@ const MappingEntry scope_1_entries[86] = {
     /* 4 */ { MAP_OUTPUT, "Layer1Visible", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.Layer1Visible, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 4 },
     /* 5 */ { MAP_OUTPUT, "TurnTextColorIndex", NULL, sizeof(T_uShort), (size_t)&outputs_ctx.TurnTextColorIndex, &_Type_T_uShort_Utils, NULL, NULL, NULL, 1, 5 },
     /* 6 */ { MAP_OUTPUT, "EmitVisible", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.EmitVisible, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 6 },
-    /* 7 */ { MAP_OUTPUT, "Send_TextString", NULL, sizeof(T_String), (size_t)&outputs_ctx.Send_TextString, &_Type_T_String_Utils, NULL, NULL, &scope_2, 1, 7 },
-    /* 8 */ { MAP_INPUT, "Turn_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Turn_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 8 },
-    /* 9 */ { MAP_INPUT, "Up_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Up_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 9 },
-    /* 10 */ { MAP_INPUT, "Down_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Down_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 10 },
-    /* 11 */ { MAP_INPUT, "Left_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Left_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 11 },
-    /* 12 */ { MAP_INPUT, "Right_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Right_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 12 },
-    /* 13 */ { MAP_INPUT, "Speed_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Speed_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 13 },
-    /* 14 */ { MAP_INPUT, "Speed_BtnValue", NULL, sizeof(kcg_float32), (size_t)&inputs_ctx.Speed_BtnValue, &_Type_kcg_float32_Utils, NULL, NULL, NULL, 1, 14 },
+    /* 7 */ { MAP_INPUT, "Turn_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Turn_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 7 },
+    /* 8 */ { MAP_INPUT, "Up_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Up_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 8 },
+    /* 9 */ { MAP_INPUT, "Down_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Down_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 9 },
+    /* 10 */ { MAP_INPUT, "Left_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Left_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 10 },
+    /* 11 */ { MAP_INPUT, "Right_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Right_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 11 },
+    /* 12 */ { MAP_INPUT, "Speed_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Speed_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 12 },
+    /* 13 */ { MAP_INPUT, "Speed_BtnValue", NULL, sizeof(kcg_float32), (size_t)&inputs_ctx.Speed_BtnValue, &_Type_kcg_float32_Utils, NULL, NULL, NULL, 1, 13 },
+    /* 14 */ { MAP_INPUT, "Photo_Btn", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.Photo_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 14 },
     /* 15 */ { MAP_LOCAL, "Var_Turn_Btn", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.Var_Turn_Btn, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 15 },
     /* 16 */ { MAP_LOCAL, "Var_Send", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx.Var_Send, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 16 },
     /* 17 */ { MAP_LOCAL, "Var_mqtt", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx.Var_mqtt, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 17 },
@@ -243,12 +243,18 @@ const MappingEntry scope_1_entries[86] = {
     /* 81 */ { MAP_LOCAL, "_L316", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L316, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 81 },
     /* 82 */ { MAP_LOCAL, "_L315", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L315, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 82 },
     /* 83 */ { MAP_LOCAL, "_L323", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L323, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 83 },
-    /* 84 */ { MAP_EXPANDED, "Switch 1", NULL, 0, 0, NULL, NULL, NULL, &scope_3, 1, 84 },
-    /* 85 */ { MAP_EXPANDED, "SpeedStr 1", NULL, 0, 0, NULL, NULL, NULL, &scope_4, 1, 85 }
+    /* 84 */ { MAP_LOCAL, "_L328", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L328, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 84 },
+    /* 85 */ { MAP_LOCAL, "_L327", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L327, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 85 },
+    /* 86 */ { MAP_LOCAL, "_L326", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L326, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 86 },
+    /* 87 */ { MAP_LOCAL, "_L325", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L325, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 87 },
+    /* 88 */ { MAP_LOCAL, "_L329", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L329, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 88 },
+    /* 89 */ { MAP_LOCAL, "_L330", NULL, sizeof(T_String), (size_t)&outputs_ctx._L330, &_Type_T_String_Utils, NULL, NULL, &scope_2, 1, 89 },
+    /* 90 */ { MAP_EXPANDED, "Switch 1", NULL, 0, 0, NULL, NULL, NULL, &scope_3, 1, 90 },
+    /* 91 */ { MAP_EXPANDED, "SpeedStr 1", NULL, 0, 0, NULL, NULL, NULL, &scope_4, 1, 91 }
 };
 const MappingScope scope_1 = {
     "ErlunControl/ ErlunControl",
-    scope_1_entries, 86
+    scope_1_entries, 92
 };
 
 const MappingEntry scope_0_entries[1] = {

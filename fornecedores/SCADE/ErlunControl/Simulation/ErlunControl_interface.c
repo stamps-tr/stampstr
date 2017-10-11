@@ -10,7 +10,7 @@ extern "C" {
 
 const int  rt_version = Srtv62;
 
-const char* _SCSIM_CheckSum = "911b36984fc79f9a7258d4fe787c5988";
+const char* _SCSIM_CheckSum = "8198661c67d3e0182c6270a61512026a";
 const char* _SCSIM_SmuTypesCheckSum = "70167ab69f4117fa3043a69f71c5aa42";
 
 /* context */
@@ -28,6 +28,7 @@ static void _SCSIM_RestoreInterface(void) {
     inputs_ctx.Right_Btn = inputs_ctx_restore.Right_Btn;
     inputs_ctx.Speed_Btn = inputs_ctx_restore.Speed_Btn;
     inputs_ctx.Speed_BtnValue = inputs_ctx_restore.Speed_BtnValue;
+    inputs_ctx.Photo_Btn = inputs_ctx_restore.Photo_Btn;
     memset((void*)&outputs_ctx, 0, sizeof(outputs_ctx));
 }
 
@@ -40,6 +41,7 @@ static void _SCSIM_ExecuteInterface(void) {
     inputs_ctx_execute.Right_Btn = inputs_ctx.Right_Btn;
     inputs_ctx_execute.Speed_Btn = inputs_ctx.Speed_Btn;
     inputs_ctx_execute.Speed_BtnValue = inputs_ctx.Speed_BtnValue;
+    inputs_ctx_execute.Photo_Btn = inputs_ctx.Photo_Btn;
     pSimulator->m_pfnReleaseValueMutex(pSimulator);
 }
 

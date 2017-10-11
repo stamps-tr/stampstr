@@ -43,6 +43,7 @@
     <Constant scadeName="SEND_BTN_RIGHT" scadeType="T_String" targetName="SEND_BTN_RIGHT" targetType="T_String"/>
     <Constant scadeName="SEND_BTN_ON" scadeType="T_String" targetName="SEND_BTN_ON" targetType="T_String"/>
     <Constant scadeName="SEND_BTN_OFF" scadeType="T_String" targetName="SEND_BTN_OFF" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_PHOTO" scadeType="T_String" targetName="SEND_BTN_PHOTO" targetType="T_String"/>
     <NamedType refType="T_String" scadeName="T_String" targetName="T_String"/>
     <NamedType refType="kcg_uint16" scadeName="T_uChar" targetName="T_uChar"/>
     <NamedType refType="kcg_uint8" scadeName="T_uShort" targetName="T_uShort"/>
@@ -54,6 +55,7 @@
       <Input inCtx="true" scadeName="Right_Btn" scadeType="bool" targetName="Right_Btn" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="Speed_Btn" scadeType="bool" targetName="Speed_Btn" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="Speed_BtnValue" scadeType="float32" targetName="Speed_BtnValue" targetType="kcg_float32"/>
+      <Input inCtx="true" scadeName="Photo_Btn" scadeType="bool" targetName="Photo_Btn" targetType="kcg_bool"/>
       <Output inCtx="true" scadeName="Turn_BtnTextString" scadeType="T_String" targetName="Turn_BtnTextString" targetType="T_String"/>
       <Output inCtx="true" scadeName="StringSize" scadeType="T_uChar" targetName="StringSize" targetType="T_uChar"/>
       <Output inCtx="true" scadeName="Emit2CDS" scadeType="bool" targetName="Emit2CDS" targetType="kcg_bool"/>
@@ -61,7 +63,6 @@
       <Output inCtx="true" scadeName="Layer1Visible" scadeType="bool" targetName="Layer1Visible" targetType="kcg_bool"/>
       <Output inCtx="true" scadeName="TurnTextColorIndex" scadeType="T_uShort" targetName="TurnTextColorIndex" targetType="T_uShort"/>
       <Output inCtx="true" scadeName="EmitVisible" scadeType="bool" targetName="EmitVisible" targetType="kcg_bool"/>
-      <Output inCtx="true" scadeName="Send_TextString" scadeType="T_String" targetName="Send_TextString" targetType="T_String"/>
       <Local inCtx="true" scadeName="Var_Turn_Btn" scadeType="bool" targetName="Var_Turn_Btn" targetType="kcg_bool"/>
       <Local inCtx="true" scadeName="Var_Send" scadeType="int32" targetName="Var_Send" targetType="kcg_int32"/>
       <Local inCtx="true" scadeName="Var_mqtt" scadeType="int32" targetName="Var_mqtt" targetType="kcg_int32"/>
@@ -131,6 +132,12 @@
       <Local inCtx="true" scadeName="_L316" scadeType="int32" targetName="_L316" targetType="kcg_int32"/>
       <Local inCtx="true" scadeName="_L315" scadeType="int32" targetName="_L315" targetType="kcg_int32"/>
       <Local inCtx="true" scadeName="_L323" scadeType="int32" targetName="_L323" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L328" scadeType="int32" targetName="_L328" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L327" scadeType="int32" targetName="_L327" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L326" scadeType="int32" targetName="_L326" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L325" scadeType="int32" targetName="_L325" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L329" scadeType="bool" targetName="_L329" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L330" scadeType="T_String" targetName="_L330" targetType="T_String"/>
       <NodeInlining instName="1" scadeName="Switch">
         <Input inCtx="true" scadeName="Input1" scadeType="bool" targetName="Input1_Switch_1" targetType="kcg_bool"/>
         <Output inCtx="true" scadeName="Output1" scadeType="bool" targetName="Output1_Switch_1" targetType="kcg_bool"/>
@@ -280,6 +287,10 @@
         <Memory inCtx="true" targetName="_L317" targetType="kcg_int32"/>
       </FbyOp>
       <NodeInstance instName="2" refName="msg" scadeName="msg"/>
+      <FbyOp instName="17">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L326" targetType="kcg_int32"/>
+      </FbyOp>
       <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
       <Memory inCtx="true" targetName="_L3_Switch_1" targetType="kcg_bool"/>
       <Memory inCtx="true" targetName="_L7" targetType="kcg_bool"/>
@@ -290,6 +301,7 @@
       <Memory inCtx="true" targetName="_L139" targetType="kcg_int32"/>
       <Memory inCtx="true" targetName="_L312" targetType="kcg_int32"/>
       <Memory inCtx="true" targetName="_L317" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L326" targetType="kcg_int32"/>
       <OutCtxType targetName="outC_ErlunControl"/>
       <InCtxType targetName="inC_ErlunControl"/>
     </RootNode>
