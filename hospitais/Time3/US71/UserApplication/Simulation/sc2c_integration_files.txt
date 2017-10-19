@@ -1,0 +1,47 @@
+*****************************
+*** Generated KCG H/Ads files ***
+*****************************
+control.h
+kcg_types.h
+kcg_consts.h
+kcg_sensors.h
+kcg_imported_functions.h
+
+*****************************
+*** Generated KCG C/Adb files ***
+*****************************
+control.c
+kcg_types.c
+kcg_consts.c
+
+*****************************
+*** External C Files ***
+*****************************
+$(SCADE)\lib\A661Cosim.c
+control_cosim.c
+comando_controle_type.c
+$(SCADE)\lib\C\SmuPredefConv.c
+$(SCADE)\lib\C\SmuTypes.c
+$(SCADE)\lib\C\SmuLib.c
+$(SCADE)\lib\C\SmuVTable.c
+comando_controle_mapping.c
+..\..\IntegrationCode\mqtt.c
+
+*****************************
+*** Generated SC2C Files ***
+*****************************
+user_macros.h
+kcg_imported_types.h
+
+*****************************
+*** Include Directories ***
+*****************************
+.
+$(SCADE)
+$(SCADE)\include
+$(SCADE)\include\C
+$(SCADE)\include\Ada
+$(SCADE)\lib\Ada
+..\..\IntegrationCode
+$(SCADE)\libraries\SC65\libmathext
+

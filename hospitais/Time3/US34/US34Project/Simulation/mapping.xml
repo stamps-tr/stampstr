@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US34/US34Project/Simulation/config.txt
-** Generation date: 2017-09-14T19:45:41
+** Command: kcg66.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US34/US34Project/Simulation/config.txt
+** Generation date: 2017-09-22T00:19:56
 *************************************************************$-->
 <mapping>
   <config>
@@ -18,7 +18,7 @@
     <option name="short_circuit" value="#off#"/>
     <option name="wrap_c_ops" value="#off#"/>
     <option name="input_file"
-        value="C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US34/US34Project/Simulation/scade_model_without_unused.scade"/>
+        value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US34/US34Project/Simulation/scade_model_without_unused.scade"/>
     <option name="probes" value="#on#"/>
     <option name="no_observe" value="#off#"/>
     <option name="observe" value="#off#"/>
@@ -34,7 +34,8 @@
     <option name="noexp" value="#off#"/>
     <option name="exp" value="#off#"/>
     <option name="expall" value="#on#"/>
-    <option name="target_dir" value="C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US34/US34Project/Simulation"/>
+    <option name="target_dir"
+        value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US34/US34Project/Simulation"/>
     <option name="target" value="C"/>
     <option name="root" value="Operator1"/>
     <option name="auth" value="#off#"/>
@@ -245,5 +246,5 @@
 </mapping>
 <!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** mapping.xml
-** Generation date: 2017-09-14T19:45:41
+** Generation date: 2017-09-22T00:19:56
 *************************************************************$-->

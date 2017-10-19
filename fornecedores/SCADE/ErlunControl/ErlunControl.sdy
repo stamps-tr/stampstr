@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="ErlunControl" oid="!ed/9314/3524/1114/59ba806b1734">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Up_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Up_Btn" type="bool" oid="!ed/9317/3524/1114/59ba827d39c5" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Down_Btn" type="bool" oid="!ed/9318/3524/1114/59ba828576fd" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Left_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Left_Btn" type="bool" oid="!ed/9319/3524/1114/59ba828e3b97" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Right_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Right_Btn" type="bool" oid="!ed/931a/3524/1114/59ba829c6977" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Turn_BtnTextString" type="char^4" oid="!ed/931c/3524/1114/59ba82cd64b" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_STRING" Size="4" WidgetType="Label" WidgetName="Turn_Label">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Emit2CDS" type="bool" oid="!ed/9330/3524/1114/59ba831e64c0" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Up_PicturePushButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Left_PicturePushButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Right_PicturePushButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Turn_Label">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_COLOR_INDEX" WidgetType="Label" WidgetName="Turn_Label">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_VISIBLE" WidgetType="Slider" WidgetName="Slider">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Speed_Label">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Speed_Label">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="StringSize" type="uint16" oid="!ed/9326/3524/1114/59ba83091784" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Turn_Label">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Layer1Active" type="bool" oid="!ed/93af/3524/1114/59ba882262b1" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Layer1Visible" type="bool" oid="!ed/93b0/3524/1114/59ba882f799" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="TurnTextColorIndex" type="uint8" oid="!ed/129ff/3524/1114/59ba967c4754" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ColorIndex" type="uchar" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_COLOR_INDEX" WidgetType="Label" WidgetName="Turn_Label">
+							<A661Data>
+								<DataField value="ColorIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="EmitVisible" type="bool" oid="!ed/4a44/4D77/BD8/59bac3516882" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Up_PicturePushButton">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Left_PicturePushButton">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Right_PicturePushButton">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Speed_Label">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_VISIBLE" WidgetType="Slider" WidgetName="Slider">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_VISIBLE" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_VISIBLE" WidgetType="Label" WidgetName="Speed_Label">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="6" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Turn_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Turn_Btn" type="bool" oid="!ed/9316/3524/1114/59ba826970be" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_EVT_VALUE_CHANGE" WidgetType="Slider" WidgetName="Slider">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Speed_Btn" type="bool" oid="!ed/931b/3524/1114/59ba82a75b83" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtValue" type="float" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_EVT_VALUE_CHANGE" WidgetType="Slider" WidgetName="Slider">
+							<A661Data>
+								<DataField value="EvtValue"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Speed_BtnValue" type="float32" oid="!ed/4f45/668F/DC4/59bfce4810c" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Photo_Btn" type="bool" oid="!ed/50dd/6A06/12D4/59de5b307acf" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+		<OperatorMapping name="ErlunControl" oid="!ed/9314/3524/1114/59ba806b1734">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Turn_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Turn_Btn" type="bool" oid="!ed/9316/3524/1114/59ba826970be" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Up_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Up_Btn" type="bool" oid="!ed/9317/3524/1114/59ba827d39c5" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Down_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Down_Btn" type="bool" oid="!ed/9318/3524/1114/59ba828576fd" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Left_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Left_Btn" type="bool" oid="!ed/9319/3524/1114/59ba828e3b97" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_EVT_SELECTION" WidgetType="PicturePushButton" WidgetName="Right_PicturePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Right_Btn" type="bool" oid="!ed/931a/3524/1114/59ba829c6977" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_EVT_VALUE_CHANGE" WidgetType="Slider" WidgetName="Slider">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Speed_Btn" type="bool" oid="!ed/931b/3524/1114/59ba82a75b83" instancepath="ErlunControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Turn_BtnTextString" type="char^4" oid="!ed/931c/3524/1114/59ba82cd64b" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\..\..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_STRING" Size="3" WidgetType="PushButton" WidgetName="Turn_PushButton">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="StringSize" type="uint16" oid="!ed/9326/3524/1114/59ba83091784" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\..\..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_STRING" WidgetType="PushButton" WidgetName="Turn_PushButton">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Emit2CDS" type="bool" oid="!ed/9330/3524/1114/59ba831e64c0" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_STRING" WidgetType="PushButton" WidgetName="Turn_PushButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Layer1Active" type="bool" oid="!ed/93af/3524/1114/59ba882262b1" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Layer1Visible" type="bool" oid="!ed/93b0/3524/1114/59ba882f799" instancepath="ErlunControl/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\cds\CDS.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

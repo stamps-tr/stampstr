@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="NUMBER_VICTIMS">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="12"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/499f/722D/3C54/59c1e405f11"/>
+			</pragmas>
+		</Constant>
+		<Constant name="STATUS_VICTIMS">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="10"/>
+					</size>
+				</Table>
+			</type>
+			<value>
+				<!-- ['G', 'R', 'A', 'V', 'I', 'S', 'S', 'I', 'M', 'O'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'G'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'V'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'M'"/>
+						<ConstValue value="'O'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/49a0/722D/3C54/59c1e4695ab0"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LATITUDE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5.123"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4b9c/74A2/14E0/59e7f02b3d25"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LONGITUDE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="9.123"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4baa/74A2/14E0/59e7f02e33b2"/>
+			</pragmas>
+		</Constant>
+		<Constant name="GREEN">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint8"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="51"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4bed/74A2/14E0/59e7f2e51b7c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="RED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint8"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="21"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4bfe/74A2/14E0/59e7f3203b34"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

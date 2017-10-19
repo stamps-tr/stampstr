@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="93">
+<Project id="1" oid_count="94">
 	<props>
 		<Prop id="1" name="@STUDIO:PRODUCT">
 			<value>UAPC</value>
@@ -263,7 +263,6 @@ $(CreatedDate)</value>
 		</Folder>
 		<Folder id="31" extensions="sgfx;ogfx;pgfx" name="Model Files">
 			<elements>
-				<FileRef id="92" persistAs="UADF.sgfx"/>
 				<FileRef id="93" persistAs="CC.sgfx"/>
 			</elements>
 		</Folder>

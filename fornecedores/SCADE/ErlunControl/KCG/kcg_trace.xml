@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/KCG/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="2"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="expall" value="#on#"/>
+    <Option name="target_dir" value="C:/Users/Paiva/SCADE/STAMPS-TR/ErlunControl/KCG"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="ErlunControl"/>
+    <Option name="auth" value="#off#"/>
+    <Constant scadeName="TURN_BTN_OFF" scadeType="T_String" targetName="TURN_BTN_OFF" targetType="T_String"/>
+    <Constant macroDef="true" scadeName="STR_SIZE" scadeType="T_uChar" targetName="STR_SIZE" targetType="T_uChar"/>
+    <Constant scadeName="TURN_BTN_ON" scadeType="T_String" targetName="TURN_BTN_ON" targetType="T_String"/>
+    <Constant macroDef="true" scadeName="GREEN" scadeType="T_uShort" targetName="GREEN" targetType="T_uShort"/>
+    <Constant macroDef="true" scadeName="RED" scadeType="T_uShort" targetName="RED" targetType="T_uShort"/>
+    <Constant scadeName="SEND_BTN_UP" scadeType="T_String" targetName="SEND_BTN_UP" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_DOWN" scadeType="T_String" targetName="SEND_BTN_DOWN" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_LEFT" scadeType="T_String" targetName="SEND_BTN_LEFT" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_RIGHT" scadeType="T_String" targetName="SEND_BTN_RIGHT" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_ON" scadeType="T_String" targetName="SEND_BTN_ON" targetType="T_String"/>
+    <Constant scadeName="SEND_BTN_OFF" scadeType="T_String" targetName="SEND_BTN_OFF" targetType="T_String"/>
+    <NamedType refType="T_String" scadeName="T_String" targetName="T_String"/>
+    <NamedType refType="kcg_uint16" scadeName="T_uChar" targetName="T_uChar"/>
+    <NamedType refType="kcg_uint8" scadeName="T_uShort" targetName="T_uShort"/>
+    <RootNode headerFile="ErlunControl.h" scadeName="ErlunControl" targetCycleFct="ErlunControl" targetInitFct="ErlunControl_reset" targetInitializationFct="ErlunControl_init">
+      <Input inCtx="true" scadeName="Turn_Btn" scadeType="bool" targetName="Turn_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Up_Btn" scadeType="bool" targetName="Up_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Down_Btn" scadeType="bool" targetName="Down_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Left_Btn" scadeType="bool" targetName="Left_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Right_Btn" scadeType="bool" targetName="Right_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Speed_Btn" scadeType="bool" targetName="Speed_Btn" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Speed_BtnValue" scadeType="float32" targetName="Speed_BtnValue" targetType="kcg_float32"/>
+      <Output inCtx="true" scadeName="Turn_BtnTextString" scadeType="T_String" targetName="Turn_BtnTextString" targetType="T_String"/>
+      <Output inCtx="true" scadeName="StringSize" scadeType="T_uChar" targetName="StringSize" targetType="T_uChar"/>
+      <Output inCtx="true" scadeName="Emit2CDS" scadeType="bool" targetName="Emit2CDS" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="Layer1Active" scadeType="bool" targetName="Layer1Active" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="Layer1Visible" scadeType="bool" targetName="Layer1Visible" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="TurnTextColorIndex" scadeType="T_uShort" targetName="TurnTextColorIndex" targetType="T_uShort"/>
+      <Output inCtx="true" scadeName="EmitVisible" scadeType="bool" targetName="EmitVisible" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="Send_TextString" scadeType="T_String" targetName="Send_TextString" targetType="T_String"/>
+      <NodeInlining instName="1" scadeName="Switch">
+        <Input inCtx="true" scadeName="Input1" scadeType="bool" targetName="Turn_Btn" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="Output1" scadeType="bool" targetName="EmitVisible" targetType="kcg_bool"/>
+        <FbyOp instName="1">
+          <Memory inCtx="true" targetName="_L3_Switch_1" targetType="kcg_bool"/>
+        </FbyOp>
+      </NodeInlining>
+      <FbyOp instName="4">
+        <Memory inCtx="true" targetName="_L7" targetType="kcg_bool"/>
+      </FbyOp>
+      <FbyOp instName="7">
+        <Memory inCtx="true" targetName="_L99" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="8">
+        <Memory inCtx="true" targetName="_L117" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="10">
+        <Memory inCtx="true" targetName="_L128" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="9">
+        <Memory inCtx="true" targetName="_L130" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="11">
+        <Memory inCtx="true" targetName="_L139" targetType="kcg_int32"/>
+      </FbyOp>
+      <NodeInlining instName="1" scadeName="SpeedStr">
+        <Input inCtx="true" scadeName="Input" scadeType="float32" targetName="Speed_BtnValue" targetType="kcg_float32"/>
+      </NodeInlining>
+      <FbyOp instName="15">
+        <Memory inCtx="true" targetName="_L312" targetType="kcg_int32"/>
+      </FbyOp>
+      <FbyOp instName="16">
+        <Memory inCtx="true" targetName="_L317" targetType="kcg_int32"/>
+      </FbyOp>
+      <NodeInstance instName="2" refName="msg" scadeName="msg"/>
+      <Memory inCtx="true" targetName="_L3_Switch_1" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L7" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L99" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L117" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L130" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L128" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L139" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L312" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L317" targetType="kcg_int32"/>
+      <OutCtxType targetName="outC_ErlunControl"/>
+      <InCtxType targetName="inC_ErlunControl"/>
+    </RootNode>
+    <ExpNode scadeName="Switch"/>
+    <ExpNode scadeName="SpeedStr"/>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="msg" targetCycleFct="msg">
+      <Input scadeName="Send" scadeType="T_String" targetName="Send" targetType="T_String"/>
+      <Output scadeName="Status" scadeType="int32" targetName="Status" targetType="kcg_int32"/>
+    </NoExpNode>
+    <ArrayType cellType="kcg_char" size="4" targetCompFct="kcg_comp_T_String" targetCopyFct="kcg_copy_T_String" targetName="T_String"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

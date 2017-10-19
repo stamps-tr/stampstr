@@ -1,0 +1,15 @@
+
+function imported #pragma ed <Operator oid="!ed/4949/65B9/2818/59bb1553517b"/>
+#end
+
+PublishMQTT(
+      #pragma ed    <Variable oid="!ed/4951/65B9/2818/59bb1c6835dd"/>
+#end
+
+Send : bool)
+returns (
+      #pragma ed    <Variable oid="!ed/4952/65B9/2818/59bb1c867b8f"/>
+#end
+
+Mqttstatus : int32)
+; 

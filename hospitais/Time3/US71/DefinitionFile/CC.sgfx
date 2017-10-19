@@ -325,112 +325,13 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="Lb_HorarioAcidente" oid="62318c0c-8a60-44fe-938d-7fe736a32b86" type="Label">
-                    <model>
-                        <intprop name="WidgetIdent">37</intprop>
-                        <enumprop name="Anonymous">A661_FALSE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">320</intprop>
-                        <intprop name="PosY">5580</intprop>
-                        <intprop name="SizeX">4000</intprop>
-                        <intprop name="SizeY">800</intprop>
-                        <intprop name="RotationAngle">0</intprop>
-                        <intprop name="StyleSet">1</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
-                        <intprop name="Font">0</intprop>
-                        <intprop name="ColorIndex">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <stringprop name="LabelString">Horario do acidente:</stringprop>
-                    </model>
-                    <runtime>
-                        <connect msg_id="A661_VISIBLE" name="Lb_HorarioAcidente_A661_VISIBLE"/>
-                        <connect msg_id="A661_STRING" name="Lb_HorarioAcidente_A661_STRING"/>
-                        <connect msg_id="A661_POS_XY" name="Lb_HorarioAcidente_A661_POS_XY"/>
-                        <connect msg_id="A661_POS_X" name="Lb_HorarioAcidente_A661_POS_X"/>
-                        <connect msg_id="A661_POS_Y" name="Lb_HorarioAcidente_A661_POS_Y"/>
-                        <connect msg_id="A661_STYLE_SET" name="Lb_HorarioAcidente_A661_STYLE_SET"/>
-                        <connect msg_id="A661_ORIENTATION" name="Lb_HorarioAcidente_A661_ORIENTATION"/>
-                        <connect msg_id="A661_COLOR_INDEX" name="Lb_HorarioAcidente_A661_COLOR_INDEX"/>
-                        <connect msg_id="A661_FONT" name="Lb_HorarioAcidente_A661_FONT"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Lb_HorarioAcidente_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Lb_HorarioAcidente_A661_REQ_CURSOR_ON_WIDGET"/>
-                    </runtime>
-                    <children/>
-                </widget>
-                <widget name="Lb_DataAcidente" oid="a85c4610-a2f9-45ab-b9fd-e229507a4a7b" type="Label">
-                    <model>
-                        <intprop name="WidgetIdent">38</intprop>
-                        <enumprop name="Anonymous">A661_FALSE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">280</intprop>
-                        <intprop name="PosY">6920</intprop>
-                        <intprop name="SizeX">4000</intprop>
-                        <intprop name="SizeY">800</intprop>
-                        <intprop name="RotationAngle">0</intprop>
-                        <intprop name="StyleSet">1</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
-                        <intprop name="Font">0</intprop>
-                        <intprop name="ColorIndex">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <stringprop name="LabelString">Data do acidente:</stringprop>
-                    </model>
-                    <runtime>
-                        <connect msg_id="A661_VISIBLE" name="Lb_DataAcidente_A661_VISIBLE"/>
-                        <connect msg_id="A661_STRING" name="Lb_DataAcidente_A661_STRING"/>
-                        <connect msg_id="A661_POS_XY" name="Lb_DataAcidente_A661_POS_XY"/>
-                        <connect msg_id="A661_POS_X" name="Lb_DataAcidente_A661_POS_X"/>
-                        <connect msg_id="A661_POS_Y" name="Lb_DataAcidente_A661_POS_Y"/>
-                        <connect msg_id="A661_STYLE_SET" name="Lb_DataAcidente_A661_STYLE_SET"/>
-                        <connect msg_id="A661_ORIENTATION" name="Lb_DataAcidente_A661_ORIENTATION"/>
-                        <connect msg_id="A661_COLOR_INDEX" name="Lb_DataAcidente_A661_COLOR_INDEX"/>
-                        <connect msg_id="A661_FONT" name="Lb_DataAcidente_A661_FONT"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Lb_DataAcidente_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Lb_DataAcidente_A661_REQ_CURSOR_ON_WIDGET"/>
-                    </runtime>
-                    <children/>
-                </widget>
-                <widget name="Lb_Ponto" oid="ebd554db-76d5-4f40-8438-343eb6a44081" type="Label">
-                    <model>
-                        <intprop name="WidgetIdent">39</intprop>
-                        <enumprop name="Anonymous">A661_FALSE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2000</intprop>
-                        <intprop name="PosY">4960</intprop>
-                        <intprop name="SizeX">400</intprop>
-                        <intprop name="SizeY">800</intprop>
-                        <intprop name="RotationAngle">0</intprop>
-                        <intprop name="StyleSet">1</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
-                        <intprop name="Font">2</intprop>
-                        <intprop name="ColorIndex">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <stringprop name="LabelString">:</stringprop>
-                    </model>
-                    <runtime>
-                        <connect msg_id="A661_VISIBLE" name="Lb_Ponto_A661_VISIBLE"/>
-                        <connect msg_id="A661_STRING" name="Lb_Ponto_A661_STRING"/>
-                        <connect msg_id="A661_POS_XY" name="Lb_Ponto_A661_POS_XY"/>
-                        <connect msg_id="A661_POS_X" name="Lb_Ponto_A661_POS_X"/>
-                        <connect msg_id="A661_POS_Y" name="Lb_Ponto_A661_POS_Y"/>
-                        <connect msg_id="A661_STYLE_SET" name="Lb_Ponto_A661_STYLE_SET"/>
-                        <connect msg_id="A661_ORIENTATION" name="Lb_Ponto_A661_ORIENTATION"/>
-                        <connect msg_id="A661_COLOR_INDEX" name="Lb_Ponto_A661_COLOR_INDEX"/>
-                        <connect msg_id="A661_FONT" name="Lb_Ponto_A661_FONT"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Lb_Ponto_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Lb_Ponto_A661_REQ_CURSOR_ON_WIDGET"/>
-                    </runtime>
-                    <children/>
-                </widget>
                 <widget name="Lb_EstadoVitimas" oid="9c6e5752-7461-409e-a22c-8f7f5e6db74b" type="Label">
                     <model>
                         <intprop name="WidgetIdent">40</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">320</intprop>
-                        <intprop name="PosY">4200</intprop>
+                        <intprop name="PosX">300</intprop>
+                        <intprop name="PosY">6380</intprop>
                         <intprop name="SizeX">4000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -462,8 +363,8 @@
                         <intprop name="WidgetIdent">41</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">4620</intprop>
-                        <intprop name="PosY">4380</intprop>
+                        <intprop name="PosX">4540</intprop>
+                        <intprop name="PosY">6460</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">500</intprop>
                         <intprop name="SelectingAreaWidth">3000</intprop>
@@ -481,7 +382,7 @@
                         <arrayprop name="EntryList">
                             <stringprop name="1">Gravissimo</stringprop>
                             <stringprop name="2">Grave</stringprop>
-                            <stringprop name="3">Estavél</stringprop>
+                            <stringprop name="3">Estavel</stringprop>
                             <stringprop name="4">Consciente</stringprop>
                         </arrayprop>
                     </model>
@@ -510,7 +411,7 @@
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
                         <intprop name="PosX">280</intprop>
-                        <intprop name="PosY">2740</intprop>
+                        <intprop name="PosY">4440</intprop>
                         <intprop name="SizeX">5000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -543,7 +444,7 @@
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
                         <intprop name="PosX">5680</intprop>
-                        <intprop name="PosY">2180</intprop>
+                        <intprop name="PosY">3880</intprop>
                         <intprop name="SizeX">3980</intprop>
                         <intprop name="SizeY">1920</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -577,7 +478,7 @@
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
                         <intprop name="PosX">280</intprop>
-                        <intprop name="PosY">840</intprop>
+                        <intprop name="PosY">2540</intprop>
                         <intprop name="SizeX">5000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -610,7 +511,7 @@
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
                         <intprop name="PosX">5700</intprop>
-                        <intprop name="PosY">60</intprop>
+                        <intprop name="PosY">1760</intprop>
                         <intprop name="SizeX">3960</intprop>
                         <intprop name="SizeY">1980</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -638,357 +539,68 @@
                     <events/>
                     <children/>
                 </widget>
-                <widget name="ComboBox_Hora" oid="e7490a53-e610-4254-adcf-725fadb3eb2e" type="ComboBox">
+                <widget name="PushButton" oid="1dedf261-29bf-44a9-aeab-95295287647f" type="PushButton">
                     <model>
-                        <intprop name="WidgetIdent">46</intprop>
+                        <intprop name="WidgetIdent">51</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">340</intprop>
-                        <intprop name="PosY">5120</intprop>
-                        <intprop name="SizeX">1500</intprop>
-                        <intprop name="SizeY">500</intprop>
-                        <intprop name="SelectingAreaWidth">3000</intprop>
-                        <intprop name="SelectingAreaHeight">4900</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxNumberOfEntries">24</intprop>
-                        <intprop name="NumberOfEntries">24</intprop>
-                        <intprop name="SelectedEntry">1</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <intprop name="OpeningEntry">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <enumprop name="OpeningMode">A661_OPEN_DOWN</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <arrayprop name="EntryList">
-                            <stringprop name="1">00</stringprop>
-                            <stringprop name="2">01</stringprop>
-                            <stringprop name="3">02</stringprop>
-                            <stringprop name="4">03</stringprop>
-                            <stringprop name="5">04</stringprop>
-                            <stringprop name="6">05</stringprop>
-                            <stringprop name="7">06</stringprop>
-                            <stringprop name="8">07</stringprop>
-                            <stringprop name="9">08</stringprop>
-                            <stringprop name="10">09</stringprop>
-                            <stringprop name="11">10</stringprop>
-                            <stringprop name="12">11</stringprop>
-                            <stringprop name="13">12</stringprop>
-                            <stringprop name="14">13</stringprop>
-                            <stringprop name="15">14</stringprop>
-                            <stringprop name="16">15</stringprop>
-                            <stringprop name="17">16</stringprop>
-                            <stringprop name="18">17</stringprop>
-                            <stringprop name="19">18</stringprop>
-                            <stringprop name="20">19</stringprop>
-                            <stringprop name="21">20</stringprop>
-                            <stringprop name="22">21</stringprop>
-                            <stringprop name="23">22</stringprop>
-                            <stringprop name="24">23</stringprop>
-                        </arrayprop>
-                    </model>
-                    <runtime>
-                        <connect msg_id="A661_ENABLE" name="ComboBox_Hora_A661_ENABLE"/>
-                        <connect msg_id="A661_VISIBLE" name="ComboBox_Hora_A661_VISIBLE"/>
-                        <connect msg_id="A661_STYLE_SET" name="ComboBox_Hora_A661_STYLE_SET"/>
-                        <connect msg_id="A661_SELECTED_ENTRY" name="ComboBox_Hora_A661_SELECTED_ENTRY"/>
-                        <connect msg_id="A661_NUMBER_OF_ENTRIES" name="ComboBox_Hora_A661_NUMBER_OF_ENTRIES"/>
-                        <connect msg_id="A661_STRING_ARRAY" name="ComboBox_Hora_A661_STRING_ARRAY"/>
-                        <connect msg_id="A661_OPENING_ENTRY" name="ComboBox_Hora_A661_OPENING_ENTRY"/>
-                        <connect msg_id="A661_ENTRY_VALID" name="ComboBox_Hora_A661_ENTRY_VALID"/>
-                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="ComboBox_Hora_A661_NEXT_FOCUSED_WIDGET"/>
-                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="ComboBox_Hora_A661_AUTO_FOCUS_MOTION"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="ComboBox_Hora_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="ComboBox_Hora_A661_REQ_CURSOR_ON_WIDGET"/>
-                    </runtime>
-                    <events/>
-                    <children/>
-                </widget>
-                <widget name="ComboBox_Minuto" oid="89980bfe-f123-4b1d-b3fe-3df45c02f41a" type="ComboBox">
-                    <model>
-                        <intprop name="WidgetIdent">47</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2460</intprop>
-                        <intprop name="PosY">5120</intprop>
-                        <intprop name="SizeX">1500</intprop>
-                        <intprop name="SizeY">500</intprop>
-                        <intprop name="SelectingAreaWidth">3000</intprop>
-                        <intprop name="SelectingAreaHeight">4900</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxNumberOfEntries">60</intprop>
-                        <intprop name="NumberOfEntries">60</intprop>
-                        <intprop name="SelectedEntry">1</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <intprop name="OpeningEntry">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <enumprop name="OpeningMode">A661_OPEN_DOWN</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <arrayprop name="EntryList">
-                            <stringprop name="1">00</stringprop>
-                            <stringprop name="2">01</stringprop>
-                            <stringprop name="3">02</stringprop>
-                            <stringprop name="4">03</stringprop>
-                            <stringprop name="5">04</stringprop>
-                            <stringprop name="6">05</stringprop>
-                            <stringprop name="7">06</stringprop>
-                            <stringprop name="8">07</stringprop>
-                            <stringprop name="9">08</stringprop>
-                            <stringprop name="10">09</stringprop>
-                            <stringprop name="11">10</stringprop>
-                            <stringprop name="12">11</stringprop>
-                            <stringprop name="13">12</stringprop>
-                            <stringprop name="14">13</stringprop>
-                            <stringprop name="15">14</stringprop>
-                            <stringprop name="16">15</stringprop>
-                            <stringprop name="17">16</stringprop>
-                            <stringprop name="18">17</stringprop>
-                            <stringprop name="19">18</stringprop>
-                            <stringprop name="20">19</stringprop>
-                            <stringprop name="21">20</stringprop>
-                            <stringprop name="22">21</stringprop>
-                            <stringprop name="23">22</stringprop>
-                            <stringprop name="24">23</stringprop>
-                            <stringprop name="25">24</stringprop>
-                            <stringprop name="26">25</stringprop>
-                            <stringprop name="27">26</stringprop>
-                            <stringprop name="28">27</stringprop>
-                            <stringprop name="29">28</stringprop>
-                            <stringprop name="30">29</stringprop>
-                            <stringprop name="31">30</stringprop>
-                            <stringprop name="32">31</stringprop>
-                            <stringprop name="33">32</stringprop>
-                            <stringprop name="34">33</stringprop>
-                            <stringprop name="35">34</stringprop>
-                            <stringprop name="36">35</stringprop>
-                            <stringprop name="37">36</stringprop>
-                            <stringprop name="38">37</stringprop>
-                            <stringprop name="39">38</stringprop>
-                            <stringprop name="40">39</stringprop>
-                            <stringprop name="41">40</stringprop>
-                            <stringprop name="42">41</stringprop>
-                            <stringprop name="43">42</stringprop>
-                            <stringprop name="44">43</stringprop>
-                            <stringprop name="45">44</stringprop>
-                            <stringprop name="46">45</stringprop>
-                            <stringprop name="47">46</stringprop>
-                            <stringprop name="48">47</stringprop>
-                            <stringprop name="49">48</stringprop>
-                            <stringprop name="50">49</stringprop>
-                            <stringprop name="51">50</stringprop>
-                            <stringprop name="52">51</stringprop>
-                            <stringprop name="53">52</stringprop>
-                            <stringprop name="54">53</stringprop>
-                            <stringprop name="55">54</stringprop>
-                            <stringprop name="56">55</stringprop>
-                            <stringprop name="57">56</stringprop>
-                            <stringprop name="58">57</stringprop>
-                            <stringprop name="59">58</stringprop>
-                            <stringprop name="60">59</stringprop>
-                        </arrayprop>
-                    </model>
-                    <runtime>
-                        <connect msg_id="A661_ENABLE" name="ComboBox_Minuto_A661_ENABLE"/>
-                        <connect msg_id="A661_VISIBLE" name="ComboBox_Minuto_A661_VISIBLE"/>
-                        <connect msg_id="A661_STYLE_SET" name="ComboBox_Minuto_A661_STYLE_SET"/>
-                        <connect msg_id="A661_SELECTED_ENTRY" name="ComboBox_Minuto_A661_SELECTED_ENTRY"/>
-                        <connect msg_id="A661_NUMBER_OF_ENTRIES" name="ComboBox_Minuto_A661_NUMBER_OF_ENTRIES"/>
-                        <connect msg_id="A661_STRING_ARRAY" name="ComboBox_Minuto_A661_STRING_ARRAY"/>
-                        <connect msg_id="A661_OPENING_ENTRY" name="ComboBox_Minuto_A661_OPENING_ENTRY"/>
-                        <connect msg_id="A661_ENTRY_VALID" name="ComboBox_Minuto_A661_ENTRY_VALID"/>
-                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="ComboBox_Minuto_A661_NEXT_FOCUSED_WIDGET"/>
-                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="ComboBox_Minuto_A661_AUTO_FOCUS_MOTION"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="ComboBox_Minuto_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="ComboBox_Minuto_A661_REQ_CURSOR_ON_WIDGET"/>
-                    </runtime>
-                    <events/>
-                    <children/>
-                </widget>
-                <widget name="ComboBox_Dia" oid="0ac2396a-cc4b-435e-b05d-fa32d578a4b7" type="ComboBox">
-                    <model>
-                        <intprop name="WidgetIdent">48</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">300</intprop>
-                        <intprop name="PosY">6440</intprop>
-                        <intprop name="SizeX">1500</intprop>
-                        <intprop name="SizeY">500</intprop>
-                        <intprop name="SelectingAreaWidth">3000</intprop>
-                        <intprop name="SelectingAreaHeight">4900</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxNumberOfEntries">31</intprop>
-                        <intprop name="NumberOfEntries">31</intprop>
-                        <intprop name="SelectedEntry">1</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <intprop name="OpeningEntry">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <enumprop name="OpeningMode">A661_OPEN_DOWN</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <arrayprop name="EntryList">
-                            <stringprop name="1">01</stringprop>
-                            <stringprop name="2">02</stringprop>
-                            <stringprop name="3">03</stringprop>
-                            <stringprop name="4">04</stringprop>
-                            <stringprop name="5">05</stringprop>
-                            <stringprop name="6">06</stringprop>
-                            <stringprop name="7">07</stringprop>
-                            <stringprop name="8">08</stringprop>
-                            <stringprop name="9">09</stringprop>
-                            <stringprop name="10">10</stringprop>
-                            <stringprop name="11">11</stringprop>
-                            <stringprop name="12">12</stringprop>
-                            <stringprop name="13">13</stringprop>
-                            <stringprop name="14">14</stringprop>
-                            <stringprop name="15">15</stringprop>
-                            <stringprop name="16">16</stringprop>
-                            <stringprop name="17">17</stringprop>
-                            <stringprop name="18">18</stringprop>
-                            <stringprop name="19">19</stringprop>
-                            <stringprop name="20">20</stringprop>
-                            <stringprop name="21">21</stringprop>
-                            <stringprop name="22">22</stringprop>
-                            <stringprop name="23">23</stringprop>
-                            <stringprop name="24">24</stringprop>
-                            <stringprop name="25">25</stringprop>
-                            <stringprop name="26">26</stringprop>
-                            <stringprop name="27">27</stringprop>
-                            <stringprop name="28">28</stringprop>
-                            <stringprop name="29">29</stringprop>
-                            <stringprop name="30">30</stringprop>
-                            <stringprop name="31">31</stringprop>
-                        </arrayprop>
-                    </model>
-                    <runtime>
-                        <connect msg_id="A661_ENABLE" name="ComboBox_Dia_A661_ENABLE"/>
-                        <connect msg_id="A661_VISIBLE" name="ComboBox_Dia_A661_VISIBLE"/>
-                        <connect msg_id="A661_STYLE_SET" name="ComboBox_Dia_A661_STYLE_SET"/>
-                        <connect msg_id="A661_SELECTED_ENTRY" name="ComboBox_Dia_A661_SELECTED_ENTRY"/>
-                        <connect msg_id="A661_NUMBER_OF_ENTRIES" name="ComboBox_Dia_A661_NUMBER_OF_ENTRIES"/>
-                        <connect msg_id="A661_STRING_ARRAY" name="ComboBox_Dia_A661_STRING_ARRAY"/>
-                        <connect msg_id="A661_OPENING_ENTRY" name="ComboBox_Dia_A661_OPENING_ENTRY"/>
-                        <connect msg_id="A661_ENTRY_VALID" name="ComboBox_Dia_A661_ENTRY_VALID"/>
-                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="ComboBox_Dia_A661_NEXT_FOCUSED_WIDGET"/>
-                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="ComboBox_Dia_A661_AUTO_FOCUS_MOTION"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="ComboBox_Dia_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="ComboBox_Dia_A661_REQ_CURSOR_ON_WIDGET"/>
-                    </runtime>
-                    <events>
-                        <connect msg_id="A661_EVT_SEL_ENTRY_CHANGE" name="ComboBox_Dia_A661_EVT_SEL_ENTRY_CHANGE"/>
-                    </events>
-                    <children/>
-                </widget>
-                <widget name="ComboBox_Mes" oid="46fed2da-7722-44f2-ab9f-fea2a7de3f83" type="ComboBox">
-                    <model>
-                        <intprop name="WidgetIdent">49</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2460</intprop>
-                        <intprop name="PosY">6480</intprop>
+                        <intprop name="PosX">2240</intprop>
+                        <intprop name="PosY">400</intprop>
                         <intprop name="SizeX">3000</intprop>
-                        <intprop name="SizeY">500</intprop>
-                        <intprop name="SelectingAreaWidth">3000</intprop>
-                        <intprop name="SelectingAreaHeight">4900</intprop>
+                        <intprop name="SizeY">800</intprop>
                         <intprop name="StyleSet">110</intprop>
                         <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxNumberOfEntries">12</intprop>
-                        <intprop name="NumberOfEntries">12</intprop>
-                        <intprop name="SelectedEntry">1</intprop>
                         <intprop name="MaxStringLength">32</intprop>
-                        <intprop name="OpeningEntry">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <enumprop name="OpeningMode">A661_OPEN_DOWN</enumprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <arrayprop name="EntryList">
-                            <stringprop name="1">Janeiro</stringprop>
-                            <stringprop name="2">Feveiro</stringprop>
-                            <stringprop name="3">Marco</stringprop>
-                            <stringprop name="4">Abril</stringprop>
-                            <stringprop name="5">Maio</stringprop>
-                            <stringprop name="6">Junho</stringprop>
-                            <stringprop name="7">Julho</stringprop>
-                            <stringprop name="8">Agosto</stringprop>
-                            <stringprop name="9">Setembro</stringprop>
-                            <stringprop name="10">Outubro</stringprop>
-                            <stringprop name="11">Novembro</stringprop>
-                            <stringprop name="12">Dezembro</stringprop>
-                        </arrayprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Enviar</stringprop>
                     </model>
                     <runtime>
-                        <connect msg_id="A661_ENABLE" name="ComboBox_Mes_A661_ENABLE"/>
-                        <connect msg_id="A661_VISIBLE" name="ComboBox_Mes_A661_VISIBLE"/>
-                        <connect msg_id="A661_STYLE_SET" name="ComboBox_Mes_A661_STYLE_SET"/>
-                        <connect msg_id="A661_SELECTED_ENTRY" name="ComboBox_Mes_A661_SELECTED_ENTRY"/>
-                        <connect msg_id="A661_NUMBER_OF_ENTRIES" name="ComboBox_Mes_A661_NUMBER_OF_ENTRIES"/>
-                        <connect msg_id="A661_STRING_ARRAY" name="ComboBox_Mes_A661_STRING_ARRAY"/>
-                        <connect msg_id="A661_OPENING_ENTRY" name="ComboBox_Mes_A661_OPENING_ENTRY"/>
-                        <connect msg_id="A661_ENTRY_VALID" name="ComboBox_Mes_A661_ENTRY_VALID"/>
-                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="ComboBox_Mes_A661_NEXT_FOCUSED_WIDGET"/>
-                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="ComboBox_Mes_A661_AUTO_FOCUS_MOTION"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="ComboBox_Mes_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="ComboBox_Mes_A661_REQ_CURSOR_ON_WIDGET"/>
+                        <connect msg_id="A661_ENABLE" name="PushButton_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="PushButton_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="PushButton_A661_STRING"/>
+                        <connect msg_id="A661_STYLE_SET" name="PushButton_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="PushButton_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="PushButton_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="PushButton_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="PushButton_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="PushButton_A661_REQ_CURSOR_ON_WIDGET"/>
                     </runtime>
                     <events>
-                        <connect msg_id="A661_EVT_SEL_ENTRY_CHANGE" name="ComboBox_Mes_A661_EVT_SEL_ENTRY_CHANGE"/>
+                        <connect msg_id="A661_EVT_SELECTION" name="PushButton_A661_EVT_SELECTION"/>
                     </events>
                     <children/>
                 </widget>
-                <widget name="ComboBox_Ano" oid="ab55d673-52cc-4b1a-b42e-a5052f222911" type="ComboBox">
+                <widget name="SendCircle" oid="90751525-4f4e-4129-b229-ff568a780822" type="GpArcCircle">
                     <model>
-                        <intprop name="WidgetIdent">50</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <intprop name="WidgetIdent">52</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">6060</intprop>
-                        <intprop name="PosY">6520</intprop>
-                        <intprop name="SizeX">1500</intprop>
-                        <intprop name="SizeY">500</intprop>
-                        <intprop name="SelectingAreaWidth">3000</intprop>
-                        <intprop name="SelectingAreaHeight">4900</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxNumberOfEntries">15</intprop>
-                        <intprop name="NumberOfEntries">15</intprop>
-                        <intprop name="SelectedEntry">1</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <intprop name="OpeningEntry">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <enumprop name="OpeningMode">A661_OPEN_DOWN</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <arrayprop name="EntryList">
-                            <stringprop name="1">2017</stringprop>
-                            <stringprop name="2">2018</stringprop>
-                            <stringprop name="3">2019</stringprop>
-                            <stringprop name="4">2020</stringprop>
-                            <stringprop name="5">2021</stringprop>
-                            <stringprop name="6">2022</stringprop>
-                            <stringprop name="7">2023</stringprop>
-                            <stringprop name="8">2024</stringprop>
-                            <stringprop name="9">2025</stringprop>
-                            <stringprop name="10">2026</stringprop>
-                            <stringprop name="11">2027</stringprop>
-                            <stringprop name="12">2028</stringprop>
-                            <stringprop name="13">2029</stringprop>
-                            <stringprop name="14">2030</stringprop>
-                            <stringprop name="15">2031</stringprop>
-                        </arrayprop>
+                        <intprop name="PosX">6720</intprop>
+                        <intprop name="PosY">800</intprop>
+                        <intprop name="StartAngle">-2147483648</intprop>
+                        <intprop name="EndAngle">2147483647</intprop>
+                        <intprop name="Radius">500</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">21</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
                     </model>
                     <runtime>
-                        <connect msg_id="A661_ENABLE" name="ComboBox_Ano_A661_ENABLE"/>
-                        <connect msg_id="A661_VISIBLE" name="ComboBox_Ano_A661_VISIBLE"/>
-                        <connect msg_id="A661_STYLE_SET" name="ComboBox_Ano_A661_STYLE_SET"/>
-                        <connect msg_id="A661_SELECTED_ENTRY" name="ComboBox_Ano_A661_SELECTED_ENTRY"/>
-                        <connect msg_id="A661_NUMBER_OF_ENTRIES" name="ComboBox_Ano_A661_NUMBER_OF_ENTRIES"/>
-                        <connect msg_id="A661_STRING_ARRAY" name="ComboBox_Ano_A661_STRING_ARRAY"/>
-                        <connect msg_id="A661_OPENING_ENTRY" name="ComboBox_Ano_A661_OPENING_ENTRY"/>
-                        <connect msg_id="A661_ENTRY_VALID" name="ComboBox_Ano_A661_ENTRY_VALID"/>
-                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="ComboBox_Ano_A661_NEXT_FOCUSED_WIDGET"/>
-                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="ComboBox_Ano_A661_AUTO_FOCUS_MOTION"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="ComboBox_Ano_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="ComboBox_Ano_A661_REQ_CURSOR_ON_WIDGET"/>
+                        <connect msg_id="A661_VISIBLE" name="SendCircle_A661_VISIBLE"/>
+                        <connect msg_id="A661_STYLE_SET" name="SendCircle_A661_STYLE_SET"/>
+                        <connect msg_id="A661_POS_XY" name="SendCircle_A661_POS_XY"/>
+                        <connect msg_id="A661_POS_X" name="SendCircle_A661_POS_X"/>
+                        <connect msg_id="A661_POS_Y" name="SendCircle_A661_POS_Y"/>
+                        <connect msg_id="A661_COLOR_INDEX" name="SendCircle_A661_COLOR_INDEX"/>
+                        <connect msg_id="A661_FILL_INDEX" name="SendCircle_A661_FILL_INDEX"/>
+                        <connect msg_id="A661_RADIUS" name="SendCircle_A661_RADIUS"/>
+                        <connect msg_id="A661_START_ANGLE" name="SendCircle_A661_START_ANGLE"/>
+                        <connect msg_id="A661_END_ANGLE" name="SendCircle_A661_END_ANGLE"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="SendCircle_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="SendCircle_A661_REQ_CURSOR_ON_WIDGET"/>
                     </runtime>
-                    <events>
-                        <connect msg_id="A661_EVT_SEL_ENTRY_CHANGE" name="ComboBox_Ano_A661_EVT_SEL_ENTRY_CHANGE"/>
-                    </events>
                     <children/>
                 </widget>
             </children>
@@ -996,5 +608,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1309889538 -->
+<!-- crc32 : 2395003164 -->
 

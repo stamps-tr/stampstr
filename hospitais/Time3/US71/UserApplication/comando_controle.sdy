@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="Operator1" oid="!ed/4949/5681/2C84/59c068724900"/>
+		<OperatorMapping name="control" oid="!ed/4b69/722D/3C54/59c1eba66b25">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="Emit" type="bool" oid="!ed/4bf4/722D/3C54/59c1ebb3676" instancepath="control/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="52" ParameterIdent="A661_FILL_INDEX" WidgetType="GpArcCircle" WidgetName="SendCircle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="SignalToLED" type="uint8" oid="!ed/4b77/74A2/14E0/59e7ee6c2862" instancepath="control/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="52" ParameterIdent="A661_FILL_INDEX" WidgetType="GpArcCircle" WidgetName="SendCircle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="51" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="SignalFromButton" type="bool" oid="!ed/4b46/74A2/14E0/59e7ed987fec" instancepath="control/"/>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>
