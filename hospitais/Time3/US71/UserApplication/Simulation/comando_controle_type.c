@@ -12,153 +12,153 @@ char strDefaultRealFormat[] = "%.5g"; /* (from .etp) */
 #define skip_whitespace(str) while(*str == ' ' || *str == '\t') str++
 
 /****************************************************************
- ** array_char_5 
+ ** array_char_150 
  ****************************************************************/
 
 #ifdef __cplusplus
-  #ifdef pSimarray_char_5VTable_defined
-    extern struct SimTypeVTable *pSimarray_char_5VTable;
+  #ifdef pSimarray_char_150VTable_defined
+    extern struct SimTypeVTable *pSimarray_char_150VTable;
   #else 
-    struct SimTypeVTable *pSimarray_char_5VTable = NULL;
+    struct SimTypeVTable *pSimarray_char_150VTable = NULL;
   #endif
 #else
-  struct SimTypeVTable *pSimarray_char_5VTable;
+  struct SimTypeVTable *pSimarray_char_150VTable;
 #endif
 
-int array_char_5_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+int array_char_150_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
-    if (pSimarray_char_5VTable != NULL
-        && pSimarray_char_5VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
-       return pfnStrAppend(*(char**)pSimarray_char_5VTable->m_pfnToType(SptString, pValue), pStrObj);
+    if (pSimarray_char_150VTable != NULL
+        && pSimarray_char_150VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
+       return pfnStrAppend(*(char**)pSimarray_char_150VTable->m_pfnToType(SptString, pValue), pStrObj);
     }
     if (pConverter->m_bDisplayStrings)
-        return pConverter->m_pfnCharArrayToString(pValue, kcg_char_to_string, 5, sizeof(kcg_char), pfnStrAppend, pStrObj, pConverter->m_bStringsPadding, pConverter->m_cStringsPaddingChar);
+        return pConverter->m_pfnCharArrayToString(pValue, kcg_char_to_string, 150, sizeof(kcg_char), pfnStrAppend, pStrObj, pConverter->m_bStringsPadding, pConverter->m_cStringsPaddingChar);
     else
-        return pConverter->m_pfnArrayToString(pValue, kcg_char_to_string, 5, sizeof(kcg_char), pfnStrAppend, pStrObj);
+        return pConverter->m_pfnArrayToString(pValue, kcg_char_to_string, 150, sizeof(kcg_char), pfnStrAppend, pStrObj);
 }
 
-int check_array_char_5_string(const char *str, char **endptr)
+int check_array_char_150_string(const char *str, char **endptr)
 {
-    static array_char_5 rTemp;
-    return string_to_array_char_5(str, &rTemp, endptr);
+    static array_char_150 rTemp;
+    return string_to_array_char_150(str, &rTemp, endptr);
 }
 
-int string_to_array_char_5(const char *str, void *pValue, char **endptr)
+int string_to_array_char_150(const char *str, void *pValue, char **endptr)
 {
     int nRet = 0;
     skip_whitespace(str);
-    if (pSimarray_char_5VTable != NULL) {
-        nRet = string_to_VTable(str, pSimarray_char_5VTable, pValue, endptr);
+    if (pSimarray_char_150VTable != NULL) {
+        nRet = string_to_VTable(str, pSimarray_char_150VTable, pValue, endptr);
     }
     if (nRet == 0) {
         if (*str == '"')
-            nRet = pConverter->m_pfnStringToCharArray(str, pValue, &_Type_kcg_char_Utils, 5, sizeof(kcg_char), endptr, pConverter->m_bStringsPadding, pConverter->m_cStringsPaddingChar);
+            nRet = pConverter->m_pfnStringToCharArray(str, pValue, &_Type_kcg_char_Utils, 150, sizeof(kcg_char), endptr, pConverter->m_bStringsPadding, pConverter->m_cStringsPaddingChar);
         else
-            nRet = pConverter->m_pfnStringToArray(str, pValue, &_Type_kcg_char_Utils, 5, sizeof(kcg_char), endptr);
+            nRet = pConverter->m_pfnStringToArray(str, pValue, &_Type_kcg_char_Utils, 150, sizeof(kcg_char), endptr);
     }
     return nRet;
 }
 
-int is_array_char_5_double_conversion_allowed()
+int is_array_char_150_double_conversion_allowed()
 {
-    if (pSimarray_char_5VTable != NULL) {
-        return is_VTable_double_conversion_allowed(pSimarray_char_5VTable);
+    if (pSimarray_char_150VTable != NULL) {
+        return is_VTable_double_conversion_allowed(pSimarray_char_150VTable);
     }
     return 0;
 }
 
-int array_char_5_to_double(const void *pValue, double *nValue)
+int array_char_150_to_double(const void *pValue, double *nValue)
 {
-    if (pSimarray_char_5VTable != NULL) {
-        return VTable_to_double(pValue, pSimarray_char_5VTable, nValue);
+    if (pSimarray_char_150VTable != NULL) {
+        return VTable_to_double(pValue, pSimarray_char_150VTable, nValue);
     }
     return 0;
 }
 
-int is_array_char_5_long_conversion_allowed()
+int is_array_char_150_long_conversion_allowed()
 {
-    if (pSimarray_char_5VTable != NULL) {
-        return is_VTable_long_conversion_allowed(pSimarray_char_5VTable);
+    if (pSimarray_char_150VTable != NULL) {
+        return is_VTable_long_conversion_allowed(pSimarray_char_150VTable);
     }
     return 0;
 }
 
-int array_char_5_to_long(const void *pValue, long *nValue)
+int array_char_150_to_long(const void *pValue, long *nValue)
 {
-    if (pSimarray_char_5VTable != NULL) {
-        return VTable_to_long(pValue, pSimarray_char_5VTable, nValue);
+    if (pSimarray_char_150VTable != NULL) {
+        return VTable_to_long(pValue, pSimarray_char_150VTable, nValue);
     }
     return 0;
 }
 
-void compare_array_char_5(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
+void compare_array_char_150(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
 {
     int unitResult = 0;
     /* Customized comparison */
-    if (pSimarray_char_5VTable != NULL
-        && pSimarray_char_5VTable->m_version >= Scv612
-        && pSimarray_char_5VTable->m_pfnCompare != NULL) {
-        if (pSimarray_char_5VTable->m_version >= Scv65) {
+    if (pSimarray_char_150VTable != NULL
+        && pSimarray_char_150VTable->m_version >= Scv612
+        && pSimarray_char_150VTable->m_pfnCompare != NULL) {
+        if (pSimarray_char_150VTable->m_version >= Scv65) {
             /* R15 and higher: VTable Compare function shall UPDATE *pResult global flag (*pResult |= SIM_CMP_RES_LT/...): */
-            unitResult = pSimarray_char_5VTable->m_pfnCompare(pResult, pValue1, pValue2);
+            unitResult = pSimarray_char_150VTable->m_pfnCompare(pResult, pValue1, pValue2);
         } else {
             /* Before R15: VTable Compare function shall SET *pResult global flag (*pResult = -1/1/0): */
-            pSimarray_char_5VTable->m_pfnCompare(&unitResult, pValue1, pValue2);
+            pSimarray_char_150VTable->m_pfnCompare(&unitResult, pValue1, pValue2);
             updateCompareResult(unitResult, pResult);
         }
     } else {
         /* Predefined comparison */
         pConverter->m_pfnArrayComparison(pResult, pValue1, pValue2, 
-                compare_kcg_char, 5, sizeof(kcg_char), pTol, pszPath, pfnStrListAppend, pListErrPaths);
+                compare_kcg_char, 150, sizeof(kcg_char), pTol, pszPath, pfnStrListAppend, pListErrPaths);
     }
     if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
         pfnStrListAppend(pszPath, pListErrPaths);
 }
 
-int get_array_char_5_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+int get_array_char_150_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
-    return pConverter->m_pfnGetArraySignature(get_kcg_char_signature, 5, pfnStrAppend, pStrObj); 
+    return pConverter->m_pfnGetArraySignature(get_kcg_char_signature, 150, pfnStrAppend, pStrObj); 
 }
 
-int set_array_char_5_default_value(void *pValue)
+int set_array_char_150_default_value(void *pValue)
 {
     int i;
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < 150; i++)
         set_kcg_char_default_value(&((kcg_char*)pValue)[i]);
     return 1;
 }
 
-int init_array_char_5(void *pValue)
+int init_array_char_150(void *pValue)
 {
     return 1;
 }
 
-int release_array_char_5(void *pValue)
+int release_array_char_150(void *pValue)
 {
     return 1;
 }
 
-int copy_array_char_5(void *pToValue, const void *pFromValue)
+int copy_array_char_150(void *pToValue, const void *pFromValue)
 {
-    kcg_copy_array_char_5((array_char_5*)pToValue, (array_char_5*)pFromValue);
+    kcg_copy_array_char_150((array_char_150*)pToValue, (array_char_150*)pFromValue);
     return 1;
 }
 
-SimTypeUtils _Type_array_char_5_Utils = {
-    array_char_5_to_string,
-    check_array_char_5_string,
-    string_to_array_char_5,
-    is_array_char_5_double_conversion_allowed,
-    array_char_5_to_double,
-    is_array_char_5_long_conversion_allowed,
-    array_char_5_to_long,
-    compare_array_char_5,
-    get_array_char_5_signature,
-    set_array_char_5_default_value,
-    init_array_char_5,
-    release_array_char_5,
-    copy_array_char_5,
-    sizeof(array_char_5)
+SimTypeUtils _Type_array_char_150_Utils = {
+    array_char_150_to_string,
+    check_array_char_150_string,
+    string_to_array_char_150,
+    is_array_char_150_double_conversion_allowed,
+    array_char_150_to_double,
+    is_array_char_150_long_conversion_allowed,
+    array_char_150_to_long,
+    compare_array_char_150,
+    get_array_char_150_signature,
+    set_array_char_150_default_value,
+    init_array_char_150,
+    release_array_char_150,
+    copy_array_char_150,
+    sizeof(array_char_150)
 };
 
 /****************************************************************

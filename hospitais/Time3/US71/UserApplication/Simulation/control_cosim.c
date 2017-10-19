@@ -1,7 +1,7 @@
 
 /* Code generated for Graphical Panels Co-simulation */
 
-#include "Main_UA_1.h"
+#include "control_UA_1.h"
 #include "comando_controle_interface.h"
 #include "A661Cosim.h"
 
@@ -13,9 +13,9 @@ void AfterSimInit(void){
 	#ifdef A661_LOGFILE
 	A661SetLogFile(A661_LOGFILE);
 	#endif
-	pszBinListFiles[0] = "C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Simulation/Main_UA_1_binaries.txt";
+	pszBinListFiles[0] = "C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Simulation/control_UA_1_binaries.txt";
 	pszBinListFiles[1] = 0;
-	if (0/*OK*/ != A661ConnectServer("127.0.0.1", 1231, pszBinListFiles, "C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Simulation/Main_UA_1_conf.xml" )) {
+	if (0/*OK*/ != A661ConnectServer("127.0.0.1", 1231, pszBinListFiles, "C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Simulation/control_UA_1_conf.xml" )) {
 		const char *pszError;
 		A661GetLastError(&pszError);
 		SsmOutputMessage(SIM_WARNING, pszError);
@@ -24,18 +24,18 @@ void AfterSimInit(void){
 
 
 void BeforeSimStep(void){
-	buffer_el msg[Main_UA_1_MAX_SIZE_INPUT_BUFFER];
+	buffer_el msg[control_UA_1_MAX_SIZE_INPUT_BUFFER];
 	/* reveive from server */
-	Main_UA_1_receive_clear(NULL, NULL);
+	control_UA_1_receive_clear(&inputs_ctx, NULL);
 	if (A661Receive(msg, sizeof msg) == 0)
-		Main_UA_1_receive(msg, sizeof msg, NULL, NULL);
+		control_UA_1_receive(msg, sizeof msg, &inputs_ctx, NULL);
 }
 
 
 void AfterSimStep(void){
-	static buffer_el msg[Main_UA_1_MAX_SIZE_OUTPUT_BUFFER];
+	static buffer_el msg[control_UA_1_MAX_SIZE_OUTPUT_BUFFER];
 	int len;
-	len = Main_UA_1_send(msg, &outputs_ctx, NULL);
+	len = control_UA_1_send(msg, &outputs_ctx, NULL);
 	/* Send to server */
 	A661Send(msg, len);
 }

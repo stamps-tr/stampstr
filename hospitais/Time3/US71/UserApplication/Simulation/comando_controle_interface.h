@@ -4,7 +4,7 @@
 #include "kcg_types.h"
 #include "kcg_sensors.h"
 #include "SmuProxy.h"
-#include "Main.h"
+#include "control.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -14,7 +14,8 @@ extern SimSimulator * pSimulator;
 
 /* context */
 
-extern outC_Main outputs_ctx;
+extern inC_control inputs_ctx;
+extern outC_control outputs_ctx;
 
 /* simulation */
 

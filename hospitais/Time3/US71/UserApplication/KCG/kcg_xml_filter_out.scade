@@ -1,32 +1,64 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/KCG/config.txt
-** Generation date: 2017-09-20T22:03:53
+** Generation date: 2017-10-18T22:41:37
 *************************************************************$ */
 
 /* xscade source: C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/comando_controle.xscade */
-const LATITUDE : char^5 = ['5', '.', '1', '2', '3'];
-
-const LONGITUDE : char^5 = ['9', '.', '1', '2', '3'];
-
 const NUMBER_VICTIMS : uint32 = 12;
 
 const
   STATUS_VICTIMS : char^10 = ['G', 'R', 'A', 'V', 'I', 'S', 'S', 'I', 'M', 'O'];
 
+const LATITUDE : float32 = 5.123;
 
-/* xscade source: C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Main.xscade */
-function Main() returns (Emit : bool; Latitude : char^5; Longitude : char^5)
+const LONGITUDE : float32 = 9.123;
+
+const GREEN : uint8 = 51;
+
+const RED : uint8 = 21;
+
+
+/* xscade source: C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/control.xscade */
+function control(SignalFromButton : bool; Description : char^150)
+  returns (Emit : bool; SignalToLED : uint8)
 var
-  _L3 : char^5;
-  _L2 : char^5;
   _L1 : bool;
+  _L31 : bool;
+  _L29 : bool;
+  _L28 : bool;
+  _L27 : bool;
+  _L32 : char^150;
+  _L33 : float32;
+  _L34 : float32;
+  _L35 : uint8;
+  _L38 : uint8;
+  _L39 : uint8;
 let
-  Latitude= _L3;
   _L1= true;
   Emit= _L1;
-  _L2= LONGITUDE;
-  _L3= LATITUDE;
-  Longitude= _L2;
+  ()= #1 PublishMQTT(_L32, _L33, _L34, _L31);
+  _L27= true;
+  _L28= SignalFromButton;
+  _L29= false;
+  _L31= #7 if _L28 then (_L27) else (_L29);
+  SignalToLED= _L35;
+  _L32= Description;
+  _L33= LATITUDE;
+  _L34= LONGITUDE;
+  _L35= #9 if _L28 then (_L38) else (_L39);
+  _L38= GREEN;
+  _L39= RED;
+tel
+
+
+/* xscade source: C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/PublishMQTT.xscade */
+function PublishMQTT(
+    Description : char^150;
+    LATITUDE : float32;
+    LONGITUDE : float32;
+    Send : bool)
+  returns ()
+let
 tel
 
 
@@ -5593,5 +5625,5 @@ end;
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** -
-** Generation date: 2017-09-20T22:03:53
+** Generation date: 2017-10-18T22:41:37
 *************************************************************$ */

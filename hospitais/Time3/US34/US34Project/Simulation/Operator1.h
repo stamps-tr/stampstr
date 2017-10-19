@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US34/US34Project/Simulation/config.txt
-** Generation date: 2017-09-14T19:45:41
+** Command: kcg66.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US34/US34Project/Simulation/config.txt
+** Generation date: 2017-09-22T00:19:56
 *************************************************************$ */
 #ifndef _Operator1_H_
 #define _Operator1_H_
@@ -59,6 +59,6 @@ extern void Operator1_init(outC_Operator1 *outC);
 #endif /* _Operator1_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Operator1.h
-** Generation date: 2017-09-14T19:45:41
+** Generation date: 2017-09-22T00:19:56
 *************************************************************$ */
 

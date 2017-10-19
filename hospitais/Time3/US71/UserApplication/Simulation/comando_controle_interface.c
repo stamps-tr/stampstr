@@ -10,19 +10,26 @@ extern "C" {
 
 const int  rt_version = Srtv62;
 
-const char* _SCSIM_CheckSum = "a8ea635155f7f6a07749f224b351956a";
+const char* _SCSIM_CheckSum = "df02d8f4ab66c4ddadaa6e1e06a14815";
 const char* _SCSIM_SmuTypesCheckSum = "70167ab69f4117fa3043a69f71c5aa42";
 
 /* context */
 
-outC_Main outputs_ctx;
+inC_control inputs_ctx;
+static inC_control inputs_ctx_restore;
+static inC_control inputs_ctx_execute;
+outC_control outputs_ctx;
 
 static void _SCSIM_RestoreInterface(void) {
+    inputs_ctx.SignalFromButton = inputs_ctx_restore.SignalFromButton;
+    kcg_copy_array_char_150(&inputs_ctx.Description, &inputs_ctx_restore.Description);
     memset((void*)&outputs_ctx, 0, sizeof(outputs_ctx));
 }
 
 static void _SCSIM_ExecuteInterface(void) {
     pSimulator->m_pfnAcquireValueMutex(pSimulator);
+    inputs_ctx_execute.SignalFromButton = inputs_ctx.SignalFromButton;
+    kcg_copy_array_char_150(&inputs_ctx_execute.Description, &inputs_ctx.Description);
     pSimulator->m_pfnReleaseValueMutex(pSimulator);
 }
 
@@ -35,7 +42,7 @@ int SimInit(void) {
     BeforeSimInit();
 #endif
 #ifndef KCG_USER_DEFINED_INIT
-    Main_init(&outputs_ctx);
+    control_init(&outputs_ctx);
     nRet = 1;
 #else
     nRet = 0;
@@ -53,7 +60,7 @@ int SimReset(void) {
     BeforeSimInit();
 #endif
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
-    Main_reset(&outputs_ctx);
+    control_reset(&outputs_ctx);
     nRet = 1;
 #else
     nRet = 0;
@@ -65,21 +72,21 @@ int SimReset(void) {
 }
 
 #ifdef __cplusplus
-    #ifdef pSimoutC_MainCIVTable_defined
-        extern struct SimCustomInitVTable *pSimoutC_MainCIVTable;
+    #ifdef pSimoutC_controlCIVTable_defined
+        extern struct SimCustomInitVTable *pSimoutC_controlCIVTable;
     #else 
-        struct SimCustomInitVTable *pSimoutC_MainCIVTable = NULL;
+        struct SimCustomInitVTable *pSimoutC_controlCIVTable = NULL;
     #endif
 #else
-    struct SimCustomInitVTable *pSimoutC_MainCIVTable;
+    struct SimCustomInitVTable *pSimoutC_controlCIVTable;
 #endif
 
 int SimCustomInit(void) {
     int nRet = 0;
-    if (pSimoutC_MainCIVTable != NULL && 
-        pSimoutC_MainCIVTable->m_pfnCustomInit != NULL) {
+    if (pSimoutC_controlCIVTable != NULL && 
+        pSimoutC_controlCIVTable->m_pfnCustomInit != NULL) {
         /* VTable function provided => call it */
-        nRet = pSimoutC_MainCIVTable->m_pfnCustomInit ((void*)&outputs_ctx);
+        nRet = pSimoutC_controlCIVTable->m_pfnCustomInit ((void*)&outputs_ctx);
     }
     else {
         /* VTable misssing => error */
@@ -98,7 +105,7 @@ int SimStep(void) {
         BeforeSimStep();
 #endif
     _SCSIM_ExecuteInterface();
-    Main(&outputs_ctx);
+    control(&inputs_ctx_execute, &outputs_ctx);
 #ifdef EXTENDED_SIM
     AfterSimStep();
 #endif
@@ -128,7 +135,8 @@ void SsmConnectExternalInputs(int bConnect) {
 
 int SsmGetDumpSize(void) {
     int nSize = 0;
-    nSize += sizeof(outC_Main);
+    nSize += sizeof(inC_control);
+    nSize += sizeof(outC_control);
 #ifdef EXTENDED_SIM
     nSize += ExtendedGetDumpSize();
 #endif
@@ -137,8 +145,10 @@ int SsmGetDumpSize(void) {
 
 void SsmGatherDumpData(char * pData) {
     char* pCurrent = pData;
-    memcpy(pCurrent, &outputs_ctx, sizeof(outC_Main));
-    pCurrent += sizeof(outC_Main);
+    memcpy(pCurrent, &inputs_ctx, sizeof(inC_control));
+    pCurrent += sizeof(inC_control);
+    memcpy(pCurrent, &outputs_ctx, sizeof(outC_control));
+    pCurrent += sizeof(outC_control);
 #ifdef EXTENDED_SIM
     ExtendedGatherDumpData(pCurrent);
 #endif
@@ -146,8 +156,10 @@ void SsmGatherDumpData(char * pData) {
 
 void SsmRestoreDumpData(const char * pData) {
     const char* pCurrent = pData;
-    memcpy(&outputs_ctx, pCurrent, sizeof(outC_Main));
-    pCurrent += sizeof(outC_Main);
+    memcpy(&inputs_ctx, pCurrent, sizeof(inC_control));
+    pCurrent += sizeof(inC_control);
+    memcpy(&outputs_ctx, pCurrent, sizeof(outC_control));
+    pCurrent += sizeof(outC_control);
 #ifdef EXTENDED_SIM
     ExtendedRestoreDumpData(pCurrent);
 #endif

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US34/US34Project/Simulation/config.txt
-** Generation date: 2017-09-14T19:45:41
+** Command: kcg66.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US34/US34Project/Simulation/config.txt
+** Generation date: 2017-09-22T00:19:56
 *************************************************************$ */
 
 #include "kcg_types.h"
@@ -35,6 +35,6 @@ kcg_bool kcg_comp_struct_259(struct_259 *kcg_c1, struct_259 *kcg_c2)
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.c
-** Generation date: 2017-09-14T19:45:41
+** Generation date: 2017-09-22T00:19:56
 *************************************************************$ */
 
