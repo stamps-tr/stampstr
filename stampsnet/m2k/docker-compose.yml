@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  m2k:
+    build: .
+    restart: always
+    environment:
+      - KAFKA=192.168.99.100
+      - MQTT=192.168.99.100
+
