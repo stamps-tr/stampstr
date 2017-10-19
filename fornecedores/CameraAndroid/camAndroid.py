@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Autor: Marcelo Paiva
-# Data: 09/10/2017
+# Data: 17/10/2017
 # Objective: Using Android IP Webcam App
 
 import urllib
@@ -46,7 +46,8 @@ def detect(image):
         
     return image
 
-while True:      
+    
+while True:
     # Use urllib to get the image from the Android IP Webcam App
     imgResp = urllib.urlopen(url)
     
@@ -55,16 +56,12 @@ while True:
     
     # Finally decode the array to OpenCV usable format
     img = cv2.imdecode(imgNp,-1)
-
-    # Write photo.jpg if 'a' is pressed
-    if cv2.waitKey(1) & 0xFF == ord('a'):
-        cv2.imwrite("photo.jpg",img)
-        
+    
     # Detect people: body, upperbody, lowerbody, face and eyes
     image_faces = detect(img)
 
     # Put the image on screen
-    cv2.imshow('Face detect',image_faces)
+    cv2.imshow('Erlun: Camera', image_faces)
         
     #To give the processor some less stress
     #time.sleep(0.1) 
@@ -72,4 +69,6 @@ while True:
     # Quit if 'q' is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
+cv2.destroyAllWindows()
 
