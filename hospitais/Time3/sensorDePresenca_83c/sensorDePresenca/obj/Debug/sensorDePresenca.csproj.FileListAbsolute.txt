@@ -1,0 +1,11 @@
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\bin\Debug\sensorDePresenca.exe.config
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\bin\Debug\sensorDePresenca.exe
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\bin\Debug\sensorDePresenca.pdb
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\bin\Debug\kafka-net.dll
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\obj\Debug\sensorDePresenca.Form1.resources
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\obj\Debug\sensorDePresenca.Properties.Resources.resources
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\obj\Debug\sensorDePresenca.csproj.GenerateResource.Cache
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\obj\Debug\sensorDePresenca.csproj.CoreCompileInputs.cache
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\obj\Debug\sensorDePresenca.exe
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\obj\Debug\sensorDePresenca.pdb
+C:\Users\guilh\source\repos\sensorDePresenca\sensorDePresenca\obj\Debug\sensorDePresenca.csprojResolveAssemblyReference.cache
