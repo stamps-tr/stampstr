@@ -2,14 +2,14 @@
 
 Serviços
 ---
-- **m2k**: Mosquitto to Kafka
+- **graylog**: Ferramenta para geração de dashboards/gráficos
+- **elasticsearch**: Full-Text Search Engine
 
 **OBS**: Ajuste as variáveis de ambiente (environment) no `docker-compose.yml` conforme sua necessidade
 
 Executar
 ---
 ```
-docker-compose build
 docker-compose up -d #executa
-docker-compose down #interrompe e remove o container
+docker-compose down #interrompe e remove todos os containers
 ```
