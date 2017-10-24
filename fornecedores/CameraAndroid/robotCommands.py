@@ -20,7 +20,18 @@ from ev3dev.ev3 import *
 motor_left = LargeMotor('outB')
 motor_right = LargeMotor('outC')
 motor_a = MediumMotor('outA')
+spd = 450
 INC_SPEED = 60
+
+def inc(sped):
+   if sped<=900:
+      sped+=50
+   return sped
+
+def dec(sped):
+   if sped>50:
+      sped-=50
+   return sped
 
 #==============================================
 
@@ -41,26 +52,26 @@ def fire():
 #==============================================
 
 def forward():
-   motor_left.run_forever(speed_sp=450)
-   motor_right.run_forever(speed_sp=450)
+   motor_left.run_forever(speed_sp=spd)
+   motor_right.run_forever(speed_sp=spd)
 
 #==============================================
 
 def back():
-   motor_left.run_forever(speed_sp=-450)
-   motor_right.run_forever(speed_sp=-450)
+   motor_left.run_forever(speed_sp=-spd)
+   motor_right.run_forever(speed_sp=-spd)
 
 #==============================================
 
 def left():
-   motor_left.run_forever(speed_sp=-450)
-   motor_right.run_forever(speed_sp=450)
+   motor_left.run_forever(speed_sp=-spd)
+   motor_right.run_forever(speed_sp=spd)
 
 #==============================================
 
 def right():
-   motor_left.run_forever(speed_sp=450)
-   motor_right.run_forever(speed_sp=-450)
+   motor_left.run_forever(speed_sp=spd)
+   motor_right.run_forever(speed_sp=-spd)
 
 #==============================================
 
