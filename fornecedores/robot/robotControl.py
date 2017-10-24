@@ -8,8 +8,20 @@ from ev3dev.ev3 import *
 motor_left = LargeMotor('outB')
 motor_right = LargeMotor('outC')
 motor_a = MediumMotor('outA')
+spd = 450
+
+def inc(sped):
+   if sped<=900:
+      sped+=50
+   return sped
+
+def dec(sped):
+   if sped>50:
+      sped-=50
+   return sped
 
 #==============================================
+
 
 def getch():
     fd = sys.stdin.fileno()
@@ -17,7 +29,7 @@ def getch():
     tty.setcbreak(fd)
     ch = sys.stdin.read(1)
     termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
-    
+
     return ch
 
 #==============================================
@@ -28,26 +40,27 @@ def fire():
 #==============================================
 
 def forward():
-   motor_left.run_forever(speed_sp=450)
-   motor_right.run_forever(speed_sp=450)
+   motor_left.run_forever(speed_sp=spd)
+   motor_right.run_forever(speed_sp=spd)
 
 #==============================================
 
 def back():
-   motor_left.run_forever(speed_sp=-450)
-   motor_right.run_forever(speed_sp=-450)
+   motor_left.run_forever(speed_sp=-spd)
+   motor_right.run_forever(speed_sp=-spd)
 
 #==============================================
 
 def left():
-   motor_left.run_forever(speed_sp=-450)
-   motor_right.run_forever(speed_sp=450)
+
+   motor_left.run_forever(speed_sp=-spd)
+   motor_right.run_forever(speed_sp=spd)
 
 #==============================================
 
 def right():
-   motor_left.run_forever(speed_sp=450)
-   motor_right.run_forever(speed_sp=-450)
+   motor_left.run_forever(speed_sp=spd)
+   motor_right.run_forever(speed_sp=-spd)
 
 #==============================================
 
@@ -56,6 +69,11 @@ def stop():
    motor_right.run_forever(speed_sp=0)
 
 #==============================================
+
+def sound():
+   Sound.set_volume(100)
+   #Sound.play('./oh-ah.wav')
+   Sound.speak('Hello I am Watson, I am here to help you').wait()
 
 while True:
    k = getch()
@@ -74,3 +92,9 @@ while True:
       stop()
    if k == 'q':
       exit()
+   if k == 'm':
+      sound()
+   if k == 't':
+      spd = inc(spd)
+   if k == 'g':
+      spd = dec(spd)

@@ -4,22 +4,22 @@
 #include "SmuTypes.h"
 
 /****************************************************************
- ** array_char_5 
+ ** array_char_150 
  ****************************************************************/
-extern int array_char_5_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int check_array_char_5_string(const char *str, char **endptr);
-extern int string_to_array_char_5(const char *str, void *pValue, char **endptr);
-extern int is_array_char_5_double_conversion_allowed();
-extern int array_char_5_to_double(const void *pValue, double *nValue);
-extern int is_array_char_5_long_conversion_allowed();
-extern int array_char_5_to_long(const void *pValue, long *nValue);
-extern void compare_array_char_5(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
-extern int get_array_char_5_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
-extern int set_array_char_5_default_value(void *pValue);
-extern int init_array_char_5(void *pValue);
-extern int release_array_char_5(void *pValue);
-extern int copy_array_char_5(void *pToValue, const void *pFromValue);
-extern SimTypeUtils _Type_array_char_5_Utils;
+extern int array_char_150_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int check_array_char_150_string(const char *str, char **endptr);
+extern int string_to_array_char_150(const char *str, void *pValue, char **endptr);
+extern int is_array_char_150_double_conversion_allowed();
+extern int array_char_150_to_double(const void *pValue, double *nValue);
+extern int is_array_char_150_long_conversion_allowed();
+extern int array_char_150_to_long(const void *pValue, long *nValue);
+extern void compare_array_char_150(int *nStatus, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths);
+extern int get_array_char_150_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj);
+extern int set_array_char_150_default_value(void *pValue);
+extern int init_array_char_150(void *pValue);
+extern int release_array_char_150(void *pValue);
+extern int copy_array_char_150(void *pToValue, const void *pFromValue);
+extern SimTypeUtils _Type_array_char_150_Utils;
 
 /****************************************************************
  ** kcg_bool 

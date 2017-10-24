@@ -1,7 +1,7 @@
 *****************************
 *** Generated KCG H/Ads files ***
 *****************************
-Main.h
+control.h
 kcg_types.h
 kcg_consts.h
 kcg_sensors.h
@@ -9,14 +9,14 @@ kcg_sensors.h
 *****************************
 *** Generated KCG C/Adb files ***
 *****************************
-Main.c
+control.c
 kcg_types.c
 kcg_consts.c
 
 *****************************
 *** External C Files ***
 *****************************
-..\..\IntegrationCode\ClientMQTT.c
+..\..\IntegrationCode\mqtt.c
 
 *****************************
 *** Generated SC2C Files ***

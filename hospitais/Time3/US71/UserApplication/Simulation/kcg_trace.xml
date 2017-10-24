@@ -18,32 +18,51 @@
     <Option name="observe" value="#off#"/>
     <Option name="debug" value="#on#"/>
     <Option name="user_config" value="./user_macros.h"/>
-    <Option name="input_threshold" value="#off#"/>
+    <Option name="input_threshold" value="2"/>
     <Option name="header" value="#off#"/>
     <Option name="significance_length" value="31"/>
     <Option name="name_length" value="200"/>
     <Option name="globals_prefix" value="#off#"/>
     <Option name="keep_asserts" value="#off#"/>
     <Option name="global_root_context" value="#off#"/>
-    <Option name="expall" value="#off#"/>
     <Option name="noexp" value="#off#"/>
     <Option name="exp" value="#off#"/>
+    <Option name="expall" value="#on#"/>
     <Option name="target_dir" value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Simulation"/>
     <Option name="target" value="C"/>
-    <Option name="root" value="Main"/>
+    <Option name="root" value="control"/>
     <Option name="auth" value="#off#"/>
-    <Constant scadeName="LONGITUDE" scadeType="char^(5)" targetName="LONGITUDE" targetType="array_char_5"/>
-    <Constant scadeName="LATITUDE" scadeType="char^(5)" targetName="LATITUDE" targetType="array_char_5"/>
-    <RootNode headerFile="Main.h" scadeName="Main" targetCycleFct="Main" targetInitFct="Main_reset" targetInitializationFct="Main_init">
+    <Constant macroDef="true" scadeName="LATITUDE" scadeType="float32" targetName="LATITUDE" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="LONGITUDE" scadeType="float32" targetName="LONGITUDE" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="GREEN" scadeType="uint8" targetName="GREEN" targetType="kcg_uint8"/>
+    <Constant macroDef="true" scadeName="RED" scadeType="uint8" targetName="RED" targetType="kcg_uint8"/>
+    <RootNode headerFile="control.h" scadeName="control" targetCycleFct="control" targetInitFct="control_reset" targetInitializationFct="control_init">
+      <Input inCtx="true" scadeName="SignalFromButton" scadeType="bool" targetName="SignalFromButton" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="Description" scadeType="char^(150)" targetName="Description" targetType="array_char_150"/>
       <Output inCtx="true" scadeName="Emit" scadeType="bool" targetName="Emit" targetType="kcg_bool"/>
-      <Output inCtx="true" scadeName="Latitude" scadeType="char^(5)" targetName="Latitude" targetType="array_char_5"/>
-      <Output inCtx="true" scadeName="Longitude" scadeType="char^(5)" targetName="Longitude" targetType="array_char_5"/>
-      <Local inCtx="true" scadeName="_L3" scadeType="char^(5)" targetName="_L3" targetType="array_char_5"/>
-      <Local inCtx="true" scadeName="_L2" scadeType="char^(5)" targetName="_L2" targetType="array_char_5"/>
+      <Output inCtx="true" scadeName="SignalToLED" scadeType="uint8" targetName="SignalToLED" targetType="kcg_uint8"/>
       <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1" targetType="kcg_bool"/>
-      <OutCtxType targetName="outC_Main"/>
+      <Local inCtx="true" scadeName="_L31" scadeType="bool" targetName="_L31" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L29" scadeType="bool" targetName="_L29" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L28" scadeType="bool" targetName="_L28" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L27" scadeType="bool" targetName="_L27" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L32" scadeType="char^(150)" targetName="_L32" targetType="array_char_150"/>
+      <Local inCtx="true" scadeName="_L33" scadeType="float32" targetName="_L33" targetType="kcg_float32"/>
+      <Local inCtx="true" scadeName="_L34" scadeType="float32" targetName="_L34" targetType="kcg_float32"/>
+      <Local inCtx="true" scadeName="_L35" scadeType="uint8" targetName="_L35" targetType="kcg_uint8"/>
+      <Local inCtx="true" scadeName="_L38" scadeType="uint8" targetName="_L38" targetType="kcg_uint8"/>
+      <Local inCtx="true" scadeName="_L39" scadeType="uint8" targetName="_L39" targetType="kcg_uint8"/>
+      <NodeInstance instName="1" refName="PublishMQTT" scadeName="PublishMQTT"/>
+      <OutCtxType targetName="outC_control"/>
+      <InCtxType targetName="inC_control"/>
     </RootNode>
-    <ArrayType cellType="kcg_char" size="5" targetCompFct="kcg_comp_array_char_5" targetCopyFct="kcg_copy_array_char_5" targetName="array_char_5"/>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="PublishMQTT" targetCycleFct="PublishMQTT">
+      <Input scadeName="Description" scadeType="char^(150)" targetName="Description" targetType="array_char_150"/>
+      <Input scadeName="LATITUDE" scadeType="float32" targetName="_1_LATITUDE" targetType="kcg_float32"/>
+      <Input scadeName="LONGITUDE" scadeType="float32" targetName="_2_LONGITUDE" targetType="kcg_float32"/>
+      <Input scadeName="Send" scadeType="bool" targetName="Send" targetType="kcg_bool"/>
+    </NoExpNode>
+    <ArrayType cellType="kcg_char" size="150" targetCompFct="kcg_comp_array_char_150" targetCopyFct="kcg_copy_array_char_150" targetName="array_char_150"/>
     <PredefType scadeName="int8" targetName="kcg_int8"/>
     <PredefType scadeName="int16" targetName="kcg_int16"/>
     <PredefType scadeName="int32" targetName="kcg_int32"/>

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Simulation/config.txt
-** Generation date: 2017-09-20T22:06:06
+** Generation date: 2017-10-18T23:50:48
 *************************************************************$ */
 #ifndef _KCG_TYPES_H_
 #define _KCG_TYPES_H_
@@ -176,24 +176,24 @@ typedef signed char kcg_int8;
 #define kcg_assign_array kcg_assign
 #endif /* kcg_assign_array */
 
-typedef kcg_char array_char_5[5];
+typedef kcg_char array_char_150[150];
 
-#ifndef kcg_copy_array_char_5
-#define kcg_copy_array_char_5(kcg_C1, kcg_C2)                                 \
-  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_5)))
-#endif /* kcg_copy_array_char_5 */
+#ifndef kcg_copy_array_char_150
+#define kcg_copy_array_char_150(kcg_C1, kcg_C2)                               \
+  (kcg_assign_array((kcg_C1), (kcg_C2), sizeof (array_char_150)))
+#endif /* kcg_copy_array_char_150 */
 
-#ifdef kcg_use_array_char_5
-#ifndef kcg_comp_array_char_5
-extern kcg_bool kcg_comp_array_char_5(
-  array_char_5 *kcg_c1,
-  array_char_5 *kcg_c2);
-#endif /* kcg_comp_array_char_5 */
-#endif /* kcg_use_array_char_5 */
+#ifdef kcg_use_array_char_150
+#ifndef kcg_comp_array_char_150
+extern kcg_bool kcg_comp_array_char_150(
+  array_char_150 *kcg_c1,
+  array_char_150 *kcg_c2);
+#endif /* kcg_comp_array_char_150 */
+#endif /* kcg_use_array_char_150 */
 
 #endif /* _KCG_TYPES_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.h
-** Generation date: 2017-09-20T22:06:06
+** Generation date: 2017-10-18T23:50:48
 *************************************************************$ */
 

@@ -13,9 +13,9 @@ void AfterSimInit(void){
 	#ifdef A661_LOGFILE
 	A661SetLogFile(A661_LOGFILE);
 	#endif
-	pszBinListFiles[0] = "C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US34/US34Project/Simulation/Operator1_UA_1_binaries.txt";
+	pszBinListFiles[0] = "C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US34/US34Project/Simulation/Operator1_UA_1_binaries.txt";
 	pszBinListFiles[1] = 0;
-	if (0/*OK*/ != A661ConnectServer("127.0.0.1", 1231, pszBinListFiles, "C:/Users/guilh/Desktop/ITA/stampstr/hospitais/Time3/US34/US34Project/Simulation/Operator1_UA_1_conf.xml" )) {
+	if (0/*OK*/ != A661ConnectServer("127.0.0.1", 1231, pszBinListFiles, "C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US34/US34Project/Simulation/Operator1_UA_1_conf.xml" )) {
 		const char *pszError;
 		A661GetLastError(&pszError);
 		SsmOutputMessage(SIM_WARNING, pszError);
