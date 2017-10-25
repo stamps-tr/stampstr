@@ -34,5 +34,5 @@ if __name__ == "__main__":
         img = open("imgSaida"+str(i)+".jpg", "wb")
         img.write(message.value.decode('base64'))
         img.close()
-        r = requests.post("http://172.17.0.1:8000/process_file", file="@imgSaida"+str(i)+".jpg")
+        r = requests.post("http://172.17.0.1:8000/process_file", file=open('imgSaida'+str(i)+'.jpg', 'rb'))
         print (r)
