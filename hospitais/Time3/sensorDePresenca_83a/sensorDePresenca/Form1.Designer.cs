@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gbSerial = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -381,8 +382,11 @@
             this.Controls.Add(this.gbMensagens);
             this.Controls.Add(this.gbPresenca);
             this.Controls.Add(this.gbSerial);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(338, 640);
+            this.MinimumSize = new System.Drawing.Size(338, 640);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.gbSerial.ResumeLayout(false);
             this.gbSerial.PerformLayout();
             this.gbPresenca.ResumeLayout(false);

@@ -29,12 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gbSerial = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.gbPresenca = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -53,11 +59,6 @@
             this.tbGraylog = new System.Windows.Forms.TextBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.gbSerial.SuspendLayout();
             this.gbPresenca.SuspendLayout();
@@ -75,6 +76,8 @@
             this.gbSerial.Controls.Add(this.comboBox1);
             this.gbSerial.Controls.Add(this.label1);
             this.gbSerial.Location = new System.Drawing.Point(12, 12);
+            this.gbSerial.MaximumSize = new System.Drawing.Size(292, 100);
+            this.gbSerial.MinimumSize = new System.Drawing.Size(292, 100);
             this.gbSerial.Name = "gbSerial";
             this.gbSerial.Size = new System.Drawing.Size(292, 100);
             this.gbSerial.TabIndex = 0;
@@ -137,6 +140,55 @@
             this.gbPresenca.TabIndex = 1;
             this.gbPresenca.TabStop = false;
             this.gbPresenca.Text = "Presença";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(224, 215);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(59, 21);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Auto";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(232, 86);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 17);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Leito 4";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(162, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 17);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Leito 3";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(85, 86);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 17);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Leito 2";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(15, 86);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(51, 17);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Leito 1";
             // 
             // label10
             // 
@@ -329,55 +381,6 @@
             this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(232, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 17);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Leito 4";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(162, 86);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 17);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Leito 3";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(85, 86);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 17);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Leito 2";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 86);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 17);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Leito 1";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(224, 215);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(59, 21);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Auto";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.timer2_Tick);
-            // 
             // timer2
             // 
             this.timer2.Interval = 60000;
@@ -392,8 +395,11 @@
             this.Controls.Add(this.gbMensagens);
             this.Controls.Add(this.gbPresenca);
             this.Controls.Add(this.gbSerial);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(338, 640);
+            this.MinimumSize = new System.Drawing.Size(338, 640);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.gbSerial.ResumeLayout(false);
             this.gbSerial.PerformLayout();
             this.gbPresenca.ResumeLayout(false);
