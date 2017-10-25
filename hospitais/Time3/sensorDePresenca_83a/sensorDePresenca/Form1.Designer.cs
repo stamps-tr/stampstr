@@ -387,6 +387,7 @@
             this.MaximumSize = new System.Drawing.Size(338, 640);
             this.MinimumSize = new System.Drawing.Size(338, 640);
             this.Name = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.gbSerial.ResumeLayout(false);
             this.gbSerial.PerformLayout();
             this.gbPresenca.ResumeLayout(false);

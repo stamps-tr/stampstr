@@ -130,8 +130,24 @@ namespace sensorDePresenca
 
         private void enviaGraylog(int _c1, int _c2, int _c3, int _c4)
         {
-            string s = @"{""version"":""1.1"",""host"":""ArduinoUS83a"",""short_message"":""sensor de presenca 83a""," + @"""_corredor1"":" + _c1.ToString() +","+ @"""_corredor2"":" + _c2.ToString() +"," + @"""_corredor3"":" + _c3.ToString() + "," + @"""_corredor4"":" + _c4.ToString() + "}";
+            string s = @"{""version"":""1.1"",""host"":""ArduinoUS83a"",""short_message"":""sensor de presenca 83a""," + @"""_corredor1"":" + _c1.ToString() + "," + @"""_corredor2"":" + _c2.ToString() + "," + @"""_corredor3"":" + _c3.ToString() + "," + @"""_corredor4"":" + _c4.ToString() + "}";
             client.SendMessageAsync("US83a", new[] { new KafkaNet.Protocol.Message(s) });
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (serialPort.IsOpen)
+            {
+                try
+                {
+                    serialPort.Close();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -183,9 +199,9 @@ namespace sensorDePresenca
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            string s = " c1="+ c1.ToString() +" c2=" + c2.ToString() + " c3=" + c3.ToString() + " c4=" + c4.ToString();
-            tbGraylog.AppendText(DateTime.Now.ToShortTimeString() + ": " +s+ "\n");
-            enviaGraylog(c1,c2,c3,c4);
+            string s = " c1=" + c1.ToString() + " c2=" + c2.ToString() + " c3=" + c3.ToString() + " c4=" + c4.ToString();
+            tbGraylog.AppendText(DateTime.Now.ToShortTimeString() + ": " + s + "\n");
+            enviaGraylog(c1, c2, c3, c4);
         }
 
         private void timer2_Tick(object sender, EventArgs e)
