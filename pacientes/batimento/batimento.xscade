@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="TRUE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="true"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3119e/699F/1424/59f23cfd2d5a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INITIAL_P1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1000"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3119f/699F/1424/59f23d0428da"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INITIAL_P2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1200"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3124b/699F/1424/59f23d4c7137"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INITIAL_P3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1400"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/31259/699F/1424/59f23d4c6f5c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INITIAL_P4">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1600"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/31267/699F/1424/59f23d4c664f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INITIAL_P5">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="uint32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1800"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/31275/699F/1424/59f23d4d3daf"/>
+			</pragmas>
+		</Constant>
+		<Constant name="GRAPH_CONSTANT_ADD">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="48.30"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/456e/52E6/50C/59f2622c8bc"/>
+			</pragmas>
+		</Constant>
+		<Constant name="GRAPH_CONSTANT_DIVIDE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="59"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4594/52E6/50C/59f262421a5f"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>
