@@ -1,0 +1,11 @@
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\bin\Release\sensorDePresenca.exe.config
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\bin\Release\sensorDePresenca.exe
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\bin\Release\sensorDePresenca.pdb
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\bin\Release\kafka-net.dll
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\obj\Release\sensorDePresenca.csprojResolveAssemblyReference.cache
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\obj\Release\sensorDePresenca.Form1.resources
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\obj\Release\sensorDePresenca.Properties.Resources.resources
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\obj\Release\sensorDePresenca.csproj.GenerateResource.Cache
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\obj\Release\sensorDePresenca.csproj.CoreCompileInputs.cache
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\obj\Release\sensorDePresenca.exe
+C:\Users\guilh\Desktop\stampstr\hospitais\Time3\sensorDePresenca_83c\sensorDePresenca\obj\Release\sensorDePresenca.pdb

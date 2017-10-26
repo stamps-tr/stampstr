@@ -11,11 +11,11 @@ class Filtering:
     def preparingSetToTrain(self, input, N=2000):
         self.all_words = set()
         wordsFreq = {}
-        stopWords = stopwords.words('portuguese')
+        stopWords = stopwords.words('english')
         stemmer = RSLPStemmer()
         for document in input:
-            clean_text = re.sub(u'[^a-zA-Z0-9áéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕçÇ: ]', '', document['workDone'])
-            for word in word_tokenize(clean_text,'portuguese'):
+            clean_text = re.sub(u'[^a-zA-Z0-9áéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕçÇ: ]', '', document[1])
+            for word in word_tokenize(clean_text,'english'):
                 if word.lower() not in stopWords:
                     stemmed_word = stemmer.stem(word.lower())
                     if stemmed_word in wordsFreq:
@@ -29,7 +29,7 @@ class Filtering:
             i+=1
         t = []
         for document in input:
-            clean_text = re.sub(u'[^a-zA-Z0-9áéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕçÇ: ]', '', document[0])
+            clean_text = re.sub(u'[^a-zA-Z0-9áéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕçÇ: ]', '', document[1])
             aux = {}
             for word in word_tokenize(clean_text, 'portuguese'):
                 if word.lower() not in stopWords:
@@ -39,7 +39,7 @@ class Filtering:
             for word in self.all_words:
                 if word not in aux:
                     aux[word] = False
-            t.append((aux,document[1]))
+            t.append((aux,document[0]))
         return t
 
     # A ser usado depois que o método acima foi usado pelo menos uma vez.
@@ -61,3 +61,18 @@ class Filtering:
                     aux[word] = False
             t.append((aux,document[1]))
         return t
+
+    def preparingToClassify(self, input):
+        stopWords = stopwords.words('english')
+        stemmer = RSLPStemmer()
+        clean_text = re.sub(u'[^a-zA-Z0-9áéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕçÇ: ]', '', input)
+        aux = {}
+        for word in word_tokenize(clean_text, 'english'):
+            if word.lower() not in stopWords:
+                stemmed_word = stemmer.stem(word.lower())
+                if stemmed_word in self.all_words:
+                    aux[stemmed_word]=True
+        for word in self.all_words:
+            if word not in aux:
+                aux[word] = False
+        return aux
