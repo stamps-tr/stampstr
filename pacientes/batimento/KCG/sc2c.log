@@ -1,0 +1,40 @@
+$**************  SCADETOC Version R17 (build i15) **************
+** Generation date: 2017-10-26T17:58:50
+** Command: scade -code "C:\Users\victo\SCADE\batimento\batimento.etp" -root batimento -conf KCG
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+ ~mapping.xml
+  at file C:\Users\victo\SCADE\batimento\KCG\mapping.xml, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\victo\SCADE\batimento\KCG\kcg_metrics.txt, line 0, character 0
+ ~batimento.c
+  at file C:\Users\victo\SCADE\batimento\KCG\batimento.c, line 0, character 0
+ ~batimento.h
+  at file C:\Users\victo\SCADE\batimento\KCG\batimento.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\victo\SCADE\batimento\KCG\kcg_types.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\victo\SCADE\batimento\KCG\kcg_consts.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\victo\SCADE\batimento\KCG\kcg_sensors.h, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\victo\SCADE\batimento\KCG\kcg_types.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\victo\SCADE\batimento\KCG\kcg_consts.c, line 0, character 0
+ ~kcg_xml_filter_out.scade
+  at file C:\Users\victo\SCADE\batimento\KCG\kcg_xml_filter_out.scade, line 0, character 0
+ ~config.txt
+  at file C:\Users\victo\SCADE\batimento\KCG\config.txt, line 0, character 0
+*** Generated Files Information (GENFIL): Code Generator Generated files
+ ~user_macros.h
+  at file C:\Users\victo\SCADE\batimento\KCG\user_macros.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file C:\Users\victo\SCADE\batimento\KCG\kcg_imported_types.h, line 0, character 0
+ ~sc2c.log
+  at file C:\Users\victo\SCADE\batimento\KCG\sc2c.log, line 0, character 0
+ ~sc2c_integration_files.txt
+  at file C:\Users\victo\SCADE\batimento\KCG\sc2c_integration_files.txt, line 0, character 0
+$**************  SCADETOC Version R17 (build i15) **************
+** Generation date: 2017-10-26T17:58:57
+** sc2c.log
+*************************************************************$
