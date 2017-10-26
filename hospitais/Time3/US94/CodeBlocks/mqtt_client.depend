@@ -1,0 +1,78 @@
+# depslib dependency file v1.0
+1479859891 source:c:\coceblocks\mqttclientc\mqtt_client\main.c
+	<Windows.h>
+	<stdio.h>
+	<wchar.h>
+	<string.h>
+	<time.h>
+	"MQTTClient.h"
+
+1479697904 source:c:\coceblocks\mqttclientc\mqtt_client\main.cpp
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+
+1478031061 c:\paho-mqtt-c-windows\include\mqttclient.h
+	<stdio.h>
+	"MQTTClientPersistence.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+
+1478031061 c:\paho-mqtt-c-windows\include\mqttclientpersistence.h
+
+1478027461 c:\coceblocks\mqttclientc\mqtt_client\libraries\paho-mqtt-c-windows\include\mqttclient.h
+	<stdio.h>
+	"MQTTClientPersistence.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+
+1478027461 c:\coceblocks\mqttclientc\mqtt_client\libraries\paho-mqtt-c-windows\include\mqttclientpersistence.h
+
+1508813633 source:c:\coceblocks\mqtt\mqtt_client\main.c
+	<stdlib.h>
+	<Windows.h>
+	<stdio.h>
+	<wchar.h>
+	<string.h>
+	<time.h>
+	"MQTTClient.h"
+
+1478031061 c:\coceblocks\mqtt\libraries\paho-mqtt-c-windows\include\mqttclient.h
+	<stdio.h>
+	"MQTTClientPersistence.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+	"stdio.h"
+	"stdlib.h"
+	"string.h"
+	"MQTTClient.h"
+
+1478031061 c:\coceblocks\mqtt\libraries\paho-mqtt-c-windows\include\mqttclientpersistence.h
+

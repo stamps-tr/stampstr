@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$**************** KCG Version 6.4 (build i21) ****************
+** Command: kcg64.exe -config C:/Users/Julhio/Desktop/US94/UserApplication/Simulation/config.txt
+** Generation date: 2017-10-26T20:14:50
+*************************************************************$-->
+<Model date="2017-10-26T20:14:50" commandLine="kcg64.exe -config C:/Users/Julhio/Desktop/US94/UserApplication/Simulation/config.txt">
+  <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+  <Option name="xml_filter" value="#off#"/>
+  <Option name="state_vector" value="#off#"/>
+  <Option name="static" value="#off#"/>
+  <Option name="warn_error" value="#off#"/>
+  <Option name="no_bitwise" value="#off#"/>
+  <Option name="wrap_c_ops" value="#off#"/>
+  <Option name="input_file"
+      value="C:/Users/Julhio/Desktop/US94/UserApplication/Simulation/scade_model_without_unused.scade"/>
+  <Option name="probes" value="#on#"/>
+  <Option name="no_observe" value="#off#"/>
+  <Option name="observe" value="#off#"/>
+  <Option name="debug" value="#on#"/>
+  <Option name="user_config" value="./user_macros.h"/>
+  <Option name="input_threshold" value="10"/>
+  <Option name="header" value="#off#"/>
+  <Option name="significance_length" value="31"/>
+  <Option name="name_length" value="200"/>
+  <Option name="globals_prefix" value="#off#"/>
+  <Option name="macro_on_assert" value="#off#"/>
+  <Option name="optimization_level" value="0"/>
+  <Option name="global_root_context" value="#off#"/>
+  <Option name="noexp" value="#off#"/>
+  <Option name="exp" value="#off#"/>
+  <Option name="expall" value="#on#"/>
+  <Option name="target_dir" value="C:/Users/Julhio/Desktop/US94/UserApplication/Simulation"/>
+  <Option name="target" value="C"/>
+  <Option name="node" value="test"/>
+  <Option name="auth" value="#off#"/>
+  <Constant scadeName="RED" scadeType="int" targetName="RED" targetType="kcg_int" macroDef="true"/>
+  <Constant scadeName="GREEN" scadeType="int" targetName="GREEN" targetType="kcg_int" macroDef="true"/>
+  <RootNode scadeName="test" headerFile="test.h" targetCycleFct="test" targetInitFct="test_reset"
+      targetInitializationFct="test_init">
+    <Input scadeName="DescriptionFromDisplay" scadeType="char^(150)" targetName="DescriptionFromDisplay"
+        targetType="array_char_150" inCtx="true"/>
+    <Input scadeName="SignalFromButton" scadeType="bool" targetName="SignalFromButton" targetType="kcg_bool"
+        inCtx="true"/>
+    <Input scadeName="Latitude" scadeType="char^(10)" targetName="Latitude" targetType="array_char_10" inCtx="true"/>
+    <Input scadeName="Longitude" scadeType="char^(10)" targetName="Longitude" targetType="array_char_10" inCtx="true"/>
+    <Input scadeName="Notification" scadeType="bool" targetName="Notification" targetType="kcg_bool" inCtx="true"/>
+    <Output scadeName="Emit" scadeType="bool" targetName="Emit" targetType="kcg_bool" inCtx="true"/>
+    <Output scadeName="SignalToLED" scadeType="int" targetName="SignalToLED" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L48" scadeType="bool" targetName="_L48" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L47" scadeType="bool" targetName="_L47" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L46" scadeType="bool" targetName="_L46" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L44" scadeType="bool" targetName="_L44" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L76" scadeType="int" targetName="_L76" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L77" scadeType="int" targetName="_L77" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L78" scadeType="int" targetName="_L78" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L81" scadeType="char^(150)" targetName="_L81" targetType="array_char_150" inCtx="true"/>
+    <Local scadeName="_L82" scadeType="char^(10)" targetName="_L82" targetType="array_char_10" inCtx="true"/>
+    <Local scadeName="_L83" scadeType="char^(10)" targetName="_L83" targetType="array_char_10" inCtx="true"/>
+    <NodeInstance scadeName="PublishMQTT" instName="1" refName="PublishMQTT"/>
+    <NodeInstance scadeName="if" instName="5"/>
+    <NodeInstance scadeName="if" instName="7"/>
+    <OutCtxType targetName="outC_test"/>
+    <InCtxType targetName="inC_test"/>
+  </RootNode>
+  <NoExpNode scadeName="PublishMQTT" headerFile="kcg_imported_functions.h" targetCycleFct="PublishMQTT" imported="true">
+    <Input scadeName="Send" scadeType="bool" targetName="Send" targetType="kcg_bool"/>
+    <Input scadeName="Description" scadeType="char^(150)" targetName="Description" targetType="array_char_150"/>
+    <Input scadeName="Latitude" scadeType="char^(10)" targetName="Latitude" targetType="array_char_10"/>
+    <Input scadeName="Longitude" scadeType="char^(10)" targetName="Longitude" targetType="array_char_10"/>
+  </NoExpNode>
+  <PredefType scadeName="real" targetName="kcg_real"/>
+  <PredefType scadeName="bool" targetName="kcg_bool"/>
+  <PredefType scadeName="char" targetName="kcg_char"/>
+  <PredefType scadeName="int" targetName="kcg_int"/>
+  <ArrayType targetName="array_char_150" cellType="kcg_char" size="150" targetCopyFct="kcg_copy_array_char_150"
+      targetCompFct="kcg_comp_array_char_150"/>
+  <ArrayType targetName="array_char_10" cellType="kcg_char" size="10" targetCopyFct="kcg_copy_array_char_10"
+      targetCompFct="kcg_comp_array_char_10"/>
+</Model>
+<!--$**************** KCG Version 6.4 (build i21) ****************
+** kcg_trace.xml
+** Generation date: 2017-10-26T20:14:50
+*************************************************************$-->

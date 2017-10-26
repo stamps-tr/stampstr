@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Constant name="RED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="21"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5126/1916/11B4/58357c1f5c17"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LONGITUDE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="9.123"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5118/1916/11B4/58357c1f111"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LATITUDE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5.123"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/510a/1916/11B4/58357c1f286d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="GREEN">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="51"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/50fc/1916/11B4/58357c1f2be2"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="test" oid="!ed/3c33/784C/2124/582c46401f65">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="Emit" type="bool" oid="!ed/3c5b/784C/2124/582cb0624a4b" instancepath="test/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="16" ParameterIdent="A661_FILL_INDEX" WidgetType="GpArcCircle" WidgetName="SendCircle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="15" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="SignalFromButton" type="bool" oid="!ed/4c22/1916/11B4/58357bf27df4" instancepath="test/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="SignalToLED" type="int" oid="!ed/5218/6BC1/2718/583664954b06" instancepath="test/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="16" ParameterIdent="A661_FILL_INDEX" WidgetType="GpArcCircle" WidgetName="SendCircle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="10" WidgetType="EditBoxText" WidgetName="EditBox_Longitude">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Latitude" type="char^10" oid="!ed/4e47/6BC1/2718/58365997375f" instancepath="test/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="10" WidgetType="EditBoxText" WidgetName="EditBoxText_Latitude">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Longitude" type="char^10" oid="!ed/4e48/6BC1/2718/5836599c1c9e" instancepath="test/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxText" WidgetName="EditBoxText_Latitude">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Notification" type="bool" oid="!ed/3cfd/4055/30C0/59effd7c7ef4" instancepath="test/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\CC.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="18" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="150" WidgetType="EditBoxText" WidgetName="EditBoxText_DetaisIncident">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="DescriptionFromDisplay" type="char^150" oid="!ed/3ca8/72EB/22E4/58339ff97283" instancepath="test/"/>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+		<OperatorMapping name="PublishMQTT" oid="!ed/3c8f/6C6A/478/582ba4dc65d2"/>
+	</operatorMappings>
+</MappingFile>
