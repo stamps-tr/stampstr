@@ -1,0 +1,58 @@
+a661 A661_DF_MAGIC_NUMBER
+01 Library version
+05 Supplement version
+0000 App ID (unused)
+0000 Size of OEM free data
+61 Begin block
+00 padding
+0008 Table Size
+00000090 Command size
+
+0008 Number of elements specified below
+0000
+00 Index
+000000
+3f99999a Line width
+3fc00000 Color width
+40400000 Halo width
+01 Index
+000000
+40200000 Line width
+3fc00000 Color width
+40600000 Halo width
+02 Index
+000000
+40600000 Line width
+40200000 Color width
+40866666 Halo width
+03 Index
+000000
+40900000 Line width
+40600000 Color width
+40b00000 Halo width
+04 Index
+000000
+40b00000 Line width
+40900000 Color width
+40d00000 Halo width
+05 Index
+000000
+40d00000 Line width
+40b00000 Color width
+40f00000 Halo width
+06 Index
+000000
+40f00000 Line width
+40d00000 Color width
+41080000 Halo width
+07 Index
+000000
+41080000 Line width
+40f00000 Color width
+41180000 Halo width
+d0 End of Block
+00
+0000
+e0 A661_DF_FOOTER
+00
+0000

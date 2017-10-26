@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/victo/SCADE/batimento/Simulation/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#on#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="debug" value="#on#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="C:/Users/victo/SCADE/batimento/Simulation"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="batimento"/>
+    <Option name="auth" value="#off#"/>
+    <Constant macroDef="true" scadeName="TRUE" scadeType="bool" targetName="TRUE" targetType="kcg_bool"/>
+    <Constant macroDef="true" scadeName="GRAPH_CONSTANT_DIVIDE" scadeType="float32" targetName="GRAPH_CONSTANT_DIVIDE" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="GRAPH_CONSTANT_ADD" scadeType="float32" targetName="GRAPH_CONSTANT_ADD" targetType="kcg_float32"/>
+    <RootNode headerFile="batimento.h" scadeName="batimento" targetCycleFct="batimento" targetInitFct="batimento_reset" targetInitializationFct="batimento_init">
+      <Output inCtx="true" scadeName="Emit" scadeType="bool" targetName="Emit" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="p1" scadeType="uint32" targetName="p1" targetType="kcg_uint32"/>
+      <Output inCtx="true" scadeName="p2" scadeType="uint32" targetName="p2" targetType="kcg_uint32"/>
+      <Output inCtx="true" scadeName="p3" scadeType="uint32" targetName="p3" targetType="kcg_uint32"/>
+      <Output inCtx="true" scadeName="p4" scadeType="uint32" targetName="p4" targetType="kcg_uint32"/>
+      <Output inCtx="true" scadeName="p5" scadeType="uint32" targetName="p5" targetType="kcg_uint32"/>
+      <Output inCtx="true" scadeName="atual" scadeType="float32" targetName="atual" targetType="kcg_float32"/>
+      <Local inCtx="true" scadeName="_L18" scadeType="bool" targetName="_L18" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L20" scadeType="uint32^(5)" targetName="_L20" targetType="array_uint32_5"/>
+      <Local inCtx="true" scadeName="_L24" scadeType="uint32" targetName="_L24" targetType="kcg_uint32"/>
+      <Local inCtx="true" scadeName="_L23" scadeType="uint32" targetName="_L23" targetType="kcg_uint32"/>
+      <Local inCtx="true" scadeName="_L22" scadeType="uint32" targetName="_L22" targetType="kcg_uint32"/>
+      <Local inCtx="true" scadeName="_L21" scadeType="uint32" targetName="_L21" targetType="kcg_uint32"/>
+      <Local inCtx="true" scadeName="_L25" scadeType="uint32" targetName="_L25" targetType="kcg_uint32"/>
+      <Local inCtx="true" scadeName="_L28" scadeType="float32" targetName="_L28" targetType="kcg_float32"/>
+      <Local inCtx="true" scadeName="_L29" scadeType="float32" targetName="_L29" targetType="kcg_float32"/>
+      <Local inCtx="true" scadeName="_L30" scadeType="float32" targetName="_L30" targetType="kcg_float32"/>
+      <Local inCtx="true" scadeName="_L31" scadeType="float32" targetName="_L31" targetType="kcg_float32"/>
+      <Local inCtx="true" scadeName="_L32" scadeType="float32" targetName="_L32" targetType="kcg_float32"/>
+      <NodeInstance instName="2" refName="read" scadeName="read"/>
+      <NodeInstance instName="1" refName="NumericToFloat32_math_uint32" scadeName="math::NumericToFloat32">
+        <OutCtxVar targetName="Context_NumericToFloat32_1"/>
+      </NodeInstance>
+      <OutCtxType targetName="outC_batimento"/>
+    </RootNode>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="read" targetCycleFct="read">
+      <Output scadeName="data" scadeType="uint32^(5)" targetName="data" targetType="array_uint32_5"/>
+    </NoExpNode>
+    <Package scadeName="math">
+      <NoExpNode headerFile="NumericToFloat32_math_uint32.h" scadeName="NumericToFloat32" targetCycleFct="NumericToFloat32_math_uint32" targetInitFct="NumericToFloat32_reset_math_uint32" targetInitializationFct="NumericToFloat32_init_math_uint32">
+        <Input scadeName="Input1" scadeType="uint32" targetName="Input1_uint32" targetType="kcg_uint32"/>
+        <Output inCtx="true" scadeName="Output1" scadeType="float32" targetName="Output1_uint32" targetType="kcg_float32"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="uint32" targetName="_L1_uint32" targetType="kcg_uint32"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float32" targetName="_L2_uint32" targetType="kcg_float32"/>
+        <OutCtxType targetName="outC_NumericToFloat32_math_uint32"/>
+      </NoExpNode>
+    </Package>
+    <ArrayType cellType="kcg_uint32" size="5" targetCompFct="kcg_comp_array_uint32_5" targetCopyFct="kcg_copy_array_uint32_5" targetName="array_uint32_5"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

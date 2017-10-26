@@ -1,0 +1,16 @@
+$********** SCADE Suite KCG 32-bit 6.6 (build i15) ***********
+** Command: kcg66.exe -config C:/Users/victo/SCADE/batimento/Simulation/config.txt
+** Generation date: 2017-10-26T20:32:14
+*************************************************************$
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/Users/victo/SCADE/batimento/Simulation/scade_model_without_unused.scade, line 314, character 0
+  at path batimento/
+ Node batimento has no internal state
+ (it should probably be declared as a function)
+1 warning was found
+No error was found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6 (build i15) ***********
+** kcg.log
+** Generation date: 2017-10-26T20:32:19
+*************************************************************$
