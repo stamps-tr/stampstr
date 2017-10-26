@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" xmlns:asammcd2mc="unknown_address">
+	<declarations>
+		<Operator kind="function" external="imported" name="read">
+			<outputs>
+				<Variable name="data">
+					<type>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="uint32"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<ConstValue value="5"/>
+							</size>
+						</Table>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/3961e/699F/1424/59f2451e6e0a"/>
+						<asammcd2mc:Pragma>
+							Measurement:&#xA;Meas=0&#xA;MeasConversion=NO_COMPU_METHOD
+						</asammcd2mc:Pragma>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<pragmas>
+				<ed:Operator oid="!ed/3961d/699F/1424/59f2423c26e4"/>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

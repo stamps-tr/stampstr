@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="batimento" oid="!ed/106df/699F/1424/59f232094652">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="Emit" type="bool" oid="!ed/28ee1/699F/1424/59f23bca13f6" instancepath="batimento/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="33" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="34" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="35" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="36" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="37" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="41" ParameterIdent="A661_VALUE" WidgetType="NumericReadout" WidgetName="NumericReadout">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="p1" type="uint32" oid="!ed/18964/699F/1424/59f232777d" instancepath="batimento/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SizeY" type="ulong" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="33" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<DataField value="SizeY"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="p2" type="uint32" oid="!ed/28eef/699F/1424/59f23bf83067" instancepath="batimento/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SizeY" type="ulong" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="34" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<DataField value="SizeY"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="p3" type="uint32" oid="!ed/28ef5/699F/1424/59f23bf8226a" instancepath="batimento/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SizeY" type="ulong" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="35" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<DataField value="SizeY"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="p4" type="uint32" oid="!ed/28efb/699F/1424/59f23bf82eb1" instancepath="batimento/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SizeY" type="ulong" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="36" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<DataField value="SizeY"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="p5" type="uint32" oid="!ed/28f01/699F/1424/59f23bf922a3" instancepath="batimento/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SizeY" type="ulong" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="37" ParameterIdent="A661_SIZE_Y" WidgetType="GpRectangle" WidgetName="GpRectangle">
+							<A661Data>
+								<DataField value="SizeY"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="atual" type="float32" oid="!ed/44de/52E6/50C/59f25da617d3" instancepath="batimento/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\display_saude\UADF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="41" ParameterIdent="A661_VALUE" WidgetType="NumericReadout" WidgetName="NumericReadout">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>
