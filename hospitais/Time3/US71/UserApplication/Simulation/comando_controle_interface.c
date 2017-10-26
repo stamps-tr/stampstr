@@ -10,7 +10,7 @@ extern "C" {
 
 const int  rt_version = Srtv62;
 
-const char* _SCSIM_CheckSum = "df02d8f4ab66c4ddadaa6e1e06a14815";
+const char* _SCSIM_CheckSum = "3444e8a0e4b9c8c9b5d83f37cb06ef22";
 const char* _SCSIM_SmuTypesCheckSum = "70167ab69f4117fa3043a69f71c5aa42";
 
 /* context */

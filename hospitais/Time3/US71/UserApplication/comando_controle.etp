@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="172" defaultConfiguration="24">
+<Project id="1" oid_count="211" defaultConfiguration="24">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -44,10 +44,6 @@
 		</Prop>
 		<Prop id="21" name="@GENERATOR:ENABLE_EXTENSIONS">
 			<value>false</value>
-			<configuration>14</configuration>
-		</Prop>
-		<Prop id="22" name="@SIMULATOR:CPU_TYPE">
-			<value>win64</value>
 			<configuration>14</configuration>
 		</Prop>
 		<Prop id="23" name="@STUDIO:TOOLCONF">
@@ -428,7 +424,7 @@
 			<configuration>14</configuration>
 		</Prop>
 		<Prop id="144" name="@GENERATOR:INPUT_THRESHOLD">
-			<value>2</value>
+			<value>10</value>
 			<configuration>24</configuration>
 		</Prop>
 		<Prop id="145" name="@GENERATOR:SKIP_UNUSED">
@@ -436,7 +432,7 @@
 			<configuration>14</configuration>
 		</Prop>
 		<Prop id="146" name="@GENERATOR:INPUT_THRESHOLD">
-			<value>2</value>
+			<value>10</value>
 			<configuration>14</configuration>
 		</Prop>
 		<Prop id="147" name="@GENERATOR:EXPAND_MODE">
@@ -447,19 +443,38 @@
 			<value>6</value>
 			<configuration>14</configuration>
 		</Prop>
-		<Prop id="169" name="@COMPILER:ADD_INCLUDE_DIR">
-			<value>..\IntegrationCode</value>
-			<value>C:\paho-mqtt-c-windows\include</value>
-			<value>C:\paho-mqtt-c-windows\lib</value>
-			<configuration>24</configuration>
-		</Prop>
 		<Prop id="170" name="@GNU Cwin64:ADD_LINK_OPTIONS">
 			<value>&quot;C:\paho-mqtt-c-windows\lib\paho-mqtt3a.lib&quot; &quot;C:\paho-mqtt-c-windows\lib\paho-mqtt3as.lib&quot; &quot;C:\paho-mqtt-c-windows\lib\paho-mqtt3c.lib&quot; &quot;C:\paho-mqtt-c-windows\lib\paho-mqtt3cs.lib&quot;</value>
 			<configuration>24</configuration>
 		</Prop>
-		<Prop id="172" name="@COMPILER:ADD_INCLUDE_DIR">
-			<value>..\IntegrationCode</value>
+		<Prop id="176" name="@SIMULATOR:CPU_TYPE">
+			<value>win64</value>
 			<configuration>14</configuration>
+		</Prop>
+		<Prop id="178" name="@SCADE:ASSTRING_TRIM">
+			<value></value>
+		</Prop>
+		<Prop id="180" name="@GNU Cwin64:ADD_LINK_OPTIONS">
+			<value>&quot;C:\paho-mqtt-c-windows\lib\paho-mqtt3a.lib&quot; &quot;C:\paho-mqtt-c-windows\lib\paho-mqtt3as.lib&quot; &quot;C:\paho-mqtt-c-windows\lib\paho-mqtt3c.lib&quot; &quot;C:\paho-mqtt-c-windows\lib\paho-mqtt3cs.lib&quot;</value>
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="197" name="@COMPILER:ADD_INCLUDE_DIR">
+			<value>C:\paho-mqtt-c-windows\include</value>
+			<value>C:\paho-mqtt-c-windows\lib</value>
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="208" name="@SIMULATOR:COMPILER">
+			<value>VC10.0</value>
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="209" name="@COMPILER:ADD_INCLUDE_DIR">
+			<value>C:\paho-mqtt-c-windows\include</value>
+			<value>C:\paho-mqtt-c-windows\lib</value>
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="210" name="@VC10.0win64:ADD_COMP_OPTIONS">
+			<value>-pedantic</value>
+			<configuration>24</configuration>
 		</Prop>
 	</props>
 	<roots>

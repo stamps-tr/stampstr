@@ -1,0 +1,32 @@
+-- $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+-- ** Command: kcg66.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Simulation/config.txt
+-- ** Generation date: 2017-10-20T01:58:21
+-- *************************************************************$
+with Kcg_Types;
+with Kcg_Config;
+
+--# inherit Kcg_Types, Kcg_Config;
+package Kcg_Top.Kcg_Imported
+is
+
+  -- PublishMQTT/
+  procedure PublishMQTT(
+    -- Description/
+    Description : in Kcg_Types.Char_Range_0_149;
+    -- Latitude/
+    Latitude : in Kcg_Config.Kcg_Float32;
+    -- Longitude/
+    Longitude : in Kcg_Config.Kcg_Float32;
+    -- Send/
+    Send : in Boolean);
+
+
+
+
+end Kcg_Top.Kcg_Imported;
+
+-- $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+-- ** kcg_top-kcg_imported.dads
+-- ** Generation date: 2017-10-20T01:58:21
+-- *************************************************************$
+

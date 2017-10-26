@@ -1,0 +1,3 @@
+-target_dir "C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/KCG" -target C -name_length 200 -significance_length 31 -user_config "./user_macros.h" -input_threshold 10 
+-root control
+"C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/KCG/scade_model_without_unused.scade"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US71/UserApplication/Simulation/config.txt
-** Generation date: 2017-10-19T00:58:37
+** Generation date: 2017-10-20T09:49:49
 *************************************************************$-->
 <mapping>
   <config>
@@ -24,7 +24,7 @@
     <option name="observe" value="#off#"/>
     <option name="debug" value="#on#"/>
     <option name="user_config" value="./user_macros.h"/>
-    <option name="input_threshold" value="2"/>
+    <option name="input_threshold" value="10"/>
     <option name="header" value="#off#"/>
     <option name="significance_length" value="31"/>
     <option name="name_length" value="200"/>
@@ -79,8 +79,8 @@
     </operator>
     <operator id="36" name="PublishMQTT" imported="true" root="false" expanded="false">
       <input id="37" name="Description" clock="false" type="1"/>
-      <input id="38" name="LATITUDE" clock="false" type="12"/>
-      <input id="39" name="LONGITUDE" clock="false" type="12"/>
+      <input id="38" name="Latitude" clock="false" type="12"/>
+      <input id="39" name="Longitude" clock="false" type="12"/>
       <input id="40" name="Send" clock="false" type="2"/>
     </operator>
   </model>
@@ -174,8 +174,8 @@
       <file id="116" name="kcg_imported_functions.h">
         <function id="117" name="PublishMQTT">
           <parameter id="118" name="Description" type="72" pointer="true"/>
-          <parameter id="119" name="_1_LATITUDE" type="106" pointer="false"/>
-          <parameter id="120" name="_2_LONGITUDE" type="106" pointer="false"/>
+          <parameter id="119" name="Latitude" type="106" pointer="false"/>
+          <parameter id="120" name="Longitude" type="106" pointer="false"/>
           <parameter id="121" name="Send" type="107" pointer="false"/>
         </function>
       </file>
@@ -254,5 +254,5 @@
 </mapping>
 <!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** mapping.xml
-** Generation date: 2017-10-19T00:58:37
+** Generation date: 2017-10-20T09:49:49
 *************************************************************$-->

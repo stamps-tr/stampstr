@@ -1,0 +1,26 @@
+V "GNAT Lib v5"
+A -gnatA
+A -m64
+A -mtune=core2
+A -march=nocona
+P ZX
+
+RN
+
+U kcg_types%s		kcg_types.ads		2781580b NE OO PK
+W kcg_config%s		kcg_config.adb		kcg_config.ali
+
+D interfac.ads		20160705101008 6033a23f interfaces%s
+D kcg_config.ads	20170109214138 a9be4eb4 kcg_config%s
+D kcg_types.ads		20171020035822 8e3f16bf kcg_types%s
+D system.ads		20160705101016 0f63a871 system%s
+X 2 kcg_config.ads
+9K9*Kcg_Config 45e15 3|5w6 11r29 11r62 13r26
+12E11*Kcg_Char{character} 3|11r73
+23I11*Kcg_Size{integer} 3|11r40 13r37
+X 3 kcg_types.ads
+8K9*Kcg_Types 17l5 17e14
+11A8*Array_Char(2|12E11)<integer> 15r31
+13I11*Range_0_149{2|23I11} 15r43
+15A11*Char_Range_0_149{11A8}<integer>
+

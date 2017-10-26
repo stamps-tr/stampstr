@@ -1,0 +1,16 @@
+V "GNAT Lib v5"
+A -gnatA
+A -m64
+A -mtune=core2
+A -march=nocona
+P ZX
+
+RN
+
+U kcg_top%s		kcg_top.ads		ee7cf1f9 NE OO PK
+
+D kcg_top.ads		20171020035822 ee7cf1f9 kcg_top%s
+D system.ads		20160705101016 0f63a871 system%s
+X 1 kcg_top.ads
+5K9*Kcg_Top 10l5 10e12
+

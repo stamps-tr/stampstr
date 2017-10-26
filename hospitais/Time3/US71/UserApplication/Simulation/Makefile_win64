@@ -10,73 +10,73 @@ C_FLAGS = -pedantic
 
 all: control.exe control.dll 
 
-win64/A661Cosim.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/A661Cosim.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\A661Cosim.c" -o "win64\A661Cosim.o"
+"win64\A661Cosim.obj": "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\A661Cosim.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "$(SCADE)\lib\A661Cosim.c" /Fo"win64\A661Cosim.obj"
 
-win64/control_cosim.o: control_cosim.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "control_cosim.c" -o "win64\control_cosim.o"
+"win64\control_cosim.obj": "control_cosim.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "control_cosim.c" /Fo"win64\control_cosim.obj"
 
-win64/control_UA_1.o: control_UA_1.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "control_UA_1.c" -o "win64\control_UA_1.o"
+"win64\control_UA_1.obj": "control_UA_1.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "control_UA_1.c" /Fo"win64\control_UA_1.obj"
 
-win64/control_UA_1_private.o: control_UA_1_private.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "control_UA_1_private.c" -o "win64\control_UA_1_private.o"
+"win64\control_UA_1_private.obj": "control_UA_1_private.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "control_UA_1_private.c" /Fo"win64\control_UA_1_private.obj"
 
-win64/control_UA_1_LAY_1.o: control_UA_1_LAY_1.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "control_UA_1_LAY_1.c" -o "win64\control_UA_1_LAY_1.o"
+"win64\control_UA_1_LAY_1.obj": "control_UA_1_LAY_1.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "control_UA_1_LAY_1.c" /Fo"win64\control_UA_1_LAY_1.obj"
 
-win64/control.o: control.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "control.c" -o "win64\control.o"
+"win64\control.obj": "control.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "control.c" /Fo"win64\control.obj"
 
-win64/kcg_types.o: kcg_types.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "kcg_types.c" -o "win64\kcg_types.o"
+"win64\kcg_types.obj": "kcg_types.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "kcg_types.c" /Fo"win64\kcg_types.obj"
 
-win64/kcg_consts.o: kcg_consts.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "kcg_consts.c" -o "win64\kcg_consts.o"
+"win64\kcg_consts.obj": "kcg_consts.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "kcg_consts.c" /Fo"win64\kcg_consts.obj"
 
-win64/comando_controle_type.o: comando_controle_type.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "comando_controle_type.c" -o "win64\comando_controle_type.o"
+"win64\comando_controle_type.obj": "comando_controle_type.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "comando_controle_type.c" /Fo"win64\comando_controle_type.obj"
 
-win64/SmuPredefConv.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuPredefConv.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuPredefConv.c" -o "win64\SmuPredefConv.o"
+"win64\SmuPredefConv.obj": "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuPredefConv.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "$(SCADE)\lib\C\SmuPredefConv.c" /Fo"win64\SmuPredefConv.obj"
 
-win64/SmuTypes.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuTypes.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuTypes.c" -o "win64\SmuTypes.o"
+"win64\SmuTypes.obj": "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuTypes.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "$(SCADE)\lib\C\SmuTypes.c" /Fo"win64\SmuTypes.obj"
 
-win64/SmuLib.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuLib.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuLib.c" -o "win64\SmuLib.o"
+"win64\SmuLib.obj": "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuLib.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "$(SCADE)\lib\C\SmuLib.c" /Fo"win64\SmuLib.obj"
 
-win64/SmuVTable.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuVTable.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuVTable.c" -o "win64\SmuVTable.o"
+"win64\SmuVTable.obj": "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuVTable.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "$(SCADE)\lib\C\SmuVTable.c" /Fo"win64\SmuVTable.obj"
 
-win64/comando_controle_mapping.o: comando_controle_mapping.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "comando_controle_mapping.c" -o "win64\comando_controle_mapping.o"
+"win64\comando_controle_mapping.obj": "comando_controle_mapping.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "comando_controle_mapping.c" /Fo"win64\comando_controle_mapping.obj"
 
-win64/mqtt.o: ../../IntegrationCode/mqtt.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "..\..\IntegrationCode\mqtt.c" -o "win64\mqtt.o"
+"win64\mqtt.obj": "..\..\IntegrationCode\mqtt.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "..\..\IntegrationCode\mqtt.c" /Fo"win64\mqtt.obj"
 
-win64/comando_controle_interface.o: comando_controle_interface.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "comando_controle_interface.c" -o "win64\comando_controle_interface.o"
+"win64\comando_controle_interface.obj": "comando_controle_interface.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "comando_controle_interface.c" /Fo"win64\comando_controle_interface.obj"
 
-win64/SmuProxy.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuProxy.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuProxy.c" -o "win64\SmuProxy.o"
+"win64\SmuProxy.obj": "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuProxy.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuProxy.c" /Fo"win64\SmuProxy.obj"
 
-control.dll: win64/A661Cosim.o win64/control_cosim.o win64/control_UA_1.o win64/control_UA_1_private.o win64/control_UA_1_LAY_1.o win64/control.o win64/kcg_types.o win64/kcg_consts.o win64/comando_controle_type.o win64/SmuPredefConv.o win64/SmuTypes.o win64/SmuLib.o win64/SmuVTable.o win64/comando_controle_mapping.o win64/mqtt.o win64/comando_controle_interface.o win64/SmuProxy.o SmuExport.def 
-	gcc -mwindows -mwin32 -shared -static-libgcc  "win64\A661Cosim.o" "win64\control_cosim.o" "win64\control_UA_1.o" "win64\control_UA_1_private.o" "win64\control_UA_1_LAY_1.o" "win64\control.o" "win64\kcg_types.o" "win64\kcg_consts.o" "win64\comando_controle_type.o" "win64\SmuPredefConv.o" "win64\SmuTypes.o" "win64\SmuLib.o" "win64\SmuVTable.o" "win64\comando_controle_mapping.o" "win64\mqtt.o" "win64\comando_controle_interface.o" "win64\SmuProxy.o" -Wl,--output-def,"SmuExport.def" "C:\paho-mqtt-c-windows\lib\paho-mqtt3a.lib" "C:\paho-mqtt-c-windows\lib\paho-mqtt3as.lib" "C:\paho-mqtt-c-windows\lib\paho-mqtt3c.lib" "C:\paho-mqtt-c-windows\lib\paho-mqtt3cs.lib" -lm -lwsock32 -m64 -o "control.dll" 
+"control.dll": "win64\A661Cosim.obj" "win64\control_cosim.obj" "win64\control_UA_1.obj" "win64\control_UA_1_private.obj" "win64\control_UA_1_LAY_1.obj" "win64\control.obj" "win64\kcg_types.obj" "win64\kcg_consts.obj" "win64\comando_controle_type.obj" "win64\SmuPredefConv.obj" "win64\SmuTypes.obj" "win64\SmuLib.obj" "win64\SmuVTable.obj" "win64\comando_controle_mapping.obj" "win64\mqtt.obj" "win64\comando_controle_interface.obj" "win64\SmuProxy.obj" "SmuExport.def" 
+	link /dll "win64\A661Cosim.obj" "win64\control_cosim.obj" "win64\control_UA_1.obj" "win64\control_UA_1_private.obj" "win64\control_UA_1_LAY_1.obj" "win64\control.obj" "win64\kcg_types.obj" "win64\kcg_consts.obj" "win64\comando_controle_type.obj" "win64\SmuPredefConv.obj" "win64\SmuTypes.obj" "win64\SmuLib.obj" "win64\SmuVTable.obj" "win64\comando_controle_mapping.obj" "win64\mqtt.obj" "win64\comando_controle_interface.obj" "win64\SmuProxy.obj" /def:"SmuExport.def" /subsystem:console /nologo /incremental:no wsock32.lib  /out:"control.dll" 
 
-SmuExport.def: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuExport.def
+"SmuExport.def": "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuExport.def"
 	copy "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuExport.def" "SmuExport.def"
 
-win64/comando_controle_dll.o: comando_controle_dll.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "comando_controle_dll.c" -o "win64\comando_controle_dll.o"
+"win64\comando_controle_dll.obj": "comando_controle_dll.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "comando_controle_dll.c" /Fo"win64\comando_controle_dll.obj"
 
-win64/SmuMainWindows.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuMainWindows.c
-	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"C:\paho-mqtt-c-windows\include" -I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuMainWindows.c" -o "win64\SmuMainWindows.o"
+"win64\SmuMainWindows.obj": "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuMainWindows.c"
+	cl /I"." /I"$(SCADE)" /I"$(SCADE)\include" /I"$(SCADE)\include\C" /I"$(SCADE)\include\Ada" /I"$(SCADE)\lib\Ada" /I"..\..\IntegrationCode" /I"$(SCADE)\libraries\SC65\libmathext" /I"C:\paho-mqtt-c-windows\include" /I"C:\paho-mqtt-c-windows\lib" $(C_FLAGS) /D_CRT_SECURE_NO_WARNINGS /DEXTENDED_SIM /DSIM /DWIN32 /D_CONSOLE /D_MBCS /c  "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuMainWindows.c" /Fo"win64\SmuMainWindows.obj"
 
-control.exe: win64/comando_controle_dll.o win64/SmuMainWindows.o 
-	gcc "win64\comando_controle_dll.o" "win64\SmuMainWindows.o" "C:\paho-mqtt-c-windows\lib\paho-mqtt3a.lib" "C:\paho-mqtt-c-windows\lib\paho-mqtt3as.lib" "C:\paho-mqtt-c-windows\lib\paho-mqtt3c.lib" "C:\paho-mqtt-c-windows\lib\paho-mqtt3cs.lib" -lm -lwsock32 -m64 -o "control.exe" 
+"control.exe": "win64\comando_controle_dll.obj" "win64\SmuMainWindows.obj" 
+	link "win64\comando_controle_dll.obj" "win64\SmuMainWindows.obj" /subsystem:console /nologo /incremental:no wsock32.lib  /out:"control.exe" 
 
-control_cosim.c: control_UA_1.h
+"control_cosim.c": "control_UA_1.h"
 
 
 #############################################################

@@ -22,7 +22,7 @@
 						<ed:Variable oid="!ed/4a58/74A2/14E0/59e7ec7c6d6e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="LATITUDE">
+				<Variable name="Latitude">
 					<type>
 						<NamedType>
 							<type>
@@ -34,7 +34,7 @@
 						<ed:Variable oid="!ed/4a59/74A2/14E0/59e7ec7c54f8"/>
 					</pragmas>
 				</Variable>
-				<Variable name="LONGITUDE">
+				<Variable name="Longitude">
 					<type>
 						<NamedType>
 							<type>

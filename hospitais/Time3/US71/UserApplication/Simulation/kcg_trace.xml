@@ -18,7 +18,7 @@
     <Option name="observe" value="#off#"/>
     <Option name="debug" value="#on#"/>
     <Option name="user_config" value="./user_macros.h"/>
-    <Option name="input_threshold" value="2"/>
+    <Option name="input_threshold" value="10"/>
     <Option name="header" value="#off#"/>
     <Option name="significance_length" value="31"/>
     <Option name="name_length" value="200"/>
@@ -58,8 +58,8 @@
     </RootNode>
     <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="PublishMQTT" targetCycleFct="PublishMQTT">
       <Input scadeName="Description" scadeType="char^(150)" targetName="Description" targetType="array_char_150"/>
-      <Input scadeName="LATITUDE" scadeType="float32" targetName="_1_LATITUDE" targetType="kcg_float32"/>
-      <Input scadeName="LONGITUDE" scadeType="float32" targetName="_2_LONGITUDE" targetType="kcg_float32"/>
+      <Input scadeName="Latitude" scadeType="float32" targetName="Latitude" targetType="kcg_float32"/>
+      <Input scadeName="Longitude" scadeType="float32" targetName="Longitude" targetType="kcg_float32"/>
       <Input scadeName="Send" scadeType="bool" targetName="Send" targetType="kcg_bool"/>
     </NoExpNode>
     <ArrayType cellType="kcg_char" size="150" targetCompFct="kcg_comp_array_char_150" targetCopyFct="kcg_copy_array_char_150" targetName="array_char_150"/>
