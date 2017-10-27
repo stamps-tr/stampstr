@@ -2,30 +2,36 @@
 [STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
 
 "C:\\Users\\Pedro\\Documents\\ITA\\CE-235\\socket_mqtt\\socket_mqtt.etp"="Simulation" 
+"C:\\Users\\victo\\stampstr\\medicos\\socket_mqtt\\SCADE\\socket_mqtt.etp"="Simulation" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
 "C:\\Users\\Pedro\\Documents\\ITA\\CE-235\\socket_mqtt\\socket_mqtt.etp"="HTML" 
+"C:\\Users\\victo\\stampstr\\medicos\\socket_mqtt\\SCADE\\socket_mqtt.etp"="HTML" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Synchronization]
 
 "C:\\Users\\Pedro\\Documents\\ITA\\CE-235\\socket_mqtt\\socket_mqtt.etp"="Synchronization" 
+"C:\\Users\\victo\\stampstr\\medicos\\socket_mqtt\\SCADE\\socket_mqtt.etp"="Synchronization" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
 
 "C:\\Users\\Pedro\\Documents\\ITA\\CE-235\\socket_mqtt\\socket_mqtt.etp"="KCG" 
+"C:\\Users\\victo\\stampstr\\medicos\\socket_mqtt\\SCADE\\socket_mqtt.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\DiffAnalyzer]
 
 "C:\\Users\\Pedro\\Documents\\ITA\\CE-235\\socket_mqtt\\socket_mqtt.etp"="KCG" 
+"C:\\Users\\victo\\stampstr\\medicos\\socket_mqtt\\SCADE\\socket_mqtt.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Instrumenter]
 
 "C:\\Users\\Pedro\\Documents\\ITA\\CE-235\\socket_mqtt\\socket_mqtt.etp"="Coverage" 
+"C:\\Users\\victo\\stampstr\\medicos\\socket_mqtt\\SCADE\\socket_mqtt.etp"="Coverage" 
 
 [STUDIO\Workspace]
 
-"ActiveProject"="C:\\Users\\Pedro\\Documents\\ITA\\CE-235\\socket_mqtt\\socket_mqtt.etp" 
+"ActiveProject"="C:\\Users\\victo\\stampstr\\medicos\\socket_mqtt\\SCADE\\socket_mqtt.etp" 
 
 [SCADE\Editor\Shortcut]
 
@@ -44,3 +50,40 @@
 [SCADE\Generator\Tool]
 
 "PragmaTarget"="C" 
+
+[SCADE\Simulator\Simulation]
+
+"Latency"="200" 
+"RefreshRate"="1" 
+
+[SCADE\Simulator\BinaryDisplay]
+
+"Count"="0" 
+
+[SCADE\Simulator\OctalDisplay]
+
+"Count"="0" 
+
+[SCADE\Simulator\HexadecimalDisplay]
+
+"Count"="0" 
+
+[SCADE\Simulator\Watch]
+
+"Count"="0" 
+
+[SCADE\Simulator\Graph]
+
+"Count"="0" 
+
+[SCADE\Simulator\ControlBreakpoint]
+
+"Count"="0" 
+
+[SCADE\Simulator\DataBreakpoint]
+
+"Count"="0" 
+
+[SCADE\Simulator\TclBreakpoint]
+
+"Count"="0" 

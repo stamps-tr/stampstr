@@ -1,0 +1,14 @@
+-target_dir "C:/Users/victo/Desktop/STAMPS/UserApplication/S2A/KCG" -expall -target C -name_length 200 -significance_length 31 -user_config "./user_macros.h" -input_threshold 2 
+-root S2A
+"C:/Users/victo/Desktop/STAMPS/UserApplication/S2A/S2A.xscade"
+"C:/Users/victo/Desktop/STAMPS/UserApplication/S2A/Comm.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libdigital/digital.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libdigital/TruthTables.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/liblinear/linear.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/liblinear/filters.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libmath/vect.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libmath/math.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libmathext/mathext.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libpwlinear/pwlinear.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libpwlinear/lut.xscade"
+"C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libverif/libverif.xscade"

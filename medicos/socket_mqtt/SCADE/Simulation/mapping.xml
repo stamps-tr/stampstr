@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Pedro/Documents/ITA/CE-235/socket_mqtt/Simulation/config.txt
-** Generation date: 2017-09-16T15:45:17
+** Command: kcg66.exe -config C:/Users/victo/stampstr/medicos/socket_mqtt/SCADE/Simulation/config.txt
+** Generation date: 2017-10-09T13:04:46
 *************************************************************$-->
 <mapping>
   <config>
@@ -18,7 +18,7 @@
     <option name="short_circuit" value="#off#"/>
     <option name="wrap_c_ops" value="#off#"/>
     <option name="input_file"
-        value="C:/Users/Pedro/Documents/ITA/CE-235/socket_mqtt/Simulation/scade_model_without_unused.scade"/>
+        value="C:/Users/victo/stampstr/medicos/socket_mqtt/SCADE/Simulation/scade_model_without_unused.scade"/>
     <option name="probes" value="#on#"/>
     <option name="no_observe" value="#off#"/>
     <option name="observe" value="#off#"/>
@@ -34,7 +34,7 @@
     <option name="noexp" value="#off#"/>
     <option name="exp" value="#off#"/>
     <option name="expall" value="#on#"/>
-    <option name="target_dir" value="C:/Users/Pedro/Documents/ITA/CE-235/socket_mqtt/Simulation"/>
+    <option name="target_dir" value="C:/Users/victo/stampstr/medicos/socket_mqtt/SCADE/Simulation"/>
     <option name="target" value="C"/>
     <option name="root" value="Operator"/>
     <option name="auth" value="#off#"/>
@@ -55,140 +55,125 @@
     <predefType id="13" name="size"/>
     <operator id="14" name="Operator" imported="false" root="true" expanded="false">
       <local id="15" name="_L1" clock="false" type="5"/>
-      <local id="16" name="_L3" clock="false" type="1"/>
-      <local id="17" name="_L4" clock="false" type="1"/>
-      <local id="18" name="_L5" clock="false" type="5"/>
-      <instance id="19" name="1" op="21" expanded="false"/>
-      <times id="20" name="1"/>
+      <local id="16" name="_L4" clock="false" type="1"/>
+      <instance id="17" name="1" op="18" expanded="false"/>
     </operator>
-    <operator id="21" name="PublishMQTT" imported="true" root="false" expanded="false">
-      <input id="22" name="Send" clock="false" type="1"/>
-      <output id="23" name="Mqttstatus" clock="false" type="5"/>
+    <operator id="18" name="PublishMQTT" imported="true" root="false" expanded="false">
+      <input id="19" name="Send" clock="false" type="1"/>
+      <output id="20" name="Mqttstatus" clock="false" type="5"/>
     </operator>
   </model>
   <generated>
     <c>
-      <file id="24" name="Operator.h">
-        <function id="25" name="Operator_init">
-          <parameter id="26" name="outC" type="31" pointer="true"/>
+      <file id="21" name="Operator.h">
+        <function id="22" name="Operator_init">
+          <parameter id="23" name="outC" type="28" pointer="true"/>
         </function>
-        <function id="27" name="Operator_reset">
-          <parameter id="28" name="outC" type="31" pointer="true"/>
+        <function id="24" name="Operator_reset">
+          <parameter id="25" name="outC" type="28" pointer="true"/>
         </function>
-        <function id="29" name="Operator">
-          <parameter id="30" name="outC" type="31" pointer="true"/>
+        <function id="26" name="Operator">
+          <parameter id="27" name="outC" type="28" pointer="true"/>
         </function>
-        <struct id="31" name="outC_Operator">
-          <field id="32" name="init" type="77" pointer="false"/>
-          <field id="33" name="v3_times_1_int32" type="68" pointer="false"/>
-          <field id="34" name="o_times_1_int32" type="77" pointer="false"/>
-          <field id="35" name="c_times_1_int32" type="77" pointer="false"/>
-          <field id="36" name="n_times_1_int32" type="68" pointer="false"/>
-          <field id="37" name="v4_times_1_int32" type="68" pointer="false"/>
-          <field id="38" name="_L1" type="68" pointer="false"/>
-          <field id="39" name="_L3" type="77" pointer="false"/>
-          <field id="40" name="_L4" type="77" pointer="false"/>
-          <field id="41" name="_L5" type="68" pointer="false"/>
+        <struct id="28" name="outC_Operator">
+          <field id="29" name="_L1" type="57" pointer="false"/>
+          <field id="30" name="_L4" type="66" pointer="false"/>
         </struct>
       </file>
-      <file id="42" name="kcg_types.h">
-        <macro id="43" name="kcg_assign_array"/>
-        <macro id="44" name="kcg_assign_struct"/>
-        <macro id="45" name="kcg_lnot_uint8"/>
-        <macro id="46" name="kcg_lnot_uint16"/>
-        <macro id="47" name="kcg_lnot_uint32"/>
-        <macro id="48" name="kcg_lnot_uint64"/>
-        <macro id="49" name="kcg_lsl_uint8"/>
-        <macro id="50" name="kcg_lsl_uint16"/>
-        <macro id="51" name="kcg_lsl_uint32"/>
-        <macro id="52" name="kcg_lsl_uint64"/>
-        <macro id="53" name="kcg_true"/>
-        <macro id="54" name="kcg_false"/>
-        <macro id="55" name="kcg_lit_int8"/>
-        <macro id="56" name="kcg_lit_int16"/>
-        <macro id="57" name="kcg_lit_int32"/>
-        <macro id="58" name="kcg_lit_int64"/>
-        <macro id="59" name="kcg_lit_uint8"/>
-        <macro id="60" name="kcg_lit_uint16"/>
-        <macro id="61" name="kcg_lit_uint32"/>
-        <macro id="62" name="kcg_lit_uint64"/>
-        <macro id="63" name="kcg_lit_size"/>
-        <macro id="64" name="kcg_lit_float64"/>
-        <macro id="65" name="kcg_lit_float32"/>
-        <predefType id="66" name="kcg_int8"/>
-        <predefType id="67" name="kcg_int16"/>
-        <predefType id="68" name="kcg_int32"/>
-        <predefType id="69" name="kcg_int64"/>
-        <predefType id="70" name="kcg_uint8"/>
-        <predefType id="71" name="kcg_uint16"/>
-        <predefType id="72" name="kcg_uint32"/>
-        <predefType id="73" name="kcg_uint64"/>
-        <predefType id="74" name="kcg_size"/>
-        <predefType id="75" name="kcg_float64"/>
-        <predefType id="76" name="kcg_float32"/>
-        <predefType id="77" name="kcg_bool"/>
-        <predefType id="78" name="kcg_char"/>
-        <macro id="79" name="KCG_MAPW_CPY"/>
+      <file id="31" name="kcg_types.h">
+        <macro id="32" name="kcg_assign_array"/>
+        <macro id="33" name="kcg_assign_struct"/>
+        <macro id="34" name="kcg_lnot_uint8"/>
+        <macro id="35" name="kcg_lnot_uint16"/>
+        <macro id="36" name="kcg_lnot_uint32"/>
+        <macro id="37" name="kcg_lnot_uint64"/>
+        <macro id="38" name="kcg_lsl_uint8"/>
+        <macro id="39" name="kcg_lsl_uint16"/>
+        <macro id="40" name="kcg_lsl_uint32"/>
+        <macro id="41" name="kcg_lsl_uint64"/>
+        <macro id="42" name="kcg_true"/>
+        <macro id="43" name="kcg_false"/>
+        <macro id="44" name="kcg_lit_int8"/>
+        <macro id="45" name="kcg_lit_int16"/>
+        <macro id="46" name="kcg_lit_int32"/>
+        <macro id="47" name="kcg_lit_int64"/>
+        <macro id="48" name="kcg_lit_uint8"/>
+        <macro id="49" name="kcg_lit_uint16"/>
+        <macro id="50" name="kcg_lit_uint32"/>
+        <macro id="51" name="kcg_lit_uint64"/>
+        <macro id="52" name="kcg_lit_size"/>
+        <macro id="53" name="kcg_lit_float64"/>
+        <macro id="54" name="kcg_lit_float32"/>
+        <predefType id="55" name="kcg_int8"/>
+        <predefType id="56" name="kcg_int16"/>
+        <predefType id="57" name="kcg_int32"/>
+        <predefType id="58" name="kcg_int64"/>
+        <predefType id="59" name="kcg_uint8"/>
+        <predefType id="60" name="kcg_uint16"/>
+        <predefType id="61" name="kcg_uint32"/>
+        <predefType id="62" name="kcg_uint64"/>
+        <predefType id="63" name="kcg_size"/>
+        <predefType id="64" name="kcg_float64"/>
+        <predefType id="65" name="kcg_float32"/>
+        <predefType id="66" name="kcg_bool"/>
+        <predefType id="67" name="kcg_char"/>
+        <macro id="68" name="KCG_MAPW_CPY"/>
       </file>
-      <file id="80" name="kcg_consts.h"/>
-      <file id="81" name="kcg_sensors.h"/>
-      <file id="82" name="kcg_imported_functions.h">
-        <function id="83" name="PublishMQTT" returnType="68">
-          <parameter id="84" name="Send" type="77" pointer="false"/>
+      <file id="69" name="kcg_consts.h"/>
+      <file id="70" name="kcg_sensors.h"/>
+      <file id="71" name="kcg_imported_functions.h">
+        <function id="72" name="PublishMQTT" returnType="57">
+          <parameter id="73" name="Send" type="66" pointer="false"/>
         </function>
       </file>
     </c>
-    <map srcId="75" dstId="64" role="wrapped-lit"/>
-    <map srcId="76" dstId="65" role="wrapped-lit"/>
-    <map srcId="74" dstId="63" role="wrapped-lit"/>
-    <map srcId="73" dstId="62" role="wrapped-lit"/>
-    <map srcId="73" dstId="48" role="wrapped-lnot"/>
-    <map srcId="73" dstId="52" role="wrapped-lsl"/>
-    <map srcId="72" dstId="61" role="wrapped-lit"/>
-    <map srcId="72" dstId="47" role="wrapped-lnot"/>
-    <map srcId="72" dstId="51" role="wrapped-lsl"/>
-    <map srcId="71" dstId="60" role="wrapped-lit"/>
-    <map srcId="71" dstId="46" role="wrapped-lnot"/>
-    <map srcId="71" dstId="50" role="wrapped-lsl"/>
-    <map srcId="70" dstId="59" role="wrapped-lit"/>
-    <map srcId="70" dstId="45" role="wrapped-lnot"/>
-    <map srcId="70" dstId="49" role="wrapped-lsl"/>
-    <map srcId="69" dstId="58" role="wrapped-lit"/>
-    <map srcId="68" dstId="57" role="wrapped-lit"/>
-    <map srcId="67" dstId="56" role="wrapped-lit"/>
-    <map srcId="66" dstId="55" role="wrapped-lit"/>
+    <map srcId="64" dstId="53" role="wrapped-lit"/>
+    <map srcId="65" dstId="54" role="wrapped-lit"/>
+    <map srcId="63" dstId="52" role="wrapped-lit"/>
+    <map srcId="62" dstId="51" role="wrapped-lit"/>
+    <map srcId="62" dstId="37" role="wrapped-lnot"/>
+    <map srcId="62" dstId="41" role="wrapped-lsl"/>
+    <map srcId="61" dstId="50" role="wrapped-lit"/>
+    <map srcId="61" dstId="36" role="wrapped-lnot"/>
+    <map srcId="61" dstId="40" role="wrapped-lsl"/>
+    <map srcId="60" dstId="49" role="wrapped-lit"/>
+    <map srcId="60" dstId="35" role="wrapped-lnot"/>
+    <map srcId="60" dstId="39" role="wrapped-lsl"/>
+    <map srcId="59" dstId="48" role="wrapped-lit"/>
+    <map srcId="59" dstId="34" role="wrapped-lnot"/>
+    <map srcId="59" dstId="38" role="wrapped-lsl"/>
+    <map srcId="58" dstId="47" role="wrapped-lit"/>
+    <map srcId="57" dstId="46" role="wrapped-lit"/>
+    <map srcId="56" dstId="45" role="wrapped-lit"/>
+    <map srcId="55" dstId="44" role="wrapped-lit"/>
   </generated>
-  <map modelId="14" generatedId="26" role="context-parameter"/>
-  <map modelId="14" generatedId="25" role="init-method"/>
-  <map modelId="14" generatedId="28" role="context-parameter"/>
-  <map modelId="14" generatedId="27" role="reset-method"/>
-  <map modelId="14" generatedId="30" role="context-parameter"/>
-  <map modelId="18" generatedId="41"/>
-  <map modelId="17" generatedId="40"/>
-  <map modelId="16" generatedId="39"/>
-  <map modelId="15" generatedId="38"/>
-  <map modelId="20" generatedId="33" role="memory"/>
-  <map modelId="20" generatedId="32" role="init"/>
-  <map modelId="14" generatedId="31" role="context-type"/>
-  <map modelId="14" generatedId="24" role="interface-file"/>
-  <map modelId="14" generatedId="29" role="cycle-method"/>
-  <map modelId="22" generatedId="84"/>
-  <map modelId="21" generatedId="83" role="cycle-method"/>
-  <map modelId="2" generatedId="78"/>
-  <map modelId="1" generatedId="77"/>
-  <map modelId="12" generatedId="75"/>
-  <map modelId="11" generatedId="76"/>
-  <map modelId="13" generatedId="74"/>
-  <map modelId="10" generatedId="73"/>
-  <map modelId="9" generatedId="72"/>
-  <map modelId="8" generatedId="71"/>
-  <map modelId="7" generatedId="70"/>
-  <map modelId="6" generatedId="69"/>
-  <map modelId="5" generatedId="68"/>
-  <map modelId="4" generatedId="67"/>
-  <map modelId="3" generatedId="66"/>
+  <map modelId="14" generatedId="23" role="context-parameter"/>
+  <map modelId="14" generatedId="22" role="init-method"/>
+  <map modelId="14" generatedId="25" role="context-parameter"/>
+  <map modelId="14" generatedId="24" role="reset-method"/>
+  <map modelId="14" generatedId="27" role="context-parameter"/>
+  <map modelId="16" generatedId="30"/>
+  <map modelId="15" generatedId="29"/>
+  <map modelId="14" generatedId="28" role="context-type"/>
+  <map modelId="14" generatedId="21" role="interface-file"/>
+  <map modelId="14" generatedId="26" role="cycle-method"/>
+  <map modelId="19" generatedId="73"/>
+  <map modelId="18" generatedId="72" role="cycle-method"/>
+  <map modelId="2" generatedId="67"/>
+  <map modelId="1" generatedId="66"/>
+  <map modelId="12" generatedId="64"/>
+  <map modelId="11" generatedId="65"/>
+  <map modelId="13" generatedId="63"/>
+  <map modelId="10" generatedId="62"/>
+  <map modelId="9" generatedId="61"/>
+  <map modelId="8" generatedId="60"/>
+  <map modelId="7" generatedId="59"/>
+  <map modelId="6" generatedId="58"/>
+  <map modelId="5" generatedId="57"/>
+  <map modelId="4" generatedId="56"/>
+  <map modelId="3" generatedId="55"/>
 </mapping>
 <!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** mapping.xml
-** Generation date: 2017-09-16T15:45:17
+** Generation date: 2017-10-09T13:04:46
 *************************************************************$-->

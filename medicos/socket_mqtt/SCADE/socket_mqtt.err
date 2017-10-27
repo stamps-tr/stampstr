@@ -1,9 +1,9 @@
 *** Post-namespace Warning (WAR_508): Unused flow
-  at file C:\Users\Pedro\AppData\Local\Temp\ScadeChecker\9800\checker_file.scade, line 42, character 0
+  at file C:\Users\victo\AppData\Local\Temp\ScadeChecker\16972\checker_file.scade, line 42, character 0
   at path Operator/_L1/
  The local variable _L1 is never used
 *** Type Warning (WAR_151): Internal state expected
-  at file C:\Users\Pedro\AppData\Local\Temp\ScadeChecker\9800\checker_file.scade, line 36, character 0
+  at file C:\Users\victo\AppData\Local\Temp\ScadeChecker\16972\checker_file.scade, line 36, character 0
   at path Operator/
  Node Operator has no internal state
  (it should probably be declared as a function)

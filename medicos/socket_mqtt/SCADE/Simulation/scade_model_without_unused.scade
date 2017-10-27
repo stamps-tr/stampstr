@@ -1,4 +1,60 @@
 
+node #pragma ed <Operator oid="!ed/494a/65B9/2818/59bb165d7fac">
+	<diagrams>
+		<NetDiagram name="Operator_1" landscape="true" format="A4 (210 297)" oid="!ed/494b/65B9/2818/59bb165deda">
+			<presentationElements>
+				<EquationGE presentable="!ed/494c/65B9/2818/59bb199f6803">
+					<position>
+						<Point x="9763" y="3254"/>
+					</position>
+					<size>
+						<Size width="4964" height="2979"/>
+					</size>
+				</EquationGE>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/15951/452E/2648/59bd6ff57ed">
+					<position>
+						<Point x="1349" y="2540"/>
+					</position>
+					<size>
+						<Size width="211" height="318"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/15951/452E/2648/59bd6ff57ed" dstEquation="!ed/494c/65B9/2818/59bb199f6803">
+					<positions>
+						<Point x="1561" y="2699"/>
+						<Point x="5662" y="2699"/>
+						<Point x="5662" y="4736"/>
+						<Point x="9763" y="4736"/>
+					</positions>
+				</Edge>
+			</presentationElements>
+		</NetDiagram>
+	</diagrams>
+</Operator>
+#end
+
+Operator()
+returns ()
+var
+      #pragma ed    <Variable oid="!ed/4953/65B9/2818/59bb1c86179e"/>
+#end
+
+_L1 : int32;
+      #pragma ed    <Variable oid="!ed/15952/452E/2648/59bd6ff573ca"/>
+#end
+
+_L4 : bool;
+let
+   #pragma ed    <Equation oid="!ed/494c/65B9/2818/59bb199f6803"/>
+#end
+
+   _L1 =  #1 PublishMQTT(_L4);
+   #pragma ed    <Equation oid="!ed/15951/452E/2648/59bd6ff57ed"/>
+#end
+
+   _L4 = true;
+tel
+
 function imported #pragma ed <Operator oid="!ed/4949/65B9/2818/59bb1553517b"/>
 #end
 

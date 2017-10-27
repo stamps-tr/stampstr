@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Pedro/Documents/ITA/CE-235/socket_mqtt/KCG/config.txt
-** Generation date: 2017-09-16T14:45:43
+** Command: kcg66.exe -config C:/Users/victo/stampstr/medicos/socket_mqtt/SCADE/KCG/config.txt
+** Generation date: 2017-09-20T16:53:30
 *************************************************************$ */
 #ifndef _KCG_TYPES_H_
 #define _KCG_TYPES_H_
@@ -185,6 +185,6 @@ typedef enum kcg_tag_TruthTableValues_truthtables {
 #endif /* _KCG_TYPES_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.h
-** Generation date: 2017-09-16T14:45:43
+** Generation date: 2017-09-20T16:53:30
 *************************************************************$ */
 

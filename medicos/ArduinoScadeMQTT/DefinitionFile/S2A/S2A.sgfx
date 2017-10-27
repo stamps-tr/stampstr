@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="17.2" ?>
+
+<specification>
+    <IDE>
+        <project path="S2A.etp"/>
+        <ratio horizontal="20" vertical="20"/>
+    </IDE>
+    <symbology>
+        <dimension height="256" width="256"/>
+    </symbology>
+    <A661 library_version="1" supp_version="5">
+        <intprop name="ApplicationId">1</intprop>
+    </A661>
+    <children>
+        <A661Layer name="a661_layer" oid="a8a7c99c-09a1-4d7d-9ee0-8eddb8c6698b">
+            <IDE>
+                <ratio horizontal="20" vertical="20"/>
+            </IDE>
+            <model>
+                <intprop name="LayerId">1</intprop>
+                <intprop name="ContextNumber">0</intprop>
+                <intprop name="Width">5120</intprop>
+                <intprop name="Height">5120</intprop>
+            </model>
+            <runtime>
+                <connect msg_id="A661_UA_CONTEXT_NUMBER" name="a661_layer_A661_UA_CONTEXT_NUMBER"/>
+                <connect msg_id="A661_REQ_LAYER_ACTIVE" name="a661_layer_A661_REQ_LAYER_ACTIVE"/>
+                <connect msg_id="A661_REQ_LAYER_INACTIVE" name="a661_layer_A661_REQ_LAYER_INACTIVE"/>
+                <connect msg_id="A661_REQ_LAYER_VISIBLE" name="a661_layer_A661_REQ_LAYER_VISIBLE"/>
+            </runtime>
+            <events/>
+            <children>
+                <widget name="PushButton" oid="b577b15a-27ca-4e9a-bb2b-c5cfb4f66470" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">3</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1100</intprop>
+                        <intprop name="PosY">460</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">OPEN/CLOSE</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="PushButton_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="PushButton_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="PushButton_A661_STRING"/>
+                        <connect msg_id="A661_STYLE_SET" name="PushButton_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="PushButton_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="PushButton_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="PushButton_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="PushButton_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="PushButton_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="PushButton_A661_EVT_SELECTION"/>
+                    </events>
+                    <children/>
+                </widget>
+                <widget name="Label" oid="9c91e696-cb81-453c-a391-c723a9a04750" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">4</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1220</intprop>
+                        <intprop name="PosY">3900</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Reading Value:</stringprop>
+                    </model>
+                    <runtime/>
+                    <children/>
+                </widget>
+                <widget name="GpPolyline" oid="aef3ce22-36b7-4698-9f1f-8cfc9024604f" type="GpPolyline">
+                    <model>
+                        <intprop name="WidgetIdent">6</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">55</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                        <enumprop name="Closed">A661_FALSE</enumprop>
+                        <intprop name="MaxNumberOfVertices">500</intprop>
+                        <intprop name="NumberOfVertices">9</intprop>
+                        <arrayprop name="Vertices">
+                            <structprop name="1">
+                                <intprop name="x">400</intprop>
+                                <intprop name="y">1620</intprop>
+                            </structprop>
+                            <structprop name="2">
+                                <intprop name="x">800</intprop>
+                                <intprop name="y">2260</intprop>
+                            </structprop>
+                            <structprop name="3">
+                                <intprop name="x">1200</intprop>
+                                <intprop name="y">1720</intprop>
+                            </structprop>
+                            <structprop name="4">
+                                <intprop name="x">1400</intprop>
+                                <intprop name="y">2540</intprop>
+                            </structprop>
+                            <structprop name="5">
+                                <intprop name="x">2000</intprop>
+                                <intprop name="y">2900</intprop>
+                            </structprop>
+                            <structprop name="6">
+                                <intprop name="x">3000</intprop>
+                                <intprop name="y">2720</intprop>
+                            </structprop>
+                            <structprop name="7">
+                                <intprop name="x">3200</intprop>
+                                <intprop name="y">2220</intprop>
+                            </structprop>
+                            <structprop name="8">
+                                <intprop name="x">3800</intprop>
+                                <intprop name="y">2220</intprop>
+                            </structprop>
+                            <structprop name="9">
+                                <intprop name="x">4200</intprop>
+                                <intprop name="y">2000</intprop>
+                            </structprop>
+                        </arrayprop>
+                    </model>
+                    <runtime/>
+                    <children/>
+                </widget>
+                <widget name="NumericReadout" oid="4a8e93b9-3334-4578-8656-b1a31ca2904c" type="NumericReadout">
+                    <model>
+                        <intprop name="WidgetIdent">7</intprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="PosX">1240</intprop>
+                        <intprop name="PosY">3260</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">50</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <floatprop name="Value">0.0</floatprop>
+                        <intprop name="LegendAreaSizeX">1100</intprop>
+                        <intprop name="MaxFormatStringLength">16</intprop>
+                        <intprop name="MaxLegendStringLength">16</intprop>
+                        <enumprop name="LegendPosition">A661_RIGHT</enumprop>
+                        <stringprop name="FormatString">+___.##</stringprop>
+                        <stringprop name="LegendString">Byte</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="NumericReadout_A661_VISIBLE"/>
+                        <connect msg_id="A661_VALUE" name="NumericReadout_A661_VALUE"/>
+                        <connect msg_id="A661_POS_XY" name="NumericReadout_A661_POS_XY"/>
+                        <connect msg_id="A661_POS_X" name="NumericReadout_A661_POS_X"/>
+                        <connect msg_id="A661_POS_Y" name="NumericReadout_A661_POS_Y"/>
+                        <connect msg_id="A661_STYLE_SET" name="NumericReadout_A661_STYLE_SET"/>
+                        <connect msg_id="A661_STRING" name="NumericReadout_A661_STRING"/>
+                        <connect msg_id="A661_FORMAT_STRING" name="NumericReadout_A661_FORMAT_STRING"/>
+                        <connect msg_id="A661_LEGEND_POSITION" name="NumericReadout_A661_LEGEND_POSITION"/>
+                        <connect msg_id="A661_ORIENTATION" name="NumericReadout_A661_ORIENTATION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="NumericReadout_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="NumericReadout_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <children/>
+                </widget>
+            </children>
+        </A661Layer>
+    </children>
+</specification>
+
+<!-- crc32 : 411076464 -->
+

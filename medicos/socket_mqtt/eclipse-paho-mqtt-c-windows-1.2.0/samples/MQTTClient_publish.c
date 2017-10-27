@@ -35,7 +35,11 @@
 #define QOS         1
 #define TIMEOUT     10000L
 
-int PublishMQTT(bool Send)
+typedef int bool;
+#define true 1
+#define false 0
+
+int publishMQTT(bool Send)
 {
     MQTTClient client;
     MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
@@ -70,10 +74,10 @@ int PublishMQTT(bool Send)
 
 #ifndef PublishMQTT
 /* PublishMQTT/ */
-extern kcg_int32 PublishMQTT(/* Send/ */ kcg_bool Send);
+extern kcg_int32 PublishMQTT(/* Send/ */ kcg_bool Send) {	
+	return publishMQTT((bool) Send);
+}
 #endif /* PublishMQTT */
-	PublishMQTT(bool status)
-	return Mqttstatus;
 #endif /* _KCG_IMPORTED_FUNCTIONS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_imported_functions.h

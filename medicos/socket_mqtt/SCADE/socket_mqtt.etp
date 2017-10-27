@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="144" defaultConfiguration="24">
+<Project id="1" oid_count="150" defaultConfiguration="24">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -405,7 +405,7 @@
 			<configuration>14</configuration>
 		</Prop>
 		<Prop id="115" name="@GNU Cwin64:ADD_LINK_OPTIONS">
-			<value>&quot;C:\Users\Pedro\Documents\ITA\CE-235\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3a.lib&quot; &quot;C:\Users\Pedro\Documents\ITA\CE-235\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3as.lib&quot; &quot;C:\Users\Pedro\Documents\ITA\CE-235\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3c.lib&quot; &quot;C:\Users\Pedro\Documents\ITA\CE-235\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3cs.lib&quot;</value>
+			<value>&quot;..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3a.lib&quot; &quot;..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3as.lib&quot; &quot;..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3c.lib&quot; &quot;..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3cs.lib&quot;</value>
 			<configuration>24</configuration>
 		</Prop>
 		<Prop id="132" name="@GENERATOR:OBSERVE_MODE">
@@ -415,11 +415,6 @@
 		<Prop id="133" name="@GENERATOR:EXPAND_MODE">
 			<value>1</value>
 			<configuration>14</configuration>
-		</Prop>
-		<Prop id="139" name="@COMPILER:ADD_INCLUDE_DIR">
-			<value>..\eclipse-paho-mqtt-c-windows-1.2.0\include</value>
-			<value>..\eclipse-paho-mqtt-c-windows-1.2.0\lib</value>
-			<configuration>24</configuration>
 		</Prop>
 		<Prop id="140" name="@GENERATOR:EXPAND_MODE">
 			<value>1</value>
@@ -436,6 +431,15 @@
 		</Prop>
 		<Prop id="144" name="@SCADE:CHECKED">
 			<value>false</value>
+		</Prop>
+		<Prop id="145" name="@GENERATOR:SEP_IO_MODE">
+			<value>6</value>
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="150" name="@COMPILER:ADD_INCLUDE_DIR">
+			<value>..\eclipse-paho-mqtt-c-windows-1.2.0\include</value>
+			<value>..\eclipse-paho-mqtt-c-windows-1.2.0\lib</value>
+			<configuration>24</configuration>
 		</Prop>
 	</props>
 	<roots>
@@ -458,8 +462,6 @@
 		</Folder>
 		<Folder id="120" extensions="c;adb;ada" name="External Code">
 			<elements>
-				<FileRef id="121" persistAs="..\eclipse-paho-mqtt-c-windows-1.2.0\samples"/>
-				<FileRef id="124" persistAs="..\eclipse-paho-mqtt-c-windows-1.2.0\samples\MQTTClient"/>
 				<FileRef id="127" persistAs="..\eclipse-paho-mqtt-c-windows-1.2.0\samples\MQTTClient_publish.c">
 					<props>
 						<Prop id="128" name="@SIMULATOR:FILEKIND">

@@ -1,0 +1,84 @@
+#############################################################
+######    Begin of Makefile
+#############################################################
+
+SCADE=C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\.
+
+SHELL=cmd.exe
+
+C_FLAGS = -pedantic -Wall
+
+all: S2A.exe S2A.dll 
+
+win64/A661Cosim.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/A661Cosim.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\A661Cosim.c" -o "win64\A661Cosim.o"
+
+win64/S2A_cosim.o: S2A_cosim.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A_cosim.c" -o "win64\S2A_cosim.o"
+
+win64/S2A_UA_1.o: S2A_UA_1.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A_UA_1.c" -o "win64\S2A_UA_1.o"
+
+win64/S2A_UA_1_private.o: S2A_UA_1_private.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A_UA_1_private.c" -o "win64\S2A_UA_1_private.o"
+
+win64/S2A_UA_1_LAY_1.o: S2A_UA_1_LAY_1.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A_UA_1_LAY_1.c" -o "win64\S2A_UA_1_LAY_1.o"
+
+win64/S2A.o: S2A.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A.c" -o "win64\S2A.o"
+
+win64/kcg_types.o: kcg_types.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "kcg_types.c" -o "win64\kcg_types.o"
+
+win64/kcg_consts.o: kcg_consts.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "kcg_consts.c" -o "win64\kcg_consts.o"
+
+win64/S2A_type.o: S2A_type.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A_type.c" -o "win64\S2A_type.o"
+
+win64/SmuPredefConv.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuPredefConv.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuPredefConv.c" -o "win64\SmuPredefConv.o"
+
+win64/SmuTypes.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuTypes.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuTypes.c" -o "win64\SmuTypes.o"
+
+win64/SmuLib.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuLib.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuLib.c" -o "win64\SmuLib.o"
+
+win64/SmuVTable.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuVTable.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuVTable.c" -o "win64\SmuVTable.o"
+
+win64/S2A_mapping.o: S2A_mapping.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A_mapping.c" -o "win64\S2A_mapping.o"
+
+win64/Comm.o: ../../../IntegrationCode/Comm.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "..\..\..\IntegrationCode\Comm.c" -o "win64\Comm.o"
+
+win64/S2A_interface.o: S2A_interface.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A_interface.c" -o "win64\S2A_interface.o"
+
+win64/SmuProxy.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuProxy.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuProxy.c" -o "win64\SmuProxy.o"
+
+S2A.dll: win64/A661Cosim.o win64/S2A_cosim.o win64/S2A_UA_1.o win64/S2A_UA_1_private.o win64/S2A_UA_1_LAY_1.o win64/S2A.o win64/kcg_types.o win64/kcg_consts.o win64/S2A_type.o win64/SmuPredefConv.o win64/SmuTypes.o win64/SmuLib.o win64/SmuVTable.o win64/S2A_mapping.o win64/Comm.o win64/S2A_interface.o win64/SmuProxy.o SmuExport.def 
+	gcc -mwindows -mwin32 -shared -static-libgcc  "win64\A661Cosim.o" "win64\S2A_cosim.o" "win64\S2A_UA_1.o" "win64\S2A_UA_1_private.o" "win64\S2A_UA_1_LAY_1.o" "win64\S2A.o" "win64\kcg_types.o" "win64\kcg_consts.o" "win64\S2A_type.o" "win64\SmuPredefConv.o" "win64\SmuTypes.o" "win64\SmuLib.o" "win64\SmuVTable.o" "win64\S2A_mapping.o" "win64\Comm.o" "win64\S2A_interface.o" "win64\SmuProxy.o" -Wl,--output-def,"SmuExport.def" "C:\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3a.lib" "C:\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3as.lib" "C:\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3c.lib" "C:\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3cs.lib" -lm -lwsock32 -m64 -o "S2A.dll" 
+
+SmuExport.def: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuExport.def
+	copy "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuExport.def" "SmuExport.def"
+
+win64/S2A_dll.o: S2A_dll.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "S2A_dll.c" -o "win64\S2A_dll.o"
+
+win64/SmuMainWindows.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuMainWindows.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I"..\..\..\IntegrationCode" -I"$(SCADE)\libraries\SC65\libmathext" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\include" -I"..\..\..\..\..\..\..\eclipse-paho-mqtt-c-windows-1.2.0\lib" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuMainWindows.c" -o "win64\SmuMainWindows.o"
+
+S2A.exe: win64/S2A_dll.o win64/SmuMainWindows.o 
+	gcc "win64\S2A_dll.o" "win64\SmuMainWindows.o" "C:\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3a.lib" "C:\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3as.lib" "C:\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3c.lib" "C:\eclipse-paho-mqtt-c-windows-1.2.0\lib\paho-mqtt3cs.lib" -lm -lwsock32 -m64 -o "S2A.exe" 
+
+S2A_cosim.c: S2A_UA_1.h
+
+
+#############################################################
+######    End of Makefile
+#############################################################

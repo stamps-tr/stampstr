@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libverif/libverif.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libpwlinear/lut.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libpwlinear/pwlinear.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libmathext/mathext.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libmath/math.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libmath/vect.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/liblinear/filters.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/liblinear/linear.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libdigital/TruthTables.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v180/SCADE/SCADE/libraries/SC65/libdigital/digital.xscade"/>
+    <Option name="input_file" value="C:/Users/victo/Desktop/STAMPS/UserApplication/S2A/Comm.xscade"/>
+    <Option name="input_file" value="C:/Users/victo/Desktop/STAMPS/UserApplication/S2A/S2A.xscade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="2"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="expall" value="#on#"/>
+    <Option name="target_dir" value="C:/Users/victo/Desktop/STAMPS/UserApplication/S2A/KCG"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="S2A"/>
+    <Option name="auth" value="#off#"/>
+    <Constant macroDef="true" scadeName="OPEN" scadeType="uint8" targetName="OPEN" targetType="kcg_uint8"/>
+    <Constant macroDef="true" scadeName="CLOSED" scadeType="uint8" targetName="CLOSED" targetType="kcg_uint8"/>
+    <RootNode headerFile="S2A.h" scadeName="S2A" targetCycleFct="S2A" targetInitFct="S2A_reset" targetInitializationFct="S2A_init">
+      <Input inCtx="true" scadeName="SignalPortButton" scadeType="bool" targetName="SignalPortButton" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="ReqLayerActive" scadeType="bool" targetName="ReqLayerActive" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="ReqLayerVisible" scadeType="bool" targetName="ReqLayerVisible" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="EmitToDisplay" scadeType="bool" targetName="EmitToDisplay" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="Debug" scadeType="float32" targetName="Debug" targetType="kcg_float32"/>
+      <FbyOp instName="1">
+        <Memory inCtx="true" targetName="_L12" targetType="kcg_bool"/>
+      </FbyOp>
+      <NodeInstance instName="2" refName="Comm" scadeName="Comm"/>
+      <FbyOp instName="4">
+        <Memory inCtx="true" targetName="_L27" targetType="kcg_bool"/>
+      </FbyOp>
+      <Memory inCtx="true" targetName="_L12" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L27" targetType="kcg_bool"/>
+      <OutCtxType targetName="outC_S2A"/>
+      <InCtxType targetName="inC_S2A"/>
+    </RootNode>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="Comm" targetCycleFct="Comm">
+      <Input scadeName="Input1" scadeType="uint8" targetName="Input1" targetType="kcg_uint8"/>
+      <Output scadeName="Output1" scadeType="float32" targetName="Output1" targetType="kcg_float32"/>
+    </NoExpNode>
+    <Package scadeName="digital"/>
+    <Package scadeName="truthtables">
+      <EnumType scadeName="TruthTableValues" targetName="TruthTableValues_truthtables">
+        <EnumVal scadeName="T" targetName="T_truthtables"/>
+        <EnumVal scadeName="F" targetName="F_truthtables"/>
+        <EnumVal scadeName="X" targetName="X_truthtables"/>
+      </EnumType>
+    </Package>
+    <Package scadeName="linear"/>
+    <Package scadeName="filters"/>
+    <Package scadeName="vect"/>
+    <Package scadeName="math"/>
+    <Package scadeName="mathext">
+      <Package scadeName="mathextimpl"/>
+    </Package>
+    <Package scadeName="pwlinear"/>
+    <Package scadeName="lut"/>
+    <Package scadeName="verif"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

@@ -12,7 +12,7 @@
     <Option name="warn_error" value="#off#"/>
     <Option name="short_circuit" value="#off#"/>
     <Option name="wrap_c_ops" value="#off#"/>
-    <Option name="input_file" value="C:/Users/Pedro/Documents/ITA/CE-235/socket_mqtt/Simulation/scade_model_without_unused.scade"/>
+    <Option name="input_file" value="C:/Users/victo/stampstr/medicos/socket_mqtt/SCADE/Simulation/scade_model_without_unused.scade"/>
     <Option name="probes" value="#on#"/>
     <Option name="no_observe" value="#off#"/>
     <Option name="observe" value="#off#"/>
@@ -28,22 +28,14 @@
     <Option name="noexp" value="#off#"/>
     <Option name="exp" value="#off#"/>
     <Option name="expall" value="#on#"/>
-    <Option name="target_dir" value="C:/Users/Pedro/Documents/ITA/CE-235/socket_mqtt/Simulation"/>
+    <Option name="target_dir" value="C:/Users/victo/stampstr/medicos/socket_mqtt/SCADE/Simulation"/>
     <Option name="target" value="C"/>
     <Option name="root" value="Operator"/>
     <Option name="auth" value="#off#"/>
     <RootNode headerFile="Operator.h" scadeName="Operator" targetCycleFct="Operator" targetInitFct="Operator_reset" targetInitializationFct="Operator_init">
       <Local inCtx="true" scadeName="_L1" scadeType="int32" targetName="_L1" targetType="kcg_int32"/>
-      <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3" targetType="kcg_bool"/>
       <Local inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool"/>
-      <Local inCtx="true" scadeName="_L5" scadeType="int32" targetName="_L5" targetType="kcg_int32"/>
       <NodeInstance instName="1" refName="PublishMQTT" scadeName="PublishMQTT"/>
-      <Times instName="1">
-        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
-        <Memory inCtx="true" targetName="v3_times_1_int32" targetType="kcg_int32"/>
-      </Times>
-      <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
-      <Memory inCtx="true" targetName="v3_times_1_int32" targetType="kcg_int32"/>
       <OutCtxType targetName="outC_Operator"/>
     </RootNode>
     <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="PublishMQTT" targetCycleFct="PublishMQTT">
