@@ -100,9 +100,9 @@ if __name__ == "__main__":
         exit(-1)
 
     # Inicializa variaveis
-    b_cmd = "stampsnet.hashtagsource.com:9092"
+    b_cmd = "stampsnet.hashtagsource.com"
     t_cmd = "erlun"
-    b_photo = "stampsnet.hashtagsource.com:9092"
+    b_photo = "stampsnet.hashtagsource.com"
     t_photo = "erlunPhoto"
     
     # Conecta no servidor Kafka (Consumer)
