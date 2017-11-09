@@ -1,0 +1,12 @@
+C:\Users\guilh\source\repos\Graylog\Graylog\obj\Debug\Graylog.csprojResolveAssemblyReference.cache
+C:\Users\guilh\source\repos\Graylog\Graylog\obj\Debug\Graylog.Form1.resources
+C:\Users\guilh\source\repos\Graylog\Graylog\obj\Debug\Graylog.Properties.Resources.resources
+C:\Users\guilh\source\repos\Graylog\Graylog\obj\Debug\Graylog.csproj.GenerateResource.Cache
+C:\Users\guilh\source\repos\Graylog\Graylog\obj\Debug\Graylog.csproj.CoreCompileInputs.cache
+C:\Users\guilh\source\repos\Graylog\Graylog\bin\Debug\Graylog.exe.config
+C:\Users\guilh\source\repos\Graylog\Graylog\bin\Debug\Graylog.exe
+C:\Users\guilh\source\repos\Graylog\Graylog\bin\Debug\Graylog.pdb
+C:\Users\guilh\source\repos\Graylog\Graylog\bin\Debug\kafka-net.dll
+C:\Users\guilh\source\repos\Graylog\Graylog\obj\Debug\Graylog.exe
+C:\Users\guilh\source\repos\Graylog\Graylog\obj\Debug\Graylog.pdb
+C:\Users\guilh\source\repos\Graylog\Graylog\bin\Debug\entrada.txt

@@ -1,0 +1,3 @@
+Topico|Tempo em Segundos|Host|Short Message|Nome da Variavel|Valor da variavel
+US93|60|arduinoUS93|sensor de presenca|_vazios|4|_ocupados|4
+US110|18000|sensorHospitalUS110|pacientes reatendidos|_pacientesReatendidos|4
