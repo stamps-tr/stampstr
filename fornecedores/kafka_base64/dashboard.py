@@ -5,6 +5,7 @@ import webbrowser, os
 import json
 import sys
 reload(sys)
+
 sys.setdefaultencoding("utf-8")
 
 
