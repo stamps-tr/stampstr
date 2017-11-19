@@ -3,6 +3,7 @@
 # Objetivo: Enviar mensagem para o Kafka no topico: erlun
 
 import sys
+import termios, tty
 from kafka import KafkaClient, SimpleProducer
 
 def getch():
