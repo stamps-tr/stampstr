@@ -20,7 +20,7 @@ if __name__ == "__main__":
     imgBase64 = base64.b64encode(img)
 
     # Inicializa variaveis
-    broker = "stampsnet.hashtagsource.com:9092"
+    broker = "stampsnet.hashtagsource.com"
     topico = "erlunPhoto"
     
     # Conecta no servidor Kafka

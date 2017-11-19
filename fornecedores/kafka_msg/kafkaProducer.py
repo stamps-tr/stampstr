@@ -14,7 +14,7 @@ if __name__ == "__main__":
         exit(-1)
 
     # Inicializa variaveis
-    broker = "stampsnet.hashtagsource.com:9092"
+    broker = "stampsnet.hashtagsource.com"
     topico = "erlun"
     mensagem = sys.argv[1]
 
