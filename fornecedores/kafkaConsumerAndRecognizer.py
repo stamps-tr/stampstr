@@ -32,5 +32,7 @@ if __name__ == "__main__":
         img = open("imgSaida.jpg", "wb")
         img.write(message.value.decode('base64'))
         img.close()
-        
+        # Envia a foto para processamento
+        proc = subprocess.Popen(["curl", "-F", "'file=@imgSaida.jpeg'","http://172.17.0.1:8000/process_file"])
+        proc.wait()
         print (message.value)

@@ -136,39 +136,36 @@ if __name__ == "__main__":
         if command == "R":
             print ("R - Right")
             right()
-        if command == "0.0":
-            print ("Speed 0.0")
+        if command == "0":
+            print ("Speed 0")
             stop()
-        if command == "1.0":
-            print ("Speed 1.0")
+        if command == "1":
+            print ("Speed 1")
             set_speed(1)
-        if command == "2.0":
-            print ("Speed 2.0")
+        if command == "2":
+            print ("Speed 2")
             set_speed(2)
-        if command == "3.0":
-            print ("Speed 3.0")
+        if command == "3":
+            print ("Speed 3")
             set_speed(3)
-        if command == "4.0":
-            print ("Speed 4.0")
+        if command == "4":
+            print ("Speed 4")
             set_speed(4)
-        if command == "5.0":
-            print ("Speed 5.0")
+        if command == "5":
+            print ("Speed 5")
             set_speed(5)
-        if command == "6.0":
-            print ("Speed 6.0")
+        if command == "6":
+            print ("Speed 6")
             set_speed(6)
-        if command == "7.0":
-            print ("Speed 7.0")
+        if command == "7":
+            print ("Speed 7")
             set_speed(7)
-        if command == "8.0":
-            print ("Speed 8.0")
+        if command == "8":
+            print ("Speed 8")
             set_speed(8)
-        if command == "9.0":
-            print ("Speed 9.0")
+        if command == "9":
+            print ("Speed 9")
             set_speed(9)
-
-        if command == "X": 
-            exit(-1)
         if command == "Q": 
             stop()
             break
