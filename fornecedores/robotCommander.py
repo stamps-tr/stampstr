@@ -5,26 +5,35 @@
 import sys
 from kafka import KafkaClient, SimpleProducer
 
+def getch():
+    fd = sys.stdin.fileno()
+    old_settings = termios.tcgetattr(fd)
+    tty.setcbreak(fd)
+    ch = sys.stdin.read(1)
+    termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+    return ch
+
 # Programa principal
 if __name__ == "__main__":
 
     # Help
-    if len(sys.argv) != 2:
-        print("Usage: kafkaProducer.py <mensagem>")
+    if len(sys.argv) != 1:
+        print("Usage: kafkaCommander.py")
         exit(-1)
 
     # Inicializa variaveis
-    broker = "stampsnet.hashtagsource.com:9092"
+    broker = "stampsnet.hashtagsource.com"
     topico = "erlun"
-    mensagem = sys.argv[1]
 
     # Conecta no servidor Kafka
     kafkaServer = KafkaClient(broker)
     producer = SimpleProducer(kafkaServer)
 
-    # Python 3
-    if str(type(mensagem)) != "<type 'str'>":
-        mensagem = bytes(mensagem, "utf-8")
-
-    # Envia mensagem para o Kafka
-    producer.send_messages(topico, mensagem)
+    while True:
+        mensagem = getch()
+        print(mensagem)
+        # Python 3
+        if str(type(mensagem)) != "<type 'str'>":
+            mensagem = bytes(mensagem, "utf-8")
+        # Envia mensagem para o Kafka
+        producer.send_messages(topico, mensagem)
