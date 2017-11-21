@@ -1,0 +1,16 @@
+-target_dir "C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/KCG" -expall -target C -O 0 -name_length 200 -significance_length 31 -user_config "./user_macros.h" -input_threshold 10 -debug 
+-node test
+"C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/test.xscade"
+"C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/socket_test.xscade"
+"C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/PublishMQTT.xscade"
+"C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/test1.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/libdigital/digital.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/libdigital/TruthTables.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/liblinear/linear.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/liblinear/filters.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/libmath/vect.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/libmath/math.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/libmathext/mathext.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/libpwlinear/pwlinear.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/libpwlinear/lut.xscade"
+"C:/Program Files (x86)/Esterel Technologies/SCADE R17/SCADE/libraries/libverif/libverif.xscade"

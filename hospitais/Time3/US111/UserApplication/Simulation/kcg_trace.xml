@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$**************** KCG Version 6.4 (build i21) ****************
+** Command: kcg64.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation/config.txt
+** Generation date: 2017-11-19T23:17:27
+*************************************************************$-->
+<Model date="2017-11-19T23:17:27" commandLine="kcg64.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation/config.txt">
+  <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+  <Option name="xml_filter" value="#off#"/>
+  <Option name="state_vector" value="#off#"/>
+  <Option name="static" value="#off#"/>
+  <Option name="warn_error" value="#off#"/>
+  <Option name="no_bitwise" value="#off#"/>
+  <Option name="wrap_c_ops" value="#off#"/>
+  <Option name="input_file"
+      value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation/scade_model_without_unused.scade"/>
+  <Option name="probes" value="#on#"/>
+  <Option name="no_observe" value="#off#"/>
+  <Option name="observe" value="#off#"/>
+  <Option name="debug" value="#on#"/>
+  <Option name="user_config" value="./user_macros.h"/>
+  <Option name="input_threshold" value="10"/>
+  <Option name="header" value="#off#"/>
+  <Option name="significance_length" value="31"/>
+  <Option name="name_length" value="200"/>
+  <Option name="globals_prefix" value="#off#"/>
+  <Option name="macro_on_assert" value="#off#"/>
+  <Option name="optimization_level" value="0"/>
+  <Option name="global_root_context" value="#off#"/>
+  <Option name="noexp" value="#off#"/>
+  <Option name="exp" value="#off#"/>
+  <Option name="expall" value="#on#"/>
+  <Option name="target_dir"
+      value="C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation"/>
+  <Option name="target" value="C"/>
+  <Option name="node" value="test"/>
+  <Option name="auth" value="#off#"/>
+  <RootNode scadeName="test" headerFile="test.h" targetCycleFct="test" targetInitFct="test_reset"
+      targetInitializationFct="test_init">
+    <Input scadeName="SignalButtonPoor" scadeType="bool" targetName="SignalButtonPoor" targetType="kcg_bool"
+        inCtx="true"/>
+    <Input scadeName="SignalButtonFair" scadeType="bool" targetName="SignalButtonFair" targetType="kcg_bool"
+        inCtx="true"/>
+    <Input scadeName="SignalButtonGood" scadeType="bool" targetName="SignalButtonGood" targetType="kcg_bool"
+        inCtx="true"/>
+    <Input scadeName="SignalButtonExcellent" scadeType="bool" targetName="SignalButtonExcellent" targetType="kcg_bool"
+        inCtx="true"/>
+    <Output scadeName="Emit" scadeType="bool" targetName="Emit" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L83" scadeType="bool" targetName="_L83" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L86" scadeType="bool" targetName="_L86" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L87" scadeType="bool" targetName="_L87" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L88" scadeType="bool" targetName="_L88" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L89" scadeType="int" targetName="_L89" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L91" scadeType="int" targetName="_L91" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L92" scadeType="int" targetName="_L92" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L93" scadeType="int" targetName="_L93" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L95" scadeType="int" targetName="_L95" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L94" scadeType="int" targetName="_L94" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L96" scadeType="bool" targetName="_L96" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L98" scadeType="int" targetName="_L98" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L101" scadeType="int" targetName="_L101" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L103" scadeType="int" targetName="_L103" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L102" scadeType="int" targetName="_L102" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L105" scadeType="int" targetName="_L105" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L106" scadeType="int" targetName="_L106" targetType="kcg_int" inCtx="true"/>
+    <NodeInstance scadeName="if" instName="3"/>
+    <NodeInstance scadeName="if" instName="5"/>
+    <NodeInstance scadeName="if" instName="6"/>
+    <NodeInstance scadeName="if" instName="7"/>
+    <NodeInstance scadeName="PublishMQTT" instName="2" refName="PublishMQTT"/>
+    <NodeInstance scadeName="or" instName="1"/>
+    <OutCtxType targetName="outC_test"/>
+    <InCtxType targetName="inC_test"/>
+  </RootNode>
+  <NoExpNode scadeName="PublishMQTT" headerFile="kcg_imported_functions.h" targetCycleFct="PublishMQTT" imported="true">
+    <Input scadeName="ButtonPoor" scadeType="int" targetName="ButtonPoor" targetType="kcg_int"/>
+    <Input scadeName="ButtonFair" scadeType="int" targetName="ButtonFair" targetType="kcg_int"/>
+    <Input scadeName="ButtonGood" scadeType="int" targetName="ButtonGood" targetType="kcg_int"/>
+    <Input scadeName="ButtonExcellent" scadeType="int" targetName="ButtonExcellent" targetType="kcg_int"/>
+    <Input scadeName="Send" scadeType="bool" targetName="Send" targetType="kcg_bool"/>
+  </NoExpNode>
+  <PredefType scadeName="real" targetName="kcg_real"/>
+  <PredefType scadeName="bool" targetName="kcg_bool"/>
+  <PredefType scadeName="char" targetName="kcg_char"/>
+  <PredefType scadeName="int" targetName="kcg_int"/>
+</Model>
+<!--$**************** KCG Version 6.4 (build i21) ****************
+** kcg_trace.xml
+** Generation date: 2017-11-19T23:17:27
+*************************************************************$-->

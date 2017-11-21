@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mqtt_client" />
+		<Option pch_mode="2" />
+		<Option compiler="cygwin" />
+		<Build>
+			<Script file="lib_finder.script" />
+			<Target title="Debug">
+				<Option output="bin/Debug/mqtt_client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="cygwin" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="libraries/paho-mqtt-c-windows/include" />
+					<Add directory="libraries/paho-mqtt-c-windows/lib" />
+				</Compiler>
+				<Linker>
+					<Add library="../libraries/paho-mqtt-c-windows/lib/paho-mqtt3a.lib" />
+					<Add library="../libraries/paho-mqtt-c-windows/lib/paho-mqtt3as.lib" />
+					<Add library="../libraries/paho-mqtt-c-windows/lib/paho-mqtt3c.lib" />
+					<Add library="../libraries/paho-mqtt-c-windows/lib/paho-mqtt3cs.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../libraries/paho-mqtt-c-windows/lib" />
+			<Add directory="../libraries/paho-mqtt-c-windows/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../libraries/paho-mqtt-c-windows/lib/paho-mqtt3a.lib" />
+			<Add library="../libraries/paho-mqtt-c-windows/lib/paho-mqtt3as.lib" />
+			<Add library="../libraries/paho-mqtt-c-windows/lib/paho-mqtt3cs.lib" />
+			<Add library="../libraries/paho-mqtt-c-windows/lib/paho-mqtt3c.lib" />
+		</Linker>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
