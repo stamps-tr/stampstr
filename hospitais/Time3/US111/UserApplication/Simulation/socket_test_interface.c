@@ -8,7 +8,7 @@ extern "C" {
 #endif
 const int  rt_version = Srtv62;
 
-const char* _SCSIM_CheckSum = "bcc63dbb753a495b2b0c587026e2a498";
+const char* _SCSIM_CheckSum = "602ed72df21c724af28fdfd1743fad97";
 const char* _SCSIM_SmuTypesCheckSum = "3093108411c6570b9c21d7b04ee1db2c";
 
 /*******************************

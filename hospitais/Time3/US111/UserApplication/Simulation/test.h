@@ -1,6 +1,6 @@
 /* $**************** KCG Version 6.4 (build i21) ****************
 ** Command: kcg64.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation/config.txt
-** Generation date: 2017-11-19T23:17:27
+** Generation date: 2017-11-21T21:46:53
 *************************************************************$ */
 #ifndef _test_H_
 #define _test_H_
@@ -34,19 +34,20 @@ typedef struct {
   kcg_bool /* test::_L86 */ _L86;
   kcg_bool /* test::_L87 */ _L87;
   kcg_bool /* test::_L88 */ _L88;
-  kcg_int /* test::_L89 */ _L89;
-  kcg_int /* test::_L91 */ _L91;
-  kcg_int /* test::_L92 */ _L92;
   kcg_int /* test::_L93 */ _L93;
-  kcg_int /* test::_L95 */ _L95;
   kcg_int /* test::_L94 */ _L94;
   kcg_bool /* test::_L96 */ _L96;
-  kcg_int /* test::_L98 */ _L98;
-  kcg_int /* test::_L101 */ _L101;
-  kcg_int /* test::_L103 */ _L103;
-  kcg_int /* test::_L102 */ _L102;
-  kcg_int /* test::_L105 */ _L105;
-  kcg_int /* test::_L106 */ _L106;
+  kcg_int /* test::_L123 */ _L123;
+  kcg_int /* test::_L126 */ _L126;
+  kcg_int /* test::_L138 */ _L138;
+  kcg_int /* test::_L137 */ _L137;
+  kcg_int /* test::_L136 */ _L136;
+  kcg_int /* test::_L141 */ _L141;
+  kcg_int /* test::_L140 */ _L140;
+  kcg_int /* test::_L139 */ _L139;
+  kcg_int /* test::_L144 */ _L144;
+  kcg_int /* test::_L143 */ _L143;
+  kcg_int /* test::_L142 */ _L142;
 } outC_test;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -64,6 +65,6 @@ extern void test_init(outC_test *outC);
 #endif /* _test_H_ */
 /* $**************** KCG Version 6.4 (build i21) ****************
 ** test.h
-** Generation date: 2017-11-19T23:17:27
+** Generation date: 2017-11-21T21:46:53
 *************************************************************$ */
 

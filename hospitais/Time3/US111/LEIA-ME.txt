@@ -1,1 +1,4 @@
 Funciona apenas no SCADE R17
+
+Todos os botões funcionando e enviando por MQTT porém,  
+é necessário corrigir o valor enviado para cada botão.

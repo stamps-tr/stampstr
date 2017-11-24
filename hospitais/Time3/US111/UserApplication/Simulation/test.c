@@ -1,6 +1,6 @@
 /* $**************** KCG Version 6.4 (build i21) ****************
 ** Command: kcg64.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation/config.txt
-** Generation date: 2017-11-19T23:17:27
+** Generation date: 2017-11-21T21:46:53
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -10,19 +10,20 @@
 #ifndef KCG_USER_DEFINED_INIT
 void test_init(outC_test *outC)
 {
-  outC->_L106 = 0;
-  outC->_L105 = 0;
-  outC->_L102 = 0;
-  outC->_L103 = 0;
-  outC->_L101 = 0;
-  outC->_L98 = 0;
+  outC->_L142 = 0;
+  outC->_L143 = 0;
+  outC->_L144 = 0;
+  outC->_L139 = 0;
+  outC->_L140 = 0;
+  outC->_L141 = 0;
+  outC->_L136 = 0;
+  outC->_L137 = 0;
+  outC->_L138 = 0;
+  outC->_L126 = 0;
+  outC->_L123 = 0;
   outC->_L96 = kcg_true;
   outC->_L94 = 0;
-  outC->_L95 = 0;
   outC->_L93 = 0;
-  outC->_L92 = 0;
-  outC->_L91 = 0;
-  outC->_L89 = 0;
   outC->_L88 = kcg_true;
   outC->_L87 = kcg_true;
   outC->_L86 = kcg_true;
@@ -48,45 +49,45 @@ void test(inC_test *inC, outC_test *outC)
   outC->_L86 = inC->SignalButtonFair;
   outC->_L87 = inC->SignalButtonGood;
   outC->_L88 = inC->SignalButtonExcellent;
-  outC->_L98 = 1;
-  outC->_L101 = 0;
-  /* 3 */ if (outC->_L83) {
-    outC->_L89 = outC->_L98;
-  }
-  else {
-    outC->_L89 = outC->_L101;
-  }
-  outC->_L105 = 1;
-  outC->_L106 = 0;
-  /* 5 */ if (outC->_L86) {
-    outC->_L91 = outC->_L105;
-  }
-  else {
-    outC->_L91 = outC->_L106;
-  }
-  outC->_L102 = 1;
-  outC->_L103 = 0;
-  /* 6 */ if (outC->_L87) {
-    outC->_L92 = outC->_L102;
-  }
-  else {
-    outC->_L92 = outC->_L103;
-  }
-  outC->_L94 = 1;
-  outC->_L95 = 0;
+  outC->_L94 = 4;
+  outC->_L126 = 0;
   /* 7 */ if (outC->_L88) {
     outC->_L93 = outC->_L94;
   }
   else {
-    outC->_L93 = outC->_L95;
+    outC->_L93 = outC->_L126;
   }
+  outC->_L142 = 1;
+  outC->_L144 = 0;
+  /* 15 */ if (outC->_L83) {
+    outC->_L143 = outC->_L142;
+  }
+  else {
+    outC->_L143 = outC->_L144;
+  }
+  outC->_L140 = 2;
+  outC->_L141 = 0;
+  /* 14 */ if (outC->_L86) {
+    outC->_L139 = outC->_L140;
+  }
+  else {
+    outC->_L139 = outC->_L141;
+  }
+  outC->_L136 = 3;
+  outC->_L138 = 0;
+  /* 13 */ if (outC->_L87) {
+    outC->_L137 = outC->_L136;
+  }
+  else {
+    outC->_L137 = outC->_L138;
+  }
+  outC->_L123 = outC->_L143 + outC->_L139 + outC->_L137 + outC->_L93;
   outC->_L96 = outC->_L83 | outC->_L86 | outC->_L87 | outC->_L88;
-  /* 2 */
-  PublishMQTT(outC->_L89, outC->_L91, outC->_L92, outC->_L93, outC->_L96);
+  /* 2 */ PublishMQTT(outC->_L123, outC->_L96);
 }
 
 /* $**************** KCG Version 6.4 (build i21) ****************
 ** test.c
-** Generation date: 2017-11-19T23:17:27
+** Generation date: 2017-11-21T21:46:53
 *************************************************************$ */
 

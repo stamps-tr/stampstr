@@ -79,116 +79,113 @@ EXPORTS
     a661_msg_csp_header @78
     any_true @79
     buildJson @80
-    buttonExcellent @81 DATA
-    buttonFair @82 DATA
-    buttonGood @83 DATA
-    buttonPoor @84 DATA
-    check_kcg_bool_string @85
-    check_kcg_char_string @86
-    check_kcg_int_string @87
-    check_kcg_real_string @88
-    check_string_access @89
-    client @90 DATA
-    closeClientMQTT @91
-    compare_kcg_bool @92
-    compare_kcg_char @93
-    compare_kcg_int @94
-    compare_kcg_real @95
-    conn_opts @96 DATA
-    get_kcg_bool_signature @97
-    get_kcg_char_signature @98
-    get_kcg_int_signature @99
-    get_kcg_real_signature @100
-    inputs_ctx @101 DATA
-    is_VTable_double_conversion_allowed @102
-    is_VTable_long_conversion_allowed @103
-    is_kcg_bool_double_conversion_allowed @104
-    is_kcg_bool_long_conversion_allowed @105
-    is_kcg_char_double_conversion_allowed @106
-    is_kcg_char_long_conversion_allowed @107
-    is_kcg_int_double_conversion_allowed @108
-    is_kcg_int_long_conversion_allowed @109
-    is_kcg_real_double_conversion_allowed @110
-    is_kcg_real_long_conversion_allowed @111
-    kcg_bool_to_double @112
-    kcg_bool_to_long @113
-    kcg_bool_to_string @114
-    kcg_char_to_double @115
-    kcg_char_to_long @116
-    kcg_char_to_string @117
-    kcg_int_to_double @118
-    kcg_int_to_long @119
-    kcg_int_to_string @120
-    kcg_real_to_double @121
-    kcg_real_to_long @122
-    kcg_real_to_string @123
-    layerstring @124 DATA
-    load_inC_test @125
-    load_outC_test @126
-    load_snapshot @127
-    load_var @128
-    mqtt_inicializado @129 DATA
-    nSsmRtVersion @130 DATA
-    notvalid @131
-    openClientMQTT @132
-    outputs_ctx @133 DATA
-    pConverter @134 DATA
-    pSimBoolVTable @135 DATA
-    pSimCharVTable @136 DATA
-    pSimDoubleVTable @137 DATA
-    pSimLongVTable @138 DATA
-    pSimoutC_testCIVTable @139 DATA
-    pSimulator @140 DATA
-    pTop @141 DATA
-    parameterstring @142 DATA
-    predef_compare_enum @143
-    predef_compare_kcg_bool @144
-    predef_compare_kcg_char @145
-    predef_compare_kcg_int @146
-    predef_compare_kcg_real @147
-    predef_kcg_bool_to_string @148
-    predef_kcg_char_to_string @149
-    predef_kcg_char_to_string_helper @150
-    predef_kcg_int_to_string @151
-    predef_kcg_real_to_string @152
-    predef_string_to_kcg_bool @153
-    predef_string_to_kcg_char @154
-    predef_string_to_kcg_char_helper @155
-    predef_string_to_kcg_int @156
-    predef_string_to_kcg_real @157
-    publishMQTT @158
-    pubmsg @159 DATA
-    read_line @160
-    rt_version @161 DATA
-    save_context @162
-    save_field @163
-    save_inC_test @164
-    save_outC_test @165
-    save_snapshot @166
-    save_var @167
-    scope_0 @168 DATA
-    scope_0_entries @169 DATA
-    scope_1 @170 DATA
-    scope_1_entries @171 DATA
-    set_kcg_bool_default_value @172
-    set_kcg_char_default_value @173
-    set_kcg_int_default_value @174
-    set_kcg_real_default_value @175
-    strDefaultRealFormat @176 DATA
-    strJson @177 DATA
-    string_to_VTable @178
-    string_to_kcg_bool @179
-    string_to_kcg_char @180
-    string_to_kcg_int @181
-    string_to_kcg_real @182
-    szKcgTraceCheckSum @183 DATA
-    test @184
-    test_UA_1_receive @185
-    test_UA_1_receive_clear @186
-    test_UA_1_send @187
-    test_init @188
-    test_reset @189
-    token @190 DATA
-    updateCompareResult @191
-    valid @192
-    widgetstring @193 DATA
+    check_kcg_bool_string @81
+    check_kcg_char_string @82
+    check_kcg_int_string @83
+    check_kcg_real_string @84
+    check_string_access @85
+    client @86 DATA
+    closeClientMQTT @87
+    compare_kcg_bool @88
+    compare_kcg_char @89
+    compare_kcg_int @90
+    compare_kcg_real @91
+    conn_opts @92 DATA
+    get_kcg_bool_signature @93
+    get_kcg_char_signature @94
+    get_kcg_int_signature @95
+    get_kcg_real_signature @96
+    grade @97 DATA
+    inputs_ctx @98 DATA
+    is_VTable_double_conversion_allowed @99
+    is_VTable_long_conversion_allowed @100
+    is_kcg_bool_double_conversion_allowed @101
+    is_kcg_bool_long_conversion_allowed @102
+    is_kcg_char_double_conversion_allowed @103
+    is_kcg_char_long_conversion_allowed @104
+    is_kcg_int_double_conversion_allowed @105
+    is_kcg_int_long_conversion_allowed @106
+    is_kcg_real_double_conversion_allowed @107
+    is_kcg_real_long_conversion_allowed @108
+    kcg_bool_to_double @109
+    kcg_bool_to_long @110
+    kcg_bool_to_string @111
+    kcg_char_to_double @112
+    kcg_char_to_long @113
+    kcg_char_to_string @114
+    kcg_int_to_double @115
+    kcg_int_to_long @116
+    kcg_int_to_string @117
+    kcg_real_to_double @118
+    kcg_real_to_long @119
+    kcg_real_to_string @120
+    layerstring @121 DATA
+    load_inC_test @122
+    load_outC_test @123
+    load_snapshot @124
+    load_var @125
+    mqtt_inicializado @126 DATA
+    nSsmRtVersion @127 DATA
+    notvalid @128
+    openClientMQTT @129
+    outputs_ctx @130 DATA
+    pConverter @131 DATA
+    pSimBoolVTable @132 DATA
+    pSimCharVTable @133 DATA
+    pSimDoubleVTable @134 DATA
+    pSimLongVTable @135 DATA
+    pSimoutC_testCIVTable @136 DATA
+    pSimulator @137 DATA
+    pTop @138 DATA
+    parameterstring @139 DATA
+    predef_compare_enum @140
+    predef_compare_kcg_bool @141
+    predef_compare_kcg_char @142
+    predef_compare_kcg_int @143
+    predef_compare_kcg_real @144
+    predef_kcg_bool_to_string @145
+    predef_kcg_char_to_string @146
+    predef_kcg_char_to_string_helper @147
+    predef_kcg_int_to_string @148
+    predef_kcg_real_to_string @149
+    predef_string_to_kcg_bool @150
+    predef_string_to_kcg_char @151
+    predef_string_to_kcg_char_helper @152
+    predef_string_to_kcg_int @153
+    predef_string_to_kcg_real @154
+    publishMQTT @155
+    pubmsg @156 DATA
+    read_line @157
+    rt_version @158 DATA
+    save_context @159
+    save_field @160
+    save_inC_test @161
+    save_outC_test @162
+    save_snapshot @163
+    save_var @164
+    scope_0 @165 DATA
+    scope_0_entries @166 DATA
+    scope_1 @167 DATA
+    scope_1_entries @168 DATA
+    set_kcg_bool_default_value @169
+    set_kcg_char_default_value @170
+    set_kcg_int_default_value @171
+    set_kcg_real_default_value @172
+    strDefaultRealFormat @173 DATA
+    strJson @174 DATA
+    string_to_VTable @175
+    string_to_kcg_bool @176
+    string_to_kcg_char @177
+    string_to_kcg_int @178
+    string_to_kcg_real @179
+    szKcgTraceCheckSum @180 DATA
+    test @181
+    test_UA_1_receive @182
+    test_UA_1_receive_clear @183
+    test_UA_1_send @184
+    test_init @185
+    test_reset @186
+    token @187 DATA
+    updateCompareResult @188
+    valid @189
+    widgetstring @190 DATA

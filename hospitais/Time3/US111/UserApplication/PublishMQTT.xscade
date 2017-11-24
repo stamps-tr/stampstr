@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" external="imported" name="PublishMQTT">
 			<inputs>
-				<Variable name="ButtonPoor">
+				<Variable name="Grade">
 					<type>
 						<NamedType>
 							<type>
@@ -13,42 +13,6 @@
 					</type>
 					<pragmas>
 						<ed:Variable oid="!ed/3d40/28DF/3990/5a025813399"/>
-					</pragmas>
-				</Variable>
-				<Variable name="ButtonFair">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="int"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/3d3c/28DF/3990/5a0257ec16f0"/>
-					</pragmas>
-				</Variable>
-				<Variable name="ButtonGood">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="int"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/3d3b/28DF/3990/5a0257dd7f89"/>
-					</pragmas>
-				</Variable>
-				<Variable name="ButtonExcellent">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="int"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/3d3f/28DF/3990/5a0257f92302"/>
 					</pragmas>
 				</Variable>
 				<Variable name="Send">

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--$**************** KCG Version 6.4 (build i21) ****************
 ** Command: kcg64.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation/config.txt
-** Generation date: 2017-11-19T23:17:27
+** Generation date: 2017-11-21T21:46:53
 *************************************************************$-->
-<Model date="2017-11-19T23:17:27" commandLine="kcg64.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation/config.txt">
+<Model date="2017-11-21T21:46:53" commandLine="kcg64.exe -config C:/Users/Julhio/Documents/ITA/CE-237/stampstr/hospitais/Time3/US111/UserApplication/Simulation/config.txt">
   <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
   <Option name="xml_filter" value="#off#"/>
   <Option name="state_vector" value="#off#"/>
@@ -50,33 +50,32 @@
     <Local scadeName="_L86" scadeType="bool" targetName="_L86" targetType="kcg_bool" inCtx="true"/>
     <Local scadeName="_L87" scadeType="bool" targetName="_L87" targetType="kcg_bool" inCtx="true"/>
     <Local scadeName="_L88" scadeType="bool" targetName="_L88" targetType="kcg_bool" inCtx="true"/>
-    <Local scadeName="_L89" scadeType="int" targetName="_L89" targetType="kcg_int" inCtx="true"/>
-    <Local scadeName="_L91" scadeType="int" targetName="_L91" targetType="kcg_int" inCtx="true"/>
-    <Local scadeName="_L92" scadeType="int" targetName="_L92" targetType="kcg_int" inCtx="true"/>
     <Local scadeName="_L93" scadeType="int" targetName="_L93" targetType="kcg_int" inCtx="true"/>
-    <Local scadeName="_L95" scadeType="int" targetName="_L95" targetType="kcg_int" inCtx="true"/>
     <Local scadeName="_L94" scadeType="int" targetName="_L94" targetType="kcg_int" inCtx="true"/>
     <Local scadeName="_L96" scadeType="bool" targetName="_L96" targetType="kcg_bool" inCtx="true"/>
-    <Local scadeName="_L98" scadeType="int" targetName="_L98" targetType="kcg_int" inCtx="true"/>
-    <Local scadeName="_L101" scadeType="int" targetName="_L101" targetType="kcg_int" inCtx="true"/>
-    <Local scadeName="_L103" scadeType="int" targetName="_L103" targetType="kcg_int" inCtx="true"/>
-    <Local scadeName="_L102" scadeType="int" targetName="_L102" targetType="kcg_int" inCtx="true"/>
-    <Local scadeName="_L105" scadeType="int" targetName="_L105" targetType="kcg_int" inCtx="true"/>
-    <Local scadeName="_L106" scadeType="int" targetName="_L106" targetType="kcg_int" inCtx="true"/>
-    <NodeInstance scadeName="if" instName="3"/>
-    <NodeInstance scadeName="if" instName="5"/>
-    <NodeInstance scadeName="if" instName="6"/>
+    <Local scadeName="_L123" scadeType="int" targetName="_L123" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L126" scadeType="int" targetName="_L126" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L138" scadeType="int" targetName="_L138" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L137" scadeType="int" targetName="_L137" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L136" scadeType="int" targetName="_L136" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L141" scadeType="int" targetName="_L141" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L140" scadeType="int" targetName="_L140" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L139" scadeType="int" targetName="_L139" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L144" scadeType="int" targetName="_L144" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L143" scadeType="int" targetName="_L143" targetType="kcg_int" inCtx="true"/>
+    <Local scadeName="_L142" scadeType="int" targetName="_L142" targetType="kcg_int" inCtx="true"/>
     <NodeInstance scadeName="if" instName="7"/>
     <NodeInstance scadeName="PublishMQTT" instName="2" refName="PublishMQTT"/>
     <NodeInstance scadeName="or" instName="1"/>
+    <NodeInstance scadeName="+" instName="2"/>
+    <NodeInstance scadeName="if" instName="13"/>
+    <NodeInstance scadeName="if" instName="14"/>
+    <NodeInstance scadeName="if" instName="15"/>
     <OutCtxType targetName="outC_test"/>
     <InCtxType targetName="inC_test"/>
   </RootNode>
   <NoExpNode scadeName="PublishMQTT" headerFile="kcg_imported_functions.h" targetCycleFct="PublishMQTT" imported="true">
-    <Input scadeName="ButtonPoor" scadeType="int" targetName="ButtonPoor" targetType="kcg_int"/>
-    <Input scadeName="ButtonFair" scadeType="int" targetName="ButtonFair" targetType="kcg_int"/>
-    <Input scadeName="ButtonGood" scadeType="int" targetName="ButtonGood" targetType="kcg_int"/>
-    <Input scadeName="ButtonExcellent" scadeType="int" targetName="ButtonExcellent" targetType="kcg_int"/>
+    <Input scadeName="Grade" scadeType="int" targetName="Grade" targetType="kcg_int"/>
     <Input scadeName="Send" scadeType="bool" targetName="Send" targetType="kcg_bool"/>
   </NoExpNode>
   <PredefType scadeName="real" targetName="kcg_real"/>
@@ -86,5 +85,5 @@
 </Model>
 <!--$**************** KCG Version 6.4 (build i21) ****************
 ** kcg_trace.xml
-** Generation date: 2017-11-19T23:17:27
+** Generation date: 2017-11-21T21:46:53
 *************************************************************$-->

@@ -8,7 +8,7 @@
 
 #define ADDRESS     "stampsnet.hashtagsource.com:1883"
 #define CLIENTID    "ExampleClientPub"
-#define TOPIC       "us111"
+#define TOPIC       "US112"
 #define PAYLOAD     ""
 #define QOS         1
 #define TIMEOUT     10000L
@@ -20,7 +20,7 @@ MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
 MQTTClient_deliveryToken token;
 MQTTClient_message pubmsg = MQTTClient_message_initializer;
 
-int	buttonPoor = 0, buttonFair = 0, buttonGood = 0, buttonExcellent = 0;
+int	grade = 0;
 char    strJson[300];
 
 int mqtt_inicializado = 0;
@@ -60,17 +60,24 @@ int openClientMQTT()
 	return rc;
 }
 
-void buildJson() {
-    char *p = &strJson[0];
+//void buildJson() {
+//    char *p = &strJson[0];
+//
+//    p += sprintf(p, "{\"version\":\"1.1\"");
+//    p += sprintf(p, ",\"host\":\"DisplayUS112\"");
+//    p += sprintf(p, ",\"short_message\":\"Display SCADE US112\"");
+//    p += sprintf(p, ",\"_grade\":\"%d\"", grade);
+//    p += sprintf(p, "}");
+//}
 
-    p += sprintf(p, "{\"version\":\"1.1\"");
-    p += sprintf(p, ",\"host\":\"DisplayUS111\"");
-    p += sprintf(p, ",\"short_message\":\"Display SCADE US111\"");
-    p += sprintf(p, ",\"_poor\":\"%d\"", buttonPoor);
-    p += sprintf(p, ",\"_fair\":\"%d\"", buttonFair);
-    p += sprintf(p, ",\"_good\":\"%d\"", buttonGood);
-    p += sprintf(p, ",\"_excellent\":\"%d\"", buttonExcellent);
-    p += sprintf(p, "}");
+void buildJson() {
+  char *p = &strJson[0];
+
+  p += sprintf(p, "{\"version\":\"1.1\"");
+  p += sprintf(p, ",\"host\":\"DisplayUS112\"");
+  p += sprintf(p, ",\"short_message\":\"Display SCADE US112\"");
+  p += sprintf(p, ",\"_grade\":%d", grade);
+  p += sprintf(p, "}");
 }
 
 int closeClientMQTT()
@@ -84,25 +91,17 @@ int closeClientMQTT()
 #ifndef PublishMQTT
 
 /* PublishMQTT/ */
-void PublishMQTT(char Send, int Grade, int ButtonGood, int ButtonFair, int ButtonPoor)
+void PublishMQTT(char Send, int Grade)
 {
-  if(Send == 1)	//Só envia quando receber 1 da aplicação SCADE
+  if(Grade > 0)	//Só envia quando receber 1 da aplicação SCADE
   {
     
-    if(ButtonPoor == 1) buttonPoor = 1; //else buttonPoor = 0;
-    if(buttonFair == 1) buttonFair = 1; //else buttonFair = 0;
-    if(ButtonGood == 1) buttonGood = 1; //else buttonGood = 0;
-    if(ButtonExcellent == 1) buttonExcellent = 1; //else buttonExcellent = 0;	
- 	
+    grade = Grade;
+    
     buildJson();
     openClientMQTT();
     publishMQTT(TOPIC, strJson);
-    closeClientMQTT();
-
-    ButtonPoor = 0;
-    ButtonFair = 0;
-    ButtonGood = 0; 
-    ButtonExcellent = 0;	
+    closeClientMQTT();	
   }
 }
 #endif /* PublishMQTT */

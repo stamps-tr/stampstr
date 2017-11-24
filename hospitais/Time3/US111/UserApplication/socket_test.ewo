@@ -51,6 +51,7 @@
 "C:\\Dev\\ces-65\\Tmp\\socket_test\\socket_test\\socket_test.etp"="KCG" 
 "C:\\Users\\Julhio\\Desktop\\SCADE_MQTT_MOD\\UserApplication\\socket_test.etp"="KCG" 
 "C:\\Users\\Julhio\\Desktop\\US94\\UserApplication\\socket_test.etp"="KCG" 
+"C:\\Users\\Julhio\\Documents\\ITA\\CE-237\\stampstr\\hospitais\\Time3\\US111\\UserApplication\\socket_test.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\DiffAnalyzer]
 
@@ -120,7 +121,7 @@
 [SCADE\Simulator\Watch]
 
 "Count"="0" 
-"Watch1"="test/_L55/" 
+"Watch1"="test/_L83/" 
 
 [SCADE\Simulator\Graph]
 

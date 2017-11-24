@@ -8,7 +8,7 @@
   #define snprintf _snprintf
 #endif
 
-const char* szKcgTraceCheckSum = "ede0f376e48f302242e909acc62007a1";
+const char* szKcgTraceCheckSum = "e69eb838f4dd385023dc7bf5c56195d9";
 
 /*********************************************
  * Snapshot Save functions
@@ -64,19 +64,20 @@ int save_outC_test(const char *cpath, const outC_test *pValue, const void *pBase
     bOK &= save_field(cpath, "._L86", (const void *)(&pValue->_L86), pBaseAddr, kcg_bool_to_string, snsFile); 
     bOK &= save_field(cpath, "._L87", (const void *)(&pValue->_L87), pBaseAddr, kcg_bool_to_string, snsFile); 
     bOK &= save_field(cpath, "._L88", (const void *)(&pValue->_L88), pBaseAddr, kcg_bool_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L89", (const void *)(&pValue->_L89), pBaseAddr, kcg_int_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L91", (const void *)(&pValue->_L91), pBaseAddr, kcg_int_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L92", (const void *)(&pValue->_L92), pBaseAddr, kcg_int_to_string, snsFile); 
     bOK &= save_field(cpath, "._L93", (const void *)(&pValue->_L93), pBaseAddr, kcg_int_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L95", (const void *)(&pValue->_L95), pBaseAddr, kcg_int_to_string, snsFile); 
     bOK &= save_field(cpath, "._L94", (const void *)(&pValue->_L94), pBaseAddr, kcg_int_to_string, snsFile); 
     bOK &= save_field(cpath, "._L96", (const void *)(&pValue->_L96), pBaseAddr, kcg_bool_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L98", (const void *)(&pValue->_L98), pBaseAddr, kcg_int_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L101", (const void *)(&pValue->_L101), pBaseAddr, kcg_int_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L103", (const void *)(&pValue->_L103), pBaseAddr, kcg_int_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L102", (const void *)(&pValue->_L102), pBaseAddr, kcg_int_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L105", (const void *)(&pValue->_L105), pBaseAddr, kcg_int_to_string, snsFile); 
-    bOK &= save_field(cpath, "._L106", (const void *)(&pValue->_L106), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L123", (const void *)(&pValue->_L123), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L126", (const void *)(&pValue->_L126), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L138", (const void *)(&pValue->_L138), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L137", (const void *)(&pValue->_L137), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L136", (const void *)(&pValue->_L136), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L141", (const void *)(&pValue->_L141), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L140", (const void *)(&pValue->_L140), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L139", (const void *)(&pValue->_L139), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L144", (const void *)(&pValue->_L144), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L143", (const void *)(&pValue->_L143), pBaseAddr, kcg_int_to_string, snsFile); 
+    bOK &= save_field(cpath, "._L142", (const void *)(&pValue->_L142), pBaseAddr, kcg_int_to_string, snsFile); 
     return bOK;
 }
 
@@ -161,19 +162,20 @@ int load_outC_test(outC_test *pValue, FILE *snsFile) {
     bOK &= load_var((void *)(&pValue->_L86), string_to_kcg_bool, snsFile); 
     bOK &= load_var((void *)(&pValue->_L87), string_to_kcg_bool, snsFile); 
     bOK &= load_var((void *)(&pValue->_L88), string_to_kcg_bool, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L89), string_to_kcg_int, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L91), string_to_kcg_int, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L92), string_to_kcg_int, snsFile); 
     bOK &= load_var((void *)(&pValue->_L93), string_to_kcg_int, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L95), string_to_kcg_int, snsFile); 
     bOK &= load_var((void *)(&pValue->_L94), string_to_kcg_int, snsFile); 
     bOK &= load_var((void *)(&pValue->_L96), string_to_kcg_bool, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L98), string_to_kcg_int, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L101), string_to_kcg_int, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L103), string_to_kcg_int, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L102), string_to_kcg_int, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L105), string_to_kcg_int, snsFile); 
-    bOK &= load_var((void *)(&pValue->_L106), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L123), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L126), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L138), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L137), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L136), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L141), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L140), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L139), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L144), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L143), string_to_kcg_int, snsFile); 
+    bOK &= load_var((void *)(&pValue->_L142), string_to_kcg_int, snsFile); 
     return bOK;
 }
 
